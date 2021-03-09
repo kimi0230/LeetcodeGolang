@@ -75,14 +75,44 @@ func LengthOfLongestSubstring(s string) int {
 	return maxLen
 }
 
-// LengthOfLongestSubstringPin 用map 紀錄是否重複 效能較好
-func LengthOfLongestSubstringPin(s string) int {
+// LengthOfLongestSubstringMap 用map 紀錄是否重複 效能較好
+func LengthOfLongestSubstringMap(s string) int {
 	slength := len(s)
 	if slength == 0 || slength == 1 {
 		return slength
 	}
 
 	charMap := make(map[byte]bool)
+	maxLen, left, right := 0, 0, 0
+	for i := 0; i < slength; i++ {
+		if ok := charMap[s[i]]; ok {
+			// 有找到
+			charMap[s[left]] = false
+			left++
+		} else {
+			charMap[s[i]] = true
+			right++
+		}
+
+		if maxLen < right-left {
+			maxLen = right - left
+		}
+		if left+maxLen >= slength || right >= len(s) {
+			break
+		}
+	}
+	return maxLen
+}
+
+// LengthOfLongestSubstringBit 用map效能不好, 使用數組改善
+func LengthOfLongestSubstringBit(s string) int {
+	slength := len(s)
+	if slength == 0 || slength == 1 {
+		return slength
+	}
+
+	// ASCII 0~255
+	charMap := [256]bool{}
 	maxLen, left, right := 0, 0, 0
 	for i := 0; i < slength; i++ {
 		if ok := charMap[s[i]]; ok {
