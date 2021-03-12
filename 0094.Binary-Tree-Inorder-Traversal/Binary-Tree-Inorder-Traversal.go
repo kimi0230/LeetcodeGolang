@@ -22,8 +22,12 @@ Follow up: Recursive solution is trivial, could you do it iteratively?
 中序遍歷一顆樹
 
 ## 解題思路
-深度優先
-若二元樹為空回傳空, 否則從根結點開始, 先走訪根節點的左子樹 -> 根節點 -> 右子樹
+深度優先 中序遍歷
+	若二元樹為空回傳空, 否則從根結點開始, 先走訪根節點的左子樹 -> 根節點 -> 右子樹
+深度優先, 前序遍歷
+ 	若二元樹為空回傳空, 否則先根節點-> 左子樹 -> 右子樹
+深度優先, 後序遍歷
+	若二元樹為空回傳空, 否則從左到右誒並從葉子節點後續走訪左子樹到右子樹, 最後是拜訪根節點
 */
 
 package binarytreeinordertraversal
@@ -60,9 +64,11 @@ func inorderStack(root *TreeNode, r *[]int) {
 
 	for !s.IsEmpty() || p != nil {
 		if p != nil {
+			// 把中間放入stack, 往左節點繼續往下找
 			s.Push(p)
 			p = p.Left
 		} else {
+			// 找不到時,印出
 			tmp := s.Pop().(*TreeNode)
 			*r = append(*r, tmp.Val)
 			p = tmp.Right

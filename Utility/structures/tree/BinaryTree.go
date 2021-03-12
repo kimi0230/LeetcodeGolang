@@ -19,6 +19,7 @@ func NewBinaryTree(rootV interface{}) *BinaryTree {
 }
 
 // BFSTraverse: 廣度優先, Breadth First Traverse 廣度優先
+// 用 Queue實現
 func (this *BinaryTree) BFSTraverse() {
 	p := this.root
 	s := NewQueueStack()
