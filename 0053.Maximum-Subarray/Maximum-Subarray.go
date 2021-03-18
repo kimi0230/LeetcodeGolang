@@ -25,12 +25,33 @@ If you have figured out the O(*n*) solution, try coding another solution using t
 
 package maximumsubarray
 
-// DP
-func MaxSubArray(nums []int) int {
-	return 0
+// MaxSubArrayDP : DP (dynamic programming)
+func MaxSubArrayDP(nums []int) int {
+	if len(nums) == 0 {
+		return 0
+	}
+
+	if len(nums) == 1 {
+		return nums[0]
+	}
+
+	dp, res := make([]int, len(nums)), nums[0]
+	dp[0] = nums[0]
+
+	for i := 1; i < len(nums); i++ {
+		if dp[i-1] > 0 {
+			// 前一個和是正的 繼續加下去
+			dp[i] = nums[i] + dp[i-1]
+		} else {
+			// 前一個和是小於等於0 直接拿現在值取代
+			dp[i] = nums[i]
+		}
+		res = max(res, dp[i])
+	}
+	return res
 }
 
-//
+// MaxSubArray1 : 模擬, 比DP快
 func MaxSubArray1(nums []int) int {
 	if len(nums) == 1 {
 		return nums[0]
@@ -48,4 +69,11 @@ func MaxSubArray1(nums []int) int {
 		}
 	}
 	return maxSum
+}
+
+func max(a int, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }
