@@ -15,5 +15,6 @@
 
 
 ## Reference
-* https://books.halfrost.com/leetcode/
-* https://leetcode-cn.com/
+* [leetcode](https://leetcode.com/)
+* [leetcode-cn](https://leetcode-cn.com/)
+* [halfrost](https://books.halfrost.com/leetcode/)
