@@ -77,3 +77,5 @@ func max(a int, b int) int {
 	}
 	return b
 }
+
+//TODO: 分治法, 這個分治方法類似於「線段樹求解最長公共上升子序列問題」的pushUp操作
