@@ -47,16 +47,3 @@ func Twosum2(nums []int, target int) []int {
 	}
 	return []int{0, 0}
 }
-
-func Twosum3(nums []int, target int) []int {
-	charMap := [256]bool{}
-	index := 0
-	for i, v := range nums {
-		if ok := charMap[target-v]; ok {
-			return []int{index, i}
-		}
-		charMap[v] = true
-		index = i
-	}
-	return []int{0, 0}
-}
