@@ -28,7 +28,8 @@ func sortColors(nums []int) {
 
 /*
 二路快排與三路快排
-先掌握二路快排，三路快排稍微改下即可
+先掌握二路快排， https://leetcode-cn.com/problems/sort-an-array/solution/golang-er-lu-kuai-pai-by-rqb-2/
+三路快排稍微改下即可
 
 區別：
 二路快排，分兩部分：小於等於、大於二部分。
