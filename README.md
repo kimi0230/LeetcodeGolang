@@ -14,7 +14,7 @@
 |0075|Sort Colors|Sort|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/0075.Sort-Colors)|Medium|O(n)|O(1)|
 |0141|Linked List Cycle|Linked List|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/0141.Linked-List-Cycle)|Easy|O(n)|O(1)|
 |0693|Binary Number with Alternating Bits_test|Bit Manipulation|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/0693.Binary-Number-with-Alternating-Bits)|Easy|O(n), O(1)|O(1)|
-|0721|Accounts Merge|Union Find|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/0721.Accounts-Merge)|Easy|O(n)|O(n)|
+|0721|Accounts Merge|Union Find|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/0721.Accounts-Merge)|Easy|O(n), O(n log n)|O(n), O(n)|
 
 ## Reference
 * [leetcode](https://leetcode.com/)
