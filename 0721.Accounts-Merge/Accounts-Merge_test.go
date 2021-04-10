@@ -65,7 +65,7 @@ func TestAccountsMergeBurst(t *testing.T) {
 
 func TestAccountsMerge(t *testing.T) {
 	for _, tt := range tests {
-		if got := accountsMerge(tt.arg1); !reflect.DeepEqual(got, tt.want) {
+		if got := AccountsMerge(tt.arg1); !reflect.DeepEqual(got, tt.want) {
 			t.Errorf("got = %v \n want = %v \n", tt.arg1, tt.want)
 		}
 	}
