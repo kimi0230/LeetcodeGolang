@@ -76,4 +76,6 @@ First, iterate the array counting number of 0's, 1's, and 2's, then overwrite ar
 
 這道題也可以用一次三路快排。數組分為 3 部分，第一個部分都是 0，中間部分都是 1，最後部分都是 2 。
 
-來源: https://books.halfrost.com/leetcode/ChapterFour/0001~0099/0075.Sort-Colors/
+## 來源
+* https://books.halfrost.com/leetcode/ChapterFour/0001~0099/0075.Sort-Colors/
+* https://leetcode-cn.com/problems/sort-colors/

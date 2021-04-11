@@ -56,3 +56,7 @@ https://books.halfrost.com/leetcode/ChapterFour/0700~0799/0721.Accounts-Merge/
 鏈接：https://leetcode-cn.com/problems/accounts-merge/solution/zhang-hu-he-bing-by-leetcode-solution-3dyq/
 來源：力扣（LeetCode）
 著作權歸作者所有。商業轉載請聯繫作者獲得授權，非商業轉載請註明出處。
+
+## 來源
+* https://books.halfrost.com/leetcode/ChapterFour/0700~0799/0721.Accounts-Merge/
+* https://leetcode-cn.com/problems/accounts-merge/

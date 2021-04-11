@@ -43,3 +43,7 @@ Given a positive integer, check whether it has alternating bits: namely, if two 
 
 ## 提示：
 1 <= n <= 2^31 - 1
+
+## 來源
+* https://books.halfrost.com/leetcode/ChapterFour/0600~0699/0693.Binary-Number-with-Alternating-Bits/
+* https://leetcode-cn.com/problems/binary-number-with-alternating-bits/
