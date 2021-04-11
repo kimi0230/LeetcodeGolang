@@ -1,7 +1,7 @@
 package accountsmerge
 
 import (
-	"reflect"
+	"fmt"
 	"testing"
 )
 
@@ -57,16 +57,45 @@ var tests = []struct {
 
 func TestAccountsMergeBurst(t *testing.T) {
 	for _, tt := range tests {
-		if got := AccountsMergeBurst(tt.arg1); !reflect.DeepEqual(got, tt.want) {
-			t.Errorf("got = %v \n want = %v \n", tt.arg1, tt.want)
-		}
+		// if got := AccountsMergeBurst(tt.arg1); !reflect.DeepEqual(got, tt.want) {
+		// 	t.Errorf("got = %v \n want = %v \n", tt.arg1, tt.want)
+		// }
+		fmt.Printf("【input】: \n%v  \n【output】:\n%v \n", tt.arg1, AccountsMergeBurst(tt.arg1))
 	}
 }
 
 func TestAccountsMerge(t *testing.T) {
 	for _, tt := range tests {
-		if got := AccountsMerge(tt.arg1); !reflect.DeepEqual(got, tt.want) {
-			t.Errorf("got = %v \n want = %v \n", tt.arg1, tt.want)
-		}
+		// if got := AccountsMerge(tt.arg1); !reflect.DeepEqual(got, tt.want) {
+		// 	t.Errorf("got = %v \n want = %v \n", tt.arg1, tt.want)
+		// }
+		fmt.Printf("\n【input】: \n%v  \n【output】:\n%v \n", tt.arg1, AccountsMerge(tt.arg1))
 	}
 }
+
+func BenchmarkAccountsMergeBurst(b *testing.B) {
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		AccountsMergeBurst(tests[1].arg1)
+	}
+}
+
+func BenchmarkAccountsMerge(b *testing.B) {
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		AccountsMerge(tests[1].arg1)
+	}
+}
+
+func BenchmarkAccountsMerge2(b *testing.B) {
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		AccountsMerge2(tests[1].arg1)
+	}
+}
+
+/*
+go test -benchmem -run=none LeetcodeGolang/0721.Accounts-Merge -bench=.
+BenchmarkAccountsMergeBurst-4             587170              1836 ns/op             624 B/op         19 allocs/op
+BenchmarkAccountsMerge-4                  583299              2043 ns/op             608 B/op         18 allocs/op
+*/
