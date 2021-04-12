@@ -81,16 +81,16 @@ func MinSubArrayLenBinarysearch(target int, nums []int) int {
 	// fmt.Println("sums", sums)
 	for i := 1; i <= lens; i++ {
 		/*
-			target		7
-			input 		2  3  1  2  4  3
+			target			7
+			input			2  3  1  2  4  3
 			-----------------------------------
-			i 	 		0  1  2  3  4  5  6
+			i				0  1  2  3  4  5  6
 			-----------------------------------
-			sums  		0  2  5  6  8 12 15 	// input 的前 n 個元素和
-			tmpTarge	   7  9 12 13 15 19		// tmpTarge = target + sums[i-1]
-			bound		   4  5  5  6  6  7		// bound = sort.SearchInts(sums, tmpTarge)
-			bound-(i-1)	   4  4  3  3  2  2
-			minSize        4  4  3  3  2  2
+			sums			0  2  5  6  8 12 15	// input 的前 n 個元素和
+			tmpTarge		7  9 12 13 15 19	// tmpTarge = target + sums[i-1]
+			bound			4  5  5  6  6  7	// bound = sort.SearchInts(sums, tmpTarge)
+			bound-(i-1)		4  4  3  3  2  2
+			minSize			4  4  3  3  2  2
 		*/
 		tmpTarge := target + sums[i-1]
 		bound := sort.SearchInts(sums, tmpTarge)
