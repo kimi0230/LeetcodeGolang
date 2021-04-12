@@ -33,3 +33,11 @@ func TestMinSubArrayLenBurst(t *testing.T) {
 		}
 	}
 }
+
+func TestMinSubArrayLenSlidingWindow(t *testing.T) {
+	for _, tt := range tests {
+		if got := MinSubArrayLenSlidingWindow(tt.arg1, tt.arg2); got != tt.want {
+			t.Errorf("got = %v \n want = %v \n", got, tt.want)
+		}
+	}
+}
