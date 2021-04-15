@@ -34,7 +34,9 @@ You may assume no duplicates in the array.
 ## 解題思路
 - 給出一個已經從小到大排序後的數組，要求在數組中找到插入 target 元素的位置。
 - 這一題是經典的二分搜索的變種題，在有序數組中找到最後一個比 target 小的元素。
+- 只要看到面試題裡給出的數組是有序數組，都可以想一想是否可以使用二分法
 
 ## 來源
 * https://books.halfrost.com/leetcode/ChapterFour/0001~0099/0035.Search-Insert-Position/
 * https://leetcode-cn.com/problems/search-insert-position/
+* [數組：每次遇到二分法，都是一看就會，一寫就廢](https://mp.weixin.qq.com/s/fCf5QbPDtE6SSlZ1yh_q8Q)
