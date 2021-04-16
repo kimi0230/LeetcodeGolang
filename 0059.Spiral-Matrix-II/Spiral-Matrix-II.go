@@ -1,5 +1,6 @@
 package spiralmatrixii
 
+// GenerateMatrix : 按層模擬, 時間複雜 O(n^2) 空間複雜 O(1)
 func GenerateMatrix(n int) [][]int {
 	result := make([][]int, n)
 	for i := range result {
@@ -38,6 +39,36 @@ func GenerateMatrix(n int) [][]int {
 			num++
 		}
 		left++
+	}
+
+	return result
+}
+
+// 模擬 : O(n)
+// https://books.halfrost.com/leetcode/ChapterFour/0001~0099/0059.Spiral-Matrix-II/
+func GenerateMatrix2(n int) [][]int {
+	if n == 0 {
+		return [][]int{}
+	}
+	if n == 1 {
+		return [][]int{{1}}
+	}
+	result, visit, round, x, y, spDir := make([][]int, n), make([][]int, n), 0, 0, 0, [][]int{
+		{0, 1},  // 朝右
+		{1, 0},  // 朝下
+		{0, -1}, // 朝左
+		{-1, 0}, // 朝上
+	}
+	for i := 0; i < n; i++ {
+		visit[i] = make([]int, n)
+		result[i] = make([]int, n)
+	}
+	visit[x][y] = 1
+	result[x][y] = 1
+
+	for i := 0; i < n*n; i++ {
+		x += spDir[round%4][0]
+		y += spDir[round%4][1]
 	}
 
 	return result
