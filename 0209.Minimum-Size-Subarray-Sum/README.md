@@ -41,3 +41,4 @@ If you have figured out the O(n) solution, try coding another solution of which 
 ## 來源
 * https://books.halfrost.com/leetcode/ChapterFour/0200~0299/0209.Minimum-Size-Subarray-Sum/
 * https://leetcode-cn.com/problems/minimum-size-subarray-sum/
+* https://mp.weixin.qq.com/s/UrZynlqi4QpyLlLhBPglyg
