@@ -29,6 +29,7 @@ func MinSubArrayLenBurst(target int, nums []int) int {
 }
 
 // MinSubArrayLenSlidingWindow : 滑動視窗 時間複雜 O(n), 空間複雜 O(1)
+// 滑動窗口的精妙之處在於根據當前子序列和大小的情況，不斷調節子序列的起始位置。從而將O(n^2)的暴力解法降為O(n)
 func MinSubArrayLenSlidingWindow(target int, nums []int) int {
 	lens := len(nums)
 	if lens <= 0 {
