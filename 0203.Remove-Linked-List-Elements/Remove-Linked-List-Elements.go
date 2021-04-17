@@ -57,3 +57,18 @@ func RemoveElementsVirtualNode(head *ListNode, val int) *ListNode {
 	}
 	return newHead.Next
 }
+
+/*
+方法二 遞迴
+*/
+func RemoveElementsRecurse(head *ListNode, val int) *ListNode {
+	if head == nil {
+		return head
+	}
+	head.Next = RemoveElementsRecurse(head.Next, val)
+	if head.Val == val {
+		return head.Next
+	} else {
+		return head
+	}
+}

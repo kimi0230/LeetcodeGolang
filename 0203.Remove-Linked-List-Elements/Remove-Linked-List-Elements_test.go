@@ -53,6 +53,16 @@ func TestRemoveElements(t *testing.T) {
 	}
 }
 
+func TestRemoveElementsRecurse(t *testing.T) {
+	for _, tt := range tests {
+		if got := RemoveElementsRecurse(tt.arg1, tt.arg2); !reflect.DeepEqual(structures.List2Ints(got), structures.List2Ints(tt.want)) {
+			t.Errorf("got = %v, want = %v", got, tt.want)
+		}
+		// got := RemoveElements(tt.arg1, tt.arg2)
+		// fmt.Println(structures.List2Ints(got))
+	}
+}
+
 func TestRemoveElementsVirtualNode(t *testing.T) {
 	for _, tt := range tests {
 		if got := RemoveElementsVirtualNode(tt.arg1, tt.arg2); !reflect.DeepEqual(structures.List2Ints(got), structures.List2Ints(tt.want)) {
@@ -74,8 +84,15 @@ func BenchmarkRemoveElementsVirtualNode(b *testing.B) {
 	}
 }
 
+func BenchmarkRemoveElementsRecurse(b *testing.B) {
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		RemoveElementsRecurse(tests[i%6].arg1, tests[i%6].arg2)
+	}
+}
+
 /*
-go test -benchmem -run=none LeetcodeGolang/0203.Remove-Linked-List-Elements -bench=.
-BenchmarkRemoveElements-4               166709967                6.804 ns/op           0 B/op          0 allocs/op
-BenchmarkRemoveElementsVirtualNode-4    210766111                5.667 ns/op           0 B/op          0 allocs/op
+BenchmarkRemoveElements-4               166961922                7.082 ns/op           0 B/op          0 allocs/op
+BenchmarkRemoveElementsVirtualNode-4    208347805                5.494 ns/op           0 B/op          0 allocs/op
+BenchmarkRemoveElementsRecurse-4        79901368                14.00 ns/op            0 B/op          0 allocs/op
 */
