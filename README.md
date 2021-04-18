@@ -1,5 +1,5 @@
 ## LeecodeGolang
-[Leetcode](https://leetcode.com/), [Codility](https://app.codility.com/programmers/) , [GeekforGeeks algorithms](https://www.geeksforgeeks.org/fundamentals-of-algorithms/?ref=shm) exercises.
+[Leetcode](https://leetcode.com/), [Codility](https://app.codility.com/programmers/) , [GeekforGeeks algorithms](https://www.geeksforgeeks.org/fundamentals-of-algorithms/?ref=shm) exercises written in Golang.
 
 ## Leetcode Content
 | No.    |  Title  | Topic |  Solution  |  Difficulty |  TimeComplexity	| SpaceComplexity|
@@ -33,7 +33,7 @@
 | No.    |  Title  | Topic |  Solution  |  Difficulty |  TimeComplexity	| SpaceComplexity|
 |:--------:|:--------:|:--------------------------------------------------------------|:--------:|:--------:|:--------:|:--------:|
 | Lesson 1|Binary Gap|Iterations|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0001.Iterations/Binary-Gap)|  |O(log n)|O(1)|
-| Lesson 2|Cyclic Rotation|Array|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0002.Array/CyclicRotation)|  |O()|O()|
+| Lesson 2|Cyclic Rotation|Array|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0002.Array/CyclicRotation)|  |O(1)|O()|
 
 ## Reference
 * [leetcode](https://leetcode.com/)
