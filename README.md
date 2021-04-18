@@ -35,7 +35,7 @@
 | Lesson 1|Binary Gap|Iterations|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0001.Iterations/Binary-Gap)|  |O(log n)|O(1)|
 | Lesson 2|Cyclic Rotation|Array|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0002.Array/CyclicRotation)|  |O(1)|O(1)|
 | Lesson 2|Odd Occurrences In Array|Array|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0002.Array/OddOccurrencesInArray)|  |O(n), O(n)|O(n), O(1)|
-| Lesson 3|Frog Jmp|Time Complexity|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/003.Time-Complexity)|  |O(1)|O(1)|
+| Lesson 3|Frog Jmp|Time Complexity|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/003.Time-Complexity/FrogJmp)|  |O(1)|O(1)|
 
 ## Reference
 * [leetcode](https://leetcode.com/)
