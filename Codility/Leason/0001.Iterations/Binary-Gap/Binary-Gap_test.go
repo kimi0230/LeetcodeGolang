@@ -31,3 +31,11 @@ func TestSolution(t *testing.T) {
 		}
 	}
 }
+
+func TestSolutionRecur(t *testing.T) {
+	for _, tt := range tests {
+		if got := SolutionRecur(tt.arg1); got != tt.want {
+			t.Errorf("got = %v, want = %v", got, tt.want)
+		}
+	}
+}

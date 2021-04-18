@@ -20,3 +20,19 @@ func Solution(N int) int {
 	}
 	return maxLen
 }
+
+// https://wandbox.org/permlink/totZwDAbL1wCgsqt
+func evil(x int) int {
+	if x&(x+1) > 0 {
+		return evil(x|(x>>1)) + 1
+	} else {
+		return 0
+	}
+}
+
+func SolutionRecur(N int) int {
+	for (N & 1) == 0 {
+		N = N >> 1
+	}
+	return evil(N)
+}
