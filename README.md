@@ -32,7 +32,7 @@
 ## Codility Content
 | No.    |  Title  | Topic |  Solution  |  Difficulty |  TimeComplexity	| SpaceComplexity|
 |:--------:|:--------:|:--------------------------------------------------------------|:--------:|:--------:|:--------:|:--------:|
-| Lesson 1|BinaryGap|Iterations|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson1_Iterations/Binary-Gap)|  |O(log n)|O(1)|
+| Lesson 1|BinaryGap|Iterations|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Leason/0001.Iterations)|  |O(log n)|O(1)|
 
 ## Reference
 * [leetcode](https://leetcode.com/)
