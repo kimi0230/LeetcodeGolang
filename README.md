@@ -29,6 +29,11 @@
 |Sorting|Find Minimum Difference Between Any Two Elements|0031|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/GeeksforGeeks/SortingAlgorithms/0031.Find-Minimum-Difference-Between-Any-Two-Elements)| Basic |O(n^2), O(n log n)|O(n), O(n)|
 
 
+## Codility Content
+| No.    |  Title  | Topic |  Solution  |  Difficulty |  TimeComplexity	| SpaceComplexity|
+|:--------:|:--------:|:--------------------------------------------------------------|:--------:|:--------:|:--------:|:--------:|
+| Lesson 1|BinaryGap|Iterations|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson1_Iterations/Binary-Gap)|  |O(log n)|O(1)|
+
 ## Reference
 * [leetcode](https://leetcode.com/)
 * [leetcode-cn](https://leetcode-cn.com/)

@@ -1,13 +1,12 @@
 package binarygap
 
-// O(N)
+// O(log n)
 func Solution(N int) int {
 	maxLen, curLen := 0, 0
 	findOne := false
 	for N > 0 {
 		curBit := N & 1
 		if curBit == 1 {
-
 			curLen = 0
 			findOne = true
 		} else if curBit == 0 && findOne {
