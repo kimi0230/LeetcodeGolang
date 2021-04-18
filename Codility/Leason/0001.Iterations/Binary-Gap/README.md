@@ -20,5 +20,11 @@ Write an efficient algorithm for the following assumptions:
 N is an integer within the range [1..2,147,483,647].
 Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.
 
+## 題目大意
+輸入正整數, 找出此數在二進位,兩個bit值為1中裡面隔著最多0的長度
+
+## 解題思路
+先找出bit 1的位子, 再開始算中間最長的長度
+
 ## 來源
 * https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
