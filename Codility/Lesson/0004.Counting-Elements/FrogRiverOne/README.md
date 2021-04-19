@@ -21,7 +21,7 @@ In second 6, a leaf falls into position 5. This is the earliest time when leaves
 
 Write a function:
 
-class Solution { public int solution(int X, int[] A); }
+func Solution(X int, A []int) int
 
 that, given a non-empty array A consisting of N integers and integer X, returns the earliest time when the frog can jump to the other side of the river.
 
@@ -47,8 +47,9 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 
 
 ## 題目大意
-
+要X步才能到對面, 每一個走過的位子不能重複計算
 ## 解題思路
+使用map存哪些地方走過
 
 ## 來源
 * https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/
