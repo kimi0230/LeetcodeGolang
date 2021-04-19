@@ -35,9 +35,9 @@
 | Lesson 1|Binary Gap|Iterations|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0001.Iterations/Binary-Gap)|  |O(log n)|O(1)|
 | Lesson 2|Cyclic Rotation|Array|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0002.Array/CyclicRotation)|  |O(1)|O(1)|
 | Lesson 2|Odd Occurrences In Array|Array|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0002.Array/OddOccurrencesInArray)|  |O(n), O(n)|O(n), O(1)|
-| Lesson 3|Frog Jmp|Time Complexity|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/003.Time-Complexity/FrogJmp)|  |O(1)|O(1)|
-| Lesson 3|Perm Missing Elem|Time Complexity|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/003.Time-Complexity/PermMissingElem)|  |O(n)|O(1)|
-| Lesson 3|Tape Equilibrium|Time Complexity|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/003.Time-Complexity/TapeEquilibrium)|  |O(n)|O(n)|
+| Lesson 3|Frog Jmp|Time Complexity|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0003.Time-Complexity/FrogJmp)|  |O(1)|O(1)|
+| Lesson 3|Perm Missing Elem|Time Complexity|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0003.Time-Complexity/PermMissingElem)|  |O(n)|O(1)|
+| Lesson 3|Tape Equilibrium|Time Complexity|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0003.Time-Complexity/TapeEquilibrium)|  |O(n)|O(n)|
 
 ## Reference
 * [leetcode](https://leetcode.com/)
