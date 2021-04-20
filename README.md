@@ -38,6 +38,8 @@
 | Lesson 3|Frog Jmp|Time Complexity|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0003.Time-Complexity/FrogJmp)|  |O(1)|O(1)|
 | Lesson 3|Perm Missing Elem|Time Complexity|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0003.Time-Complexity/PermMissingElem)|  |O(n)|O(1)|
 | Lesson 3|Tape Equilibrium|Time Complexity|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0003.Time-Complexity/TapeEquilibrium)|  |O(n)|O(n)|
+| Lesson 4|Frog River One|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/FrogRiverOne)|  |O(n)|O(n)|
+| Lesson 4|Max Counters|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/MaxCounters)|  |O(N+M) |O(n)|
 
 ## Reference
 * [leetcode](https://leetcode.com/)
