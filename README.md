@@ -40,6 +40,7 @@
 | Lesson 3|Tape Equilibrium|Time Complexity|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0003.Time-Complexity/TapeEquilibrium)|  |O(n)|O(n)|
 | Lesson 4|Frog River One|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/FrogRiverOne)|  |O(n)|O(n)|
 | Lesson 4|Max Counters|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/MaxCounters)|  |O(N+M) |O(n)|
+| Lesson 4|MissingInteger|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/MissingInteger)|  |O(n) |O(n)|
 
 ## Reference
 * [leetcode](https://leetcode.com/)
