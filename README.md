@@ -41,6 +41,7 @@
 | Lesson 4|Frog River One|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/FrogRiverOne)|  |O(n)|O(n)|
 | Lesson 4|Max Counters|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/MaxCounters)|  |O(n+m) |O(n)|
 | Lesson 4|Missing Integer|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/MissingInteger)|  |O(n) |O(n)|
+| Lesson 4|Perm Check|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/PermCheck)|  |O(n) |O(n)|
 
 ## Reference
 * [leetcode](https://leetcode.com/)
