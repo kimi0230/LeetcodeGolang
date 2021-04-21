@@ -42,6 +42,7 @@
 | Lesson 4|Max Counters|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/MaxCounters)|  |O(n+m) |O(n)|
 | Lesson 4|Missing Integer|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/MissingInteger)|  |O(n) |O(n)|
 | Lesson 4|Perm Check|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/PermCheck)|  |O(n) |O(n)|
+| Lesson 5|Count Div|Prefix Sums|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/CountDiv)|  |O(1) |O(1)|
 
 ## Reference
 * [leetcode](https://leetcode.com/)
