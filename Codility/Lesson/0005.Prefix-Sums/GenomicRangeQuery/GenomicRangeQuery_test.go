@@ -26,3 +26,11 @@ func TestSolution(t *testing.T) {
 		}
 	}
 }
+
+func TestSolutionBurst(t *testing.T) {
+	for _, tt := range tests {
+		if got := SolutionBurst(tt.arg1, tt.arg2, tt.arg3); !reflect.DeepEqual(got, tt.want) {
+			t.Errorf("got = %v, want = %v", got, tt.want)
+		}
+	}
+}
