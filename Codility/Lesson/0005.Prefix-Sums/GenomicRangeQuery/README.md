@@ -40,9 +40,9 @@ string S consists only of upper-case English letters A, C, G, T.
 Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.
 
 ## 題目大意
-K=0: P[0]=2, Q[0]=4 之間的核苷酸因素分別是3和2, 最小的就是2
-K=1: P[1]=5, Q[1]=5 是4
-K=2: P[2]=0, Q[2]=6 最小的是1
+K=0: P[0]=2, Q[0]=4 之間的核苷酸因素分別是3和2, 最小的就是2.
+K=1: P[1]=5, Q[1]=5 是4.
+K=2: P[2]=0, Q[2]=6 最小的是1.
 
 ## 解題思路
 
