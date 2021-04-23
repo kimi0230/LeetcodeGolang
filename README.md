@@ -44,6 +44,8 @@
 | Lesson 4|Perm Check|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/PermCheck)|  |O(n) |O(n)|
 | Lesson 5|Count Div|Prefix Sums|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/CountDiv)|  |O(1) |O(1)|
 | Lesson 5|Genomic Range Query|Prefix Sums|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/GenomicRangeQuery)|  |O(n+m) |O(n)|
+| Lesson 5|MinAvg Two Slice|Prefix Sums|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/MinAvgTwoSlice)|  |O(n) |O(n)|
+
 
 ## Reference
 * [leetcode](https://leetcode.com/)
