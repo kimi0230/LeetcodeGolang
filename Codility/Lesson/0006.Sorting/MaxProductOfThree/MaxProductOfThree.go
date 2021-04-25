@@ -11,6 +11,6 @@ func max(a, b int) int {
 
 func Solution(A []int) int {
 	sort.Ints(A)
-	alen := len(A)
-	return max(A[0]*A[1]*A[alen-1], A[alen-1]*A[alen-2]*A[alen-3])
+	aLen := len(A)
+	return max(A[0]*A[1]*A[aLen-1], A[aLen-1]*A[aLen-2]*A[aLen-3])
 }
