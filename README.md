@@ -46,7 +46,8 @@
 | Lesson 5|Genomic Range Query|Prefix Sums|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/GenomicRangeQuery)|  |O(n+m) |O(n)|
 | Lesson 5|MinAvg Two Slice|Prefix Sums|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/MinAvgTwoSlice)|  |O(n) |O(n)|
 | Lesson 5|Passing Cars|Prefix Sums|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/PassingCars)|  |O(n) |O(1)|
-| Lesson 6|Distinct|Prefix Sums|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0006.Sorting/Distinct)|  |O(nlogn) |O(n)|
+| Lesson 6|Distinct|Sorting|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0006.Sorting/Distinct)|  |O(nlogn) |O(n)|
+| Lesson 6|Max Product Of Three|Sorting|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0006.Sorting/MaxProductOfThree)|  |O(nlogn) |O(1)|
 
 
 ## Reference
