@@ -56,7 +56,7 @@ func MinSubArrayLenSlidingWindow(target int, nums []int) int {
 }
 
 /*
-MinSubArrayLenBinarysearch : 前缀和 + 二分查找
+MinSubArrayLenBinarysearch : 前缀和 + 二分查找  O(nlog(n))
 為了使用二分查找，需要額外創建一個數組 sums 用於存儲數組nums 的前綴和，其中 sums[i] 表示從 nums[0] 到 nums[i−1] 的元素和。
 得到前綴和之後，對於每個開始下標i，可通過二分查找得到大於或等於 i 的最小下標 bound，
 使得 sums[bound]-sums[i-1] >= s，
@@ -72,6 +72,7 @@ func MinSubArrayLenBinarysearch(target int, nums []int) int {
 	}
 	minSize := math.MaxInt32
 
+	// sums[i] 表示從 nums[0] 到 nums[i−1]
 	sums := make([]int, lens+1)
 	// 為了方便計算 size = lens + 1
 	// sums[0] = 0, 前0個的元素和
