@@ -26,6 +26,6 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 ## 題目大意
 括號配對, 可配對回傳1 反之回傳0.
 ## 解題思路
-將左括號都放入stack, 遇到右括號時將stack pop出來並檢查pop出來的左括號是否跟右括號配對.
+將左括號都放入stack. 遇到右括號時將stack pop出來並檢查pop出來的左括號是否跟右括號配對.
 ## 來源
 https://app.codility.com/programmers/lessons/7-stacks_and_queues/brackets/
