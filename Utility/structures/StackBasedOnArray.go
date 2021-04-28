@@ -61,6 +61,13 @@ func (this *ArrayStack) Flush() {
 	this.top = -1
 }
 
+func (this *ArrayStack) Size() int {
+	if this.top < 0 {
+		return 0
+	}
+	return this.top + 1
+}
+
 func (this *ArrayStack) Print() {
 	if this.IsEmpty() {
 		fmt.Println("empty statck")

@@ -51,6 +51,7 @@
 | Lesson 6|Number Of Disc Intersections|Sorting|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0006.Sorting/NumberOfDiscIntersections)|  |O(nlogn) |O(n)|
 | Lesson 6|Triangle|Sorting|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0006.Sorting/Triangle)|  |O(nlogn) |O(n)|
 | Lesson 7|Brackets|Stack and Queues |[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0007.Stacks-and-Queues/Brackets)|  |O(n) |O(n)|
+| Lesson 7|Brackets|Fish |[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0007.Stacks-and-Queues/Fish)|  |O(n) |O(n)|
 
 
 ## Reference
