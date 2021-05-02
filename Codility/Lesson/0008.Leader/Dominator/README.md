@@ -31,8 +31,11 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 
 ## 題目大意
 返回Array中的支配數. A的支配數是3，因為它出現在A的8個元素中的5個元素中(index為0、2、4、6和7). 而5是8的一半以上
+可以返回 0,2,4,6,7中的任一數
 
 ## 解題思路
+用map紀錄每筆數出現次數. 取最大次數看是否有超過一半以上.
+是的話返回此數任一個index, 反之返回-1
 
 ## 來源
 https://app.codility.com/programmers/lessons/8-leader/dominator/
