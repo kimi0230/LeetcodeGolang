@@ -45,9 +45,14 @@ each element of array A is an integer within the range [−1,000,000,000..1,000,
 Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.
 
 ## 題目大意
-由N個整體組成的非空數組A. 出現次數達到多個所有元素個數的一半以上的數為該數組的超頻數.
+選定一個下標, 將一個數組分爲左右兩個子數組, 使得兩個子數組都有相同的leader,
+則稱此下標爲EquiLeader, 要求返回給定數組中EquiLeader的個數n.
+事實上, 若一個數同時是左子數組的leader, 它必然也是整個數組的leader.
 
 ## 解題思路
+需要先找出序列中的leader, 記錄其出現的次數.
+然後再遍歷整個數組，枚舉分割點，記錄下左子數組leader出現的次數s,
+看s與n-s是否能使得leader在左右子數組中仍爲leader.
 
 ## 來源
 https://app.codility.com/programmers/lessons/8-leader/equi_leader/
