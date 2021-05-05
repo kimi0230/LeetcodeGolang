@@ -123,7 +123,7 @@ func BenchmarkLengthOfLongestSubstringBit(b *testing.B) {
 }
 
 /*
-go test -benchmem -run=none LeetcodeGolang/0003.Longest-Substring-Without-Repeating-Characters -bench=.
+go test -benchmem -run=none LeetcodeGolang/Leetcode/0003.Longest-Substring-Without-Repeating-Characters -bench=.
 goos: darwin
 goarch: amd64
 pkg: LeetcodeGolang/0003.Longest-Substring-Without-Repeating-Characters

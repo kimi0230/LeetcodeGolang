@@ -75,6 +75,9 @@ func BenchmarkSearchInsertBisection2(b *testing.B) {
 }
 
 /*
-go test -benchmem -run=none LeetcodeGolang/0035.Search-Insert-Position -bench=.
-
+go test -benchmem -run=none LeetcodeGolang/Leetcode/0035.Search-Insert-Position -bench=.
+cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+BenchmarkSearchInsertBurst-8            742931880                1.891 ns/op           0 B/op          0 allocs/op
+BenchmarkSearchInsertBisection-8        328495410                3.576 ns/op           0 B/op          0 allocs/op
+BenchmarkSearchInsertBisection2-8       470675948                2.811 ns/op           0 B/op          0 allocs/op
 */

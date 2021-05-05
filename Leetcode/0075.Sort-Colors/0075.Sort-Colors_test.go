@@ -64,7 +64,7 @@ func BenchmarkSortColorsQuickSort(b *testing.B) {
 }
 
 /*
-go test -benchmem -run=none LeetcodeGolang/0075.Sort-Colors -bench=.
+go test -benchmem -run=none LeetcodeGolang/Leetcode/0075.Sort-Colors -bench=.
 BenchmarkSortColors-8                   157253976                8.111 ns/op           0 B/op          0 allocs/op
 BenchmarkSortColorsQuickSort-8          63078445                20.91 ns/op            0 B/op          0 allocs/op
 */

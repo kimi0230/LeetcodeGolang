@@ -65,7 +65,7 @@ func BenchmarkInorderTraversalRecursion(b *testing.B) {
 }
 
 /*
-go test -benchmem -run=none LeetcodeGolang/0094.Binary-Tree-Inorder-Traversal -bench=.
+go test -benchmem -run=none LeetcodeGolang/Leetcode/0094.Binary-Tree-Inorder-Traversal -bench=.
 BenchmarkInorderTraversalStack-8         4469162               267.9 ns/op           568 B/op          4 allocs/op
 BenchmarkInorderTraversalRecursion-8    11604469               103.4 ns/op            56 B/op          3 allocs/op
 */

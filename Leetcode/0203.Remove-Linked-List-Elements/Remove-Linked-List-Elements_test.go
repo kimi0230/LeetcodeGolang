@@ -92,7 +92,9 @@ func BenchmarkRemoveElementsRecurse(b *testing.B) {
 }
 
 /*
-BenchmarkRemoveElements-4               166961922                7.082 ns/op           0 B/op          0 allocs/op
-BenchmarkRemoveElementsVirtualNode-4    208347805                5.494 ns/op           0 B/op          0 allocs/op
-BenchmarkRemoveElementsRecurse-4        79901368                14.00 ns/op            0 B/op          0 allocs/op
+go test -benchmem -run=none LeetcodeGolang/Leetcode/0203.Remove-Linked-List-Elements -bench=.
+cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+BenchmarkRemoveElements-8               195664567                5.953 ns/op           0 B/op          0 allocs/op
+BenchmarkRemoveElementsVirtualNode-8    217690257                4.806 ns/op           0 B/op          0 allocs/op
+BenchmarkRemoveElementsRecurse-8        79181312                14.31 ns/op            0 B/op          0 allocs/op
 */

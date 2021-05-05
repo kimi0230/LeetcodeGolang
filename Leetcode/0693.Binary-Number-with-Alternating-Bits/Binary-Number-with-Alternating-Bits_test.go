@@ -55,7 +55,7 @@ func BenchmarkHasAlternatingBits2(b *testing.B) {
 }
 
 /*
-go test -benchmem -run=none LeetcodeGolang/0693.Binary-Number-with-Alternating-Bits -bench=.
+go test -benchmem -run=none LeetcodeGolang/Leetcode/0693.Binary-Number-with-Alternating-Bits -bench=.
 BenchmarkHasAlternatingBits-8           300204136                3.979 ns/op           0 B/op          0 allocs/op
 BenchmarkHasAlternatingBits2-8          1000000000               0.3335 ns/op          0 B/op          0 allocs/op
 */

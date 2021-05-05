@@ -62,7 +62,7 @@ func BenchmarkThreeSumDoublePoint(b *testing.B) {
 }
 
 /*
-go test -benchmem -run=none LeetcodeGolang/0015.3Sum -bench=.
+go test -benchmem -run=none LeetcodeGolang/Leetcode/0015.3Sum -bench=.
 BenchmarkThreeSumBurst-8                 8780395               160.7 ns/op            72 B/op          3 allocs/op
 BenchmarkThreeSumDoublePoint-8          10466467               127.8 ns/op            72 B/op          3 allocs/op
 */

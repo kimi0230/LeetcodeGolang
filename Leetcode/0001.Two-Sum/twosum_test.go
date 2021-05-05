@@ -72,7 +72,7 @@ func BenchmarkTwosum2(b *testing.B) {
 }
 
 /*
-go test -benchmem -run=none LeetcodeGolang/0001.Two-Sum -bench=.
+go test -benchmem -run=none LeetcodeGolang/Leetcode/0001.Two-Sum -bench=.
 BenchmarkTwosum-8       53737875                22.04 ns/op           16 B/op          1 allocs/op
 BenchmarkTwosum2-8      25733203                44.74 ns/op           16 B/op          1 allocs/op
 */

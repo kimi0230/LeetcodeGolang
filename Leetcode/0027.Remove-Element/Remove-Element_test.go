@@ -73,7 +73,7 @@ func BenchmarkRemoveElementDoublePoint(b *testing.B) {
 }
 
 /*
-go test -benchmem -run=none LeetcodeGolang/0027.Remove-Element -bench=.
+go test -benchmem -run=none LeetcodeGolang/Leetcode/0027.Remove-Element -bench=.
 BenchmarkRemoveElement-8                100000000               10.66 ns/op            0 B/op          0 allocs/op
 BenchmarkRemoveElementDoublePoint-8     285200671                5.456 ns/op           0 B/op          0 allocs/op
 */

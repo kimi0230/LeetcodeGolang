@@ -70,7 +70,7 @@ func BenchmarkMinSubArrayLenBinarysearch(b *testing.B) {
 }
 
 /*
-go test -benchmem -run=none LeetcodeGolang/0209.Minimum-Size-Subarray-Sum -bench=.
+go test -benchmem -run=none LeetcodeGolang/Leetcode/0209.Minimum-Size-Subarray-Sum -bench=.
 BenchmarkMinSubArrayLenBurst-4                  27345652                41.67 ns/op            0 B/op          0 allocs/op
 BenchmarkMinSubArrayLenSlidingWindow-4          87522610                13.67 ns/op            0 B/op          0 allocs/op
 BenchmarkMinSubArrayLenBinarysearch-4            8496684               136.7 ns/op            64 B/op          1 allocs/op

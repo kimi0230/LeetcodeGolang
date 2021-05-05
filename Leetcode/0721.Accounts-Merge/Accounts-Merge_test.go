@@ -95,7 +95,9 @@ func BenchmarkAccountsMerge2(b *testing.B) {
 }
 
 /*
-go test -benchmem -run=none LeetcodeGolang/0721.Accounts-Merge -bench=.
-BenchmarkAccountsMergeBurst-4             587170              1836 ns/op             624 B/op         19 allocs/op
-BenchmarkAccountsMerge-4                  583299              2043 ns/op             608 B/op         18 allocs/op
+go test -benchmem -run=none LeetcodeGolang/Leetcode/0721.Accounts-Merge -bench=.
+cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+BenchmarkAccountsMergeBurst-8             394038              2885 ns/op             984 B/op         27 allocs/op
+BenchmarkAccountsMerge-8                  240194              5594 ns/op            2008 B/op         28 allocs/op
+BenchmarkAccountsMerge2-8                 315127              3755 ns/op            1413 B/op         28 allocs/op
 */

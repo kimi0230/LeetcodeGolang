@@ -45,7 +45,7 @@ func BenchmarkMaxSubArray1(b *testing.B) {
 }
 
 /*
-go test -benchmem -run=none LeetcodeGolang/0053.Maximum-Subarray -bench=.
+go test -benchmem -run=none LeetcodeGolang/Leetcode/0053.Maximum-Subarray -bench=.
 BenchmarkMaxSubArrayDP-8        22077684                48.19 ns/op           80 B/op          1 allocs/op
 BenchmarkMaxSubArray1-8         94770036                10.74 ns/op            0 B/op          0 allocs/op
 */
