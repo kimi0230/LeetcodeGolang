@@ -55,4 +55,5 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 看s與n-s是否能使得leader在左右子數組中仍爲leader.
 
 ## 來源
-https://app.codility.com/programmers/lessons/8-leader/equi_leader/
+* https://app.codility.com/programmers/lessons/8-leader/equi_leader/
+* https://github.com/Anfany/Codility-Lessons-By-Python3/blob/master/L8_Leader/8.1%20EquiLeader.md
