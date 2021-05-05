@@ -55,6 +55,7 @@
 | Lesson 7|Nesting|Stack and Queues|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0007.Stacks-and-Queues/Nesting)|  |O(n) |O(1)|
 | Lesson 7|Stone Wall|Stack and Queues|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0007.Stacks-and-Queues/StoneWall)|  |O(n) |O(n)|
 | Lesson 8|Dominator|Leader|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0008.Leader/Dominator)|  |O(n) |O(1)|
+| Lesson 8|EquiLeader|Leader|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0008.Leader/EquiLeader)|  |O(n) |O(n)|
 
 ## Reference
 * [leetcode](https://leetcode.com/)
