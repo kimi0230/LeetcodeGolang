@@ -49,7 +49,7 @@ each element of array A is an integer within the range [−10,000..10,000].
 Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.
 
 ## 題目大意
-
+A[X+1]到A[Y-1] + A[Y+1]到A[Z-1] 最大的和
 
 ## 解題思路
 正向尋過array, 獲得到達每個index可以得到的最大值序列, 然后反向尋過array獲得到達每個index可以得到的最大值序列，
