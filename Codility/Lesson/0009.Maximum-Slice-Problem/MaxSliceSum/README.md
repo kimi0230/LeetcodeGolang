@@ -28,9 +28,10 @@ the result will be an integer within the range [−2,147,483,648..2,147,483,647]
 Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.
 
 ## 題目大意
-
+找出連續子序列最大的和
 ## 解題思路
-
+長度如果為1, 回傳第一筆
+當下的值跟當下的值加上先前的和, 取最大值. 再將剛剛算出的最大值跟紀錄中的最大值比較,取最大值
 
 ## 來源
 https://app.codility.com/programmers/lessons/9-maximum_slice_problem/max_slice_sum/

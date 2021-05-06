@@ -1,6 +1,8 @@
 package MaxSliceSum
 
-import "math"
+import (
+	"math"
+)
 
 func Solution(A []int) int {
 	if len(A) == 1 {
