@@ -59,6 +59,7 @@
 | Lesson 9|Max Profit|Maximum Slice Problem|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0009.Maximum-Slice-Problem/MaxProfit)| Painless |O(n) |O(1)|
 | Lesson 9|Max Slice Sum|Maximum Slice Problem|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0009.Maximum-Slice-Problem/MaxSliceSum)| Painless |O(n) |O(n)|
 | Lesson 9|Max Double Slice Sum|Maximum Slice Problem|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0009.Maximum-Slice-Problem/MaxDoubleSliceSum)| Respectable |O(n) |O(n)|
+| Lesson 10|Count Factors|Prime And Composite Numbers|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0010.Prime-And-Composite-Numbers/CountFactors)| Painless | O(sqrt(n)) |O(1)|
 
 ## Reference
 * [leetcode](https://leetcode.com/)
