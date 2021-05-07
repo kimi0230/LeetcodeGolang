@@ -58,6 +58,7 @@
 | Lesson 8|EquiLeader|Leader|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0008.Leader/EquiLeader)|  |O(n) |O(n)|
 | Lesson 9|Max Profit|Maximum Slice Problem|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0009.Maximum-Slice-Problem/MaxProfit)|  |O(n) |O(1)|
 | Lesson 9|Max Slice Sum|Maximum Slice Problem|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0009.Maximum-Slice-Problem/MaxSliceSum)|  |O(n) |O(n)|
+| Lesson 9|Max Double Slice Sum|Maximum Slice Problem|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0009.Maximum-Slice-Problem/MaxDoubleSliceSum)|  |O(n) |O(n)|
 
 ## Reference
 * [leetcode](https://leetcode.com/)
