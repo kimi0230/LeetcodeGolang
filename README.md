@@ -32,33 +32,33 @@
 ## Codility Content
 | No.    |  Title  | Topic |  Solution  |  Difficulty |  TimeComplexity	| SpaceComplexity|
 |:--------:|:--------:|:--------------------------------------------------------------|:--------:|:--------:|:--------:|:--------:|
-| Lesson 1|Binary Gap|Iterations|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0001.Iterations/Binary-Gap)|  |O(log n)|O(1)|
-| Lesson 2|Cyclic Rotation|Array|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0002.Array/CyclicRotation)|  |O(1)|O(1)|
-| Lesson 2|Odd Occurrences In Array|Array|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0002.Array/OddOccurrencesInArray)|  |O(n), O(n)|O(n), O(1)|
-| Lesson 3|Frog Jmp|Time Complexity|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0003.Time-Complexity/FrogJmp)|  |O(1)|O(1)|
-| Lesson 3|Perm Missing Elem|Time Complexity|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0003.Time-Complexity/PermMissingElem)|  |O(n)|O(1)|
-| Lesson 3|Tape Equilibrium|Time Complexity|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0003.Time-Complexity/TapeEquilibrium)|  |O(n)|O(n)|
-| Lesson 4|Frog River One|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/FrogRiverOne)|  |O(n)|O(n)|
-| Lesson 4|Max Counters|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/MaxCounters)|  |O(n+m) |O(n)|
-| Lesson 4|Missing Integer|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/MissingInteger)|  |O(n) |O(n)|
-| Lesson 4|Perm Check|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/PermCheck)|  |O(n) |O(n)|
-| Lesson 5|Count Div|Prefix Sums|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/CountDiv)|  |O(1) |O(1)|
-| Lesson 5|Genomic Range Query|Prefix Sums|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/GenomicRangeQuery)|  |O(n+m) |O(n)|
-| Lesson 5|MinAvg Two Slice|Prefix Sums|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/MinAvgTwoSlice)|  |O(n) |O(n)|
-| Lesson 5|Passing Cars|Prefix Sums|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/PassingCars)|  |O(n) |O(1)|
-| Lesson 6|Distinct|Sorting|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0006.Sorting/Distinct)|  |O(nlogn) |O(n)|
-| Lesson 6|Max Product Of Three|Sorting|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0006.Sorting/MaxProductOfThree)|  |O(nlogn) |O(1)|
-| Lesson 6|Number Of Disc Intersections|Sorting|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0006.Sorting/NumberOfDiscIntersections)|  |O(nlogn) |O(n)|
-| Lesson 6|Triangle|Sorting|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0006.Sorting/Triangle)|  |O(nlogn) |O(n)|
-| Lesson 7|Brackets|Stack and Queues|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0007.Stacks-and-Queues/Brackets)|  |O(n) |O(n)|
-| Lesson 7|Fish|Stack and Queues|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0007.Stacks-and-Queues/Fish)|  |O(n) |O(n)|
-| Lesson 7|Nesting|Stack and Queues|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0007.Stacks-and-Queues/Nesting)|  |O(n) |O(1)|
-| Lesson 7|Stone Wall|Stack and Queues|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0007.Stacks-and-Queues/StoneWall)|  |O(n) |O(n)|
-| Lesson 8|Dominator|Leader|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0008.Leader/Dominator)|  |O(n) |O(1)|
-| Lesson 8|EquiLeader|Leader|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0008.Leader/EquiLeader)|  |O(n) |O(n)|
-| Lesson 9|Max Profit|Maximum Slice Problem|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0009.Maximum-Slice-Problem/MaxProfit)|  |O(n) |O(1)|
-| Lesson 9|Max Slice Sum|Maximum Slice Problem|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0009.Maximum-Slice-Problem/MaxSliceSum)|  |O(n) |O(n)|
-| Lesson 9|Max Double Slice Sum|Maximum Slice Problem|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0009.Maximum-Slice-Problem/MaxDoubleSliceSum)|  |O(n) |O(n)|
+| Lesson 1|Binary Gap|Iterations|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0001.Iterations/Binary-Gap)| Painless  |O(log n)|O(1)|
+| Lesson 2|Cyclic Rotation|Array|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0002.Array/CyclicRotation)| Painless |O(1)|O(1)|
+| Lesson 2|Odd Occurrences In Array|Array|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0002.Array/OddOccurrencesInArray)| Painless |O(n), O(n)|O(n), O(1)|
+| Lesson 3|Frog Jmp|Time Complexity|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0003.Time-Complexity/FrogJmp)| Painless |O(1)|O(1)|
+| Lesson 3|Perm Missing Elem|Time Complexity|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0003.Time-Complexity/PermMissingElem)| Painless |O(n)|O(1)|
+| Lesson 3|Tape Equilibrium|Time Complexity|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0003.Time-Complexity/TapeEquilibrium)| Painless |O(n)|O(n)|
+| Lesson 4|Frog River One|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/FrogRiverOne)| Painless |O(n)|O(n)|
+| Lesson 4|Max Counters|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/MaxCounters)| Respectable |O(n+m) |O(n)|
+| Lesson 4|Missing Integer|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/MissingInteger)| Respectable |O(n) |O(n)|
+| Lesson 4|Perm Check|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/PermCheck)| Painless |O(n) |O(n)|
+| Lesson 5|Count Div|Prefix Sums|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/CountDiv)| Respectable |O(1) |O(1)|
+| Lesson 5|Genomic Range Query|Prefix Sums|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/GenomicRangeQuery)| Respectable |O(n+m) |O(n)|
+| Lesson 5|MinAvg Two Slice|Prefix Sums|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/MinAvgTwoSlice)| Respectable |O(n) |O(n)|
+| Lesson 5|Passing Cars|Prefix Sums|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/PassingCars)| Painless |O(n) |O(1)|
+| Lesson 6|Distinct|Sorting|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0006.Sorting/Distinct)| Painless |O(nlogn) |O(n)|
+| Lesson 6|Max Product Of Three|Sorting|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0006.Sorting/MaxProductOfThree)| Painless |O(nlogn) |O(1)|
+| Lesson 6|Number Of Disc Intersections|Sorting|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0006.Sorting/NumberOfDiscIntersections)| Respectable |O(nlogn) |O(n)|
+| Lesson 6|Triangle|Sorting|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0006.Sorting/Triangle)| Painless |O(nlogn) |O(n)|
+| Lesson 7|Brackets|Stack and Queues|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0007.Stacks-and-Queues/Brackets)| Painless |O(n) |O(n)|
+| Lesson 7|Fish|Stack and Queues|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0007.Stacks-and-Queues/Fish)| Painless |O(n) |O(n)|
+| Lesson 7|Nesting|Stack and Queues|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0007.Stacks-and-Queues/Nesting)| Painless |O(n) |O(1)|
+| Lesson 7|Stone Wall|Stack and Queues|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0007.Stacks-and-Queues/StoneWall)| Painless |O(n) |O(n)|
+| Lesson 8|Dominator|Leader|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0008.Leader/Dominator)| Painless |O(n) |O(1)|
+| Lesson 8|EquiLeader|Leader|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0008.Leader/EquiLeader)| Painless |O(n) |O(n)|
+| Lesson 9|Max Profit|Maximum Slice Problem|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0009.Maximum-Slice-Problem/MaxProfit)| Painless |O(n) |O(1)|
+| Lesson 9|Max Slice Sum|Maximum Slice Problem|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0009.Maximum-Slice-Problem/MaxSliceSum)| Painless |O(n) |O(n)|
+| Lesson 9|Max Double Slice Sum|Maximum Slice Problem|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0009.Maximum-Slice-Problem/MaxDoubleSliceSum)| Respectable |O(n) |O(n)|
 
 ## Reference
 * [leetcode](https://leetcode.com/)
