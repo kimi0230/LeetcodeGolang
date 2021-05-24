@@ -62,7 +62,7 @@
 | Lesson 10|Count Factors|Prime And Composite Numbers|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0010.Prime-And-Composite-Numbers/CountFactors)| Painless | O(sqrt(n)) |O(1)|
 | Lesson 10|Flags|Prime And Composite Numbers|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0010.Prime-And-Composite-Numbers/Flags)| Respectable | O(n) |O(n)|
 | Lesson 10|MinPerimeterRectangle|Prime And Composite Numbers|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0010.Prime-And-Composite-Numbers/MinPerimeterRectangle)| Painless | O(sqrt(n)) |O(1)|
-| Lesson 10|Peaks|Prime And Composite Numbers|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0010.Prime-And-Composite-Numbers/Peaks)| Respectable |  ||
+| Lesson 10|Peaks|Prime And Composite Numbers|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0010.Prime-And-Composite-Numbers/Peaks)| Respectable | O(n*log(log(n))) |O(n)|
 
 ## Reference
 * [leetcode](https://leetcode.com/)

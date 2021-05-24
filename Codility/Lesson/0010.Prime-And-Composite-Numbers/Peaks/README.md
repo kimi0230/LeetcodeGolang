@@ -72,10 +72,13 @@ each element of array A is an integer within the range [0..1,000,000,000].
 Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.
 
 ## 題目大意
-
+將 array 分成同樣長度的區塊, 買個區塊至少包含一個peak.
 
 ## 解題思路
-
+先找出所有peak的index 寫入peaks array.
+從peaks的長度開始往下找, 將 A 拆成區塊,
+每個區塊檢查是否有有找到peak
 
 ## 來源
 * https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/peaks/
+* https://www.martinkysel.com/codility-peaks-solution/
