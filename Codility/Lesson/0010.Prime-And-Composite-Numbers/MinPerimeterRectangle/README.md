@@ -33,7 +33,7 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 
 
 ## 解題思路
-從不大於N的平方根的數開始遍歷,只要找到N的因子,就返回。
+從不大於N的平方根的數開始遍歷,只要找到N的因子
 因為越往後所得的周長越大.邊長接近平方根的矩形的周長是最小的
 
 ## 來源
