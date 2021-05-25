@@ -51,6 +51,8 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 遍歷A, 對於每個元素從1到sqrt(i)中找出因子,如果是因子,就去字典找出出現次數
 最後用總長度減去因子數就可得出非因子數, 並將結果存入map, 空間換取時間
 
+factor <= int(math.Pow(float64(val), 0.5)) 改成 factor*factor <= val 可提高效能
+
 ## 來源
 * https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/count_non_divisible/
 * https://github.com/Anfany/Codility-Lessons-By-Python3/blob/master/L11_Sieve%20of%20Eratosthenes/11.1%20CountNonDivisible.md
