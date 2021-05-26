@@ -51,3 +51,5 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 
 ## 來源
 * https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/count_semiprimes/
+* https://github.com/Luidy/codility-golang/blob/master/Lesson11/02_countSemiprimes.go
+* https://github.com/Anfany/Codility-Lessons-By-Python3/blob/master/L11_Sieve%20of%20Eratosthenes/11.2%20CountSemiprimes.md

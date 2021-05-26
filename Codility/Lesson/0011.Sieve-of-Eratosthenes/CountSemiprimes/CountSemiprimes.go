@@ -3,6 +3,46 @@ package countsemiprimes
 import "fmt"
 
 func Solution(N int, P []int, Q []int) []int {
+	prime := make([]int, N+1)
+	i := 2
+	for i*i <= N {
+		if prime[i] == 0 {
+			k := i * i
+			for k <= N {
+				if prime[k] == 0 {
+					prime[k] = i
+				}
+				k = k + i
+			}
+		}
+		i++
+	}
+	fmt.Println("prime: ", prime)
+
+	semiprime := make([]int, N+1)
+	for i := 1; i < len(prime); i++ {
+		p := prime[i]
+		if p == 0 {
+			semiprime[i] = semiprime[i-1]
+			continue
+		}
+		if prime[i/p] == 0 {
+			semiprime[i] = semiprime[i-1] + 1
+		} else {
+			semiprime[i] = semiprime[i-1]
+		}
+	}
+	fmt.Println("semiprime: ", semiprime)
+
+	result := make([]int, len(P))
+	for i, p := range P {
+		result[i] = semiprime[Q[i]] - semiprime[p-1]
+	}
+	return result
+}
+
+// wrong
+func Solution2(N int, P []int, Q []int) []int {
 	semiPrime := []int{}
 
 	// 半質數:兩個質數的乘積所得的自然數我們稱之為半質數.
@@ -61,7 +101,7 @@ func Solution(N int, P []int, Q []int) []int {
 	result := []int{}
 	for i := 0; i < len(P); i++ {
 		if _, ok := semiMap[P[i]]; ok {
-			result = append(result, indexMap[Q[i]]-indexMap[P[i]]+1)
+			result = append(result, indexMap[Q[i]]-indexMap[P[i-1]])
 		} else {
 			result = append(result, indexMap[Q[i]]-indexMap[P[i]])
 		}
