@@ -64,6 +64,7 @@
 | Lesson 10|MinPerimeterRectangle|Prime And Composite Numbers|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0010.Prime-And-Composite-Numbers/MinPerimeterRectangle)| Painless | O(sqrt(n)) |O(1)|
 | Lesson 10|Peaks|Prime And Composite Numbers|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0010.Prime-And-Composite-Numbers/Peaks)| Respectable | O(n*log(log(n))) |O(n)|
 | Lesson 11|CountNonDivisible|Sieve of Eratosthenes|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0011.Sieve-of-Eratosthenes/CountNonDivisible)| Respectable | O(N * log(N)) |O(n)|
+| Lesson 11|CountSemiprimes|Sieve of Eratosthenes|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0011.Sieve-of-Eratosthenes/CountSemiprimes)| Respectable | O(N*log(log(N))+M) |O(N+M)|
 
 ## Reference
 * [leetcode](https://leetcode.com/)

@@ -2,6 +2,7 @@ package countsemiprimes
 
 import "fmt"
 
+// TODO:
 func Solution(N int, P []int, Q []int) []int {
 	prime := make([]int, N+1)
 	i := 2
@@ -19,6 +20,7 @@ func Solution(N int, P []int, Q []int) []int {
 	}
 	fmt.Println("prime: ", prime)
 
+	// 當前一共有幾個半質數
 	semiprime := make([]int, N+1)
 	for i := 1; i < len(prime); i++ {
 		p := prime[i]
@@ -41,7 +43,7 @@ func Solution(N int, P []int, Q []int) []int {
 	return result
 }
 
-// wrong
+// TODO: Wrong answer. Need check again
 func Solution2(N int, P []int, Q []int) []int {
 	semiPrime := []int{}
 
