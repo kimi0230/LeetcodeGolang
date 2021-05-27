@@ -46,14 +46,14 @@ func Solution(N int, P []int, Q []int) []int {
 	// 當前array和前面一共有幾個半質數
 	indexMap := make(map[int]int)
 	// 如果是半質數添加到 map
-	semiMap := make(map[int]int)
+	semiMap := make(map[int]struct{})
 	count := 0
 
 	for i := 0; i < len(semiPrime); i++ {
 		if semiPrime[i] != 0 {
 			count++
 			indexMap[semiPrime[i]] = count
-			semiMap[semiPrime[i]] = 0
+			semiMap[semiPrime[i]] = struct{}{}
 		} else {
 			indexMap[i+1] = count
 		}
