@@ -30,9 +30,11 @@ N and M are integers within the range [1..1,000,000,000].
 Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.
 
 ## 題目大意
-
+N塊巧克力,如果吃的是X號 下一個是吃 (X + M) modulo N 號
+總共可以吃幾顆.
 
 ## 解題思路
-
+方法ㄧ: 從0號開始吃, 下一個號碼+M-1號. 迴圈去跑
+方法二: 可以吃到的巧克力的數量就是總的巧克力顆數 N 除以 N 和 M 的最大公因數. 計算 N和M的最大公因數P, N除以P得到商即為答案
 ## 來源
 https://app.codility.com/programmers/lessons/12-euclidean_algorithm/chocolates_by_numbers/
