@@ -31,47 +31,6 @@
 
 ---
 ## [Codility](https://app.codility.com/programmers/) Content
-| No.    |  Title  | Topic |  Solution  |  Difficulty |  TimeComplexity	| SpaceComplexity|
-|:--------:|:--------:|:--------------------------------------------------------------|:--------:|:--------:|:--------:|:--------:|
-| Lesson 1|Binary Gap|Iterations|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0001.Iterations/Binary-Gap)| Painless  |O(log n)|O(1)|
-| Lesson 2|Cyclic Rotation|Array|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0002.Array/CyclicRotation)| Painless |O(1)|O(1)|
-| Lesson 2|Odd Occurrences In Array|Array|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0002.Array/OddOccurrencesInArray)| Painless |O(n), O(n)|O(n), O(1)|
-| Lesson 3|Frog Jmp|Time Complexity|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0003.Time-Complexity/FrogJmp)| Painless |O(1)|O(1)|
-| Lesson 3|Perm Missing Elem|Time Complexity|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0003.Time-Complexity/PermMissingElem)| Painless |O(n)|O(1)|
-| Lesson 3|Tape Equilibrium|Time Complexity|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0003.Time-Complexity/TapeEquilibrium)| Painless |O(n)|O(n)|
-| Lesson 4|Frog River One|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/FrogRiverOne)| Painless |O(n)|O(n)|
-| Lesson 4|Max Counters|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/MaxCounters)| Respectable |O(n+m) |O(n)|
-| Lesson 4|Missing Integer|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/MissingInteger)| Respectable |O(n) |O(n)|
-| Lesson 4|Perm Check|Counting Elements|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/PermCheck)| Painless |O(n) |O(n)|
-| Lesson 5|Count Div|Prefix Sums|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/CountDiv)| Respectable |O(1) |O(1)|
-| Lesson 5|Genomic Range Query|Prefix Sums|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/GenomicRangeQuery)| Respectable |O(n+m) |O(n)|
-| Lesson 5|MinAvg Two Slice|Prefix Sums|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/MinAvgTwoSlice)| Respectable |O(n) |O(n)|
-| Lesson 5|Passing Cars|Prefix Sums|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/PassingCars)| Painless |O(n) |O(1)|
-| Lesson 6|Distinct|Sorting|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0006.Sorting/Distinct)| Painless |O(nlogn) |O(n)|
-| Lesson 6|Max Product Of Three|Sorting|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0006.Sorting/MaxProductOfThree)| Painless |O(nlogn) |O(1)|
-| Lesson 6|Number Of Disc Intersections|Sorting|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0006.Sorting/NumberOfDiscIntersections)| Respectable |O(nlogn) |O(n)|
-| Lesson 6|Triangle|Sorting|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0006.Sorting/Triangle)| Painless |O(nlogn) |O(n)|
-| Lesson 7|Brackets|Stack and Queues|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0007.Stacks-and-Queues/Brackets)| Painless |O(n) |O(n)|
-| Lesson 7|Fish|Stack and Queues|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0007.Stacks-and-Queues/Fish)| Painless |O(n) |O(n)|
-| Lesson 7|Nesting|Stack and Queues|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0007.Stacks-and-Queues/Nesting)| Painless |O(n) |O(1)|
-| Lesson 7|Stone Wall|Stack and Queues|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0007.Stacks-and-Queues/StoneWall)| Painless |O(n) |O(n)|
-| Lesson 8|Dominator|Leader|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0008.Leader/Dominator)| Painless |O(n) |O(1)|
-| Lesson 8|EquiLeader|Leader|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0008.Leader/EquiLeader)| Painless |O(n) |O(n)|
-| Lesson 9|Max Profit|Maximum Slice Problem|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0009.Maximum-Slice-Problem/MaxProfit)| Painless |O(n) |O(1)|
-| Lesson 9|Max Slice Sum|Maximum Slice Problem|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0009.Maximum-Slice-Problem/MaxSliceSum)| Painless |O(n) |O(n)|
-| Lesson 9|Max Double Slice Sum|Maximum Slice Problem|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0009.Maximum-Slice-Problem/MaxDoubleSliceSum)| Respectable |O(n) |O(n)|
-| Lesson 10|Count Factors|Prime And Composite Numbers|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0010.Prime-And-Composite-Numbers/CountFactors)| Painless | O(sqrt(n)) |O(1)|
-| Lesson 10|Flags|Prime And Composite Numbers|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0010.Prime-And-Composite-Numbers/Flags)| Respectable | O(n) |O(n)|
-| Lesson 10|MinPerimeterRectangle|Prime And Composite Numbers|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0010.Prime-And-Composite-Numbers/MinPerimeterRectangle)| Painless | O(sqrt(n)) |O(1)|
-| Lesson 10|Peaks|Prime And Composite Numbers|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0010.Prime-And-Composite-Numbers/Peaks)| Respectable | O(n*log(log(n))) |O(n)|
-| Lesson 11|CountNonDivisible|Sieve of Eratosthenes (質數篩)|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0011.Sieve-of-Eratosthenes/CountNonDivisible)| Respectable | O(N * log(N)) |O(n)|
-| Lesson 11|CountSemiprimes|Sieve of Eratosthenes (質數篩)|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0011.Sieve-of-Eratosthenes/CountSemiprimes)| Respectable | O(N*log(log(N))+M) |O(N+M)|
-| Lesson 12|Chocolates By Numbers| Euclidean Algorithm (輾轉相除法 or 歐幾里得算法) |[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0012.Euclidean-Algorithm/ChocolatesByNumbers)| Painless | O(log(N + M))|O(1)|
-| Lesson 12|Common Prime Divisors| Euclidean Algorithm |[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0012.Euclidean-Algorithm/CommonPrimeDivisors)| Respectable | O(Z * log(max(A) + max(B))**2) |O(1)|
-| Lesson 13|Fibonacci numbers| Euclidean Algorithm |[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0013.Fibonacci-Numbers/FibFrog)| Respectable |  ||
-
----
-## [Codility](https://app.codility.com/programmers/) Content
 <table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
     <tr>   
         <th colspan="2">  Topic </th>
