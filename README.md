@@ -499,6 +499,33 @@
         <th> O(N*log(log(N))+M) </th>
         <th> O(N+M) </th>
     </tr>
+    <!-- lesson 12  -->
+    <tr>   
+        <th rowspan="2"> Lesson 12</th>
+        <th rowspan="2">
+            <a href="https://app.codility.com/programmers/lessons/12-euclidean_algorithm/"> Euclidean algorithm <br/> (輾轉相除法 or 歐幾里得算法) </a>
+        </th>
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/12-euclidean_algorithm/chocolates_by_numbers/"> Chocolates By Numbers <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0012.Euclidean-Algorithm/ChocolatesByNumbers"> Go <br/></a>
+        </th>
+        <th> Painless </th>
+        <th> O(log(N + M)) </th>
+        <th> O(1) </th>
+    </tr> 
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/12-euclidean_algorithm/common_prime_divisors/"> Common Prime Divisors <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0012.Euclidean-Algorithm/CommonPrimeDivisors"> Go <br/></a>
+        </th>
+        <th style="color:red;"> Respectable </th>
+        <th> O(Z * log(max(A) + max(B))**2) </th>
+        <th> O(1) </th>
+    </tr>
 </table>
 
 ## Reference
