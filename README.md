@@ -423,6 +423,55 @@
         <th> O(n) </th>
         <th> O(n) </th>
     </tr>
+    <!-- lesson 10  -->
+    <tr>   
+        <th rowspan="4"> Lesson 10</th>
+        <th rowspan="4">
+            <a href="https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/"> Prime and composite numbers <br/></a>
+        </th>
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/count_factors/"> Count Factors <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0010.Prime-And-Composite-Numbers/CountFactors"> Go <br/></a>
+        </th>
+        <th> Painless </th>
+        <th> O(sqrt(n)) </th>
+        <th> O(1) </th>
+    </tr> 
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/flags/"> Flags <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0010.Prime-And-Composite-Numbers/Flags"> Go <br/></a>
+        </th>
+        <th style="color:red;"> Respectable </th>
+        <th> O(n) </th>
+        <th> O(n) </th>
+    </tr>
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/min_perimeter_rectangle/"> MinPerimeterRectangle <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0010.Prime-And-Composite-Numbers/MinPerimeterRectangle"> Go <br/></a>
+        </th>
+        <th> Painless </th>
+        <th> O(sqrt(n))) </th>
+        <th> O(1) </th>
+    </tr>
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/peaks/"> Peaks <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0010.Prime-And-Composite-Numbers/Peaks"> Go <br/></a>
+        </th>
+        <th style="color:red;"> Respectable </th>
+        <th> O( n*log( log(n) )) </th>
+        <th> O(n) </th>
+    </tr>
 </table>
 
 ## Reference
