@@ -358,6 +358,33 @@
         <th> O(n) </th>
         <th> O(n) </th>
     </tr>
+    <!-- lesson 8  -->
+    <tr>   
+        <th rowspan="2"> Lesson 8</th>
+        <th rowspan="2">
+            <a href="https://app.codility.com/programmers/lessons/8-leader/"> Leader <br/></a>
+        </th>
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/8-leader/dominator/"> Dominator <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0008.Leader/Dominator"> Go <br/></a>
+        </th>
+        <th> Painless </th>
+        <th> O(n) </th>
+        <th> O(1) </th>
+    </tr> 
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/8-leader/equi_leader/"> EquiLeader <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0008.Leader/EquiLeader"> Go <br/></a>
+        </th>
+        <th> Painless </th>
+        <th> O(n) </th>
+        <th> O(n) </th>
+    </tr>
 </table>
 
 ## Reference
