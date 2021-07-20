@@ -68,6 +68,155 @@
 | Lesson 11|CountSemiprimes|Sieve of Eratosthenes (質數篩)|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0011.Sieve-of-Eratosthenes/CountSemiprimes)| Respectable | O(N*log(log(N))+M) |O(N+M)|
 | Lesson 12|Chocolates By Numbers| Euclidean Algorithm (輾轉相除法 or 歐幾里得算法) |[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0012.Euclidean-Algorithm/ChocolatesByNumbers)| Painless | O(log(N + M))|O(1)|
 | Lesson 12|Common Prime Divisors| Euclidean Algorithm |[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0012.Euclidean-Algorithm/CommonPrimeDivisors)| Respectable | O(Z * log(max(A) + max(B))**2) |O(1)|
+| Lesson 13|Fibonacci numbers| Euclidean Algorithm |[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0013.Fibonacci-Numbers/FibFrog)| Respectable |  ||
+
+---
+## [Codility](https://app.codility.com/programmers/) Content
+<style>
+table {
+    width:100%;
+}
+</style>
+<table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
+    <tr>   
+        <th colspan="2">  Topic </th>
+        <th> Title</th>
+        <th> Solution</th>
+        <th> Difficulty</th>
+        <th> TimeComplexity</th>
+        <th> SpaceComplexity</th>
+    </tr>  
+    <!-- lesson 1  -->
+    <tr>   
+        <th> Lesson 1</th>
+        <th>
+            <a href="https://app.codility.com/programmers/lessons/1-iterations/"> Iterations <br/></a>
+        </th>
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/1-iterations/binary_gap/"> Binary Gap <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0001.Iterations/Binary-Gap"> Go <br/></a>
+        </th>
+        <th> Painless </th>
+        <th> O(log n) </th>
+        <th> O(1) </th>
+    </tr> 
+    <!-- lesson 2  -->
+    <tr>   
+        <th rowspan="2"> Lesson 2</th>
+        <th rowspan="2">
+            <a href="https://app.codility.com/programmers/lessons/2-array/"> Array <br/></a>
+        </th>
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/"> Cyclic Rotation <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0002.Array/CyclicRotation"> Go <br/></a>
+        </th>
+        <th> Painless </th>
+        <th> O(1) </th>
+        <th> O(1) </th>
+    </tr> 
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/"> Odd Occurrences In Array <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0002.Array/OddOccurrencesInArray"> Go <br/></a>
+        </th>
+        <th> Painless </th>
+        <th> O(n), O(n) </th>
+        <th> O(n), O(1) </th>
+    </tr>
+    <!-- lesson 3  -->
+     <tr>   
+        <th rowspan="3"> Lesson 3</th>
+        <th rowspan="3">
+            <a href="https://app.codility.com/programmers/lessons/3-time_complexity/"> Time Complexity <br/></a>
+        </th>
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/3-time_complexity/frog_jmp/"> Frog Jmp <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0003.Time-Complexity/FrogJmp"> Go <br/></a>
+        </th>
+        <th> Painless </th>
+        <th> O(1) </th>
+        <th> O(1) </th>
+    </tr> 
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/3-time_complexity/perm_missing_elem/"> Perm Missing Elem <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0003.Time-Complexity/PermMissingElem"> Go <br/></a>
+        </th>
+        <th> Painless </th>
+        <th> O(n) </th>
+        <th> O(1) </th>
+    </tr>
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/"> Tape Equilibrium <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0003.Time-Complexity/TapeEquilibrium"> Go <br/></a>
+        </th>
+        <th> Painless </th>
+        <th> O(n) </th>
+        <th> O(n) </th>
+    </tr>
+    <!-- lesson 4  -->
+     <tr>   
+        <th rowspan="4"> Lesson 4</th>
+        <th rowspan="4">
+            <a href="https://app.codility.com/programmers/lessons/4-counting_elements/"> Counting Elements <br/></a>
+        </th>
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/"> Frog River One <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/FrogRiverOne"> Go <br/></a>
+        </th>
+        <th> Painless </th>
+        <th> O(n) </th>
+        <th> O(n) </th>
+    </tr> 
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/4-counting_elements/max_counters/"> Max Counters <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/MaxCounters"> Go <br/></a>
+        </th>
+        <th> Respectable </th>
+        <th> O(n+m) </th>
+        <th> O(n) </th>
+    </tr>
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/4-counting_elements/missing_integer/"> Missing Integer <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/MissingInteger"> Go <br/></a>
+        </th>
+        <th> Respectable </th>
+        <th> O(n) </th>
+        <th> O(n) </th>
+    </tr>
+     <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/4-counting_elements/perm_check/"> Perm Check <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/PermCheck"> Go <br/></a>
+        </th>
+        <th> Painless </th>
+        <th> O(n) </th>
+        <th> O(n) </th>
+    </tr>
+</table>
 
 ## Reference
 * [leetcode](https://leetcode.com/)
