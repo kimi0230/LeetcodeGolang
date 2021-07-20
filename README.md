@@ -385,6 +385,44 @@
         <th> O(n) </th>
         <th> O(n) </th>
     </tr>
+    <!-- lesson 9  -->
+    <tr>   
+        <th rowspan="3"> Lesson 9</th>
+        <th rowspan="3">
+            <a href="https://app.codility.com/programmers/lessons/9-maximum_slice_problem/"> Maximum slice problem <br/></a>
+        </th>
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/9-maximum_slice_problem/max_profit/"> Max Profit <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0009.Maximum-Slice-Problem/MaxProfit"> Go <br/></a>
+        </th>
+        <th> Painless </th>
+        <th> O(n) </th>
+        <th> O(1) </th>
+    </tr> 
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/9-maximum_slice_problem/max_slice_sum/"> Max Slice Sum <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0009.Maximum-Slice-Problem/MaxSliceSum"> Go <br/></a>
+        </th>
+        <th> Painless </th>
+        <th> O(n) </th>
+        <th> O(n) </th>
+    </tr>
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/9-maximum_slice_problem/max_double_slice_sum/"> Max Double Slice Sum <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0009.Maximum-Slice-Problem/MaxDoubleSliceSum"> Go <br/></a>
+        </th>
+        <th style="color:red;"> Respectable </th>
+        <th> O(n) </th>
+        <th> O(n) </th>
+    </tr>
 </table>
 
 ## Reference
