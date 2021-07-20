@@ -526,6 +526,33 @@
         <th> O(Z * log(max(A) + max(B))**2) </th>
         <th> O(1) </th>
     </tr>
+    <!-- lesson 13  -->
+    <tr>   
+        <th rowspan="2"> Lesson 13</th>
+        <th rowspan="2">
+            <a href="https://app.codility.com/programmers/lessons/13-fibonacci_numbers/"> Fibonacci numbers <br/> </a>
+        </th>
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/13-fibonacci_numbers/fib_frog/"> FibFrog <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0013.Fibonacci-Numbers/FibFrog"> Go <br/></a>
+        </th>
+        <th style="color:red;"> Respectable </th>
+        <th>  </th>
+        <th>  </th>
+    </tr> 
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/13-fibonacci_numbers/ladder/"> Common Prime Divisors <br/></a>
+        </th>
+        <th>
+            <a href=""> Go <br/></a>
+        </th>
+        <th style="color:red;"> Respectable </th>
+        <th>  </th>
+        <th>  </th>
+    </tr>
 </table>
 
 ## Reference
