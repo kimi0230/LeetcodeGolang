@@ -309,6 +309,55 @@
         <th> O(nlogn) </th>
         <th> O(n) </th>
     </tr>
+    <!-- lesson 7  -->
+    <tr>   
+        <th rowspan="4"> Lesson 7</th>
+        <th rowspan="4">
+            <a href="https://app.codility.com/programmers/lessons/7-stacks_and_queues/"> Stacks and Queues <br/></a>
+        </th>
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/7-stacks_and_queues/brackets/"> Brackets <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0007.Stacks-and-Queues/Brackets"> Go <br/></a>
+        </th>
+        <th> Painless </th>
+        <th> O(n) </th>
+        <th> O(n) </th>
+    </tr> 
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/7-stacks_and_queues/fish/"> Fish <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0007.Stacks-and-Queues/Fish"> Go <br/></a>
+        </th>
+        <th> Painless </th>
+        <th> O(n) </th>
+        <th> O(n) </th>
+    </tr>
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/7-stacks_and_queues/nesting/"> Nesting <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0007.Stacks-and-Queues/Nesting"> Go <br/></a>
+        </th>
+        <th> Painless </th>
+        <th> O(n) </th>
+        <th> O(1) </th>
+    </tr>
+     <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/7-stacks_and_queues/stone_wall/"> Stone Wall <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0007.Stacks-and-Queues/StoneWall"> Go <br/></a>
+        </th>
+        <th > Painless </th>
+        <th> O(n) </th>
+        <th> O(n) </th>
+    </tr>
 </table>
 
 ## Reference
