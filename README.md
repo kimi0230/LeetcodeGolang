@@ -472,6 +472,33 @@
         <th> O( n*log( log(n) )) </th>
         <th> O(n) </th>
     </tr>
+    <!-- lesson 11  -->
+    <tr>   
+        <th rowspan="2"> Lesson 11</th>
+        <th rowspan="2">
+            <a href="https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/"> Sieve of Eratosthenes <br/> (質數篩) </a>
+        </th>
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/count_non_divisible/"> Count Non Divisible <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0011.Sieve-of-Eratosthenes/CountNonDivisible"> Go <br/></a>
+        </th>
+        <th style="color:red;"> Respectable </th>
+        <th> O(N * log(N)) </th>
+        <th> O(n) </th>
+    </tr> 
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/count_semiprimes/"> Count Semiprimes <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0011.Sieve-of-Eratosthenes/CountSemiprimes"> Go <br/></a>
+        </th>
+        <th style="color:red;"> Respectable </th>
+        <th> O(N*log(log(N))+M) </th>
+        <th> O(N+M) </th>
+    </tr>
 </table>
 
 ## Reference
