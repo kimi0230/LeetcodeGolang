@@ -72,11 +72,6 @@
 
 ---
 ## [Codility](https://app.codility.com/programmers/) Content
-<style>
-table {
-    width:100%;
-}
-</style>
 <table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
     <tr>   
         <th colspan="2">  Topic </th>
@@ -190,7 +185,7 @@ table {
         <th>
             <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/MaxCounters"> Go <br/></a>
         </th>
-        <th> Respectable </th>
+        <th style="color:red;"> Respectable </th>
         <th> O(n+m) </th>
         <th> O(n) </th>
     </tr>
@@ -201,7 +196,7 @@ table {
         <th>
             <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/MissingInteger"> Go <br/></a>
         </th>
-        <th> Respectable </th>
+        <th style="color:red;"> Respectable </th>
         <th> O(n) </th>
         <th> O(n) </th>
     </tr>
@@ -215,6 +210,55 @@ table {
         <th> Painless </th>
         <th> O(n) </th>
         <th> O(n) </th>
+    </tr>
+    <!-- lesson 5  -->
+     <tr>   
+        <th rowspan="4"> Lesson 5</th>
+        <th rowspan="4">
+            <a href="https://app.codility.com/programmers/lessons/5-prefix_sums/"> Prefix Sums <br/></a>
+        </th>
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/5-prefix_sums/count_div/"> Count Div <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/CountDive"> Go <br/></a>
+        </th>
+        <th style="color:red;"> Respectable </th>
+        <th> O(1) </th>
+        <th> O(1) </th>
+    </tr> 
+    <tr>   
+        <th> 
+            <a href="hhttps://app.codility.com/programmers/lessons/5-prefix_sums/genomic_range_query/"> Genomic Range Query <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/GenomicRangeQuery"> Go <br/></a>
+        </th>
+        <th style="color:red;"> Respectable </th>
+        <th> O(n+m) </th>
+        <th> O(n) </th>
+    </tr>
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/"> MinAvg Two Slice <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/MinAvgTwoSlice"> Go <br/></a>
+        </th>
+        <th style="color:red;"> Respectable </th>
+        <th> O(n) </th>
+        <th> O(n) </th>
+    </tr>
+     <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/"> Passing Cars <br/></a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/PassingCars"> Go <br/></a>
+        </th>
+        <th > Painless </th>
+        <th> O(n) </th>
+        <th> O(1) </th>
     </tr>
 </table>
 
