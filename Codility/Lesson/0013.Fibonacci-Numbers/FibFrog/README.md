@@ -58,15 +58,13 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 
 ## 題目大意
 一只小青蛙想到對岸。它開始位於河的另一邊 位置-1, 想要到對面的河岸 位置N . 青蛙可以跳任意距離 F(K). 其中F(K)是第K個斐波那契數.
-且河上有許多樹葉 A[0] = 0 代表位置 0 有樹葉, 1 代表沒樹葉
+且河上有許多樹葉 A[0] = 0 代表位置 0 沒有樹葉, 1 代表有樹葉
 青蛙可以在樹葉之間跳, 但只能朝河岸 N 的方向跳
 找出最小跳的次數
 ## 解題思路
 廣度優先搜尋 (Breadth-First Search, BFS) 問題.
 對於河上有樹葉的位置index, 則遍歷比index小的斐波那契數f, 
 只要 index - f 這個位置可以達到, 這index的位置就可以經過一次跳躍長度為f
-
-典型的BFS搜索問題。對於河面上有樹葉的位置index，則就要遍歷比index不大的所有斐波那契數f，只要index-f這個位置可以達到，那麼index這個位置就可以經過一次跳躍長度爲f達到。因爲是遍歷，所以就決定了最後得到的是最小次數。
 
 ## 來源
 * https://app.codility.com/programmers/lessons/13-fibonacci_numbers/fib_frog/
