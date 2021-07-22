@@ -498,8 +498,8 @@
             <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0013.Fibonacci-Numbers/FibFrog"> Go <br/></a>
         </th>
         <th style="color:red;"> Respectable </th>
-        <th>  </th>
-        <th>  </th>
+        <th> O(N * log(N)) </th>
+        <th> O(N) </th>
     </tr> 
     <tr>   
         <th> 

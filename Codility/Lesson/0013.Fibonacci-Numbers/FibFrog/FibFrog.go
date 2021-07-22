@@ -1,7 +1,5 @@
 package fibfrog
 
-import "fmt"
-
 /**
  * @description: 產生不大於n的斐波那契數的列表
  * @param {int} N
@@ -29,16 +27,17 @@ func Solution(A []int) int {
 		return 1
 	}
 	fibArr = fibArr[1 : len(fibArr)-1]
-	fmt.Println(fibArr)
+	// fmt.Println(fibArr)
 
 	// get the leafs that can be reached from the starting shore
 	reachable := make([]int, N)
 	for _, v := range fibArr {
 		if A[v-1] == 1 {
+			// 找到樹葉
 			reachable[v-1] = 1
 		}
 	}
-	// 一開始只能到 index: 4
+	// 一開始只能跳到 index: 4 , fib是 [1 1 2 3 5 8], 會使用到 5
 	// fmt.Println("re", reachable) // [0 0 0 0 1 0 0 0 0 0 0 0]
 
 	// iterate all the positions until you reach the other shore
@@ -58,13 +57,13 @@ func Solution(A []int) int {
 				previousIdx := i - f
 
 				if previousIdx < 0 || reachable[previousIdx] == 0 {
-					fmt.Printf("[No] %d :previousIdx = %d reachable = %v \n", i, previousIdx, reachable)
+					// fmt.Printf("[No] %d :previousIdx = %d reachable = %v \n", i, previousIdx, reachable)
 					continue
 				}
-				fmt.Printf("%d :previousIdx = %d reachable = %v \n", i, previousIdx, reachable)
 
 				if minJump > reachable[previousIdx] {
 					// 此 previousIdx 位置可以到達
+					// fmt.Printf("%d :previousIdx = %d reachable = %v \n", i, previousIdx, reachable)
 					minJump = reachable[previousIdx]
 					canJump = true
 				}
@@ -73,12 +72,11 @@ func Solution(A []int) int {
 				reachable[i] = minJump + 1
 			}
 		}
-		fmt.Printf("i=%d , reachable = %v \n", i, reachable)
+		// fmt.Printf("i=%d , reachable = %v \n", i, reachable)
 	}
 
-	if reachable[len(reachable)-1] < N {
-		return reachable[len(reachable)-1]
-	} else {
+	if reachable[len(reachable)-1] == 0 {
 		return -1
 	}
+	return reachable[len(reachable)-1]
 }
