@@ -3,7 +3,20 @@
 
 ---
 ## [leetcode](https://leetcode.com/) Content
-| No.    |  Title  | Topic |  Solution  |  Difficulty |  TimeComplexity	| SpaceComplexity|
+* [Data Structure](#data-structure)
+    * [Array](#array)
+    * [Stack](#stack)
+    * [Linked List](#linked-list)
+* [Algorithm](#algorithm)
+    * [Sort](#sort)
+    * [Backtracking (回溯法)](#backtracking-回溯法)
+    * [Dynamic Programming](#dynamic-programming)
+    * [Sliding Window](#sliding-window)
+    * [Two Pointers](#two-pointers)
+    * [Bit Manipulation](#bit-manipulation)
+    * [Union Find](#union-find)
+
+<!-- | No.    |  Title  | Topic |  Solution  |  Difficulty |  TimeComplexity	| SpaceComplexity|
 |:--------:|:--------:|:--------------------------------------------------------------|:--------:|:--------:|:--------:|:--------:|
 |0001|Two Sum|Array|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0001.Two-Sum)|Easy|O(n)|O(n)|
 |0003|Longest Substring Without Repeating Characters|Array|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0003.Longest-Substring-Without-Repeating-Characters)|Medium|O(n)|O(1)|
@@ -21,7 +34,7 @@
 |0209|Minimum Size Subarray Sum|Sliding Window|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0209.Minimum-Size-Subarray-Sum)|Medium|O(n^2), O(n), O(nlog n)|O(1), O(1), O(n)|
 |0344|Reverse String|Two Pointers|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0344.Reverse-String)|Easy|O(n)|O(1))|
 |0693|Binary Number with Alternating Bits_test|Bit Manipulation|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0693.Binary-Number-with-Alternating-Bits)|Easy|O(n), O(1)|O(1)|
-|0721|Accounts Merge|Union Find|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0721.Accounts-Merge)|Easy|O(n), O(n log n)|O(n), O(n)|
+|0721|Accounts Merge|Union Find|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0721.Accounts-Merge)|Easy|O(n), O(n log n)|O(n), O(n)| -->
 
 
 ### Data Structure
@@ -163,6 +176,47 @@
     </tr>
 </table>
 
+#### Linked List 
+<table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
+    <tr>   
+        <th>  No. </th>
+        <th> Topic </th>
+        <th> Title </th>
+        <th> Solution </th>
+        <th> Difficulty </th>
+        <th> TimeComplexity </th>
+        <th> SpaceComplexity</th>
+    </tr>
+    <!-- 0141 -->
+    <tr>   
+        <th> 0141</th>
+        <th> Linked List </th>
+        <th> 
+            <a href="https://leetcode.com/problems/linked-list-cycle"> Linked List Cycle </a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0141.Linked-List-Cycle"> Go </a>
+        </th>
+        <th> Easy </th>
+        <th> O(n) </th>
+        <th> O(1) </th>
+    </tr>
+    <!-- 0203 -->
+    <tr>   
+        <th> 0203</th>
+        <th> Linked List </th>
+        <th> 
+            <a href="https://leetcode.com/problems/remove-linked-list-elements/"> Remove Linked List Elements </a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0203.Remove-Linked-List-Elements"> Go </a>
+        </th>
+        <th> Easy </th>
+        <th> O(n) </th>
+        <th> O(1) </th>
+    </tr>
+</table>
+
 ### Algorithm
 
 #### Sort
@@ -191,6 +245,7 @@
         <th> O(1) </th>
     </tr>
 </table>
+
 #### Backtracking (回溯法)
 <table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
     <tr>   
@@ -232,7 +287,7 @@
     <!-- 0053 -->
     <tr>   
         <th> 0053</th>
-        <th> Backtracking </th>
+        <th> Dynamic Programming </th>
         <th> 
             <a href="https://leetcode.com/problems/maximum-subarray/"> Maximum Subarray </a>
         </th>
@@ -242,6 +297,114 @@
         <th> Easy </th>
         <th> O(n) </th>
         <th> O(n) </th>
+    </tr>
+</table>
+
+#### Sliding Window
+<table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
+    <tr>   
+        <th>  No. </th>
+        <th> Topic </th>
+        <th> Title </th>
+        <th> Solution </th>
+        <th> Difficulty </th>
+        <th> TimeComplexity </th>
+        <th> SpaceComplexity</th>
+    </tr>
+    <!-- 0209 -->
+    <tr>   
+        <th> 0209</th>
+        <th> Sliding Window </th>
+        <th> 
+            <a href="https://leetcode.com/problems/minimum-size-subarray-sum/"> Minimum Size Subarray Sum </a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0209.Minimum-Size-Subarray-Sum"> Go </a>
+        </th>
+        <th> Medium </th>
+        <th> O(n^2), O(n), O(nlog n) </th>
+        <th> O(1), O(1), O(n) </th>
+    </tr>
+</table>
+
+#### Two Pointers
+<table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
+    <tr>   
+        <th>  No. </th>
+        <th> Topic </th>
+        <th> Title </th>
+        <th> Solution </th>
+        <th> Difficulty </th>
+        <th> TimeComplexity </th>
+        <th> SpaceComplexity</th>
+    </tr>
+    <!-- 0344 -->
+    <tr>   
+        <th> 0344</th>
+        <th> Two Pointers</th>
+        <th> 
+            <a href="https://leetcode.com/problems/reverse-string/"> Reverse String </a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0344.Reverse-String"> Go </a>
+        </th>
+        <th> Easy </th>
+        <th> O(n) </th>
+        <th> O(1) </th>
+    </tr>
+</table>
+
+#### Bit Manipulation
+<table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
+    <tr>   
+        <th>  No. </th>
+        <th> Topic </th>
+        <th> Title </th>
+        <th> Solution </th>
+        <th> Difficulty </th>
+        <th> TimeComplexity </th>
+        <th> SpaceComplexity</th>
+    </tr>
+    <!-- 0693 -->
+    <tr>   
+        <th> 0693</th>
+        <th> Bit Manipulation</th>
+        <th> 
+            <a href="https://leetcode.com/problems/binary-number-with-alternating-bits/"> Binary Number with Alternating Bits </a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0693.Binary-Number-with-Alternating-Bits"> Go </a>
+        </th>
+        <th> Easy </th>
+        <th> O(n), O(1) </th>
+        <th> O(1) </th>
+    </tr>
+</table>
+
+#### Union Find
+<table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
+    <tr>   
+        <th>  No. </th>
+        <th> Topic </th>
+        <th> Title </th>
+        <th> Solution </th>
+        <th> Difficulty </th>
+        <th> TimeComplexity </th>
+        <th> SpaceComplexity</th>
+    </tr>
+    <!-- 0721 -->
+    <tr>   
+        <th> 0721</th>
+        <th> Union Find</th>
+        <th> 
+            <a href="https://leetcode.com/problems/accounts-merge/"> Accounts Merge </a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0721.Accounts-Merge"> Go </a>
+        </th>
+        <th> Easy </th>
+        <th> O(n), O(n log n) </th>
+        <th> O(n), O(n) </th>
     </tr>
 </table>
 
