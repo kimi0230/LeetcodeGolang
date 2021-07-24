@@ -23,6 +23,34 @@
 |0693|Binary Number with Alternating Bits_test|Bit Manipulation|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0693.Binary-Number-with-Alternating-Bits)|Easy|O(n), O(1)|O(1)|
 |0721|Accounts Merge|Union Find|[Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0721.Accounts-Merge)|Easy|O(n), O(n log n)|O(n), O(n)|
 
+
+### Data Structure
+#### Array
+<table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
+    <tr>   
+        <th>  No. </th>
+        <th> Topic </th>
+        <th> Title </th>
+        <th> Solution </th>
+        <th> Difficulty </th>
+        <th> TimeComplexity </th>
+        <th> SpaceComplexity</th>
+    </tr>
+    <!-- 0001 -->
+    <tr>   
+        <th> 0001</th>
+        <th> Array </th>
+        <th> 
+            <a href="https://leetcode.com/problems/two-sum/"> Two Sum </a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0001.Two-Sum"> Go </a>
+        </th>
+        <th> Easy </th>
+        <th> O(n) </th>
+        <th> O(n) </th>
+    </tr>  
+</table>
 ---
 ## [GeeksforGeeks](https://www.geeksforgeeks.org/) Content
 | Topic    |  Title  | No. |  Solution  |  Difficulty |  TimeComplexity	| SpaceComplexity|
