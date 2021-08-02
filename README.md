@@ -888,7 +888,7 @@
     </tr> 
     <tr>   
         <th> 
-            <a href="https://app.codility.com/programmers/lessons/13-fibonacci_numbers/ladder/"> Common Prime Divisors <br/></a>
+            <a href="https://app.codility.com/programmers/lessons/13-fibonacci_numbers/ladder/"> Ladder <br/></a>
         </th>
         <th>
             <a href=""> Go <br/></a>
