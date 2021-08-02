@@ -529,7 +529,7 @@
         <th>
             <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/MaxCounters"> Go <br/></a>
         </th>
-        <th style="color:red;"> Respectable </th>
+        <th style="color:#5EC0C6;"> Respectable </th>
         <th> O(n+m) </th>
         <th> O(n) </th>
     </tr>
@@ -540,7 +540,7 @@
         <th>
             <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0004.Counting-Elements/MissingInteger"> Go <br/></a>
         </th>
-        <th style="color:red;"> Respectable </th>
+        <th style="color:#5EC0C6;"> Respectable </th>
         <th> O(n) </th>
         <th> O(n) </th>
     </tr>
@@ -567,7 +567,7 @@
         <th>
             <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/CountDive"> Go <br/></a>
         </th>
-        <th style="color:red;"> Respectable </th>
+        <th style="color:#5EC0C6;"> Respectable </th>
         <th> O(1) </th>
         <th> O(1) </th>
     </tr> 
@@ -578,7 +578,7 @@
         <th>
             <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/GenomicRangeQuery"> Go <br/></a>
         </th>
-        <th style="color:red;"> Respectable </th>
+        <th style="color:#5EC0C6;"> Respectable </th>
         <th> O(n+m) </th>
         <th> O(n) </th>
     </tr>
@@ -589,7 +589,7 @@
         <th>
             <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0005.Prefix-Sums/MinAvgTwoSlice"> Go <br/></a>
         </th>
-        <th style="color:red;"> Respectable </th>
+        <th style="color:#5EC0C6;"> Respectable </th>
         <th> O(n) </th>
         <th> O(n) </th>
     </tr>
@@ -638,7 +638,7 @@
         <th>
             <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0006.Sorting/NumberOfDiscIntersections"> Go <br/></a>
         </th>
-        <th style="color:red;"> Respectable </th>
+        <th style="color:#5EC0C6;"> Respectable </th>
         <th> O(nlogn) </th>
         <th> O(n) </th>
     </tr>
@@ -763,7 +763,7 @@
         <th>
             <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0009.Maximum-Slice-Problem/MaxDoubleSliceSum"> Go <br/></a>
         </th>
-        <th style="color:red;"> Respectable </th>
+        <th style="color:#5EC0C6;"> Respectable </th>
         <th> O(n) </th>
         <th> O(n) </th>
     </tr>
@@ -790,7 +790,7 @@
         <th>
             <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0010.Prime-And-Composite-Numbers/Flags"> Go <br/></a>
         </th>
-        <th style="color:red;"> Respectable </th>
+        <th style="color:#5EC0C6;"> Respectable </th>
         <th> O(n) </th>
         <th> O(n) </th>
     </tr>
@@ -812,7 +812,7 @@
         <th>
             <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0010.Prime-And-Composite-Numbers/Peaks"> Go <br/></a>
         </th>
-        <th style="color:red;"> Respectable </th>
+        <th style="color:#5EC0C6;"> Respectable </th>
         <th> O( n*log( log(n) )) </th>
         <th> O(n) </th>
     </tr>
@@ -828,7 +828,7 @@
         <th>
             <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0011.Sieve-of-Eratosthenes/CountNonDivisible"> Go <br/></a>
         </th>
-        <th style="color:red;"> Respectable </th>
+        <th style="color:#5EC0C6;"> Respectable </th>
         <th> O(N * log(N)) </th>
         <th> O(n) </th>
     </tr> 
@@ -839,7 +839,7 @@
         <th>
             <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0011.Sieve-of-Eratosthenes/CountSemiprimes"> Go <br/></a>
         </th>
-        <th style="color:red;"> Respectable </th>
+        <th style="color:#5EC0C6;"> Respectable </th>
         <th> O(N*log(log(N))+M) </th>
         <th> O(N+M) </th>
     </tr>
@@ -866,7 +866,7 @@
         <th>
             <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0012.Euclidean-Algorithm/CommonPrimeDivisors"> Go <br/></a>
         </th>
-        <th style="color:red;"> Respectable </th>
+        <th style="color:#5EC0C6;"> Respectable </th>
         <th> O(Z * log(max(A) + max(B))**2) </th>
         <th> O(1) </th>
     </tr>
@@ -882,7 +882,7 @@
         <th>
             <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Codility/Lesson/0013.Fibonacci-Numbers/FibFrog"> Go <br/></a>
         </th>
-        <th style="color:red;"> Respectable </th>
+        <th style="color:#5EC0C6;"> Respectable </th>
         <th> O(N * log(N)) </th>
         <th> O(N) </th>
     </tr> 
@@ -891,9 +891,139 @@
             <a href="https://app.codility.com/programmers/lessons/13-fibonacci_numbers/ladder/"> Ladder <br/></a>
         </th>
         <th>
-            <a href=""> Go <br/></a>
+            <a href="">  <br/></a>
         </th>
-        <th style="color:red;"> Respectable </th>
+        <th style="color:#5EC0C6;"> Respectable </th>
+        <th>  </th>
+        <th>  </th>
+    </tr>
+    <!-- lesson 14  -->
+    <tr>   
+        <th rowspan="2"> Lesson 14</th>
+        <th rowspan="2">
+            <a href="https://app.codility.com/programmers/lessons/14-binary_search_algorithm/"> Binary search algorithm <br/> </a>
+        </th>
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/14-binary_search_algorithm/min_max_division/"> MinMaxDivision <br/></a>
+        </th>
+        <th>
+            <a href="">  <br/></a>
+        </th>
+        <th style="color:#5EC0C6;"> Respectable </th>
+        <th>  </th>
+        <th> ) </th>
+    </tr> 
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/14-binary_search_algorithm/nailing_planks/"> NailingPlanks <br/></a>
+        </th>
+        <th>
+            <a href="">  <br/></a>
+        </th>
+        <th style="color:#5EC0C6;"> Respectable </th>
+        <th>  </th>
+        <th>  </th>
+    </tr>
+    <!-- lesson 15  -->
+    <tr>   
+        <th rowspan="4"> Lesson 15</th>
+        <th rowspan="4">
+            <a href="https://app.codility.com/programmers/lessons/15-caterpillar_method/"> Caterpillar method <br/> </a>
+        </th>
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/15-caterpillar_method/abs_distinct/"> AbsDistinct <br/></a>
+        </th>
+        <th>
+            <a href="">  <br/></a>
+        </th>
+        <th> Painless </th>
+        <th>  </th>
+        <th>  </th>
+    </tr> 
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/15-caterpillar_method/count_distinct_slices/"> CountDistinctSlices <br/></a>
+        </th>
+        <th>
+            <a href="">  <br/></a>
+        </th>
+        <th> Painless </th>
+        <th>  </th>
+        <th>  </th>
+    </tr>
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/15-caterpillar_method/count_triangles/"> CountTriangles <br/></a>
+        </th>
+        <th>
+            <a href="">  <br/></a>
+        </th>
+        <th> Painless </th>
+        <th>  </th>
+        <th>  </th>
+    </tr>
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/15-caterpillar_method/min_abs_sum_of_two/"> MinAbsSumOfTwo <br/></a>
+        </th>
+        <th>
+            <a href="">  <br/></a>
+        </th>
+        <th style="color:#5EC0C6;"> Respectable </th>
+        <th>  </th>
+        <th>  </th>
+    </tr>
+    <!-- lesson 16  -->
+    <tr>   
+        <th rowspan="2"> Lesson 16</th>
+        <th rowspan="2">
+            <a href="https://app.codility.com/programmers/lessons/16-greedy_algorithms/"> Greedy algorithms <br/> </a>
+        </th>
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/16-greedy_algorithms/max_nonoverlapping_segments/"> MaxNonoverlappingSegments <br/></a>
+        </th>
+        <th>
+            <a href="">  <br/></a>
+        </th>
+        <th> Painless </th>
+        <th>  </th>
+        <th>  </th>
+    </tr> 
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/16-greedy_algorithms/tie_ropes/"> TieRopes <br/></a>
+        </th>
+        <th>
+            <a href="">  <br/></a>
+        </th>
+        <th> Painless </th>
+        <th>  </th>
+        <th>  </th>
+    </tr>
+    <!-- lesson 17  -->
+    <tr>   
+        <th rowspan="2"> Lesson 17</th>
+        <th rowspan="2">
+            <a href="https://app.codility.com/programmers/lessons/17-dynamic_programming/"> Dynamic programming <br/> </a>
+        </th>
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/17-dynamic_programming/min_abs_sum/"> MinAbsSum <br/></a>
+        </th>
+        <th>
+            <a href="">  <br/></a>
+        </th>
+        <th style="color:#4BA0A5;" > Ambitious </th>
+        <th>  </th>
+        <th>  </th>
+    </tr> 
+    <tr>   
+        <th> 
+            <a href="https://app.codility.com/programmers/lessons/17-dynamic_programming/number_solitaire/"> NumberSolitaire <br/></a>
+        </th>
+        <th>
+            <a href="">  <br/></a>
+        </th>
+        <th style="color:#5EC0C6" > Respectable </th>
         <th>  </th>
         <th>  </th>
     </tr>
