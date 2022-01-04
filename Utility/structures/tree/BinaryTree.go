@@ -93,6 +93,22 @@ func (this *BinaryTree) InOrderTraverse() {
 	fmt.Println()
 }
 
+// InOrderTraverseRecursive : 中序遍歷 遞迴
+func (this *Node) InOrderTraverseRecursive() {
+	p := this
+	if p == nil {
+		return
+	}
+
+	left := p.left
+	left.PreOrderTraverseRecursive()
+
+	fmt.Printf("%+v ", p.data)
+
+	right := p.right
+	right.PreOrderTraverseRecursive()
+}
+
 // PostOrderTraverse : 深度優先, 後序遍歷
 // 若二元樹為空回傳空, 否則從左到右誒並從葉子節點後續走訪左子樹到右子樹, 最後是拜訪根節點
 func (this *BinaryTree) PostOrderTraverse() {
@@ -147,4 +163,18 @@ func (this *BinaryTree) PostOrderTraverse2() {
 		}
 	}
 	fmt.Println()
+}
+
+// PostOrderTraverseRecursive : 後序遍歷 遞迴
+func (this *Node) PostOrderTraverseRecursive() {
+	p := this
+	if p == nil {
+		return
+	}
+
+	left := p.left
+	right := p.right
+	left.PreOrderTraverseRecursive()
+	right.PreOrderTraverseRecursive()
+	fmt.Printf("%+v ", p.data)
 }
