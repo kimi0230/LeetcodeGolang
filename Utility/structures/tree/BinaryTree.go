@@ -4,6 +4,33 @@ import (
 	"fmt"
 )
 
+/*
+      0
+     / \
+    1   2
+   / \   \
+  3   4   5
+ / \     / \
+6   7   8   9
+Preorder Traversal 前序遍歷 = Depth-first Search
+理論上的遍歷順序是：根、左子樹、右子樹。根排在前面。
+0 1 3 6 7 4 2 5 8 9
+
+Inorder Traversal 中序遍歷
+理論上的遍歷順序是：左子樹、根、右子樹。根排在中間。
+實際上是採用Depth-first Search，只不過更動了節點的輸出順序。
+6 3 7 1 4 0 2 8 5 9
+
+Postorder Traversal 後序遍歷
+理論上的遍歷順序是：左子樹、右子樹、根。根排在後面。
+實際上是採用Depth-first Search，只不過更動了節點的輸出順序。
+6 7 3 4 1 8 9 5 2 0
+
+Level-order Traversal 層序遍歷
+即是Breadth-first Search。
+0 1 2 3 4 5 6 7 8 9
+*/
+
 type BinaryTree struct {
 	root *Node
 }
