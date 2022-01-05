@@ -303,6 +303,20 @@
         <th> O(n) </th>
         <th> O(n) </th>
     </tr>
+    <!-- 0509 -->
+    <tr>   
+        <th> 0509</th>
+        <th> Dynamic Programming </th>
+        <th> 
+            <a href="https://leetcode.com/problems/fibonacci-number/"> Fibonacci Number </a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0509.Fibonacci-Number"> Go </a>
+        </th>
+        <th> Easy </th>
+        <th> 很多解法 </th>
+        <th> 很多解法 </th>
+    </tr>
 </table>
 
 #### Sliding Window
