@@ -3,18 +3,23 @@
 
 ---
 ## [leetcode](https://leetcode.com/) Content
-* [Data Structure](#data-structure)
-    * [Array](#array)
-    * [Stack](#stack)
-    * [Linked List](#linked-list)
-* [Algorithm](#algorithm)
-    * [Sort](#sort)
-    * [Backtracking (回溯法)](#backtracking-回溯法)
-    * [Dynamic Programming](#dynamic-programming)
-    * [Sliding Window](#sliding-window)
-    * [Two Pointers](#two-pointers)
-    * [Bit Manipulation](#bit-manipulation)
-    * [Union Find](#union-find)
+- [Leetcode in Golang](#leetcode-in-golang)
+- [leetcode Content](#leetcode-content)
+  - [Data Structure](#data-structure)
+    - [Array](#array)
+    - [Stack](#stack)
+    - [Linked List](#linked-list)
+  - [Algorithm](#algorithm)
+    - [Sort](#sort)
+    - [Backtracking (回溯法)](#backtracking-回溯法)
+    - [Dynamic Programming](#dynamic-programming)
+    - [Sliding Window](#sliding-window)
+    - [Two Pointers](#two-pointers)
+    - [Bit Manipulation](#bit-manipulation)
+    - [Union Find](#union-find)
+- [GeeksforGeeks Content](#geeksforgeeks-content)
+- [Codility Content](#codility-content)
+- [Reference](#reference)
 
 <!-- | No.    |  Title  | Topic |  Solution  |  Difficulty |  TimeComplexity	| SpaceComplexity|
 |:--------:|:--------:|:--------------------------------------------------------------|:--------:|:--------:|:--------:|:--------:|
@@ -911,7 +916,7 @@
         </th>
         <th style="color:#5EC0C6;"> Respectable </th>
         <th>  </th>
-        <th> ) </th>
+        <th>  </th>
     </tr> 
     <tr>   
         <th> 
