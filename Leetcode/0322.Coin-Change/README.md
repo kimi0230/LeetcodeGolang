@@ -135,3 +135,16 @@ BenchmarkCoinChangeMemoryTableRecursion-8       50481345                21.66 ns
 PASS
 ok      LeetcodeGolang/Leetcode/0322.Coin-Change        2.459s
 ```
+
+
+```
+amount = 11. k=[1,2,5]
+
+amount 0 1 2 3 4 5 ... 9 10 11
+index  0 1 2 3 4 5 ... 9 10 11
+dp     0 1 1 2 2 1 ... 3  2  3
+
+
+dp[5] = 1+min(dp[5-1],dp[5-2],dp[5-5])
+dp[11] = 1+min(dp[10],dp[9],dp[6])
+```
