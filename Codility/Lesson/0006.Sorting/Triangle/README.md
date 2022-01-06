@@ -43,3 +43,27 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 
 ## 來源
 https://app.codility.com/programmers/lessons/6-sorting/triangle/
+
+## 解答
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Codility/Lesson/0006.Sorting/Triangle/Triangle.go
+
+
+```go
+package Triangle
+
+import "sort"
+
+func Solution(A []int) int {
+	if len(A) < 3 {
+		return 0
+	}
+	sort.Ints(A)
+	for i := 0; i < len(A)-2; i++ {
+		if A[i+2] < A[i+1]+A[i] {
+			return 1
+		}
+	}
+	return 0
+}
+
+```

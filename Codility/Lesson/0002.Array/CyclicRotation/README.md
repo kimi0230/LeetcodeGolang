@@ -45,3 +45,30 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 
 ## 來源
 * https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/
+
+## 解答
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Codility/Lesson/0002.Array/CyclicRotation/CyclicRotation.go
+
+
+```go
+package cyclicrotation
+
+func Solution(A []int, K int) []int {
+	if K == 0 || len(A) <= 1 {
+		return A
+	}
+
+	K = K % len(A)
+	return append(A[len(A)-K:], A[:len(A)-K]...)
+}
+
+func Solution2(A []int, K int) []int {
+	if K == 0 || len(A) <= 1 {
+		return A
+	}
+	if K > len(A) {
+		K = K % len(A)
+	}
+	return append(A[len(A)-K:], A[:len(A)-K]...)
+}
+```

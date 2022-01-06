@@ -51,3 +51,26 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 
 ## 來源
 https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/
+
+## 解答
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Codility/Lesson/0005.Prefix-Sums/PassingCars/PassingCars.go
+
+
+```go
+package PassingCars
+
+func Solution(A []int) int {
+	addBase, result := 0, 0
+	for i := 0; i < len(A); i++ {
+		if A[i] == 0 {
+			addBase++
+		} else {
+			result += addBase
+		}
+	}
+	if result > 1000000000 {
+		return -1
+	}
+	return result
+}
+```

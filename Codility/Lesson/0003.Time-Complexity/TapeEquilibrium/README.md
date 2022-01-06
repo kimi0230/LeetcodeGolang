@@ -52,3 +52,39 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 
 ## 來源
 * https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/
+
+## 解答
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Codility/Lesson/0003.Time-Complexity/TapeEquilibrium/TapeEquilibrium.go
+
+
+```go
+package TapeEquilibrium
+
+import "math"
+
+func Solution(A []int) int {
+
+	totalSum := 0
+	for _, v := range A {
+		totalSum += v
+	}
+
+	leftSum := A[0]
+	rightSum := totalSum - leftSum
+	result := math.MaxInt32
+	for i := 1; i < len(A); i++ {
+		tmpDiff := int(math.Abs(float64(rightSum) - float64(leftSum)))
+		if tmpDiff < result {
+			result = tmpDiff
+		}
+		rightSum -= A[i]
+		leftSum += A[i]
+	}
+
+	if result == math.MaxInt32 {
+		result = 0
+	}
+
+	return result
+}
+```

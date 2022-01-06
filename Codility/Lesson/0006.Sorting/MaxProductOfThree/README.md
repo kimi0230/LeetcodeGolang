@@ -48,3 +48,26 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 
 ## 來源
 https://app.codility.com/programmers/lessons/6-sorting/max_product_of_three/
+
+## 解答
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Codility/Lesson/0006.Sorting/MaxProductOfThree/MaxProductOfThree.go
+
+
+```go
+package MaxProductOfThree
+
+import "sort"
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
+}
+
+func Solution(A []int) int {
+	sort.Ints(A)
+	aLen := len(A)
+	return max(A[0]*A[1]*A[aLen-1], A[aLen-1]*A[aLen-2]*A[aLen-3])
+}
+```

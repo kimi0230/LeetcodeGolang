@@ -28,3 +28,39 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 
 ## 來源
 https://app.codility.com/programmers/lessons/6-sorting/distinct/
+
+## 解答
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Codility/Lesson/0006.Sorting/Distinct/Distinct.go
+
+
+```go
+package Distinct
+
+import "sort"
+
+func Solution(A []int) int {
+	sort.Ints(A)
+	if len(A) == 0 {
+		return 0
+	}
+	result := 1
+	for i := 1; i < len(A); i++ {
+		if A[i] != A[i-1] {
+			result++
+		}
+	}
+	return result
+}
+
+func SolutionSet(A []int) int {
+	set := make(map[int]struct{})
+	var void struct{}
+
+	for i := 0; i < len(A); i++ {
+		if _, ok := set[A[i]]; !ok {
+			set[A[i]] = void
+		}
+	}
+	return len(set)
+}
+```

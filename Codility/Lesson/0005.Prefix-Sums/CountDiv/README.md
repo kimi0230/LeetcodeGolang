@@ -26,3 +26,35 @@ B/K 找出最大的商, A/K 最小的商. 相減取得在此中間之商的數�
 
 ## 來源
 * https://app.codility.com/programmers/lessons/5-prefix_sums/count_div/
+
+## 解答
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Codility/Lesson/0005.Prefix-Sums/CountDiv/CountDiv.go
+
+
+```go
+package CountDiv
+
+import "math"
+
+// 時間: O(n)
+func SolutionBurst(A int, B int, K int) int {
+	result := 0
+	for i := A; i <= B; i++ {
+		if i%K == 0 {
+			result++
+		}
+	}
+
+	return result
+}
+
+// 時間:O(1) 空間: O(1)
+func Solution(A int, B int, K int) int {
+	result := 0
+	if A%2 == 0 {
+		result = 1
+	}
+	return int(math.Floor(float64(B/K))) - int(math.Floor(float64(A/K))) + result
+}
+
+```

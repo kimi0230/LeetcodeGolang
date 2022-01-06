@@ -32,3 +32,23 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 
 ## 來源
 * https://app.codility.com/programmers/lessons/3-time_complexity/frog_jmp/
+
+## 解答
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Codility/Lesson/0003.Time-Complexity/FrogJmp/FrogJmp.go
+
+
+```go
+package frogjump
+
+import (
+	"math"
+)
+
+func Solution(X int, Y int, D int) int {
+	if Y < X {
+		return 0
+	}
+	remainDist := Y - X
+	return int(math.Ceil(float64(remainDist) / float64(D)))
+}
+```
