@@ -57,3 +57,46 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 ## 來源
 * https://app.codility.com/programmers/lessons/8-leader/equi_leader/
 * https://github.com/Anfany/Codility-Lessons-By-Python3/blob/master/L8_Leader/8.1%20EquiLeader.md
+
+## 解答
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Codility/Lesson/0008.Leader/EquiLeader/EquiLeader.go
+
+
+```go
+package EquiLeader
+
+func Solution(A []int) int {
+	leaderDict := make(map[int]int)
+	for i := 0; i < len(A); i++ {
+		if _, ok := leaderDict[A[i]]; ok {
+			leaderDict[A[i]]++
+		} else {
+			leaderDict[A[i]] = 1
+		}
+	}
+
+	leader := 0
+	times := 0
+	for k, v := range leaderDict {
+		if v > times {
+			times = v
+			leader = k
+		}
+	}
+
+	equiCount := 0
+	count := 0 // 超頻數已出現的次數
+
+	for index, v := range A {
+		if v == leader {
+			count++
+		}
+		if count > (index+1)/2 && (times-count) > (len(A)-(index+1))/2 {
+			equiCount++
+		}
+
+	}
+
+	return equiCount
+}
+```

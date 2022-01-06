@@ -69,3 +69,11 @@ N 是 [1..100,000] 內的 整數;
 
 ## 來源
 * https://app.codility.com/programmers/lessons/15-caterpillar_method/abs_distinct/
+
+## 解答
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Codility/Lesson/0015.Caterpillar-Method/AbsDistinct/AbsDistinct.go
+
+
+```go
+
+```

@@ -26,3 +26,31 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 
 ## 來源
 https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/count_factors/
+
+## 解答
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Codility/Lesson/0010.Prime-And-Composite-Numbers/CountFactors/CountFactors.go
+
+
+```go
+package CountFactors
+
+import (
+	"math"
+)
+
+func Solution(N int) int {
+	result := 0
+	for i := 1; i <= int(math.Pow(float64(N), 0.5)); i++ {
+		if N%i == 0 {
+			if i*i == N {
+				// fmt.Println("+1 : ", i)
+				result++
+			} else {
+				// fmt.Println("+2 : ", i)
+				result += 2
+			}
+		}
+	}
+	return result
+}
+```

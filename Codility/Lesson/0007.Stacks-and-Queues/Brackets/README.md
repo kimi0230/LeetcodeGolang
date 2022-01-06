@@ -29,3 +29,55 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 將左括號都放入stack. 遇到右括號時將stack pop出來並檢查pop出來的左括號是否跟右括號配對.
 ## 來源
 https://app.codility.com/programmers/lessons/7-stacks_and_queues/brackets/
+
+## 解答
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Codility/Lesson/0007.Stacks-and-Queues/Brackets/Brackets.go
+
+
+```go
+package Brackets
+
+import (
+	"LeetcodeGolang/Utility/structures"
+)
+
+func Solution(S string) int {
+	if len(S) == 0 {
+		return 1
+	}
+	if len(S)%2 != 0 {
+		return 0
+	}
+
+	BracketMap := map[string]string{
+		")": "(",
+		"]": "[",
+		"}": "{",
+	}
+
+	stack := structures.NewArrayStack()
+	for _, v := range S {
+		val := string(v)
+		if val == "(" || val == "[" || val == "{" {
+			stack.Push(val)
+		} else if val == ")" || val == "]" || val == "}" {
+			if stack.IsEmpty() {
+				return 0
+			}
+
+			topVal := stack.Top()
+			if topVal == BracketMap[val] {
+				stack.Pop()
+			} else {
+				// 找不到可配對的括號
+				return 0
+			}
+		}
+	}
+	if stack.IsEmpty() {
+		return 1
+	} else {
+		return 0
+	}
+}
+```

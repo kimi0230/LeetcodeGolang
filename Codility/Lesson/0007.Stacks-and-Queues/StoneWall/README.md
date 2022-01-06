@@ -42,3 +42,28 @@ H[N-1]大表牆N-1米處到最右的高度
 ## 來源
 * https://app.codility.com/programmers/lessons/7-stacks_and_queues/stone_wall/
 * https://github.com/Anfany/Codility-Lessons-By-Python3/blob/master/L7_Stacks%20and%20Queues/7.4%20StoneWall.md
+
+## 解答
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Codility/Lesson/0007.Stacks-and-Queues/StoneWall/StoneWall.go
+
+
+```go
+package StoneWall
+
+import "LeetcodeGolang/Utility/structures"
+
+func Solution(H []int) int {
+	stack := structures.NewArrayStack()
+	result := 0
+	for _, v := range H {
+		for !stack.IsEmpty() && stack.Top().(int) > v {
+			stack.Pop()
+		}
+		if stack.IsEmpty() || stack.Top().(int) < v {
+			stack.Push(v)
+			result++
+		}
+	}
+	return result
+}
+```

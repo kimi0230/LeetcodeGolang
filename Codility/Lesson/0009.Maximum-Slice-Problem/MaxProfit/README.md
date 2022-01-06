@@ -44,3 +44,28 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 
 ## 來源
 https://app.codility.com/programmers/lessons/9-maximum_slice_problem/max_profit/
+
+## 解答
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Codility/Lesson/0009.Maximum-Slice-Problem/MaxProfit/MaxProfit.go
+
+
+```go
+package MaxProfit
+
+import (
+	"math"
+)
+
+func Solution(A []int) int {
+	minBuyPrice := math.MaxFloat64
+	maxProfit := 0.0
+
+	for _, v := range A {
+		minBuyPrice = math.Min(minBuyPrice, float64(v))
+		maxProfit = math.Max(maxProfit, float64(v)-minBuyPrice)
+	}
+
+	return int(maxProfit)
+}
+
+```

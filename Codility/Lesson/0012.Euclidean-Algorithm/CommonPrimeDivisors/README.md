@@ -43,3 +43,61 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 * https://app.codility.com/programmers/lessons/12-euclidean_algorithm/common_prime_divisors/
 * https://github.com/Anfany/Codility-Lessons-By-Python3/blob/master/L12_Euclidean%20algorithm/12.2%20CommonPrimeDivisors.md
 * https://github.com/Luidy/codility-golang/blob/master/Lesson12/02_commonPrimeDivisors.go
+
+## 解答
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Codility/Lesson/0012.Euclidean-Algorithm/CommonPrimeDivisors/CommonPrimeDivisors.go
+
+
+```go
+package commonprimedivisors
+
+/*
+func gcd(a, b int) int {
+	for b != 0 {
+		t := b
+		b = a % b
+		a = t
+	}
+	return a
+}
+*/
+func gcd(N int, M int) int {
+	if N%M == 0 {
+		return M
+	} else {
+		return gcd(M, N%M)
+	}
+}
+
+func Solution(A []int, B []int) int {
+	result := 0
+	for i := 0; i < len(A); i++ {
+		if A[i] == B[i] {
+			result++
+			continue
+		}
+		// 先判斷兩數的最大公因數,
+		abGcd := gcd(A[i], B[i])
+
+		// 再判斷兩個數是含有最大公因數沒有的因子
+		a := A[i] / abGcd
+		aGcd := gcd(a, abGcd)
+		for aGcd != 1 {
+			// 還有其他因子
+			a = a / aGcd
+			aGcd = gcd(aGcd, a)
+		}
+
+		b := B[i] / abGcd
+		bGcd := gcd(b, abGcd)
+		for bGcd != 1 {
+			b = b / bGcd
+			bGcd = gcd(bGcd, b)
+		}
+		if a == b {
+			result++
+		}
+	}
+	return result
+}
+```

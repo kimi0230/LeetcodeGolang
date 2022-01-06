@@ -74,3 +74,48 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 ## 來源
 * https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/
 * https://github.com/Anfany/Codility-Lessons-By-Python3/blob/master/L10_Prime%20and%20composite%20numbers/10.4%20Flags.md
+
+## 解答
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Codility/Lesson/0010.Prime-And-Composite-Numbers/Flags/Flags.go
+
+
+```go
+package Flags
+
+import (
+	"math"
+)
+
+func Solution(A []int) int {
+	var peaksFlag []int
+
+	for i := 1; i < len(A)-1; i++ {
+		if A[i] > A[i-1] && A[i] > A[i+1] {
+			peaksFlag = append(peaksFlag, i)
+		}
+	}
+
+	if len(peaksFlag) == 0 {
+		return 0
+	}
+	if len(peaksFlag) == 1 {
+		return 1
+	}
+
+	maxFlag := int(math.Pow(float64(peaksFlag[len(peaksFlag)-1]-peaksFlag[0]), 0.5) + 1)
+
+	for i := maxFlag; i > 1; i-- {
+		addressFlag := []int{peaksFlag[0]}
+		for _, val := range peaksFlag[1:] {
+			if val-addressFlag[len(addressFlag)-1] >= i {
+				addressFlag = append(addressFlag, val)
+				if len(addressFlag) >= i {
+					return i
+				}
+			}
+		}
+	}
+
+	return 1
+}
+```

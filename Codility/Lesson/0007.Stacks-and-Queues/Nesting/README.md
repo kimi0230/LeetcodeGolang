@@ -30,3 +30,37 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 
 ## 來源
 https://app.codility.com/programmers/lessons/7-stacks_and_queues/nesting/
+
+## 解答
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Codility/Lesson/0007.Stacks-and-Queues/Nesting/Nesting.go
+
+
+```go
+package Nesting
+
+import "LeetcodeGolang/Utility/structures"
+
+func Solution(S string) int {
+	if len(S) == 0 {
+		return 1
+	}
+	if len(S)%2 != 0 {
+		return 0
+	}
+
+	stack := structures.NewArrayStack()
+	for _, v := range S {
+		val := string(v)
+		if val == "(" {
+			stack.Push(val)
+		} else if val == ")" {
+			stack.Pop()
+		}
+	}
+	if stack.IsEmpty() {
+		return 1
+	} else {
+		return 0
+	}
+}
+```

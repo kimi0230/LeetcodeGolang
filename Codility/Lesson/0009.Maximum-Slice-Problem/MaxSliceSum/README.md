@@ -35,3 +35,28 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 
 ## 來源
 https://app.codility.com/programmers/lessons/9-maximum_slice_problem/max_slice_sum/
+
+## 解答
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Codility/Lesson/0009.Maximum-Slice-Problem/MaxSliceSum/MaxSliceSum.go
+
+
+```go
+package MaxSliceSum
+
+import (
+	"math"
+)
+
+func Solution(A []int) int {
+	if len(A) == 1 {
+		return A[0]
+	}
+	result := math.MinInt64
+	sum := math.MinInt64
+	for i := 0; i < len(A); i++ {
+		sum = int(math.Max(float64(A[i]), float64(A[i])+float64(sum)))
+		result = int(math.Max(float64(sum), float64(result)))
+	}
+	return result
+}
+```
