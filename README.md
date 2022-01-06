@@ -314,8 +314,8 @@
             <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0322.Coin-Change"> Go </a>
         </th>
         <th> Medium </th>
-        <th>  </th>
-        <th>  </th>
+        <th> O(nm) </th>
+        <th> O(n) </th>
     </tr>
     <!-- 0509 -->
     <tr>   
