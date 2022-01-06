@@ -33,3 +33,17 @@ Output: ["h","a","n","n","a","H"]
 ## 來源
 * https://books.halfrost.com/leetcode/ChapterFour/0300~0399/0344.Reverse-String/
 * https://leetcode-cn.com/problems/reverse-string/
+
+## 解答
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/0344.Reverse-Stringm/Reverse-String.go
+
+```go
+package reversestring
+
+func ReverseString(s []byte) {
+	for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1 {
+		s[i], s[j] = s[j], s[i]
+	}
+}
+
+```

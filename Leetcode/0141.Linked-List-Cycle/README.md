@@ -18,3 +18,28 @@ Can you solve it without using extra space?
 ## 來源
 * https://books.halfrost.com/leetcode/ChapterFour/0100~0199/0141.Linked-List-Cycle/
 * https://leetcode-cn.com/problems/linked-list-cycle/
+
+## 解答
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/0141.Linked-List-Cycle/Linked-List-Cycle.go
+
+```go
+package linkedlistcycle
+
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
+
+func HasCycle(head *ListNode) bool {
+	fast := head
+	slow := head
+	for slow != nil && fast != nil && fast.Next != nil {
+		fast = fast.Next.Next
+		slow = slow.Next
+		if slow == fast {
+			return true
+		}
+	}
+	return false
+}
+```
