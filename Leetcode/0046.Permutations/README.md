@@ -43,7 +43,8 @@ def backtrack(路徑, 選擇列表):
         |[3]   |[2]     |[3]   |[1]      |[2]    |[1]   
 結果  [1,2,3]  [1,3,2] [2,1,3] [2,3,1]  [3,1,2]  [3,2,1]
 ```
-![](/assets/leetcode/images/0046_permutations.png)
+<!-- ![](/assets/leetcode/images/0046_permutations.png) -->
+![](https://github.com/kimi0230/assets/blob/master/leetcode/images/0046_permutations.png?raw=true)
 
 - 求出一個數組的排列組合中的所有排列，用 DFS 深搜即可。
 這個問題可以看作有 ñ 個排列成一行的空格，我們需要從左往右依此填入題目給定的 ñ個數，每個數只能使用一次。
