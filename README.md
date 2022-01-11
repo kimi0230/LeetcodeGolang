@@ -17,8 +17,7 @@
     - [Two Pointers](#two-pointers)
     - [Bit Manipulation](#bit-manipulation)
     - [Union Find](#union-find)
-    - [Breadth First Search](#breadth-first-search)
-- [</table>](#table)
+    - [Breadth First Search (BFS)](#breadth-first-search-bfs)
 - [GeeksforGeeks Content](#geeksforgeeks-content)
 - [Codility Content](#codility-content)
 - [Reference](#reference)
@@ -156,6 +155,8 @@
     </tr>
 </table>
 
+---
+
 #### Stack
 <table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
     <tr>   
@@ -182,6 +183,8 @@
         <th> O(1) </th>
     </tr>
 </table>
+
+---
 
 #### Linked List 
 <table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
@@ -224,8 +227,9 @@
     </tr>
 </table>
 
-### Algorithm
+---
 
+### Algorithm
 #### Sort
 <table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
     <tr>   
@@ -253,7 +257,26 @@
     </tr>
 </table>
 
+---
+
 #### Backtracking (回溯法)
+DFS. 解決一個回溯問題, 實際上就是一個決策數的遍歷過程.
+算是一個暴力的窮舉算法
+1. 路徑：也就是已經做出的選擇。
+2. 選擇列表：也就是你當前可以做的選擇。
+3. 結束條件：也就是到達決策樹底層，無法再做選擇的條件。
+```python
+result = []
+def backtrack(路徑, 選擇列表):
+    if 滿足結束條件:
+        result.add(路徑)
+        return
+    
+    for 選擇 in 選擇列表:
+        做選擇(前序)
+        backtrack(路徑, 選擇列表)
+        撤銷選擇(後序)
+```
 <table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
     <tr>   
         <th>  No. </th>
@@ -280,7 +303,29 @@
     </tr>
 </table>
 
-#### Dynamic Programming 
+---
+
+#### Dynamic Programming
+動態規劃問題的一般形式就是求**最值**, **最長**遞增子序列, **最小**編輯距離等. 核心問題是窮舉
+1. 重疊子問題
+   1. memory table
+   2. DP table
+2. 最優子結構
+3. 狀態轉移方程式
+   1. 這問題的 base case (最簡單情況) 是什麼?
+   2. 這問題有什麼**狀態**
+   3. 對於每個狀態, 可以做出什麼**選擇**, 使得狀態發生改變
+   4. 如何定義 dp 數組/函數的含義來表現**狀態**和**選擇**?
+
+```python
+# 初始化 base case
+dp[0][0][...] = base
+# 進行狀態轉移
+for 狀態1 in 狀態1的所有取值：
+    for 狀態2 in 狀態2的所有取值：
+        for ...
+            dp[狀態1][狀態2][...] = 求最值(選擇1，選擇2...)
+```
 <table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
     <tr>   
         <th>  No. </th>
@@ -335,6 +380,8 @@
     </tr>
 </table>
 
+---
+
 #### Sliding Window
 <table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
     <tr>   
@@ -361,6 +408,8 @@
         <th> O(1), O(1), O(n) </th>
     </tr>
 </table>
+
+---
 
 #### Two Pointers
 <table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
@@ -389,6 +438,8 @@
     </tr>
 </table>
 
+---
+
 #### Bit Manipulation
 <table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
     <tr>   
@@ -415,6 +466,8 @@
         <th> O(1) </th>
     </tr>
 </table>
+
+---
 
 #### Union Find
 <table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
@@ -443,7 +496,46 @@
     </tr>
 </table>
 
-#### Breadth First Search
+---
+
+#### Breadth First Search (BFS)
+DFS 算法可以被認為是[回溯算法](#backtracking-回溯法), BFS算法都是用**Queue**這種數據結構, 每次將一個截短周圍的所有節點加入Queue.
+BFS 找到的路徑一定是最短的, 但是代價是**空間複雜度**比DFS大
+[BFS vs DFS](https://github.com/kimi0230/MyGoNote/blob/main/structures/BFS_vs_DFS.md)
+```c++
+// 計算從起點 start 到 終點 target 的最點距離
+int BFS(Node start, Node targe){
+    Queue<Node> q; // 核心數據結構
+    Set<Node> visited; // 避免走回頭路
+    
+    q.offer(start); // 將起點加入 Queue
+    visited.add(start);
+    int step = 0; // 紀錄擴散的步數
+
+    while(q not empty) {
+        int sz = q.size();
+        // 當前 Queue 中的所有節點向四周擴散
+        for (int i = 0 ; i < sz; i++) {
+            Node cur = q.poll();
+            // 這裡判斷是否到達終點
+            if (cur is target) {
+                return step;
+            }
+
+            // 將cur 的相鄰節點加入 Queue
+            for (Node x : cur.adj()) {
+                if (x not in visited) {
+                    q.offer(x);
+                    visited.add(x);
+                }
+            }
+        }
+        // 在這裡更新步數
+        step++
+    }
+}
+```
+
 <table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
     <tr>   
         <th>  No. </th>
@@ -469,7 +561,9 @@
         <th> </th>
     </tr>
 </table>
+
 ---
+
 ## [GeeksforGeeks](https://www.geeksforgeeks.org/) Content
 | Topic    |  Title  | No. |  Solution  |  Difficulty |  TimeComplexity	| SpaceComplexity|
 |:--------:|:--------:|:--------------------------------------------------------------|:--------:|:--------:|:--------:|:--------:|
@@ -1096,3 +1190,4 @@
 * [halfrost](https://books.halfrost.com/leetcode/)
 * [GeeksforGeeks](https://www.geeksforgeeks.org/)
 * [Codility](https://app.codility.com/programmers/)
+* [labuladong 算法小抄](https://github.com/labuladong/fucking-algorithm)
