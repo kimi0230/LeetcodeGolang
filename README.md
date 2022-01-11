@@ -17,6 +17,8 @@
     - [Two Pointers](#two-pointers)
     - [Bit Manipulation](#bit-manipulation)
     - [Union Find](#union-find)
+    - [Breadth First Search](#breadth-first-search)
+- [</table>](#table)
 - [GeeksforGeeks Content](#geeksforgeeks-content)
 - [Codility Content](#codility-content)
 - [Reference](#reference)
@@ -441,6 +443,32 @@
     </tr>
 </table>
 
+#### Breadth First Search
+<table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
+    <tr>   
+        <th>  No. </th>
+        <th> Topic </th>
+        <th> Title </th>
+        <th> Solution </th>
+        <th> Difficulty </th>
+        <th> TimeComplexity </th>
+        <th> SpaceComplexity</th>
+    </tr>
+    <!-- 0310 -->
+    <tr>   
+        <th> 0310</th>
+        <th> Breadth First Search </th>
+        <th> 
+            <a href="https://leetcode.com/problems/minimum-height-trees/"> Minimum Height Trees </a>
+        </th>
+        <th>
+            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0310.Minimum-Height-Trees"> Go </a>
+        </th>
+        <th> Medium </th>
+        <th> </th>
+        <th> </th>
+    </tr>
+</table>
 ---
 ## [GeeksforGeeks](https://www.geeksforgeeks.org/) Content
 | Topic    |  Title  | No. |  Solution  |  Difficulty |  TimeComplexity	| SpaceComplexity|
