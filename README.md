@@ -215,6 +215,7 @@ int BFS(Node start, Node targe){
 | No. | Title | Solution | Difficulty | Time | Space | Topic |
 |-----|:-----:|:--------:|------------|------|-------|-------|
 | 0310 | [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0310.Minimum-Height-Trees) | Medium |  |  | Breadth First Search |
+| 0752 | [752. Open the Lock](https://leetcode.com/problems/open-the-lock/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0752.Open-the-Lock) | Medium |  |  | Breadth First Search |
 
 ---
 
@@ -842,6 +843,8 @@ int BFS(Node start, Node targe){
 * [leetcode](https://leetcode.com/)
 * [leetcode-cn](https://leetcode-cn.com/)
 * [halfrost](https://books.halfrost.com/leetcode/)
+* [anakin](https://github.com/anakin/golang-leetcode)
+* [wufenggirl](https://github.com/wufenggirl/LeetCode-in-Golang)
 * [GeeksforGeeks](https://www.geeksforgeeks.org/)
 * [Codility](https://app.codility.com/programmers/)
 * [labuladong 算法小抄](https://github.com/labuladong/fucking-algorithm)
