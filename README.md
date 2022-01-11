@@ -45,115 +45,15 @@
 
 ### Data Structure
 #### Array
-<table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
-    <tr>   
-        <th>  No. </th>
-        <th> Topic </th>
-        <th> Title </th>
-        <th> Solution </th>
-        <th> Difficulty </th>
-        <th> TimeComplexity </th>
-        <th> SpaceComplexity</th>
-    </tr>
-    <!-- 0001 -->
-    <tr>   
-        <th> 0001</th>
-        <th> Array </th>
-        <th> 
-            <a href="https://leetcode.com/problems/two-sum/"> Two Sum </a>
-        </th>
-        <th>
-            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0001.Two-Sum"> Go </a>
-        </th>
-        <th> Easy </th>
-        <th> O(n) </th>
-        <th> O(n) </th>
-    </tr>
-    <!-- 0003 -->
-    <tr>   
-        <th> 0003</th>
-        <th> Array </th>
-        <th> 
-            <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/"> Longest Substring Without Repeating Characters </a>
-        </th>
-        <th>
-            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0003.Longest-Substring-Without-Repeating-Characters"> Go </a>
-        </th>
-        <th> Medium </th>
-        <th> O(n) </th>
-        <th> O(1) </th>
-    </tr>
-    <!-- 0015 -->
-    <tr>   
-        <th> 0015</th>
-        <th> Array </th>
-        <th> 
-            <a href="https://leetcode.com/problems/3sum/"> 3 Sum </a>
-        </th>
-        <th>
-            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0015.3Sum"> Go </a>
-        </th>
-        <th> Medium </th>
-        <th> O(n^2) </th>
-        <th> O(n) </th>
-    </tr>
-    <!-- 0027 -->
-    <tr>   
-        <th> 0027</th>
-        <th> Array </th>
-        <th> 
-            <a href="https://leetcode.com/problems/remove-element/"> Remove Element </a>
-        </th>
-        <th>
-            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0027.Remove-Element"> Go </a>
-        </th>
-        <th> Easy </th>
-        <th> O(n) </th>
-        <th> O(1) </th>
-    </tr>
-    <!-- 0035 -->
-    <tr>   
-        <th> 0035</th>
-        <th> Array </th>
-        <th> 
-            <a href="https://leetcode.com/problems/search-insert-position/"> Search Insert Position </a>
-        </th>
-        <th>
-            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0035.Search-Insert-Position"> Go </a>
-        </th>
-        <th> Easy </th>
-        <th> O(n), O(logn) </th>
-        <th> O(1) </th>
-    </tr>
-    <!-- 0059 -->
-    <tr>   
-        <th> 0059</th>
-        <th> Array </th>
-        <th> 
-            <a href="https://leetcode.com/problems/spiral-matrix-ii/"> Spiral Matrix II </a>
-        </th>
-        <th>
-            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0059.Spiral-Matrix-II"> Go </a>
-        </th>
-        <th> Medium </th>
-        <th> O(n)) </th>
-        <th> O(n^2) </th>
-    </tr>
-    <!-- 0088 -->
-    <tr>   
-        <th> 0088</th>
-        <th> Array </th>
-        <th> 
-            <a href="https://leetcode.com/problems/merge-sorted-array/"> Merge Sorted Array </a>
-        </th>
-        <th>
-            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0088.Merge-Sorted-Array"> Go </a>
-        </th>
-        <th> Easy </th>
-        <th> O(n)) </th>
-        <th> O(1) </th>
-    </tr>
-</table>
+| No. | Title | Solution | Difficulty | Time | Space | Topic |
+|--|:--:|:--:|--|--|--|--|
+| 0001 | [Two Sum](https://leetcode.com/problems/two-sum/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0001.Two-Sum) | Easy | O(n) | O(n) | Array |
+| 0003 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0003.Longest-Substring-Without-Repeating-Characters) | Medium | O(n) | O(1) | Array |
+| 0015 | [3 Sum](https://leetcode.com/problems/3sum/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0015.3Sum) | Medium | O(n^2) | O(n) | Array |
+| 0027 | [Remove Element](https://leetcode.com/problems/remove-element/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0027.Remove-Element) | Easy | O(n) | O(1) | Array |
+| 0035 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0035.Search-Insert-Position) | Easy |  O(n), O(logn) | O(1) | Array |
+| 0059 | [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0059.Spiral-Matrix-II) | Medium | O(n) | O(n^2) | Array |
+| 0088 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0088.Merge-Sorted-Array) | Easy | O(n) | O(1) | Array |
 
 ---
 
