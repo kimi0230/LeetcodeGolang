@@ -17,7 +17,7 @@
     - [Two Pointers](#two-pointers)
     - [Bit Manipulation](#bit-manipulation)
     - [Union Find](#union-find)
-    - [Breadth First Search (BFS)](#breadth-first-search-bfs)
+    - [Breadth First Search](#breadth-first-search)
 - [GeeksforGeeks Content](#geeksforgeeks-content)
 - [Codility Content](#codility-content)
 - [Reference](#reference)
@@ -58,104 +58,28 @@
 ---
 
 #### Stack
-<table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
-    <tr>   
-        <th>  No. </th>
-        <th> Topic </th>
-        <th> Title </th>
-        <th> Solution </th>
-        <th> Difficulty </th>
-        <th> TimeComplexity </th>
-        <th> SpaceComplexity</th>
-    </tr>
-    <!-- 0094 -->
-    <tr>   
-        <th> 0094</th>
-        <th> Stack </th>
-        <th> 
-            <a href="https://leetcode.com/problems/binary-tree-inorder-traversal/"> Binary Tree Inorder Traversal </a>
-        </th>
-        <th>
-            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0094.Binary-Tree-Inorder-Traversal"> Go </a>
-        </th>
-        <th> Medium </th>
-        <th> O(n)) </th>
-        <th> O(1) </th>
-    </tr>
-</table>
+
+| No. | Title | Solution | Difficulty | Time | Space | Topic |
+|-----|:-----:|:--------:|------------|------|-------|-------|
+| 0094 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0094.Binary-Tree-Inorder-Traversal) | Medium | O(n) | O(1) | Stack |
 
 ---
 
-#### Linked List 
-<table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
-    <tr>   
-        <th>  No. </th>
-        <th> Topic </th>
-        <th> Title </th>
-        <th> Solution </th>
-        <th> Difficulty </th>
-        <th> TimeComplexity </th>
-        <th> SpaceComplexity</th>
-    </tr>
-    <!-- 0141 -->
-    <tr>   
-        <th> 0141</th>
-        <th> Linked List </th>
-        <th> 
-            <a href="https://leetcode.com/problems/linked-list-cycle"> Linked List Cycle </a>
-        </th>
-        <th>
-            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0141.Linked-List-Cycle"> Go </a>
-        </th>
-        <th> Easy </th>
-        <th> O(n) </th>
-        <th> O(1) </th>
-    </tr>
-    <!-- 0203 -->
-    <tr>   
-        <th> 0203</th>
-        <th> Linked List </th>
-        <th> 
-            <a href="https://leetcode.com/problems/remove-linked-list-elements/"> Remove Linked List Elements </a>
-        </th>
-        <th>
-            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0203.Remove-Linked-List-Elements"> Go </a>
-        </th>
-        <th> Easy </th>
-        <th> O(n) </th>
-        <th> O(1) </th>
-    </tr>
-</table>
+#### Linked List
+
+| No. | Title | Solution | Difficulty | Time | Space | Topic |
+|-----|:-----:|:--------:|------------|------|-------|-------|
+| 0141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0141.Linked-List-Cycle) | Easy | O(n) | O(1) | Linked List |
+| 0203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0203.Remove-Linked-List-Elements) | Easy | O(n) | O(1) | Linked List |
 
 ---
 
 ### Algorithm
 #### Sort
-<table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
-    <tr>   
-        <th>  No. </th>
-        <th> Topic </th>
-        <th> Title </th>
-        <th> Solution </th>
-        <th> Difficulty </th>
-        <th> TimeComplexity </th>
-        <th> SpaceComplexity</th>
-    </tr>
-    <!-- 0075 -->
-    <tr>   
-        <th> 0075</th>
-        <th> Sort </th>
-        <th> 
-            <a href="https://leetcode.com/problems/sort-colors/"> Sort Colors </a>
-        </th>
-        <th>
-            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0075.Sort-Colors"> Go </a>
-        </th>
-        <th> Medium </th>
-        <th> O(n)) </th>
-        <th> O(1) </th>
-    </tr>
-</table>
+| No. | Title | Solution | Difficulty | Time | Space | Topic |
+|-----|:-----:|:--------:|------------|------|-------|-------|
+| 0075 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0075.Sort-Color) | Medium | O(n) | O(1) | Sort |
+
 
 ---
 
@@ -177,31 +101,10 @@ def backtrack(路徑, 選擇列表):
         backtrack(路徑, 選擇列表)
         撤銷選擇(後序)
 ```
-<table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
-    <tr>   
-        <th>  No. </th>
-        <th> Topic </th>
-        <th> Title </th>
-        <th> Solution </th>
-        <th> Difficulty </th>
-        <th> TimeComplexity </th>
-        <th> SpaceComplexity</th>
-    </tr>
-    <!-- 0046 -->
-    <tr>   
-        <th> 0046</th>
-        <th> Backtracking </th>
-        <th> 
-            <a href="https://leetcode.com/problems/permutations/"> Permutations (排列) </a>
-        </th>
-        <th>
-            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0046.Permutations"> Go </a>
-        </th>
-        <th> Medium </th>
-        <th> O(n) </th>
-        <th> O(n) </th>
-    </tr>
-</table>
+
+| No. | Title | Solution | Difficulty | Time | Space | Topic |
+|-----|:-----:|:--------:|------------|------|-------|-------|
+| 0046 | [Permutations (全排列)](https://leetcode.com/problems/permutations/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0046.Permutations) | Medium | O(n) | O(n) | Backtracking |
 
 ---
 
@@ -226,182 +129,52 @@ for 狀態1 in 狀態1的所有取值：
         for ...
             dp[狀態1][狀態2][...] = 求最值(選擇1，選擇2...)
 ```
-<table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
-    <tr>   
-        <th>  No. </th>
-        <th> Topic </th>
-        <th> Title </th>
-        <th> Solution </th>
-        <th> Difficulty </th>
-        <th> TimeComplexity </th>
-        <th> SpaceComplexity</th>
-    </tr>
-    <!-- 0053 -->
-    <tr>   
-        <th> 0053</th>
-        <th> Dynamic Programming </th>
-        <th> 
-            <a href="https://leetcode.com/problems/maximum-subarray/"> Maximum Subarray </a>
-        </th>
-        <th>
-            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0053.Maximum-Subarray"> Go </a>
-        </th>
-        <th> Easy </th>
-        <th> O(n) </th>
-        <th> O(n) </th>
-    </tr>
-    <!-- 0322 -->
-    <tr>   
-        <th> 0322</th>
-        <th> Dynamic Programming </th>
-        <th> 
-            <a href="https://leetcode.com/problems/coin-change/"> Coin Change </a>
-        </th>
-        <th>
-            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0322.Coin-Change"> Go </a>
-        </th>
-        <th> Medium </th>
-        <th> O(nm) </th>
-        <th> O(n) </th>
-    </tr>
-    <!-- 0509 -->
-    <tr>   
-        <th> 0509</th>
-        <th> Dynamic Programming </th>
-        <th> 
-            <a href="https://leetcode.com/problems/fibonacci-number/"> Fibonacci Number </a>
-        </th>
-        <th>
-            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0509.Fibonacci-Number"> Go </a>
-        </th>
-        <th> Easy </th>
-        <th> 很多解法 </th>
-        <th> 很多解法 </th>
-    </tr>
-</table>
+
+| No. | Title | Solution | Difficulty | Time | Space | Topic |
+|-----|:-----:|:--------:|------------|------|-------|-------|
+| 0053 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0053.Maximum-Subarray) | Easy | O(n) | O(n) | Dynamic Programming |
+| 0322 | [Coin Change](https://leetcode.com/problems/coin-change/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0322.Coin-Change) | Medium | O(nm) | O(n) | Dynamic Programming |
+| 0509 | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0509.Fibonacci-Number) | Easy | 很多解法 | 很多解法 | Dynamic Programming |
 
 ---
 
 #### Sliding Window
-<table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
-    <tr>   
-        <th>  No. </th>
-        <th> Topic </th>
-        <th> Title </th>
-        <th> Solution </th>
-        <th> Difficulty </th>
-        <th> TimeComplexity </th>
-        <th> SpaceComplexity</th>
-    </tr>
-    <!-- 0209 -->
-    <tr>   
-        <th> 0209</th>
-        <th> Sliding Window </th>
-        <th> 
-            <a href="https://leetcode.com/problems/minimum-size-subarray-sum/"> Minimum Size Subarray Sum </a>
-        </th>
-        <th>
-            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0209.Minimum-Size-Subarray-Sum"> Go </a>
-        </th>
-        <th> Medium </th>
-        <th> O(n^2), O(n), O(nlog n) </th>
-        <th> O(1), O(1), O(n) </th>
-    </tr>
-</table>
+
+| No. | Title | Solution | Difficulty | Time | Space | Topic |
+|-----|:-----:|:--------:|------------|------|-------|-------|
+| 0209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0209.Minimum-Size-Subarray-Sum) | Medium | O(n^2) / O(n) / O(nlog n) |  O(1) / O(1) / O(n) | Sliding Window |
 
 ---
 
 #### Two Pointers
-<table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
-    <tr>   
-        <th>  No. </th>
-        <th> Topic </th>
-        <th> Title </th>
-        <th> Solution </th>
-        <th> Difficulty </th>
-        <th> TimeComplexity </th>
-        <th> SpaceComplexity</th>
-    </tr>
-    <!-- 0344 -->
-    <tr>   
-        <th> 0344</th>
-        <th> Two Pointers</th>
-        <th> 
-            <a href="https://leetcode.com/problems/reverse-string/"> Reverse String </a>
-        </th>
-        <th>
-            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0344.Reverse-String"> Go </a>
-        </th>
-        <th> Easy </th>
-        <th> O(n) </th>
-        <th> O(1) </th>
-    </tr>
-</table>
+
+| No. | Title | Solution | Difficulty | Time | Space | Topic |
+|-----|:-----:|:--------:|------------|------|-------|-------|
+| 0344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0344.Reverse-String) | Easy | O(n) |  O(1) | Two Pointers |
 
 ---
 
 #### Bit Manipulation
-<table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
-    <tr>   
-        <th>  No. </th>
-        <th> Topic </th>
-        <th> Title </th>
-        <th> Solution </th>
-        <th> Difficulty </th>
-        <th> TimeComplexity </th>
-        <th> SpaceComplexity</th>
-    </tr>
-    <!-- 0693 -->
-    <tr>   
-        <th> 0693</th>
-        <th> Bit Manipulation</th>
-        <th> 
-            <a href="https://leetcode.com/problems/binary-number-with-alternating-bits/"> Binary Number with Alternating Bits </a>
-        </th>
-        <th>
-            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0693.Binary-Number-with-Alternating-Bits"> Go </a>
-        </th>
-        <th> Easy </th>
-        <th> O(n), O(1) </th>
-        <th> O(1) </th>
-    </tr>
-</table>
+
+| No. | Title | Solution | Difficulty | Time | Space | Topic |
+|-----|:-----:|:--------:|------------|------|-------|-------|
+| 0693 | [Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0693.Binary-Number-with-Alternating-Bits) | Easy | O(n)/ O(1) |  O(1) / O(1) | Bit Manipulation |
 
 ---
 
 #### Union Find
-<table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
-    <tr>   
-        <th>  No. </th>
-        <th> Topic </th>
-        <th> Title </th>
-        <th> Solution </th>
-        <th> Difficulty </th>
-        <th> TimeComplexity </th>
-        <th> SpaceComplexity</th>
-    </tr>
-    <!-- 0721 -->
-    <tr>   
-        <th> 0721</th>
-        <th> Union Find</th>
-        <th> 
-            <a href="https://leetcode.com/problems/accounts-merge/"> Accounts Merge </a>
-        </th>
-        <th>
-            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0721.Accounts-Merge"> Go </a>
-        </th>
-        <th> Easy </th>
-        <th> O(n), O(n log n) </th>
-        <th> O(n), O(n) </th>
-    </tr>
-</table>
+
+| No. | Title | Solution | Difficulty | Time | Space | Topic |
+|-----|:-----:|:--------:|------------|------|-------|-------|
+| 0721 | [Accounts Merge](https://leetcode.com/problems/accounts-merge/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0721.Accounts-Merge) | Easy | O(n) / O(n log n) |  O(n) / O(n) | Union Find |
 
 ---
 
-#### Breadth First Search (BFS)
+#### Breadth First Search
 DFS 算法可以被認為是[回溯算法](#backtracking-回溯法), BFS算法都是用**Queue**這種數據結構, 每次將一個截短周圍的所有節點加入Queue.
 BFS 找到的路徑一定是最短的, 但是代價是**空間複雜度**比DFS大
 [BFS vs DFS](https://github.com/kimi0230/MyGoNote/blob/main/structures/BFS_vs_DFS.md)
+
 ```c++
 // 計算從起點 start 到 終點 target 的最點距離
 int BFS(Node start, Node targe){
@@ -436,31 +209,9 @@ int BFS(Node start, Node targe){
 }
 ```
 
-<table cellspacing="1" cellpadding="1" frame="solid"  align='border_left'>
-    <tr>   
-        <th>  No. </th>
-        <th> Topic </th>
-        <th> Title </th>
-        <th> Solution </th>
-        <th> Difficulty </th>
-        <th> TimeComplexity </th>
-        <th> SpaceComplexity</th>
-    </tr>
-    <!-- 0310 -->
-    <tr>   
-        <th> 0310</th>
-        <th> Breadth First Search </th>
-        <th> 
-            <a href="https://leetcode.com/problems/minimum-height-trees/"> Minimum Height Trees </a>
-        </th>
-        <th>
-            <a href="https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0310.Minimum-Height-Trees"> Go </a>
-        </th>
-        <th> Medium </th>
-        <th> </th>
-        <th> </th>
-    </tr>
-</table>
+| No. | Title | Solution | Difficulty | Time | Space | Topic |
+|-----|:-----:|:--------:|------------|------|-------|-------|
+| 0310 | [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0310.Minimum-Height-Trees) | Medium |  |  | Breadth First Search |
 
 ---
 
