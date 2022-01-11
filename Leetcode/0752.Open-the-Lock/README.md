@@ -1,5 +1,5 @@
 # [752. Open the Lock](https://leetcode.com/problems/open-the-lock/) 
-###### tags: `Medium` `Leetcode`
+###### tags: `Medium` `Leetcode` `BFS`
 
 You have a lock in front of you with 4 circular wheels. Each wheel has 10 slots: '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'. The wheels can rotate freely and wrap around: for example we can turn '9' to be '0', or '0' to be '9'. Each move consists of turning one wheel one slot.
 
@@ -51,6 +51,7 @@ Constraints:
 再以這八種密碼為基礎, 對每總密碼再轉一下, 窮舉出每個可能
 可以抽象成一副圖, 每個節點有8個相鄰的節點, 讓你求出最短距離
 
+還可以用雙向BFS, 從起點跟終點開始擴散, 當兩邊有交集時停止
 
 ## 來源
 * https://leetcode.com/problems/open-the-lock/
@@ -62,6 +63,7 @@ https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/0310.Minimum-Hei
 ```go
 package openthelock
 
+// 方法ㄧ: 單向BFS
 func OpenLock(deadends []string, target string) int {
 	if target == "0000" {
 		return 0
@@ -115,6 +117,89 @@ func OpenLock(deadends []string, target string) int {
 	return -1
 }
 
+/* Note: Golang set
+type void struct{}
+var member void
+
+set := make(map[string]void) // New empty set
+set["Foo"] = member          // Add
+for k := range set {         // Loop
+    fmt.Println(k)
+}
+delete(set, "Foo")      // Delete
+size := len(set)        // Size
+_, exists := set["Foo"] // Membership
+*/
+
+// 方法二: 雙向BFS. 不在使用 Queue而是用 hashset, 快速判斷兩者是否交集
+// 從起點跟終點開始擴散, 當兩邊有交集時停止
+func OpenLockBiDirection(deadends []string, target string) int {
+	if target == "0000" {
+		return 0
+	}
+	targetNum := strToInt(target)
+
+	// 紀錄已窮舉過的密碼, 防止走回頭路
+	visited := make([]bool, 10000)
+	for _, deadend := range deadends {
+		num := strToInt(deadend)
+		if num == 0 {
+			return -1
+		}
+		visited[num] = true
+	}
+
+	depth := 0
+
+	// 起點跟終點初始化
+	curDepth := make(map[int16]struct{})
+	nextDepth := make(map[int16]struct{})
+	curDepth[0] = struct{}{}
+	nextDepth[targetNum] = struct{}{}
+
+	var nextNum int16
+
+	for len(curDepth) != 0 && len(nextDepth) != 0 {
+		// 儲存 curDepth 的擴散結果
+		tmp := make(map[int16]struct{})
+
+		// curDepth的節點向外擴散
+		for curNum := range curDepth {
+			// 判斷是否達到終點
+			if visited[curNum] {
+				continue
+			}
+			_, exists := nextDepth[curNum]
+			if exists {
+				return depth
+			}
+			visited[curNum] = true
+
+			// 遍歷八種組合
+			for incrementer := int16(1000); incrementer > 0; incrementer /= 10 {
+				nextNum = PlusOne(curNum, incrementer)
+				if !visited[nextNum] {
+					tmp[nextNum] = struct{}{}
+				}
+
+				nextNum = MinusOne(curNum, incrementer)
+				if !visited[nextNum] {
+					tmp[nextNum] = struct{}{}
+				}
+			}
+		}
+
+		// 小技巧, 這裏交換 curDepth, nextDepth .
+		// 下一輪 whihe會擴散 nextDepth.
+		// 所以只要默認擴散curDepth, 就相當於輪流擴散curDepth, nextDepth
+		curDepth, nextDepth = nextDepth, tmp
+		// 增加步數
+		depth++
+	}
+
+	return -1
+}
+
 func PlusOne(curNum int16, incrementer int16) (nextNum int16) {
 	digit := (curNum / incrementer) % 10
 	if digit == 9 {
@@ -138,4 +223,6 @@ func MinusOne(curNum int16, incrementer int16) (nextNum int16) {
 func strToInt(str string) int16 {
 	return int16(str[0]-'0')*1000 + int16(str[1]-'0')*100 + int16(str[2]-'0')*10 + int16(str[3]-'0')
 }
+
+
 ```
