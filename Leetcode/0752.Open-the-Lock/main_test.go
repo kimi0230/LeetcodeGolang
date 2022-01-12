@@ -42,6 +42,14 @@ func TestOpenLockBiDirection(t *testing.T) {
 	}
 }
 
+func TestOpenLockBiDirectionＯptimization(t *testing.T) {
+	for _, tt := range tests {
+		if got := OpenLockBiDirectionOptimization(tt.arg1, tt.arg2); got != tt.want {
+			t.Errorf("got = %v \n want = %v \n", got, tt.want)
+		}
+	}
+}
+
 func BenchmarkOpenLock(b *testing.B) {
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
@@ -56,14 +64,22 @@ func BenchmarkOpenLockBiDirection(b *testing.B) {
 	}
 }
 
+func BenchmarkOpenLockBiDirectionOptimization(b *testing.B) {
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		OpenLockBiDirectionOptimization(tests[i%3].arg1, tests[i%3].arg2)
+	}
+}
+
 /*
 go test -benchmem -run=none LeetcodeGolang/Leetcode/0752.Open-the-Lock -bench=.
 goos: darwin
 goarch: amd64
 pkg: LeetcodeGolang/Leetcode/0752.Open-the-Lock
-cpu: Intel(R) Core(TM) i5-6400 CPU @ 2.70GHz
-BenchmarkOpenLock-4                        10004            138853 ns/op            5543 B/op         12 allocs/op
-BenchmarkOpenLockBiDirection-4             61729             20114 ns/op            1723 B/op         28 allocs/op
+cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+BenchmarkOpenLock-8                                12866             92523 ns/op            5543 B/op         12 allocs/op
+BenchmarkOpenLockBiDirection-8                     79819             14357 ns/op            1722 B/op         28 allocs/op
+BenchmarkOpenLockBiDirectionOptimization-8         85179             14486 ns/op            1721 B/op         28 allocs/op
 PASS
-ok      LeetcodeGolang/Leetcode/0752.Open-the-Lock      3.750s
+ok      LeetcodeGolang/Leetcode/0752.Open-the-Lock      4.820s
 */
