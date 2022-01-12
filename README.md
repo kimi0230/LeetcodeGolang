@@ -150,9 +150,13 @@ for 狀態1 in 狀態1的所有取值：
 ---
 
 #### Two Pointers
+分為兩類 1. "快,慢指針" 2. "左,右指針"
+1. 快,慢指針: 主要解決 linkedlist問題, 典型的判斷linkedlist是否包含環
+2. 左,右指針: 主要解決array(或 string)中的問題, 如二分搜尋.
 
 | No. | Title | Solution | Difficulty | Time | Space | Topic |
 |-----|:-----:|:--------:|------------|------|-------|-------|
+| 0141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0141.Linked-List-Cycle) | Easy | O(n) | O(1) | Linked List, Two Pointers |
 | 0344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0344.Reverse-String) | Easy | O(n) |  O(1) | Two Pointers |
 
 ---
