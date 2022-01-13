@@ -28,5 +28,6 @@ func DetectCycle(head *ListNode) *ListNode {
 		fast = fast.Next
 		slow = slow.Next
 	}
+	// 兩個指針相遇的點就是環的起點
 	return slow
 }
