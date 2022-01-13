@@ -51,7 +51,7 @@ Constraints:
 * https://leetcode.com/problems/linked-list-cycle-ii/
 
 ## 解答
-https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/0142.Linked-List-Cycle/Linked-List-CycleII.go
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/0142.Linked-List-CycleII/main.go
 
 ```go
 package linkedlistcycleII
