@@ -131,10 +131,12 @@ for 狀態1 in 狀態1的所有取值：
 ---
 
 #### Two Pointers
+只要array有序, 就應該想到雙指針技巧
 分為兩類 1. "快,慢指針" 2. "左,右指針"
-1. 快,慢指針: 主要解決 linkedlist 問題, 典型的判斷 linkedlist 是否包含環
-2. 左,右指針: 主要解決array(或 string)中的問題, 如二分搜尋.
-https://labuladong.gitee.io/algo/2/20/56/
+   1. 快,慢指針: 主要解決 linkedlist 問題, 典型的判斷 linkedlist 是否包含環
+   2. 左,右指針: 主要解決array(或 string)中的問題, 如二分搜尋.
+
+https://labuladong.gitee.io/algo/2/21/57/
 
 | No. | Title | Solution | Difficulty | Time | Space | Topic |
 |-----|:-----:|:--------:|------------|------|-------|-------|
