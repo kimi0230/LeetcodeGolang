@@ -18,6 +18,7 @@
     - [Bit Manipulation](#bit-manipulation)
     - [Union Find](#union-find)
     - [Breadth First Search](#breadth-first-search)
+    - [Binary Search](#binary-search)
 - [GeeksforGeeks Content](#geeksforgeeks-content)
 - [Codility Content](#codility-content)
 - [Reference](#reference)
@@ -207,6 +208,16 @@ int BFS(Node start, Node targe){
 |-----|:-----:|:--------:|------------|------|-------|-------|
 | 0310 | [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0310.Minimum-Height-Trees) | Medium |  |  | Breadth First Search |
 | 0752 | [752. Open the Lock](https://leetcode.com/problems/open-the-lock/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0752.Open-the-Lock) | Medium |  |  | Breadth First Search |
+
+---
+#### Binary Search
+分析二分搜尋技巧: 不要出現 **else**, 而是把所有情況用 **else if** 寫清楚.
+計算 mid 時需要防止溢出
+
+| No. | Title | Solution | Difficulty | Time | Space | Topic |
+|-----|:-----:|:--------:|------------|------|-------|-------|
+| 0704 | [704. Binary Search](https://leetcode.com/problems/binary-search/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0704.Binary-Search) | Easy | 最差:O(long n)<br> 最佳O(1)剛好在中間 | 迭代: O(1) <br/> 遞迴O(log n) | Binary Search |
+
 
 ---
 
