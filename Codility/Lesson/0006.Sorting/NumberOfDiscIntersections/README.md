@@ -39,12 +39,13 @@ A[0] = 1, 代表在(0,0)的位置上有一個半徑為1的圓. 找出圓相交�
 
 ## 解題思路
 * 方法一: 對於第i，j個圓來說，如果兩個原要相交的話
-<a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{A[i]&space;&plus;&space;A[j]&space;>=&space;j&space;-&space;i,&space;\,\,&space;\,&space;\,&space;i\ne&space;j}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{A[i]&space;&plus;&space;A[j]&space;>=&space;j&space;-&space;i,&space;\,\,&space;\,&space;\,&space;i\ne&space;j}" title="\mathbf{A[i] + A[j] >= j - i, \,\, \, \, i\ne j}" /></a>
+![](https://github.com/kimi0230/assets/blob/master/images/NumberOfDiscIntersections.gif?raw=true)
+
 參考SolutionDirect. 時間複雜度為O(n^2)
 * 方法二
 也就是將原來的二維的線段列表變為2個一維的列表
 首先遍歷數組A得到A[i]+i組成的數組i_limit，以及j-A[j]組成的數組j_limit。然後再遍歷數組i_limit中的元素S，利用二分查找算法得到數組j_limit中不大於S的元素個數。前一個操作時間複雜度是O(N)，二分查找算法時間複雜度是O(LogN)，因此最終的時間複雜度為O(N*logN)。參考Solution。
-<a href="https://www.codecogs.com/eqnedit.php?latex=\\&space;\mathbf{A[i]&space;&plus;&space;A[j]&space;>=&space;j&space;-&space;i,&space;\,\,&space;\,&space;\,&space;i\ne&space;j}&space;\\&space;\\&space;{\color{Red}&space;\Rightarrow&space;\mathbf{A[i]&space;&plus;&space;i&space;>=&space;j&space;-&space;A[j],&space;\,\,&space;\,&space;\,&space;i\ne&space;j}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\\&space;\mathbf{A[i]&space;&plus;&space;A[j]&space;>=&space;j&space;-&space;i,&space;\,\,&space;\,&space;\,&space;i\ne&space;j}&space;\\&space;\\&space;{\color{Red}&space;\Rightarrow&space;\mathbf{A[i]&space;&plus;&space;i&space;>=&space;j&space;-&space;A[j],&space;\,\,&space;\,&space;\,&space;i\ne&space;j}}" title="\\ \mathbf{A[i] + A[j] >= j - i, \,\, \, \, i\ne j} \\ \\ {\color{Red} \Rightarrow \mathbf{A[i] + i >= j - A[j], \,\, \, \, i\ne j}}" /></a>
+![](https://github.com/kimi0230/assets/blob/master/images/NumberOfDiscIntersections2.gif?raw=true)
 
 
 ## 來源
