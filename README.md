@@ -24,6 +24,7 @@
 - [Reference](#reference)
 ### Data Structure
 #### Array
+
 | No. | Title | Solution | Difficulty | Time | Space | Topic |
 |--|:--:|:--:|--|--|--|--|
 | 0001 | [Two Sum](https://leetcode.com/problems/two-sum/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0001.Two-Sum) | Easy | O(n) | O(n) | Array |
