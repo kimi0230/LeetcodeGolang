@@ -1,4 +1,5 @@
 # [704. Binary Search](https://leetcode.com/problems/binary-search/)
+###### tags: `Easy` `Leetcode` `Binary Search`
 
 ## 題目
 
@@ -134,6 +135,65 @@ func BinarySearchRecursively(nums []int, target int, start int, end int) int {
 	} else {
 		return BinarySearchRecursively(nums, target, start, middle-1)
 	}
+}
+
+// 有點類似 nums 小於 target的元素有幾個
+func LeftBound(nums []int, target int) (index int) {
+	lenght := len(nums)
+	if lenght <= 0 {
+		return -1
+	}
+	left, right := 0, lenght-1
+
+	for left <= right {
+		// 除以2
+		// mid := left + (right-left)>>1
+		mid := int(uint(right+left) >> 1)
+		if nums[mid] == target {
+			// 要繼續找左邊, 所以把右邊變小
+			right = mid - 1
+		} else if nums[mid] < target {
+			// 找右邊
+			left = mid + 1
+		} else if nums[mid] > target {
+			// 找左邊
+			right = mid - 1
+		}
+	}
+	// 都沒找到 注意: left越界情況
+	if left >= lenght || nums[left] != target {
+		return -1
+	}
+	return left
+}
+
+func RightBound(nums []int, target int) (index int) {
+	lenght := len(nums)
+	if lenght <= 0 {
+		return -1
+	}
+	left, right := 0, lenght-1
+
+	for left <= right {
+		// 除以2
+		// mid := left + (right-left)>>1
+		mid := int(uint(right+left) >> 1)
+		if nums[mid] == target {
+			// 注意:要繼續找右邊, 所以把左邊變大=mid+1
+			left = mid + 1
+		} else if nums[mid] < target {
+			// 找右邊
+			left = mid + 1
+		} else if nums[mid] > target {
+			// 找左邊
+			right = mid - 1
+		}
+	}
+	// 都沒找到 注意:right越界情況
+	if right < 0 || nums[right] != target {
+		return -1
+	}
+	return right
 }
 
 ```
