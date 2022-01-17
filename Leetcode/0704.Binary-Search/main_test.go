@@ -24,6 +24,50 @@ var tests = []struct {
 	},
 }
 
+var leftboundtests = []struct {
+	arg1 []int
+	arg2 int
+	want int
+}{
+	{
+		[]int{1, 2, 2, 2, 3},
+		2,
+		1,
+	},
+	{
+		[]int{2, 3, 5, 7},
+		1,
+		-1,
+	},
+	{
+		[]int{2, 3, 5, 7},
+		8,
+		-1,
+	},
+}
+
+var rightboundtests = []struct {
+	arg1 []int
+	arg2 int
+	want int
+}{
+	{
+		[]int{1, 2, 2, 4},
+		2,
+		2,
+	},
+	{
+		[]int{1, 2, 2, 4},
+		0,
+		-1,
+	},
+	{
+		[]int{2, 3, 5, 7},
+		7,
+		3,
+	},
+}
+
 func TestSearch(t *testing.T) {
 	for _, tt := range tests {
 		if got := Search(tt.arg1, tt.arg2); got != tt.want {
@@ -35,6 +79,22 @@ func TestSearch(t *testing.T) {
 func TestSearch2(t *testing.T) {
 	for _, tt := range tests {
 		if got := Search2(tt.arg1, tt.arg2); got != tt.want {
+			t.Errorf("got = %v, want = %v", got, tt.want)
+		}
+	}
+}
+
+func TestLeftBound(t *testing.T) {
+	for _, tt := range leftboundtests {
+		if got := LeftBound(tt.arg1, tt.arg2); got != tt.want {
+			t.Errorf("got = %v, want = %v", got, tt.want)
+		}
+	}
+}
+
+func TestRightBound(t *testing.T) {
+	for _, tt := range rightboundtests {
+		if got := RightBound(tt.arg1, tt.arg2); got != tt.want {
 			t.Errorf("got = %v, want = %v", got, tt.want)
 		}
 	}
