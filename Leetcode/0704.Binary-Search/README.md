@@ -1,5 +1,5 @@
 # [704. Binary Search](https://leetcode.com/problems/binary-search/)
-tags: Easy, Leetcode, Binary Search
+tags: Easy, Binary Search
 
 ## 題目
 
