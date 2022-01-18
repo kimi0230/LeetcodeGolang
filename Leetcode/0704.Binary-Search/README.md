@@ -1,5 +1,5 @@
 # [704. Binary Search](https://leetcode.com/problems/binary-search/)
-###### tags: `Easy` `Leetcode` `Binary Search`
+tags: Easy, Leetcode, Binary Search
 
 ## 題目
 
@@ -197,3 +197,5 @@ func RightBound(nums []int, target int) (index int) {
 }
 
 ```
+
+###### tags: `Easy` `Leetcode` `Binary Search`

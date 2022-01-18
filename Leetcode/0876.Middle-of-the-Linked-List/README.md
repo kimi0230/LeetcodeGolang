@@ -1,5 +1,5 @@
 # [876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
-###### tags: `Medium` `Leetcode` `two pointers`
+tags: Medium, Leetcode, Two Pointers
 
 ## 題目
 Given the head of a singly linked list, return the middle node of the linked list.
@@ -89,3 +89,5 @@ func MiddleNode(head *ListNode) *ListNode {
 	}
 }
 ```
+
+###### tags: `Medium` `Leetcode` `two pointers`
