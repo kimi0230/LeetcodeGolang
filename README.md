@@ -125,7 +125,37 @@ for 狀態1 in 狀態1的所有取值：
 ---
 
 #### Sliding Window
+維護一個窗口, 不斷滑動
+```c++
+void slidingWindow(string s, string t){
+    unordered map<char,int>need, window;
+    for (char c:t) need[c++]
+    int left = 0 , right = 0
+    int valid = 0
 
+    while(right < s.size()){
+        // c是將移入窗口的字符
+        char c = s[right]
+        // 右移窗口 
+        right++
+        // 進行窗口內數據的一系列更新
+        // ...
+
+        /*** 用來debug 輸出位置 ***/
+        printf("window: [%d, %d)\n",left,right)
+        /************************/
+
+        // 判斷左側窗口是否收縮
+        while(window needs shrink){
+           // d是將移出窗口的字符
+           // 左移窗口 
+            left++
+            // 進行窗口內數據的一系列更新
+            // ...
+        }
+    }
+}
+```
 | No. | Title | Solution | Difficulty | Time | Space | Topic |
 |-----|:-----:|:--------:|------------|------|-------|-------|
 | 0209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0209.Minimum-Size-Subarray-Sum) | Medium | O(n^2) / O(n) / O(nlog n) |  O(1) / O(1) / O(n) | Sliding Window |
