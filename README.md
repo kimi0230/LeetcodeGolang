@@ -133,6 +133,7 @@ void slidingWindow(string s, string t){
     int left = 0 , right = 0
     int valid = 0
 
+    // 先移動 right 再移動 left. 直到right到達 string的末端
     while(right < s.size()){
         // c是將移入窗口的字符
         char c = s[right]
@@ -159,6 +160,7 @@ void slidingWindow(string s, string t){
 | No. | Title | Solution | Difficulty | Time | Space | Topic |
 |-----|:-----:|:--------:|------------|------|-------|-------|
 | 0209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0209.Minimum-Size-Subarray-Sum) | Medium | O(n^2) / O(n) / O(nlog n) |  O(1) / O(1) / O(n) | Sliding Window |
+| 0567 | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0567.Permutation-in-String) | Medium | O(n) |  O(1) | Sliding Window |
 
 ---
 
