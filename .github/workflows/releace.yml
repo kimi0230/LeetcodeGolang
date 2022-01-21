@@ -23,14 +23,14 @@ jobs:
       
       - name: install calibre
         run: |
-          brew cask install calibre
+          brew install calibre
 
       - name: configue gitbook
         run: |
           npm install -g gitbook-cli          
           gitbook install
           npm install -g gitbook-summary
-          
+
       - name: generate _book folder
         run: |
           book sm
