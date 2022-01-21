@@ -1,6 +1,8 @@
 ## Leetcode in Golang
 [Leetcode](https://leetcode.com/), [Codility](https://app.codility.com/programmers/) , [GeekforGeeks algorithms](https://www.geeksforgeeks.org/fundamentals-of-algorithms/?ref=shm) exercises written in Golang.
 
+https://kimi0230.github.io/LeetcodeGolang/
+
 ---
 ## [leetcode](https://leetcode.com/) Content
 - [Leetcode in Golang](#leetcode-in-golang)
