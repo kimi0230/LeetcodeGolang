@@ -1,6 +1,7 @@
 name: Build latest tag
 
 on:
+  workflow_dispatch:
   push:
     tags:
     - 'v*'
