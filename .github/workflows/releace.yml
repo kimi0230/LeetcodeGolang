@@ -1,8 +1,9 @@
 name: Build latest tag
 
-on: 
+on:
   push:
-    tags: ["v*"]
+    tags:
+    - 'v*'
 
 jobs:
   build:
