@@ -12,7 +12,7 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: checkout master
         uses: actions/checkout@v2
@@ -20,12 +20,17 @@ jobs:
           ref: master
       - name: install nodejs
         uses: actions/setup-node@v1
+      
+      - name: install calibre
+        run: |
+          brew cask install calibre
 
       - name: configue gitbook
         run: |
           npm install -g gitbook-cli          
           gitbook install
           npm install -g gitbook-summary
+          
       - name: generate _book folder
         run: |
           book sm
