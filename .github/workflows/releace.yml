@@ -38,7 +38,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: book.pdf
-          path: book.pdf
+          path: ./book.pdf
 
   deploy:
     name: Release file to GitHub Release
@@ -56,8 +56,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
         with:
-          tag_name: ${{ github.run_number }}
-          release_name: Release ${{ github.run_number }}
+          tag_name: v0.1.${{ github.run_number }}
+          release_name: Release v0.1.${{ github.run_number }}
           draft: false
           prerelease: false
 
@@ -68,6 +68,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.id }}
-          asset_path: book.pdf
+          asset_path: ./book.pdf
           asset_name: book.pdf
           asset_content_type: application/pdf

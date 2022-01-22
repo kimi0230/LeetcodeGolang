@@ -1,0 +1,89 @@
+# Kimi's LeetcodeGolang  Notes
+
+- Codility
+  - Lesson
+    - 0001.Iterations
+      - [Binary Gap](Codility/Lesson/0001.Iterations/Binary-Gap/README.md)
+    - 0002.Array
+      - [Cyclic Rotation](Codility/Lesson/0002.Array/CyclicRotation/README.md)
+      - [Odd Occurrences In Array](Codility/Lesson/0002.Array/OddOccurrencesInArray/README.md)
+    - 0003.Time-Complexity
+      - [Frog Jmp](Codility/Lesson/0003.Time-Complexity/FrogJmp/README.md)
+      - [Perm Missing Elem](Codility/Lesson/0003.Time-Complexity/PermMissingElem/README.md)
+      - [Tape Equilibrium](Codility/Lesson/0003.Time-Complexity/TapeEquilibrium/README.md)
+    - 0004.Counting-Elements
+      - [Frog River One](Codility/Lesson/0004.Counting-Elements/FrogRiverOne/README.md)
+      - [Max Counters](Codility/Lesson/0004.Counting-Elements/MaxCounters/README.md)
+      - [Missing Integer](Codility/Lesson/0004.Counting-Elements/MissingInteger/README.md)
+      - [Perm Check](Codility/Lesson/0004.Counting-Elements/PermCheck/README.md)
+    - 0005.Prefix-Sums
+      - [Count Div](Codility/Lesson/0005.Prefix-Sums/CountDiv/README.md)
+      - [Genomic Range Query](Codility/Lesson/0005.Prefix-Sums/GenomicRangeQuery/README.md)
+      - [Min Avg Two Slice](Codility/Lesson/0005.Prefix-Sums/MinAvgTwoSlice/README.md)
+      - [Passing Cars](Codility/Lesson/0005.Prefix-Sums/PassingCars/README.md)
+    - 0006.Sorting
+      - [Distinct](Codility/Lesson/0006.Sorting/Distinct/README.md)
+      - [Max Product Of Three](Codility/Lesson/0006.Sorting/MaxProductOfThree/README.md)
+      - [Number Of Disc Intersections](Codility/Lesson/0006.Sorting/NumberOfDiscIntersections/README.md)
+      - [Triangle](Codility/Lesson/0006.Sorting/Triangle/README.md)
+    - 0007.Stacks-and-Queues
+      - [Brackets](Codility/Lesson/0007.Stacks-and-Queues/Brackets/README.md)
+      - [Fish](Codility/Lesson/0007.Stacks-and-Queues/Fish/README.md)
+      - [Nesting](Codility/Lesson/0007.Stacks-and-Queues/Nesting/README.md)
+      - [Stone Wall](Codility/Lesson/0007.Stacks-and-Queues/StoneWall/README.md)
+    - 0008.Leader
+      - [Dominator](Codility/Lesson/0008.Leader/Dominator/README.md)
+      - [Equi Leader](Codility/Lesson/0008.Leader/EquiLeader/README.md)
+    - 0009.Maximum-Slice-Problem
+      - [Max Double Slice Sum](Codility/Lesson/0009.Maximum-Slice-Problem/MaxDoubleSliceSum/README.md)
+      - [Max Profit](Codility/Lesson/0009.Maximum-Slice-Problem/MaxProfit/README.md)
+      - [Max Slice Sum](Codility/Lesson/0009.Maximum-Slice-Problem/MaxSliceSum/README.md)
+    - 0010.Prime-And-Composite-Numbers
+      - [Count Factors](Codility/Lesson/0010.Prime-And-Composite-Numbers/CountFactors/README.md)
+      - [Flags](Codility/Lesson/0010.Prime-And-Composite-Numbers/Flags/README.md)
+      - [Min Perimeter Rectangle](Codility/Lesson/0010.Prime-And-Composite-Numbers/MinPerimeterRectangle/README.md)
+      - [Peaks](Codility/Lesson/0010.Prime-And-Composite-Numbers/Peaks/README.md)
+    - 0011.Sieve-of-Eratosthenes
+      - [Count Non Divisible](Codility/Lesson/0011.Sieve-of-Eratosthenes/CountNonDivisible/README.md)
+      - [Count Semiprimes](Codility/Lesson/0011.Sieve-of-Eratosthenes/CountSemiprimes/README.md)
+    - 0012.Euclidean-Algorithm
+      - [Chocolates By Numbers](Codility/Lesson/0012.Euclidean-Algorithm/ChocolatesByNumbers/README.md)
+      - [Common Prime Divisors](Codility/Lesson/0012.Euclidean-Algorithm/CommonPrimeDivisors/README.md)
+    - 0013.Fibonacci-Numbers
+      - [Fib Frog](Codility/Lesson/0013.Fibonacci-Numbers/FibFrog/README.md)
+    - 0015.Caterpillar-Method
+      - [Abs Distinct](Codility/Lesson/0015.Caterpillar-Method/AbsDistinct/README.md)
+- Geeksfor Geeks
+  - Sorting Algorithms
+    - [0031.Find-Minimum-Difference-Between-Any-Two-Elements](GeeksforGeeks/SortingAlgorithms/0031.Find-Minimum-Difference-Between-Any-Two-Elements/README.md)
+- Leetcode
+  - [0001.Two-Sum](Leetcode/0001.Two-Sum/README.md)
+  - [0003.Longest-Substring-Without-Repeating-Characters](Leetcode/0003.Longest-Substring-Without-Repeating-Characters/README.md)
+  - [0015.3Sum](Leetcode/0015.3Sum/README.md)
+  - [0019.Remove-Nth-Node-From-End-of-List](Leetcode/0019.Remove-Nth-Node-From-End-of-List/README.md)
+  - [0027.Remove-Element](Leetcode/0027.Remove-Element/README.md)
+  - [0035.Search-Insert-Position](Leetcode/0035.Search-Insert-Position/README.md)
+  - [0046.Permutations](Leetcode/0046.Permutations/README.md)
+  - [0053.Maximum-Subarray](Leetcode/0053.Maximum-Subarray/README.md)
+  - [0059.Spiral-Matrix-II](Leetcode/0059.Spiral-Matrix-II/README.md)
+  - [0075.Sort-Colors](Leetcode/0075.Sort-Colors/README.md)
+  - [0088.Merge-Sorted-Array](Leetcode/0088.Merge-Sorted-Array/README.md)
+  - [0094.Binary-Tree-Inorder-Traversal](Leetcode/0094.Binary-Tree-Inorder-Traversal/README.md)
+  - [0141.Linked-List-Cycle](Leetcode/0141.Linked-List-Cycle/README.md)
+  - [0142.Linked-List-CycleII](Leetcode/0142.Linked-List-CycleII/README.md)
+  - [0203.Remove-Linked-List-Elements](Leetcode/0203.Remove-Linked-List-Elements/README.md)
+  - [0209.Minimum-Size-Subarray-Sum](Leetcode/0209.Minimum-Size-Subarray-Sum/README.md)
+  - [0310.Minimum-Height-Trees](Leetcode/0310.Minimum-Height-Trees/README.md)
+  - [0322.Coin-Change](Leetcode/0322.Coin-Change/README.md)
+  - [0344.Reverse-String](Leetcode/0344.Reverse-String/README.md)
+  - [0509.Fibonacci-Number](Leetcode/0509.Fibonacci-Number/README.md)
+  - [0567.Permutation-in-String](Leetcode/0567.Permutation-in-String/README.md)
+  - [0693.Binary-Number-with-Alternating-Bits](Leetcode/0693.Binary-Number-with-Alternating-Bits/README.md)
+  - [0704.Binary-Search](Leetcode/0704.Binary-Search/README.md)
+  - [0721.Accounts-Merge](Leetcode/0721.Accounts-Merge/README.md)
+  - [0752.Open-the-Lock](Leetcode/0752.Open-the-Lock/README.md)
+  - [0876.Middle-of-the-Linked-List](Leetcode/0876.Middle-of-the-Linked-List/README.md)
+- [Structures](structures/README.md)
+- [Template](template/README.md)
+* [Content](Content.md)
+* [Tags](tags.md)
