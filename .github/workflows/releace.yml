@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     tags:
-      - 'v*'
+      - "v*.*.*"
 
 jobs:
   build:
@@ -56,17 +56,6 @@ jobs:
 
       - name: 'Echo download path'
         run: echo ${{steps.download.outputs.download-path}}
-
-      - name: Create GitHub Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
-        with:
-          tag_name: v0.1.0
-          release_name: Release v0.1.0
-          draft: false
-          prerelease: false
 
       - name: Release
         uses: softprops/action-gh-release@v1
