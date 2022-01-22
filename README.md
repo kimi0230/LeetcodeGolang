@@ -1,4 +1,6 @@
 ## Leetcode in Golang
+[![Build latest tag](https://github.com/kimi0230/LeetcodeGolang/actions/workflows/releace.yml/badge.svg)](https://github.com/kimi0230/LeetcodeGolang/actions/workflows/releace.yml) [![Build my gitbook and deploy to gh-pages](https://github.com/kimi0230/LeetcodeGolang/actions/workflows/build.yml/badge.svg)](https://github.com/kimi0230/LeetcodeGolang/actions/workflows/build.yml) [![pages-build-deployment](https://github.com/kimi0230/LeetcodeGolang/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/kimi0230/LeetcodeGolang/actions/workflows/pages/pages-build-deployment)
+
 [Leetcode](https://leetcode.com/), [Codility](https://app.codility.com/programmers/) , [GeekforGeeks algorithms](https://www.geeksforgeeks.org/fundamentals-of-algorithms/?ref=shm) exercises written in Golang.
 
 https://kimi0230.github.io/LeetcodeGolang/
