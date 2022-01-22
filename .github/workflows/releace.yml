@@ -43,11 +43,6 @@ jobs:
           name: book.pdf
           path: path/to/artifact/book.pdf
 
-  deploy:
-    name: Release file to GitHub Release
-    runs-on: macos-latest
-    needs: build
-    steps:
       - name: Download file
         id: download
         uses: actions/download-artifact@v2
