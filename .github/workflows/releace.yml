@@ -80,6 +80,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.id }}
-          asset_path: ./book.pdf
+          asset_path: path/to/artifact/book.pdf
           asset_name: book.pdf
           asset_content_type: application/pdf
