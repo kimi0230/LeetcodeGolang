@@ -45,7 +45,7 @@ jobs:
 
   deploy:
     name: Release file to GitHub Release
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     needs: build
     steps:
       - name: Download file
