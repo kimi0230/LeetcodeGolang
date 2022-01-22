@@ -34,8 +34,12 @@ jobs:
           book sm
           ln -s -f SUMMARY.md README.md
           gitbook pdf
+          gitbook epub
+          gitbook mobi
           mkdir -p path/to/artifact
           cp book.pdf path/to/artifact
+          cp book.epub path/to/artifact
+          cp book.mobi path/to/artifact
       
       - name: Upload file
         uses: actions/upload-artifact@v2
@@ -61,6 +65,10 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: path/to/artifact/book.pdf
+          files: |
+            path/to/artifact/book.pdf
+            path/to/artifact/book.epub
+            path/to/artifact/book.mobi
+            LICENSE
         env:
           GITHUB_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
