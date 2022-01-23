@@ -1,5 +1,6 @@
 ---
-tags: [easy]
+title: Two Sum
+tags: Easy
 ---
 # [1. Two Sum](https://leetcode.com/problems/two-sum/)
 ## 题目
