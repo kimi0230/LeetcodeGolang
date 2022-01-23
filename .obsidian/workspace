@@ -4,14 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "e61003d781297a45",
+        "id": "2f485142fa4c46d8",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CHANGELOG.md",
+            "file": "Leetcode/0001.Two-Sum/README.md",
             "mode": "source"
           }
+        },
+        "pane-relief:history-v1": {
+          "pos": 0,
+          "stack": [
+            {
+              "leaf": "2f485142fa4c46d8",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Leetcode/0001.Two-Sum/README.md\",\"mode\":\"source\"}}",
+              "eState": "{\"scroll\":0}"
+            }
+          ]
         }
       }
     ],
@@ -47,12 +58,20 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "2aa5453eeace537c",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 248
+    "width": 344
   },
   "right": {
     "id": "b17ca5e8ec886492",
@@ -68,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CHANGELOG.md",
+                "file": "Leetcode/0001.Two-Sum/README.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -78,18 +97,36 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "e0c71a3886272f58",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
-  "active": "e61003d781297a45",
+  "active": "2f485142fa4c46d8",
   "lastOpenFiles": [
-    "CHANGELOG.md",
-    "node_modules/moment/README.md",
+    "Leetcode/0001.Two-Sum/README.md",
     "README.md",
-    "Leetcode/0001.Two-Sum/README.md"
+    "structures/README.md",
+    "Codility/Lesson/0010.Prime-And-Composite-Numbers/Flags/README.md",
+    "Leetcode/0876.Middle-of-the-Linked-List/README.md",
+    "Leetcode/0704.Binary-Search/README.md",
+    "Leetcode/0693.Binary-Number-with-Alternating-Bits/README.md",
+    "Leetcode/0567.Permutation-in-String/README.md",
+    "Leetcode/0003.Longest-Substring-Without-Repeating-Characters/README.md",
+    "CHANGELOG.md"
   ]
 }
