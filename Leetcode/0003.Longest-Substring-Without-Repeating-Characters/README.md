@@ -39,7 +39,7 @@ Note that the answer must be a substring, "pwke" is a subsequence and not a subs
 
 O(n)
 
-用空間換取時間, map紀錄已出現過的字符, 如果map效能不好時可使用數組來改善
+**用空間換取時間, map紀錄已出現過的字符, 如果map效能不好時可使用數組(Slice)來改善**
 
 ## 來源
 * https://books.halfrost.com/leetcode/ChapterFour/0001~0099/0003.Longest-Substring-Without-Repeating-Characters/
