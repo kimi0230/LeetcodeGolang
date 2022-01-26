@@ -62,7 +62,7 @@ Constraints:
 * https://books.halfrost.com/leetcode/ChapterFour/0700~0799/0752.Open-the-Lock/
 
 ## 解答
-https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/0310.Minimum-Height-Trees/main.go
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/0752.Open-the-Lock/main.go
 
 ```go
 package openthelock
