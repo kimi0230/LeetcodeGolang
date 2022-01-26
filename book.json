@@ -103,7 +103,7 @@
             "update_format": "YYYY-MM-DD HH:mm:ss"
         },
         "edit-link": {
-            "base": "https://github.com/kimi0230/LeetcodeGolang/edit/main/",
+            "base": "https://github.com/kimi0230/LeetcodeGolang/edit/master/",
             "label": "Edit"
         }
     },
