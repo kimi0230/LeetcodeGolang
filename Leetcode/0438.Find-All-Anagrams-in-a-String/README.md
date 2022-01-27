@@ -1,6 +1,6 @@
 ---
 title: Find All Anagrams in a String
-tags: Medium
+tags: Medium, Sliding Window
 author: Kimi Tsai <kimi0230@gmail.com>
 description:
 ---
@@ -36,8 +36,9 @@ s and p consist of lowercase English letters.
 
 ## 題目大意
 找所有字母異位詞, 就像[全排列](https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/0567.Permutation-in-String/main.go)
-
+給定一個字符串 S 和非空的字符串 P, 找到 S 中所有是 P 得排列, 並返回他的起始 index
 ## 解題思路
+跟 [0567.Permutation-in-String](https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/0567.Permutation-in-String/main.go)類似, 只是把找到的答案記錄起來
 
 ## 來源
 * https://leetcode.com/problems/find-all-anagrams-in-a-string/
