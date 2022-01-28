@@ -1,3 +1,9 @@
+---
+title: 0094.Binary Tree Inorder Traversal
+tags: Medium, Stack
+author: Kimi Tsai <kimi0230@gmail.com>
+description:
+---
 # [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
 
 ## 題目

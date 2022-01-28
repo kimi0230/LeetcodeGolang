@@ -1,3 +1,9 @@
+---
+title: 0310.Minimum Height Trees
+tags: Medium, Breadth First Search
+author: Kimi Tsai <kimi0230@gmail.com>
+description:
+---
 # [310. Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/) 
 tags: Medium, BFS
 

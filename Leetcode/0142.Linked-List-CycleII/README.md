@@ -1,3 +1,9 @@
+---
+title: 0142.Linked List Cycle II
+tags: Medium, Linked List, Two Pointers
+author: Kimi Tsai <kimi0230@gmail.com>
+description:
+---
 # [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)
 
 ## 題目

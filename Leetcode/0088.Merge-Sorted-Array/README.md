@@ -1,3 +1,9 @@
+---
+title: 0088.Merge Sorted Array
+tags: Easy, Array
+author: Kimi Tsai <kimi0230@gmail.com>
+description:
+---
 # [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/)
 
 ## 題目

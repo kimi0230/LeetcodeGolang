@@ -1,5 +1,10 @@
+---
+title: 0876.Middle of the Linked List
+tags: Easy, Linked List, Two Pointers
+author: Kimi Tsai <kimi0230@gmail.com>
+description:
+---
 # [876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
-tags: Medium, Two Pointers
 
 ## 題目
 Given the head of a singly linked list, return the middle node of the linked list.

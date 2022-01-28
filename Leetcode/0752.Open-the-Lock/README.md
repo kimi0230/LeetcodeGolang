@@ -1,3 +1,9 @@
+---
+title: 0752.Open the Lock
+tags: Medium, Breadth First Search
+author: Kimi Tsai <kimi0230@gmail.com>
+description:
+---
 # [752. Open the Lock](https://leetcode.com/problems/open-the-lock/) 
 tags: Medium, BFS
 

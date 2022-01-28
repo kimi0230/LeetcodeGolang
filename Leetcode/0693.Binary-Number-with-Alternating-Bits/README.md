@@ -1,3 +1,9 @@
+---
+title: 0693.Binary Number with Alternating Bits
+tags: Medium, Bit Manipulation
+author: Kimi Tsai <kimi0230@gmail.com>
+description:
+---
 # [693. Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/)
 
 ## 題目

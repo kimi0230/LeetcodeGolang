@@ -1,3 +1,9 @@
+---
+title: 0704.Binary Search
+tags: Easy, Binary Search
+author: Kimi Tsai <kimi0230@gmail.com>
+description:
+---
 # [704. Binary Search](https://leetcode.com/problems/binary-search/)
 tags: Easy, Binary Search
 

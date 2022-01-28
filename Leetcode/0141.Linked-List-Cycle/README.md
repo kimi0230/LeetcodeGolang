@@ -1,3 +1,9 @@
+---
+title: 0141.Linked List Cycle
+tags: Easy, Linked List, Two Pointers
+author: Kimi Tsai <kimi0230@gmail.com>
+description:
+---
 # [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/)
 
 ## 題目

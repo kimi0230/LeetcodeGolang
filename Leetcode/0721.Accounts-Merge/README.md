@@ -1,3 +1,9 @@
+---
+title: 0721.Accounts Merge
+tags: Easy, Union Find
+author: Kimi Tsai <kimi0230@gmail.com>
+description:
+---
 # [721. Accounts Merge](https://leetcode.com/problems/accounts-merge/)
 
 

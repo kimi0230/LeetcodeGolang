@@ -1,3 +1,9 @@
+---
+title: 0322.Coin Change
+tags: Medium, Dynamic Programming
+author: Kimi Tsai <kimi0230@gmail.com>
+description:
+---
 # [322. Coin Change](https://leetcode.com/problems/coin-change/) 
 `Medium`
 ## 題目

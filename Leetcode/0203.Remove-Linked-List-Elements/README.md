@@ -1,3 +1,9 @@
+---
+title: 0203.Remove Linked List Elements
+tags: Easy, Linked List
+author: Kimi Tsai <kimi0230@gmail.com>
+description:
+---
 # [203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)
 
 ## 題目
