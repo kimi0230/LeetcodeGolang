@@ -1,5 +1,5 @@
 ---
-title: Two Sum
+title: 0001.Two Sum
 tags: Easy
 author: Kimi Tsai <kimi0230@gmail.com>
 description:

@@ -1,5 +1,5 @@
 ---
-title: Permutation in String
+title: 0567.Permutation in String
 tags: Medium, Sliding Window
 author: Kimi Tsai <kimi0230@gmail.com>
 description:
