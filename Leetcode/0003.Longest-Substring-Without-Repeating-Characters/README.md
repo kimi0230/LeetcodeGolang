@@ -1,6 +1,6 @@
 ---
 title: 0003.Longest Substring Without Repeating Characters
-tags: Medium, Array
+tags: Medium, Array, Sliding Window
 author: Kimi Tsai <kimi0230@gmail.com>
 description:
 ---

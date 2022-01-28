@@ -32,7 +32,7 @@ https://kimi0230.github.io/LeetcodeGolang/
 | No. | Title | Solution | Difficulty | Time | Space | Topic |
 |--|:--:|:--:|--|--|--|--|
 | 0001 | [Two Sum](https://leetcode.com/problems/two-sum/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0001.Two-Sum) | Easy | O(n) | O(n) | Array |
-| 0003 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0003.Longest-Substring-Without-Repeating-Characters) | Medium | O(n) | O(1) | Array |
+| 0003 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0003.Longest-Substring-Without-Repeating-Characters) | Medium | O(n) | O(1) | Array, Sliding Window |
 | 0015 | [3 Sum](https://leetcode.com/problems/3sum/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0015.3Sum) | Medium | O(n^2) | O(n) | Array |
 | 0027 | [Remove Element](https://leetcode.com/problems/remove-element/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0027.Remove-Element) | Easy | O(n) | O(1) | Array |
 | 0035 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0035.Search-Insert-Position) | Easy |  O(n), O(logn) | O(1) | Array |
