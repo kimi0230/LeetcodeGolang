@@ -1,3 +1,9 @@
+---
+title: 0027.Remove Element
+tags: Easy, Array
+author: Kimi Tsai <kimi0230@gmail.com>
+description:
+---
 # [27. Remove Element](https://leetcode.com/problems/remove-element/)
 
 ## 題目

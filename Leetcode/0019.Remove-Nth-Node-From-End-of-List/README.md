@@ -1,5 +1,11 @@
-# [19. Remove Nth Node From End of List](https://leetcode.com/problems/middle-of-the-linked-list/)
+---
+title: 0019.Remove Nth Node From End of List
 tags: Medium, Two Pointers
+author: Kimi Tsai <kimi0230@gmail.com>
+description:
+---
+# [19. Remove Nth Node From End of List](https://leetcode.com/problems/middle-of-the-linked-list/)
+
 ## 題目
 Given the head of a linked list, remove the nth node from the end of the list and return its head.
 

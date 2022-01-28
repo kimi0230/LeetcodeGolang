@@ -1,3 +1,9 @@
+---
+title: 0003.Longest Substring Without Repeating Characters
+tags: Medium, Array
+author: Kimi Tsai <kimi0230@gmail.com>
+description:
+---
 # [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
 ## 题目

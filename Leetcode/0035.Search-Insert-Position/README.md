@@ -1,3 +1,10 @@
+---
+title: 0035.Search Insert Position
+tags: Easy, Array
+author: Kimi Tsai <kimi0230@gmail.com>
+description:
+---
+
 # [35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)
 ## 題目
 

@@ -1,3 +1,9 @@
+---
+title: 0053.Maximum Subarray
+tags: Easy, Dynamic Programming
+author: Kimi Tsai <kimi0230@gmail.com>
+description:
+---
 # [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 
 ## 題目

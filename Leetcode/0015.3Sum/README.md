@@ -1,3 +1,10 @@
+---
+title: 0015.3Sum
+tags: Easy
+author: Kimi Tsai <kimi0230@gmail.com>
+description:
+---
+
 # [15. 3Sum](https://leetcode.com/problems/3sum/)
 
 ## 題目

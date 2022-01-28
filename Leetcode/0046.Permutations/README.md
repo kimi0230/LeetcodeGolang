@@ -1,3 +1,10 @@
+---
+title: 0046.Permutations
+tags: Medium, Backtracking
+author: Kimi Tsai <kimi0230@gmail.com>
+description:
+---
+
 # [46. Permutations](https://leetcode.com/problems/permutations/)
 
 ## 題目
