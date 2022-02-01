@@ -156,3 +156,16 @@ func LengthOfLISPatience(nums []int) int {
 	return piles
 }
 ```
+
+```
+go test -benchmem -run=none LeetcodeGolang/Leetcode/300.Longest-Increasing-Subsequence -bench=.
+goos: darwin
+goarch: amd64
+pkg: LeetcodeGolang/Leetcode/300.Longest-Increasing-Subsequence
+cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+BenchmarkLengthOfLIS-8                  18300901                64.77 ns/op           64 B/op          1 allocs/op
+BenchmarkLengthOfLIS2-8                 17410562                68.98 ns/op           80 B/op          1 allocs/op
+BenchmarkLengthOfLISPatience-8          20768851                58.47 ns/op           64 B/op          1 allocs/op
+PASS
+ok      LeetcodeGolang/Leetcode/300.Longest-Increasing-Subsequence      3.812s
+```
