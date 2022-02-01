@@ -205,9 +205,11 @@ https://labuladong.gitee.io/algo/2/21/57/
 ---
 
 #### Breadth First Search
-DFS 算法可以被認為是[回溯算法](#backtracking-回溯法), BFS算法都是用**Queue**這種數據結構, 每次將一個截短周圍的所有節點加入Queue.
-BFS 找到的路徑一定是最短的, 但是代價是**空間複雜度**比DFS大
-[BFS vs DFS](https://github.com/kimi0230/MyGoNote/blob/main/structures/BFS_vs_DFS.md)
+* DFS 算法可以被認為是[回溯算法](#backtracking-回溯法), BFS算法都是用**Queue**這種數據結構, 每次將一個截短周圍的所有節點加入Queue.
+* BFS 找到的路徑一定是最短的, 但是代價是**空間複雜度**比DFS大. [BFS vs DFS](https://github.com/kimi0230/MyGoNote/blob/main/structures/BFS_vs_DFS.md)
+* 優化: 雙向 BFS 優化, 在 while 開始時做一個判斷. 讓每次都選擇較小的集合進行擴散,
+那麼佔用的空間增長速度就會慢一些, 盡可能以最小的空間代價產生 curDepth 和 nextDepth 的交集
+無論單向的 BFS 或是 雙向BFS, 優化過的BFS 空間複雜度都是一樣的
 
 ```c++
 // 計算從起點 start 到 終點 target 的最點距離
