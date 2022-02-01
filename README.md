@@ -254,7 +254,22 @@ int BFS(Node start, Node targe){
 #### Binary Search
 分析二分搜尋技巧: 不要出現 **else**, 而是把所有情況用 **else if** 寫清楚.
 計算 mid 時需要防止溢出
-
+```c++
+int binarySearch(int[] nums, int target){
+    int left = 0 , right = ...;
+    while(...) {
+        int mid = left + (right - left)/2
+        if (nums[mid] == target){
+            ...
+        } else if (nums[mid] < target){
+            left = ...
+        } else if (nums[mid] > target){
+            right = ...
+        }
+    }
+    return ...;
+}
+```
 | No. | Title | Solution | Difficulty | Time | Space | Topic |
 |-----|:-----:|:--------:|------------|------|-------|-------|
 | 0704 | [704. Binary Search](https://leetcode.com/problems/binary-search/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0704.Binary-Search) | Easy | 最差:O(long n)<br> 最佳O(1)剛好在中間 | 迭代: O(1) <br/> 遞迴O(log n) | Binary Search |
