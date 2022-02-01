@@ -48,7 +48,7 @@ Follow up: Can you come up with an algorithm that runs in O(n log(n)) time compl
 ### 方法一: DP
 dp[i]表示nums[i]這個數結尾的最長遞增子序列的長度
 譬如要找dp[5]的直, 也就是球nums[5]為結尾的最長遞增子序列
-只要找到結尾比nums[5]小的子序列, 然後把 nums[5]接到最後, 
+只要找到結尾比nums[5]小的子序列, 然後把 nums[5]接到最後,
 就可以形成新的遞增子序列, 而這個新子序列長度+1
 
 ### 方法二: DP + 二分搜尋
@@ -71,3 +71,88 @@ patience sorting (耐心排序)
 https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/300.Longest-Increasing-Subsequence/main.go
 
 ```go
+package longestincreasingsubsequence
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
+}
+
+//  DP 解法 O(n^2)
+func LengthOfLIS(nums []int) int {
+	dp := make([]int, len(nums))
+	for idx := 0; idx < len(dp); idx++ {
+		dp[idx] = 1
+	}
+
+	res := 0
+	for i := 0; i < len(nums); i++ {
+		for j := 0; j < i; j++ {
+			if nums[i] > nums[j] {
+				// 找到前面比現在結尾還小的子序列
+				dp[i] = max(dp[i], dp[j]+1)
+			}
+		}
+		res = max(res, dp[i])
+	}
+	// fmt.Println(dp)
+	return res
+}
+
+func LengthOfLIS2(nums []int) int {
+	dp := make([]int, len(nums)+1)
+	dp[0] = 0
+	res := 0
+
+	for i := 1; i <= len(nums); i++ {
+		for j := 1; j < i; j++ {
+			if nums[i-1] > nums[j-1] {
+				// 找到前面比現在結尾還小的子序列
+				dp[i] = max(dp[i], dp[j])
+			}
+		}
+		dp[i] = dp[i] + 1
+		res = max(res, dp[i])
+	}
+	// fmt.Println(dp)
+	return res
+}
+
+//  DP + 二分搜尋:patience sorting
+func LengthOfLISPatience(nums []int) int {
+	top := make([]int, len(nums))
+
+	// 牌堆數初始化為0
+	piles := 0
+
+	for i := 0; i < len(nums); i++ {
+		poker := nums[i]
+
+		// 搜尋左側邊界的二元搜尋
+		left, right := 0, piles
+		// fmt.Printf("i:%d\tL:%d\tR:%d\n", i, left, right)
+		for left < right {
+			mid := left + (right-left)/2
+			if top[mid] > poker {
+				// 現在的牌比堆小, 所小範圍
+				right = mid
+			} else if top[mid] < poker {
+				// 現在的牌比堆大
+				left = mid + 1
+			} else {
+				right = mid
+			}
+		}
+
+		// 沒有找到堆, 建立一個新的堆
+		if left == piles {
+			piles++
+		}
+		// 再把這張牌放在堆的頂端
+		top[left] = poker
+	}
+	return piles
+}
+```

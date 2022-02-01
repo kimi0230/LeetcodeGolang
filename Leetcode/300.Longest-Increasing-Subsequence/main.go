@@ -1,7 +1,5 @@
 package longestincreasingsubsequence
 
-import "fmt"
-
 func max(a, b int) int {
 	if a > b {
 		return a
@@ -26,7 +24,7 @@ func LengthOfLIS(nums []int) int {
 		}
 		res = max(res, dp[i])
 	}
-	fmt.Println(dp)
+	// fmt.Println(dp)
 	return res
 }
 
@@ -45,6 +43,42 @@ func LengthOfLIS2(nums []int) int {
 		dp[i] = dp[i] + 1
 		res = max(res, dp[i])
 	}
-	fmt.Println(dp)
+	// fmt.Println(dp)
 	return res
+}
+
+//  DP + 二分搜尋:patience sorting. O(nlogn)
+func LengthOfLISPatience(nums []int) int {
+	top := make([]int, len(nums))
+
+	// 牌堆數初始化為0
+	piles := 0
+
+	for i := 0; i < len(nums); i++ {
+		poker := nums[i]
+
+		// 搜尋左側邊界的二元搜尋
+		left, right := 0, piles
+		// fmt.Printf("i:%d\tL:%d\tR:%d\n", i, left, right)
+		for left < right {
+			mid := left + (right-left)/2
+			if top[mid] > poker {
+				// 現在的牌比堆小, 所小範圍
+				right = mid
+			} else if top[mid] < poker {
+				// 現在的牌比堆大
+				left = mid + 1
+			} else {
+				right = mid
+			}
+		}
+
+		// 沒有找到堆, 建立一個新的堆
+		if left == piles {
+			piles++
+		}
+		// 再把這張牌放在堆的頂端
+		top[left] = poker
+	}
+	return piles
 }
