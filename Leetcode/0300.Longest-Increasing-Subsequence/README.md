@@ -1,5 +1,5 @@
 ---
-title: 300.Longest Increasing Subsequence
+title: 0300.Longest Increasing Subsequence
 tags: Medium, Dynamic Programming
 author: Kimi Tsai <kimi0230@gmail.com>
 description:
