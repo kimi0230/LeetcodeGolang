@@ -68,7 +68,7 @@ patience sorting (耐心排序)
 * https://leetcode.com/problems/longest-increasing-subsequence/
   
 ## 解答
-https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/300.Longest-Increasing-Subsequence/main.go
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/0300.Longest-Increasing-Subsequence/main.go
 
 ```go
 package longestincreasingsubsequence
