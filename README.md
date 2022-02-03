@@ -15,7 +15,7 @@ https://kimi0230.github.io/LeetcodeGolang/
     - [Linked List](#linked-list)
   - [Algorithm](#algorithm)
     - [Sort](#sort)
-    - [Backtracking (回溯法)](#backtracking-回溯法)
+    - [Backtracking (回溯法). DFS](#backtracking-回溯法-dfs)
     - [Dynamic Programming](#dynamic-programming)
     - [Sliding Window](#sliding-window)
     - [Two Pointers](#two-pointers)
@@ -70,8 +70,8 @@ https://kimi0230.github.io/LeetcodeGolang/
 
 ---
 
-#### Backtracking (回溯法)
-DFS. 解決一個回溯問題, 實際上就是一個決策數的遍歷過程.
+#### Backtracking (回溯法). DFS
+DFS. 解決一個回溯問題, 實際上就是一個**決策樹**的遍歷過程.
 算是一個暴力的窮舉算法
 1. 路徑：也就是已經做出的選擇。
 2. 選擇列表：也就是你當前可以做的選擇。
@@ -99,7 +99,7 @@ def backtrack(路徑, 選擇列表):
 ---
 
 #### Dynamic Programming
-動態規劃問題的一般形式就是求**最值**, **最長**遞增子序列, **最小**編輯距離等. 核心問題是窮舉
+動態規劃問題的一般形式就是**求最值**, **最長**遞增子序列, **最小**編輯距離等. 核心問題是窮舉
 1. 重疊子問題
    1. memory table
    2. DP table
@@ -171,7 +171,7 @@ void slidingWindow(string s, string t){
 ---
 
 #### Two Pointers
-只要array有序, 就應該想到雙指針技巧
+只要**array有序**, 就應該想到雙指針技巧
 分為兩類 1. "快,慢指針" 2. "左,右指針"
    1. 快,慢指針: 主要解決 linkedlist 問題, 典型的判斷 linkedlist 是否包含環
    2. 左,右指針: 主要解決array(或 string)中的問題, 如二分搜尋.

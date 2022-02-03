@@ -6,6 +6,7 @@ description:
 ---
 # [300.Longest-Increasing-Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
 
+最長遞增子序列(Longest Increasing Subsequence, LIS)
 ## 題目
 
 Given an integer array nums, return the length of the longest strictly increasing subsequence.
