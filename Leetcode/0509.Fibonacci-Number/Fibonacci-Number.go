@@ -70,25 +70,17 @@ func FibDP(n int) int {
 
 // 狀態壓縮
 func FibDPStateCompression(n int) int {
-	if v, vok := memo[n]; vok == true {
-		// cached
-		return v
+	if n == 0 {
+		return 0
 	}
-
-	if _, vok := memo[0]; vok == false {
-		// 沒cache
-		memo[0] = 0
-	}
-
-	if _, vok := memo[1]; vok == false {
-		// 沒cache
-		memo[1] = 1
+	if n == 2 || n == 1 {
+		return 1
 	}
 
 	prev := 1
 	curr := 1
 
-	for i := 2; i <= n; i++ {
+	for i := 3; i <= n; i++ {
 		sum := prev + curr
 		prev = curr
 		curr = sum
