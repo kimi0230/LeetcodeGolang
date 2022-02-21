@@ -125,6 +125,7 @@ for 狀態1 in 狀態1的所有取值：
 | 0053 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0053.Maximum-Subarray) | Easy | O(n) | O(n) | Dynamic Programming |
 | 0300 | [Longest-Increasing-Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0300.Longest-Increasing-Subsequence) | Medium | 方法一:O(n^2) 方法二:O(nlogn) | O(n) | Dynamic Programming |
 | 0322 | [Coin Change](https://leetcode.com/problems/coin-change/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0322.Coin-Change) | Medium | O(nm) | O(n) | Dynamic Programming |
+| 0354 | [Russian Doll Envelope](https://leetcode.com/problems/russian-doll-envelopes/)| [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0354.Russian-Doll-Envelopes) | Hard |  |  | Dynamic Programming |
 | 0509 | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0509.Fibonacci-Number) | Easy | 很多解法 | 很多解法 | Dynamic Programming |
 
 ---
