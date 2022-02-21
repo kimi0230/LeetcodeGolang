@@ -31,13 +31,13 @@ https://kimi0230.github.io/LeetcodeGolang/
 
 | No. | Title | Solution | Difficulty | Time | Space | Topic |
 |--|:--:|:--:|--|--|--|--|
-| 0001 | [Two Sum](https://leetcode.com/problems/two-sum/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0001.Two-Sum) | Easy | O(n) | O(n) | Array |
-| 0003 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0003.Longest-Substring-Without-Repeating-Characters) | Medium | O(n) | O(1) | Array, Sliding Window |
-| 0015 | [3 Sum](https://leetcode.com/problems/3sum/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0015.3Sum) | Medium | O(n^2) | O(n) | Array |
-| 0027 | [Remove Element](https://leetcode.com/problems/remove-element/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0027.Remove-Element) | Easy | O(n) | O(1) | Array |
-| 0035 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0035.Search-Insert-Position) | Easy |  O(n), O(logn) | O(1) | Array |
-| 0059 | [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0059.Spiral-Matrix-II) | Medium | O(n) | O(n^2) | Array |
-| 0088 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0088.Merge-Sorted-Array) | Easy | O(n) | O(1) | Array |
+| [0001](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0001.Two-Sum) | [Two Sum](https://leetcode.com/problems/two-sum/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0001.Two-Sum) | Easy | O(n) | O(n) | Array |
+| [0003](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0003.Longest-Substring-Without-Repeating-Characters) | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0003.Longest-Substring-Without-Repeating-Characters) | Medium | O(n) | O(1) | Array, Sliding Window |
+| [0015](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0015.3Sum) | [3 Sum](https://leetcode.com/problems/3sum/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0015.3Sum) | Medium | O(n^2) | O(n) | Array |
+| [0027](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0027.Remove-Element) | [Remove Element](https://leetcode.com/problems/remove-element/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0027.Remove-Element) | Easy | O(n) | O(1) | Array |
+| [0035](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0035.Search-Insert-Position) | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0035.Search-Insert-Position) | Easy |  O(n), O(logn) | O(1) | Array |
+| [0059](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0059.Spiral-Matrix-II) | [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0059.Spiral-Matrix-II) | Medium | O(n) | O(n^2) | Array |
+| [0088](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0088.Merge-Sorted-Array) | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0088.Merge-Sorted-Array) | Easy | O(n) | O(1) | Array |
 
 ---
 
@@ -45,7 +45,7 @@ https://kimi0230.github.io/LeetcodeGolang/
 
 | No. | Title | Solution | Difficulty | Time | Space | Topic |
 |-----|:-----:|:--------:|------------|------|-------|-------|
-| 0094 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0094.Binary-Tree-Inorder-Traversal) | Medium | O(n) | O(1) | Stack |
+| [0094](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0094.Binary-Tree-Inorder-Traversal/) | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0094.Binary-Tree-Inorder-Traversal) | Medium | O(n) | O(1) | Stack |
 
 ---
 
@@ -53,11 +53,11 @@ https://kimi0230.github.io/LeetcodeGolang/
 
 | No. | Title | Solution | Difficulty | Time | Space | Topic |
 |-----|:-----:|:--------:|------------|------|-------|-------|
-| 0019 | [Remove Nth Node From End of List](https://leetcode.com/problems/middle-of-the-linked-list/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0019.Remove-Nth-Node-From-End-of-List) | Medium | O(n) | O(1) | Linked List, Two Pointers |
-| 0141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0141.Linked-List-Cycle) | Easy | O(n) | O(1) | Linked List, Two Pointers |
-| 0142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0142.Linked-List-CycleII) | Medium | O(n) | O(1) | Linked List, Two Pointers |
-| 0876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0876.Middle-of-the-Linked-List) | Easy |  |  | Linked List, Two Pointers |
-| 0203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0203.Remove-Linked-List-Elements) | Easy | O(n) | O(1) | Linked List |
+| [0019](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0019.Remove-Nth-Node-From-End-of-List/) | [Remove Nth Node From End of List](https://leetcode.com/problems/middle-of-the-linked-list/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0019.Remove-Nth-Node-From-End-of-List) | Medium | O(n) | O(1) | Linked List, Two Pointers |
+| [0141](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0141.Linked-List-Cycle/) | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0141.Linked-List-Cycle) | Easy | O(n) | O(1) | Linked List, Two Pointers |
+| [0142](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0142.Linked-List-CycleII/) | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0142.Linked-List-CycleII) | Medium | O(n) | O(1) | Linked List, Two Pointers |
+| [0203](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0203.Remove-Linked-List-Elements) | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0203.Remove-Linked-List-Elements) | Easy | O(n) | O(1) | Linked List |
+| [0876](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0876.Middle-of-the-Linked-List/) | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0876.Middle-of-the-Linked-List) | Easy |  |  | Linked List, Two Pointers |
 
 ---
 
@@ -65,7 +65,7 @@ https://kimi0230.github.io/LeetcodeGolang/
 #### Sort
 | No. | Title | Solution | Difficulty | Time | Space | Topic |
 |-----|:-----:|:--------:|------------|------|-------|-------|
-| 0075 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0075.Sort-Color) | Medium | O(n) | O(1) | Sort |
+| [0075](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0075.Sort-Colors/) | [Sort Colors](https://leetcode.com/problems/sort-colors/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0075.Sort-Color) | Medium | O(n) | O(1) | Sort |
 
 
 ---
@@ -94,7 +94,7 @@ def backtrack(路徑, 選擇列表):
 
 | No. | Title | Solution | Difficulty | Time | Space | Topic |
 |-----|:-----:|:--------:|------------|------|-------|-------|
-| 0046 | [Permutations (全排列)](https://leetcode.com/problems/permutations/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0046.Permutations) | Medium | O(n) | O(n) | Backtracking |
+| [0046](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0046.Permutations/) | [Permutations (全排列)](https://leetcode.com/problems/permutations/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0046.Permutations) | Medium | O(n) | O(n) | Backtracking |
 
 ---
 
@@ -122,11 +122,11 @@ for 狀態1 in 狀態1的所有取值：
 
 | No. | Title | Solution | Difficulty | Time | Space | Topic |
 |-----|:-----:|:--------:|------------|------|-------|-------|
-| 0053 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0053.Maximum-Subarray) | Easy | O(n) | O(n) | Dynamic Programming |
-| 0300 | [Longest-Increasing-Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0300.Longest-Increasing-Subsequence) | Medium | 方法一:O(n^2) 方法二:O(nlogn) | O(n) | Dynamic Programming |
-| 0322 | [Coin Change](https://leetcode.com/problems/coin-change/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0322.Coin-Change) | Medium | O(nm) | O(n) | Dynamic Programming |
-| 0354 | [Russian Doll Envelope](https://leetcode.com/problems/russian-doll-envelopes/)| [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0354.Russian-Doll-Envelopes) | Hard |  |  | Dynamic Programming |
-| 0509 | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0509.Fibonacci-Number) | Easy | 很多解法 | 很多解法 | Dynamic Programming |
+| [0053](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0053.Maximum-Subarray/) | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0053.Maximum-Subarray) | Easy | O(n) | O(n) | Dynamic Programming |
+| [0300](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0300.Longest-Increasing-Subsequence/)  | [Longest-Increasing-Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0300.Longest-Increasing-Subsequence) | Medium | 方法一:O(n^2) 方法二:O(nlogn) | O(n) | Dynamic Programming |
+| [0322](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0322.Coin-Change/)  | [Coin Change](https://leetcode.com/problems/coin-change/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0322.Coin-Change) | Medium | O(nm) | O(n) | Dynamic Programming |
+| [0354](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0354.Russian-Doll-Envelopes/)  | [Russian Doll Envelope](https://leetcode.com/problems/russian-doll-envelopes/)| [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0354.Russian-Doll-Envelopes) | Hard |  |  | Dynamic Programming |
+| [0509](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0509.Fibonacci-Number/)  | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0509.Fibonacci-Number) | Easy | 很多解法 | 很多解法 | Dynamic Programming |
 
 ---
 
@@ -165,9 +165,9 @@ void slidingWindow(string s, string t){
 ```
 | No. | Title | Solution | Difficulty | Time | Space | Topic |
 |-----|:-----:|:--------:|------------|------|-------|-------|
-| 0209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0209.Minimum-Size-Subarray-Sum) | Medium | O(n^2) / O(n) / O(nlog n) |  O(1) / O(1) / O(n) | Sliding Window |
-| 0438 | [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0438.Find-All-Anagrams-in-a-String) | Medium | O(n) |  O(1) | Sliding Window |
-| 0567 | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0567.Permutation-in-String) | Medium | O(n) |  O(1) | Sliding Window |
+| [0209](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0209.Minimum-Size-Subarray-Sum/)  | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0209.Minimum-Size-Subarray-Sum) | Medium | O(n^2) / O(n) / O(nlog n) |  O(1) / O(1) / O(n) | Sliding Window |
+| [0438](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0438.Find-All-Anagrams-in-a-String/)  | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0438.Find-All-Anagrams-in-a-String) | Medium | O(n) |  O(1) | Sliding Window |
+| [0567](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0567.Permutation-in-String/) | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0567.Permutation-in-String) | Medium | O(n) |  O(1) | Sliding Window |
 
 ---
 
@@ -181,11 +181,11 @@ https://labuladong.gitee.io/algo/2/21/57/
 
 | No. | Title | Solution | Difficulty | Time | Space | Topic |
 |-----|:-----:|:--------:|------------|------|-------|-------|
-| 0019 | [Remove Nth Node From End of List](https://leetcode.com/problems/middle-of-the-linked-list/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0019.Remove-Nth-Node-From-End-of-List) | Medium | O(n) | O(1) | Linked List, Two Pointers |
-| 0141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0141.Linked-List-Cycle) | Easy | O(n) | O(1) | Linked List, Two Pointers |
-| 0142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0142.Linked-List-CycleII) | Medium | O(n) | O(1) | Linked List, Two Pointers |
-| 0344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0344.Reverse-String) | Easy | O(n) |  O(1) | Two Pointers |
-| 0876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0876.Middle-of-the-Linked-List) | Easy |  |  | Linked List, Two Pointers |
+| [0019](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0019.Remove-Nth-Node-From-End-of-List/) | [Remove Nth Node From End of List](https://leetcode.com/problems/middle-of-the-linked-list/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0019.Remove-Nth-Node-From-End-of-List) | Medium | O(n) | O(1) | Linked List, Two Pointers |
+| [0141](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0141.Linked-List-Cycle/) | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0141.Linked-List-Cycle) | Easy | O(n) | O(1) | Linked List, Two Pointers |
+| [0142](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0142.Linked-List-CycleII/) | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0142.Linked-List-CycleII) | Medium | O(n) | O(1) | Linked List, Two Pointers |
+| [0344](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0344.Reverse-String/) | [Reverse String](https://leetcode.com/problems/reverse-string/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0344.Reverse-String) | Easy | O(n) |  O(1) | Two Pointers |
+| [0876](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0876.Middle-of-the-Linked-List/) | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0876.Middle-of-the-Linked-List) | Easy |  |  | Linked List, Two Pointers |
 
 ---
 
@@ -193,7 +193,7 @@ https://labuladong.gitee.io/algo/2/21/57/
 
 | No. | Title | Solution | Difficulty | Time | Space | Topic |
 |-----|:-----:|:--------:|------------|------|-------|-------|
-| 0693 | [Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0693.Binary-Number-with-Alternating-Bits) | Easy | O(n)/ O(1) |  O(1) / O(1) | Bit Manipulation |
+| [0693](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0693.Binary-Number-with-Alternating-Bits/) | [Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0693.Binary-Number-with-Alternating-Bits) | Easy | O(n)/ O(1) |  O(1) / O(1) | Bit Manipulation |
 
 ---
 
@@ -201,7 +201,7 @@ https://labuladong.gitee.io/algo/2/21/57/
 
 | No. | Title | Solution | Difficulty | Time | Space | Topic |
 |-----|:-----:|:--------:|------------|------|-------|-------|
-| 0721 | [Accounts Merge](https://leetcode.com/problems/accounts-merge/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0721.Accounts-Merge) | Easy | O(n) / O(n log n) |  O(n) / O(n) | Union Find |
+| [0721](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0721.Accounts-Merge/) | [Accounts Merge](https://leetcode.com/problems/accounts-merge/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0721.Accounts-Merge) | Easy | O(n) / O(n log n) |  O(n) / O(n) | Union Find |
 
 ---
 
@@ -248,8 +248,8 @@ int BFS(Node start, Node targe){
 
 | No. | Title | Solution | Difficulty | Time | Space | Topic |
 |-----|:-----:|:--------:|------------|------|-------|-------|
-| 0310 | [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0310.Minimum-Height-Trees) | Medium |  |  | Breadth First Search |
-| 0752 | [752. Open the Lock](https://leetcode.com/problems/open-the-lock/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0752.Open-the-Lock) | Medium |  |  | Breadth First Search |
+| [0310](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0310.Minimum-Height-Trees/) | [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0310.Minimum-Height-Trees) | Medium |  |  | Breadth First Search |
+| [0752](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0752.Open-the-Lock/) | [752. Open the Lock](https://leetcode.com/problems/open-the-lock/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0752.Open-the-Lock) | Medium |  |  | Breadth First Search |
 
 ---
 #### Binary Search
@@ -273,7 +273,7 @@ int binarySearch(int[] nums, int target){
 ```
 | No. | Title | Solution | Difficulty | Time | Space | Topic |
 |-----|:-----:|:--------:|------------|------|-------|-------|
-| 0704 | [704. Binary Search](https://leetcode.com/problems/binary-search/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0704.Binary-Search) | Easy | 最差:O(long n)<br> 最佳O(1)剛好在中間 | 迭代: O(1) <br/> 遞迴O(log n) | Binary Search |
+| [0704](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0704.Binary-Search/) | [704. Binary Search](https://leetcode.com/problems/binary-search/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0704.Binary-Search) | Easy | 最差:O(long n)<br> 最佳O(1)剛好在中間 | 迭代: O(1) <br/> 遞迴O(log n) | Binary Search |
 
 
 ---

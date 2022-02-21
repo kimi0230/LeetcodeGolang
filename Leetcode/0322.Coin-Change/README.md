@@ -5,7 +5,6 @@ author: Kimi Tsai <kimi0230@gmail.com>
 description:
 ---
 # [322. Coin Change](https://leetcode.com/problems/coin-change/) 
-`Medium`
 ## 題目
 You are given an integer array coins representing coins of different denominations and an integer amount representing a total amount of money.
 
