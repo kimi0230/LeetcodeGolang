@@ -66,6 +66,40 @@ func MinDistanceMemo(word1 string, word2 string) int {
 	return dp(len(word1)-1, len(word2)-1)
 }
 
+// DP table 優化, DP table 是自底向上求解, 遞迴是自頂向下求解
+func MinDistanceDP(word1 string, word2 string) int {
+	m, n := len(word1), len(word2)
+	// 初始化  dp table : [][]int{}
+	dp := make([][]int, m+1)
+	for i := 0; i < m+1; i++ {
+		dp[i] = make([]int, n+1)
+	}
+
+	// base case
+	for i := 1; i <= m; i++ {
+		dp[i][0] = i
+	}
+	for j := 1; j <= n; j++ {
+		dp[0][j] = j
+	}
+
+	// 向上求解
+	for i := 1; i <= m; i++ {
+		for j := 1; j <= n; j++ {
+			if word1[i-1] == word2[j-1] {
+				dp[i][j] = dp[i-1][j-1]
+			} else {
+				dp[i][j] = min(
+					dp[i][j-1]+1,   // insert
+					dp[i-1][j]+1,   // delete
+					dp[i-1][j-1]+1, // replace
+				)
+			}
+		}
+	}
+	return dp[m][n]
+}
+
 type Number interface {
 	int | int64 | float64
 }

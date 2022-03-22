@@ -139,6 +139,40 @@ func MinDistanceMemo(word1 string, word2 string) int {
 	return dp(len(word1)-1, len(word2)-1)
 }
 
+// DP table 優化, DP table 是自底向上求解, 遞迴是自頂向下求解
+func MinDistanceDP(word1 string, word2 string) int {
+	m, n := len(word1), len(word2)
+	// 初始化  dp table : [][]int{}
+	dp := make([][]int, m+1)
+	for i := 0; i < m+1; i++ {
+		dp[i] = make([]int, n+1)
+	}
+
+	// base case
+	for i := 1; i <= m; i++ {
+		dp[i][0] = i
+	}
+	for j := 1; j <= n; j++ {
+		dp[0][j] = j
+	}
+
+	// 向上求解
+	for i := 1; i <= m; i++ {
+		for j := 1; j <= n; j++ {
+			if word1[i-1] == word2[j-1] {
+				dp[i][j] = dp[i-1][j-1]
+			} else {
+				dp[i][j] = min(
+					dp[i][j-1]+1,   // insert
+					dp[i-1][j]+1,   // delete
+					dp[i-1][j-1]+1, // replace
+				)
+			}
+		}
+	}
+	return dp[m][n]
+}
+
 type Number interface {
 	int | int64 | float64
 }
@@ -165,8 +199,9 @@ goos: darwin
 goarch: amd64
 pkg: LeetcodeGolang/Leetcode/0072.Edit-Distance
 cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
-BenchmarkMinDistance-8            415807              3888 ns/op               0 B/op          0 allocs/op
-BenchmarkMinDistanceMemo-8         64245             16935 ns/op            2212 B/op         69 allocs/op
+BenchmarkMinDistance-8            398260              3748 ns/op               0 B/op          0 allocs/op
+BenchmarkMinDistanceMemo-8        102272             10796 ns/op            2211 B/op         69 allocs/op
+BenchmarkMinDistanceDP-8         1944886               794.2 ns/op           688 B/op          9 allocs/op
 PASS
-ok      LeetcodeGolang/Leetcode/0072.Edit-Distance      2.940s
+ok      LeetcodeGolang/Leetcode/0072.Edit-Distance      5.717s
 ```
