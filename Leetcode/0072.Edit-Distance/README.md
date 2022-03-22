@@ -4,7 +4,7 @@ tags: Hard, Dynamic Programming
 author: Kimi Tsai <kimi0230@gmail.com>
 description:
 ---
-# [75. Sort Colors](https://leetcode.com/problems/edit-distance/)
+# [0072. Edit Distance](https://leetcode.com/problems/edit-distance/)
 
 ## 题目
 Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.
@@ -63,9 +63,19 @@ else:
     # replace
 ```
 
+`dp = [[0 1 2 3] [1 1 2 3] [2 2 1 2] [3 2 2 2] [4 3 3 2] [5 4 4 3]]`
+
+| word1 \ word2 |  "" |  h  |  o  |  r  |  s  |  e  |
+|---------------|-----|-----|-----|-----|-----|-----|
+| ""            |  0  |  1  |  2  |  3  |  4  |  5  |
+| r             |  1  |  1  |  2  |  2  |  3  |  4  |
+| o             |  2  |  2  |  1  |  2  |  3  |  4  |
+| s             |  3  |  3  |  2  |  2  |  2  |  3  |
+
+
 ## 來源
 * https://leetcode.com/problems/edit-distance/
-
+* https://labuladong.gitee.io/algo/3/25/77/
 
 ## 解答
 https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/0072.Edit-Distance/main.go
