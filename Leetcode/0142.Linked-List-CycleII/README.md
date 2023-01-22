@@ -51,7 +51,7 @@ Constraints:
 ## 解題思路
 假設第一次相遇, slow 走了`k`步, 那麼 `fast就走了 2k`, 也就是說fast比slow多走了k步(環長度的整數倍)
 設相遇點與環的起點距離為 `m`, 那麼`環的起點`與`Head`的距離為 `k-m`
-![](https://github.com/kimi0230/assets/blob/master/leetcode/images/0142.LinkedListCycleII.jpg?raw=true)
+![](../../assets/images/0142.LinkedListCycleII.jpg)
 
 ## 來源
 * https://leetcode.com/problems/linked-list-cycle-ii/
