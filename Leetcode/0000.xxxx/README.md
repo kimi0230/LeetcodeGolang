@@ -10,7 +10,7 @@ description: "NUMLEETCODEFOLDER"
 license: ""
 images: []
 
-tags: [LeetCode, Easy, TITLE]
+tags: [LeetCode, Go, Easy, TITLE]
 categories: [LeetCode]
 
 featuredImage: ""
@@ -76,5 +76,11 @@ seo:
 https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/NUMLEETCODEFOLDER/main.go
 
 ```go
+
+```
+
+##  Benchmark
+
+```sh
 
 ```

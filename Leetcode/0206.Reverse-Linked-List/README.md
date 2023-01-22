@@ -10,7 +10,7 @@ description: "Reverse Linked List"
 license: ""
 images: []
 
-tags: [LeetCode, Easy, Reverse Linked List]
+tags: [LeetCode, Go, Easy, Reverse Linked List]
 categories: [LeetCode]
 
 featuredImage: ""
@@ -103,5 +103,60 @@ Follow up: A linked list can be reversed either iteratively or recursively. Coul
 https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/0000.kkkk/main.go
 
 ```go
+package reverselinkedlist
 
+import (
+	. "LeetcodeGolang/structures"
+)
+
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+
+func ReverseList(head *ListNode) *ListNode {
+	if head == nil || head.Next == nil {
+		return head
+	}
+
+	var prev *ListNode
+
+	for head != nil {
+		next := head.Next
+		head.Next = prev
+		prev = head
+		head = next
+	}
+
+	return prev
+}
+
+func ReverseListRecursively(head *ListNode) *ListNode {
+	return ListRecursivelyChild(head, nil)
+}
+
+func ListRecursivelyChild(current *ListNode, prev *ListNode) *ListNode {
+	if current == nil {
+		return prev
+	}
+	next := current.Next
+	current.Next = prev
+	return ListRecursivelyChild(next, current)
+}
+
+```
+
+##  Benchmark
+```sh
+goos: darwin
+goarch: amd64
+pkg: LeetcodeGolang/Leetcode/0206.Reverse-Linked-List
+cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+BenchmarkReverseList-8                  1000000000               0.7960 ns/op          0 B/op          0 allocs/op
+BenchmarkReverseListRecursively-8       276534334                4.374 ns/op           0 B/op          0 allocs/op
+PASS
+ok      LeetcodeGolang/Leetcode/0206.Reverse-Linked-List        2.597s
 ```

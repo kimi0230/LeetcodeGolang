@@ -17,14 +17,27 @@ func ReverseList(head *ListNode) *ListNode {
 		return head
 	}
 
-	var pre *ListNode
+	var prev *ListNode
 
 	for head != nil {
 		next := head.Next
-		head.Next = pre
-		pre = head
+		head.Next = prev
+		prev = head
 		head = next
 	}
 
-	return pre
+	return prev
+}
+
+func ReverseListRecursively(head *ListNode) *ListNode {
+	return ListRecursivelyChild(head, nil)
+}
+
+func ListRecursivelyChild(current *ListNode, prev *ListNode) *ListNode {
+	if current == nil {
+		return prev
+	}
+	next := current.Next
+	current.Next = prev
+	return ListRecursivelyChild(next, current)
 }
