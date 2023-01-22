@@ -10,14 +10,11 @@ var tests = []struct {
 		"bbbab",
 		4,
 	},
-	{
-		"cbbd",
-		2,
-	},
 }
 
 func TestLongestPalindromeSubseq(t *testing.T) {
 	for _, tt := range tests {
+		// if got := ReverseList(tt.arg1); !reflect.DeepEqual(got, tt.want) {
 		if got := LongestPalindromeSubseq(tt.arg1); got != tt.want {
 			t.Errorf("got = %v, want = %v", got, tt.want)
 		}

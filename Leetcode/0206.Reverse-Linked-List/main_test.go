@@ -1,37 +1,45 @@
-package longestpalindromicsubsequence
+package reverselinkedlist
 
-import "testing"
+import (
+	. "LeetcodeGolang/structures"
+	"reflect"
+	"testing"
+)
 
 var tests = []struct {
-	arg1 string
-	want int
+	arg1 *ListNode
+	want *ListNode
 }{
 	{
-		"bbbab",
-		4,
+		Ints2List([]int{1, 2, 3, 4, 5}),
+		Ints2List([]int{5, 4, 3, 2, 1}),
 	},
 	{
-		"cbbd",
-		2,
+		Ints2List([]int{1, 2}),
+		Ints2List([]int{2, 1}),
+	},
+	{
+		Ints2List([]int{}),
+		Ints2List([]int{}),
 	},
 }
 
-func TestLongestPalindromeSubseq(t *testing.T) {
+func TestReverseList(t *testing.T) {
 	for _, tt := range tests {
-		if got := LongestPalindromeSubseq(tt.arg1); got != tt.want {
+		if got := ReverseList(tt.arg1); !reflect.DeepEqual(got, tt.want) {
 			t.Errorf("got = %v, want = %v", got, tt.want)
 		}
 	}
 }
 
-func BenchmarkLongestPalindromeSubseq(b *testing.B) {
+func BenchmarkReverseList(b *testing.B) {
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
-		LongestPalindromeSubseq(tests[0].arg1)
+		ReverseList(tests[0].arg1)
 	}
 }
 
 /*
-go test -benchmem -run=none LeetcodeGolang/Leetcode/0354.Russian-Doll-Envelopes -bench=.
+go test -benchmem -run=none LeetcodeGolang/Leetcode/0206.Reverse-Linked-List -bench=.
 
 */
