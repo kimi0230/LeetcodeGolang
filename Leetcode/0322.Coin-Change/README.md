@@ -68,7 +68,7 @@ var memo = map[int]int{}
 
 func dp(coins []int, n int) int {
 	// 查詢備忘錄 避免重複
-	if _, vok := memo[n]; vok == true {
+	if _, vok := memo[n]; vok {
 		return memo[n]
 	}
 
@@ -107,6 +107,7 @@ func CoinChangeDP(coins []int, amount int) int {
 	dp[0] = 0
 
 	// 初始化, 湊成 amount 金額的硬幣 最多就 amount 個(全都用1元), 所以 amount+1相當於正的無窮
+	// dp[]的定義: 當目標金額為i時, 至少需要dp[i]枚硬幣湊出
 	for i := 1; i < len(dp); i++ {
 		dp[i] = amount + 1
 	}
