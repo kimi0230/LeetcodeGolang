@@ -15,7 +15,7 @@ var memo = map[int]int{}
 
 func dp(coins []int, n int) int {
 	// 查詢備忘錄 避免重複
-	if _, vok := memo[n]; vok == true {
+	if _, vok := memo[n]; vok {
 		return memo[n]
 	}
 
@@ -73,4 +73,30 @@ func CoinChangeDP(coins []int, amount int) int {
 	}
 
 	return dp[amount]
+}
+
+func CoinChange(coins []int, n int) int {
+	var dpClosure func(n int) int
+	dpClosure = func(n int) int {
+		if n == 0 {
+			return 0
+		}
+		if n < 0 {
+			return -1
+		}
+		res := math.MaxInt
+		for _, coin := range coins {
+			subproblem := dpClosure(n - coin)
+			if subproblem == -1 {
+				continue
+			}
+			res = min(res, 1+subproblem)
+		}
+		if res != math.MaxInt {
+			return res
+		} else {
+			return -1
+		}
+	}
+	return dpClosure(n)
 }

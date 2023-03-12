@@ -16,6 +16,14 @@ var tests = []struct {
 	},
 }
 
+func TestCoinChange(t *testing.T) {
+	for _, tt := range tests {
+		if got := CoinChange(tt.arg1, tt.arg2); got != tt.want {
+			t.Errorf("got = %v \n want = %v \n", got, tt.want)
+		}
+	}
+}
+
 func TestCoinChangeDP(t *testing.T) {
 	for _, tt := range tests {
 		if got := CoinChangeDP(tt.arg1, tt.arg2); got != tt.want {
@@ -34,6 +42,13 @@ func TestCoinChangeMemoryTableRecursion(t *testing.T) {
 
 var arg1 = []int{1, 2, 5}
 var arg2 = 11
+
+func BenchmarkCoinChange(b *testing.B) {
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		CoinChange(arg1, arg2)
+	}
+}
 
 func BenchmarkCoinChangeDP(b *testing.B) {
 	b.ResetTimer()
@@ -54,9 +69,10 @@ go test -benchmem -run=none LeetcodeGolang/Leetcode/0322.Coin-Change -bench=.
 goos: darwin
 goarch: amd64
 pkg: LeetcodeGolang/Leetcode/0322.Coin-Change
-cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
-BenchmarkCoinChangeDP-8                         13531378                91.60 ns/op           96 B/op          1 allocs/op
-BenchmarkCoinChangeMemoryTableRecursion-8       50481345                21.66 ns/op            0 B/op          0 allocs/op
+cpu: Intel(R) Core(TM) i5-6400 CPU @ 2.70GHz
+BenchmarkCoinChange-4                             273376              4452 ns/op               0 B/op          0 allocs/op
+BenchmarkCoinChangeDP-4                         11071686               128.1 ns/op            96 B/op          1 allocs/op
+BenchmarkCoinChangeMemoryTableRecursion-4       57663068                23.69 ns/op            0 B/op          0 allocs/op
 PASS
-ok      LeetcodeGolang/Leetcode/0322.Coin-Change        2.459s
+ok      LeetcodeGolang/Leetcode/0322.Coin-Change        4.194s
 */
