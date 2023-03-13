@@ -14,6 +14,16 @@ var tests = []struct {
 		11,
 		3,
 	},
+	{
+		[]int{2},
+		3,
+		-1,
+	},
+	{
+		[]int{1},
+		0,
+		0,
+	},
 }
 
 func TestCoinChange(t *testing.T) {
