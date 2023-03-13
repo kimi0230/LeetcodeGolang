@@ -1,5 +1,6 @@
 package movezeroes
 
+// 時間O(n^2)
 func MoveZeroes(nums []int) {
 	for i := 0; i < len(nums); i++ {
 		if nums[i] == 0 {
@@ -9,6 +10,19 @@ func MoveZeroes(nums []int) {
 					break
 				}
 			}
+		}
+	}
+}
+
+// 時間O(n), 空間O(1)
+func MoveZeroes2point(nums []int) {
+	j := 0
+	for i := 0; i < len(nums); i++ {
+		if nums[i] != 0 {
+			if i != j {
+				nums[i], nums[j] = nums[j], nums[i]
+			}
+			j++
 		}
 	}
 }
