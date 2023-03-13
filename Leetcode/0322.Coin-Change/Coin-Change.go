@@ -45,6 +45,7 @@ func dp(coins []int, n int) int {
 
 // 備忘錄 遞迴 時間複雜O(kn).
 func CoinChangeMemoryTableRecursion(coins []int, amount int) int {
+	memo = map[int]int{}
 	return dp(coins, amount)
 }
 
