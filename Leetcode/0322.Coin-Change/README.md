@@ -1,8 +1,62 @@
 ---
 title: 0322.Coin Change
-tags: Medium, Dynamic Programming
-author: Kimi Tsai <kimi0230@gmail.com>
-description:
+subtitle: "https://leetcode.com/problems/coin-change/"
+date: 2023-03-14T21:20:00+08:00
+lastmod: 2023-03-14T21:20:00+08:00
+draft: false
+author: "Kimi.Tsai"
+authorLink: "https://kimi0230.github.io/"
+description: "0322.Coin Change"
+license: ""
+images: []
+
+tags: [LeetCode, Go, Coin Change, Medium, Dynamic Programming]
+categories: [LeetCode]
+
+featuredImage: ""
+featuredImagePreview: ""
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+twemoji: false
+lightgallery: true
+ruby: true
+fraction: true
+fontawesome: true
+linkToMarkdown: false
+rssFullText: false
+
+toc:
+  enable: true
+  auto: true
+code:
+  copy: true
+  maxShownLines: 200
+math:
+  enable: false
+  # ...
+mapbox:
+  # ...
+share:
+  enable: true
+  # ...
+comment:
+  enable: true
+  # ...
+library:
+  css:
+    # someCSS = "some.css"
+    # located in "assets/"
+    # Or
+    # someCSS = "https://cdn.example.com/some.css"
+  js:
+    # someJS = "some.js"
+    # located in "assets/"
+    # Or
+    # someJS = "https://cdn.example.com/some.js"
+seo:
+  images: []
+  # ...
 ---
 # [322. Coin Change](https://leetcode.com/problems/coin-change/) 
 ## 題目
