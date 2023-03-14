@@ -79,10 +79,10 @@ go test -benchmem -run=none LeetcodeGolang/Leetcode/0322.Coin-Change -bench=.
 goos: darwin
 goarch: amd64
 pkg: LeetcodeGolang/Leetcode/0322.Coin-Change
-cpu: Intel(R) Core(TM) i5-6400 CPU @ 2.70GHz
-BenchmarkCoinChange-4                             273376              4452 ns/op               0 B/op          0 allocs/op
-BenchmarkCoinChangeDP-4                         11071686               128.1 ns/op            96 B/op          1 allocs/op
-BenchmarkCoinChangeMemoryTableRecursion-4       57663068                23.69 ns/op            0 B/op          0 allocs/op
+cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+BenchmarkCoinChange-8                             323095              4531 ns/op               0 B/op          0 allocs/op
+BenchmarkCoinChangeDP-8                         12356360                90.89 ns/op           96 B/op          1 allocs/op
+BenchmarkCoinChangeMemoryTableRecursion-8        1238718               955.2 ns/op           493 B/op          3 allocs/op
 PASS
-ok      LeetcodeGolang/Leetcode/0322.Coin-Change        4.194s
+ok      LeetcodeGolang/Leetcode/0322.Coin-Change        5.708s
 */
