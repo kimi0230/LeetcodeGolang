@@ -235,3 +235,17 @@ func T2s(head *TreeNode, array *[]int) {
 		T2s(head.Right, array)
 	}
 }
+
+func BuildTree(nums []int, index int) *TreeNode {
+	if index >= len(nums) || nums[index] == -1 {
+		return nil
+	}
+	root := &TreeNode{Val: nums[index]}
+	root.Left = BuildTree(nums, 2*index+1)
+	root.Right = BuildTree(nums, 2*index+2)
+	return root
+}
+
+func IntsToTree(nums []int) *TreeNode {
+	return BuildTree(nums, 0)
+}

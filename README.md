@@ -13,6 +13,7 @@ https://kimi0230.github.io/LeetcodeGolang/
     - [Array](#array)
     - [Stack](#stack)
     - [Linked List](#linked-list)
+    - [Tree](#tree)
   - [Algorithm](#algorithm)
     - [Sort](#sort)
     - [Backtracking (回溯法). DFS](#backtracking-回溯法-dfs)
@@ -61,6 +62,11 @@ https://kimi0230.github.io/LeetcodeGolang/
 | [0876](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0876.Middle-of-the-Linked-List/)        |    [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)     |    [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0876.Middle-of-the-Linked-List)     | Easy       |      |       | Linked List, Two Pointers |
 
 ---
+
+#### Tree
+| No.                                                                                |                                  Title                                  |                                           Solution                                            | Difficulty | Time | Space | Topic |
+|------------------------------------------------------------------------------------|:-----------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------:|------------|------|-------|-------|
+| [0876](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0226.Invert-Binary-Tree) | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0226.Invert-Binary-Tree) | Easy       | O(n) | O(1)  | Tree  |
 
 ### Algorithm
 #### Sort
