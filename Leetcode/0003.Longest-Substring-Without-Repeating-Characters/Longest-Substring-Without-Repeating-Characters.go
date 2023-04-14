@@ -42,23 +42,24 @@ func LengthOfLongestSubstringMap(s string) int {
 
 	charMap := make(map[byte]bool)
 	maxLen, left, right := 0, 0, 0
-	for i := 0; i < slength; i++ {
-		if ok := charMap[s[i]]; ok {
+
+	for left < slength {
+		if ok := charMap[s[right]]; ok {
 			// 有找到
 			charMap[s[left]] = false
 			left++
 		} else {
-			charMap[s[i]] = true
+			charMap[s[right]] = true
 			right++
 		}
-
 		if maxLen < right-left {
 			maxLen = right - left
 		}
-		if left+maxLen >= slength || right >= len(s) {
+		if (left+maxLen) >= slength || right >= len(s) {
 			break
 		}
 	}
+
 	return maxLen
 }
 
@@ -72,13 +73,13 @@ func LengthOfLongestSubstringBit(s string) int {
 	// ASCII 0~255
 	charMap := [256]bool{}
 	maxLen, left, right := 0, 0, 0
-	for i := 0; i < slength; i++ {
-		if ok := charMap[s[i]]; ok {
+	for left < slength {
+		if ok := charMap[s[right]]; ok {
 			// 有找到
 			charMap[s[left]] = false
 			left++
 		} else {
-			charMap[s[i]] = true
+			charMap[s[right]] = true
 			right++
 		}
 

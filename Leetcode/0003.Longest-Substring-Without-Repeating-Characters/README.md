@@ -1,8 +1,62 @@
 ---
 title: 0003.Longest Substring Without Repeating Characters
-tags: Medium, Array, Sliding Window
-author: Kimi Tsai <kimi0230@gmail.com>
-description:
+subtitle: "https://leetcode.com/problems/longest-substring-without-repeating-characters/submissions/933491221/"
+date: 2023-01-22T21:20:00+08:00
+lastmod: 2023-01-22T21:20:00+08:00
+draft: false
+author: "Kimi.Tsai"
+authorLink: "https://kimi0230.github.io/"
+description: "NUMLEETCODEFOLDER"
+license: ""
+images: []
+
+tags: [LeetCode, Go, Medium, Longest Substring Without Repeating Characters, Sliding Window, Array]
+categories: [LeetCode]
+
+featuredImage: ""
+featuredImagePreview: ""
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+twemoji: false
+lightgallery: true
+ruby: true
+fraction: true
+fontawesome: true
+linkToMarkdown: false
+rssFullText: false
+
+toc:
+  enable: true
+  auto: true
+code:
+  copy: true
+  maxShownLines: 200
+math:
+  enable: false
+  # ...
+mapbox:
+  # ...
+share:
+  enable: true
+  # ...
+comment:
+  enable: true
+  # ...
+library:
+  css:
+    # someCSS = "some.css"
+    # located in "assets/"
+    # Or
+    # someCSS = "https://cdn.example.com/some.css"
+  js:
+    # someJS = "some.js"
+    # located in "assets/"
+    # Or
+    # someJS = "https://cdn.example.com/some.js"
+seo:
+  images: []
+  # ...
 ---
 # [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
@@ -99,23 +153,24 @@ func LengthOfLongestSubstringMap(s string) int {
 
 	charMap := make(map[byte]bool)
 	maxLen, left, right := 0, 0, 0
-	for i := 0; i < slength; i++ {
-		if ok := charMap[s[i]]; ok {
+
+	for left < slength {
+		if ok := charMap[s[right]]; ok {
 			// 有找到
 			charMap[s[left]] = false
 			left++
 		} else {
-			charMap[s[i]] = true
+			charMap[s[right]] = true
 			right++
 		}
-
 		if maxLen < right-left {
 			maxLen = right - left
 		}
-		if left+maxLen >= slength || right >= len(s) {
+		if (left+maxLen) >= slength || right >= len(s) {
 			break
 		}
 	}
+
 	return maxLen
 }
 
@@ -129,13 +184,13 @@ func LengthOfLongestSubstringBit(s string) int {
 	// ASCII 0~255
 	charMap := [256]bool{}
 	maxLen, left, right := 0, 0, 0
-	for i := 0; i < slength; i++ {
-		if ok := charMap[s[i]]; ok {
+	for left < slength {
+		if ok := charMap[s[right]]; ok {
 			// 有找到
 			charMap[s[left]] = false
 			left++
 		} else {
-			charMap[s[i]] = true
+			charMap[s[right]] = true
 			right++
 		}
 
@@ -149,4 +204,18 @@ func LengthOfLongestSubstringBit(s string) int {
 	return maxLen
 }
 
+```
+
+##  Benchmark
+
+```sh
+goos: darwin
+goarch: amd64
+pkg: LeetcodeGolang/Leetcode/0003.Longest-Substring-Without-Repeating-Characters
+cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+BenchmarkLengthOfLongestSubstring-8             66143602                19.08 ns/op            0 B/op          0 allocs/op
+BenchmarkLengthOfLongestSubstringMap-8           2524627               397.8 ns/op             0 B/op          0 allocs/op
+BenchmarkLengthOfLongestSubstringBit-8          65099846                21.37 ns/op            0 B/op          0 allocs/op
+PASS
+ok      LeetcodeGolang/Leetcode/0003.Longest-Substring-Without-Repeating-Characters     4.193s
 ```
