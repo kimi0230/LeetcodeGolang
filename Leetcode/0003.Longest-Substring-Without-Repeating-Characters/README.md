@@ -6,7 +6,7 @@ lastmod: 2023-01-22T21:20:00+08:00
 draft: false
 author: "Kimi.Tsai"
 authorLink: "https://kimi0230.github.io/"
-description: "NUMLEETCODEFOLDER"
+description: "0003.Longest Substring Without Repeating Characters"
 license: ""
 images: []
 
