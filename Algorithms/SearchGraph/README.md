@@ -62,6 +62,7 @@ seo:
 # Search Graph
 
 
+```text
      2
    /   \
   /     \
@@ -84,7 +85,7 @@ seo:
 // Also this is valid : 1,4,3,2,6,5,7
 
 例如 開始位置1, print : 1,2,3,4,5,6,
-
+```
 
 ## 解法
 用BFS(Queue)
