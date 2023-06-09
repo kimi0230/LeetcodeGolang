@@ -918,3 +918,4 @@ int binarySearch(int[] nums, int target){
 * [labuladong 算法小抄](https://github.com/labuladong/fucking-algorithm)
 * https://cses.fi/
 * [小浩算法是一套针对小白的完整的算法训练流程](https://github.com/geekxh/hello-algorithm)
+* [小浩算法](https://www.geekxh.com/0.0.%E5%AD%A6%E4%B9%A0%E9%A1%BB%E7%9F%A5/01.html)
