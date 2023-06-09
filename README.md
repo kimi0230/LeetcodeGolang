@@ -917,3 +917,4 @@ int binarySearch(int[] nums, int target){
 * [Codility](https://app.codility.com/programmers/)
 * [labuladong 算法小抄](https://github.com/labuladong/fucking-algorithm)
 * https://cses.fi/
+* [小浩算法是一套针对小白的完整的算法训练流程](https://github.com/geekxh/hello-algorithm)
