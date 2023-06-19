@@ -111,3 +111,8 @@ func TestFindIntersection(t *testing.T) {
 	}
 }
 ```
+
+TODO: 
+延伸 
+1. [349. Intersection of Two Arrays (easy)](https://leetcode.com/problems/intersection-of-two-arrays/)
+2. [350. Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)
