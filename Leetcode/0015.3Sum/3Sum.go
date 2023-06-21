@@ -33,12 +33,12 @@ ThreeSumDoublePoint : 最佳解, 排序 + 雙指針法 (滑動視窗) O(n^2)
 1. 特判，對於數組長度 n，如果數組為 null 或者數組長度小於 3，返回 []。
 2. 對數組進行排序。
 3. 遍歷排序後數組：
-	* 對於重複元素：跳過，避免出現重複解
-	* 令左指針 L=i+1，右指針 R=n−1，當 L<R 時，執行循環：
-		* 當nums[i]+nums[L]+nums[R]==0，執行循環，判斷左界和右界是否和下一位置重複，
-		去除重複解。並同時將 L,R 移到下一位置，尋找新的解
-		* 若和大於 0，說明 nums[R] 太大，R 左移
-		* 若和小於 0，說明 nnums[L] 太小，L 右移
+  - 對於重複元素：跳過，避免出現重複解
+  - 令左指針 L=i+1，右指針 R=n−1，當 L<R 時，執行循環：
+  - 當nums[i]+nums[L]+nums[R]==0，執行循環，判斷左界和右界是否和下一位置重複，
+    去除重複解。並同時將 L,R 移到下一位置，尋找新的解
+  - 若和大於 0，說明 nums[R] 太大，R 左移
+  - 若和小於 0，說明 nnums[L] 太小，L 右移
 */
 func ThreeSumDoublePoint(nums []int) [][]int {
 	result := [][]int{}
@@ -74,6 +74,36 @@ func ThreeSumDoublePoint(nums []int) [][]int {
 			} else {
 				start++
 			}
+		}
+	}
+	return result
+}
+
+func ThreeSumHashTable(nums []int) [][]int {
+	result := [][]int{}
+	if len(nums) < 3 {
+		return result
+	}
+	sort.Ints(nums) // O(n log n)
+
+	for i := 0; i < len(nums)-2; i++ {
+		// 避免重複的起始元素
+		if i > 0 && nums[i] == nums[i-1] {
+			continue
+		}
+
+		seen := make(map[int]bool)
+		target := -nums[i] // 目標值為當前元素的相反數
+		for j := i + 1; j < len(nums); j++ {
+			complement := target - nums[j] // 找到與當前元素配對的目標元素
+			if seen[complement] {
+				result = append(result, []int{nums[i], complement, nums[j]})
+				// 避免重複的配對元素
+				for j < len(nums)-1 && nums[j] == nums[j+1] {
+					j++
+				}
+			}
+			seen[nums[j]] = true
 		}
 	}
 	return result

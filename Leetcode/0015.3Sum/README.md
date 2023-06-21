@@ -126,4 +126,47 @@ func ThreeSumDoublePoint(nums []int) [][]int {
 	}
 	return result
 }
+
+
+func ThreeSumHashTable(nums []int) [][]int {
+	result := [][]int{}
+	if len(nums) < 3 {
+		return result
+	}
+	sort.Ints(nums) // O(n log n)
+
+	for i := 0; i < len(nums)-2; i++ {
+		// 避免重複的起始元素
+		if i > 0 && nums[i] == nums[i-1] {
+			continue
+		}
+
+		seen := make(map[int]bool)
+		target := -nums[i] // 目標值為當前元素的相反數
+		for j := i + 1; j < len(nums); j++ {
+			complement := target - nums[j] // 找到與當前元素配對的目標元素
+			if seen[complement] {
+				result = append(result, []int{nums[i], complement, nums[j]})
+				// 避免重複的配對元素
+				for j < len(nums)-1 && nums[j] == nums[j+1] {
+					j++
+				}
+			}
+			seen[nums[j]] = true
+		}
+	}
+	return result
+}
+
+```
+
+
+```sh
+go test -benchmem -run=none LeetcodeGolang/Leetcode/0015.3Sum -bench=.
+cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+BenchmarkThreeSumBurst-8                 4905326               260.5 ns/op            72 B/op          3 allocs/op
+BenchmarkThreeSumDoublePoint-8           7796299               138.9 ns/op            72 B/op          3 allocs/op
+BenchmarkThreeSumHashTable-8             6525658               182.5 ns/op            72 B/op          3 allocs/op
+PASS
+ok      LeetcodeGolang/Leetcode/0015.3Sum       4.201s
 ```
