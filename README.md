@@ -149,9 +149,9 @@ def backtrack(路徑, 選擇列表):
 ---
 
 #### DFS & BFS
-| No.                                                                         |                          Title                          |                                       Solution                                        | Difficulty | Time | Space | Topic     |
-|-----------------------------------------------------------------------------|:-------------------------------------------------------:|:-------------------------------------------------------------------------------------:|------------|------|-------|-----------|
-| [0733](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0733.Flood-Fill/) | [7Flood Fill](https://leetcode.com/problems/flood-fill) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0733.Flood-Fill) | Easy       | O(n) | O(n)  | DFS & BFS |
+| No.                                                                         |                         Title                          |                                       Solution                                        | Difficulty | Time | Space | Topic     |
+|-----------------------------------------------------------------------------|:------------------------------------------------------:|:-------------------------------------------------------------------------------------:|------------|------|-------|-----------|
+| [0733](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0733.Flood-Fill/) | [Flood Fill](https://leetcode.com/problems/flood-fill) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0733.Flood-Fill) | Easy       | O(n) | O(n)  | DFS & BFS |
 
 ---
 #### Dynamic Programming
