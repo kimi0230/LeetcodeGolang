@@ -10,7 +10,7 @@ description: "0733.Flood Fill"
 license: ""
 images: []
 
-tags: [LeetCode, Go, Easy, LEETCODETITLE]
+tags: [LeetCode, Go, Easy, Flood Fill]
 categories: [LeetCode]
 
 featuredImage: ""
