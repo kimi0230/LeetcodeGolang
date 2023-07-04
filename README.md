@@ -10,26 +10,48 @@ https://kimi0230.github.io/LeetcodeGolang/
 - [Leetcode in Golang](#leetcode-in-golang)
 - [leetcode Content](#leetcode-content)
   - [Data Structure](#data-structure)
-    - [Array](#array)
-    - [Stack](#stack)
+    - [Array \& String](#array--string)
+    - [Matrix](#matrix)
     - [Linked List](#linked-list)
-    - [Tree](#tree)
+    - [HashSet \& HashMap](#hashset--hashmap)
+    - [Stack \& Queue](#stack--queue)
+    - [Heap](#heap)
+    - [Disjoint Set Union](#disjoint-set-union)
+    - [Trie](#trie)
+    - [Binary Indexed Tree](#binary-indexed-tree)
+    - [Design Data Structures](#design-data-structures)
   - [Algorithm](#algorithm)
+    - [Greedy](#greedy)
     - [Sort](#sort)
+    - [Multiple Pointers](#multiple-pointers)
     - [Backtracking (回溯法). DFS](#backtracking-回溯法-dfs)
     - [DFS \& BFS](#dfs--bfs)
     - [Dynamic Programming](#dynamic-programming)
     - [Sliding Window](#sliding-window)
+    - [Sweep Line](#sweep-line)
+    - [Rolling Sum](#rolling-sum)
     - [Two Pointers](#two-pointers)
     - [Bit Manipulation](#bit-manipulation)
     - [Union Find](#union-find)
     - [Breadth First Search](#breadth-first-search)
     - [Binary Search](#binary-search)
+    - [Minimax](#minimax)
+  - [Graph](#graph)
+    - [Graph](#graph-1)
+    - [Topological Sort](#topological-sort)
+    - [Tree](#tree)
+    - [Tree Traversal](#tree-traversal)
+    - [Binary Search Tree](#binary-search-tree)
+    - [Compputational Geometry](#compputational-geometry)
+  - [Selected Topics](#selected-topics)
+    - [Mathematics](#mathematics)
+    - [Random](#random)
+    - [Bitwise Manipulation](#bitwise-manipulation)
 - [GeeksforGeeks Content](#geeksforgeeks-content)
 - [Codility Content](#codility-content)
 - [Reference](#reference)
 ### Data Structure
-#### Array
+#### Array & String
 
 | No.                                                                                                            |                                                              Title                                                              |                                                         Solution                                                          | Difficulty | Time          | Space  | Topic                 |
 |----------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------:|------------|---------------|--------|-----------------------|
@@ -43,14 +65,9 @@ https://kimi0230.github.io/LeetcodeGolang/
 
 ---
 
-#### Stack
-
-| No.                                                                                            |                                             Title                                             |                                                 Solution                                                 | Difficulty | Time | Space | Topic |
-|------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------:|------------|------|-------|-------|
-| [0094](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0094.Binary-Tree-Inorder-Traversal/) | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0094.Binary-Tree-Inorder-Traversal) | Medium     | O(n) | O(1)  | Stack |
+#### Matrix
 
 ---
-
 #### Linked List
 
 | No.                                                                                               |                                            Title                                             |                                                  Solution                                                   | Difficulty | Time | Space | Topic                     |
@@ -64,17 +81,42 @@ https://kimi0230.github.io/LeetcodeGolang/
 
 ---
 
-#### Tree
-| No.                                                                                |                                  Title                                  |                                           Solution                                            | Difficulty | Time | Space | Topic |
-|------------------------------------------------------------------------------------|:-----------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------:|------------|------|-------|-------|
-| [0876](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0226.Invert-Binary-Tree) | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0226.Invert-Binary-Tree) | Easy       | O(n) | O(1)  | Tree  |
+#### HashSet & HashMap
+
+---
+
+#### Stack & Queue
+
+| No.                                                                                            |                                             Title                                             |                                                 Solution                                                 | Difficulty | Time | Space | Topic |
+|------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------:|------------|------|-------|-------|
+| [0094](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0094.Binary-Tree-Inorder-Traversal/) | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0094.Binary-Tree-Inorder-Traversal) | Medium     | O(n) | O(1)  | Stack |
+
+
+#### Heap
+
+
+#### Disjoint Set Union
+
+#### Trie
+
+#### Binary Indexed Tree
+ 
+#### Design Data Structures
+
+---
 
 ### Algorithm
+
+#### Greedy
+
+---
+
 #### Sort
 | No.                                                                          |                           Title                           |                                       Solution                                        | Difficulty | Time | Space | Topic |
 |------------------------------------------------------------------------------|:---------------------------------------------------------:|:-------------------------------------------------------------------------------------:|------------|------|-------|-------|
 | [0075](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0075.Sort-Colors/) | [Sort Colors](https://leetcode.com/problems/sort-colors/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0075.Sort-Color) | Medium     | O(n) | O(1)  | Sort  |
 
+#### Multiple Pointers
 
 ---
 
@@ -185,7 +227,13 @@ void slidingWindow(string s, string t){
 | [0567](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0567.Permutation-in-String/)         |         [Permutation in String](https://leetcode.com/problems/permutation-in-string/)         |     [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0567.Permutation-in-String)     | Medium     | O(n)                      | O(1)               | Sliding Window |
 
 ---
+#### Sweep Line
 
+
+---
+#### Rolling Sum
+
+---
 #### Two Pointers
 只要**array有序**, 就應該想到雙指針技巧
 分為兩類 1. "快,慢指針" 2. "左,右指針"
@@ -293,7 +341,43 @@ int binarySearch(int[] nums, int target){
 
 
 ---
+#### Minimax
 
+---
+### Graph
+
+#### Graph
+
+---
+
+#### Topological Sort
+
+---
+
+#### Tree
+| No.                                                                                |                                  Title                                  |                                           Solution                                            | Difficulty | Time | Space | Topic |
+|------------------------------------------------------------------------------------|:-----------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------:|------------|------|-------|-------|
+| [0876](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0226.Invert-Binary-Tree) | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0226.Invert-Binary-Tree) | Easy       | O(n) | O(1)  | Tree  |
+
+---
+
+#### Tree Traversal
+
+---
+
+#### Binary Search Tree
+
+---
+#### Compputational Geometry
+
+---
+### Selected Topics
+#### Mathematics
+---
+#### Random
+---
+#### Bitwise Manipulation
+---
 ## [GeeksforGeeks](https://www.geeksforgeeks.org/) Content
 |  Topic  |                      Title                       | No.  |                                                                      Solution                                                                      | Difficulty |   TimeComplexity   | SpaceComplexity |
 |:-------:|:------------------------------------------------:|:-----|:--------------------------------------------------------------------------------------------------------------------------------------------------:|:----------:|:------------------:|:---------------:|
