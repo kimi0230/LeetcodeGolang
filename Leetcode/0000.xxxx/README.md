@@ -1,16 +1,16 @@
 ---
-title: NUMLEETCODETITLE
+title: NUM.LEETCODETITLE
 subtitle: "LEETCODELINK"
 date: 2023-01-22T21:20:00+08:00
 lastmod: 2023-01-22T21:20:00+08:00
 draft: false
 author: "Kimi.Tsai"
 authorLink: "https://kimi0230.github.io/"
-description: "NUMLEETCODEFOLDER"
+description: "LEETCODETITLE"
 license: ""
 images: []
 
-tags: [LeetCode, Go, Easy, TITLE]
+tags: [LeetCode, Go, Easy/Medium/Hard, LEETCODETITLE]
 categories: [LeetCode]
 
 featuredImage: ""
@@ -58,10 +58,9 @@ seo:
   images: []
   # ...
 ---
-# [NUMLEETCODETITLE](LEETCODELINK)
+# [NUM.LEETCODETITLE](LEETCODELINK)
 
 ## 題目
-
 
 ## 題目大意
 
@@ -73,7 +72,7 @@ seo:
 * LEETCODELINK
 
 ## 解答
-https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/NUMLEETCODEFOLDER/main.go
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/NUM.LEETCODETITLE/main.go
 
 ```go
 

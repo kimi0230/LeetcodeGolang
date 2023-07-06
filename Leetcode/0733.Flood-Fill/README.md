@@ -1,8 +1,8 @@
 ---
 title: 0733.Flood Fill
 subtitle: "https://leetcode.com/problems/flood-fill/"
-date: 2023-01-22T21:20:00+08:00
-lastmod: 2023-01-22T21:20:00+08:00
+date: 2023-07-04T21:20:00+08:00
+lastmod: 2023-07-04T21:20:00+08:00
 draft: false
 author: "Kimi.Tsai"
 authorLink: "https://kimi0230.github.io/"
@@ -114,7 +114,9 @@ Constraints:
 一個給出二維的圖片點陣，每個點陣都有一個數字。給出起點一個坐標，要求從這個起點坐標開始，把所有與這個起點設置的點都染色成新的顏色。
 這題是標準的洪水填充算法。可以用 DFS 也可以用 BFS 。
 
-BFS比較適合找最短路徑，DFS比較適合找所有路徑。這題用 DFS 也可以用 BFS 。
+BFS比較適合找最短路徑，DFS比較適合找所有路徑
+DFS使用遞迴比較好寫
+
 
 ## 來源
 * https://leetcode.com/problems/flood-fill/
