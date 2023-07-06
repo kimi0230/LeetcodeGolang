@@ -1008,14 +1008,3 @@ int binarySearch(int[] nums, int target){
 * [Codility](https://app.codility.com/programmers/)
 * [GitHub: labuladong/fucking-algorithm(labuladong 算法小抄)](https://github.com/labuladong/fucking-algorithm)
 * https://cses.fi/
-* [小浩算法是一套针对小白的完整的算法训练流程](https://github.com/geekxh/hello-algorithm)
-* [小浩算法](https://www.geekxh.com/0.0.%E5%AD%A6%E4%B9%A0%E9%A1%BB%E7%9F%A5/01.html)
-* [Codility Solutions](https://martinkysel.com/codility-solutions/)
-* [GitHub:《代码随想录》LeetCode 刷题攻略：200道经典题目刷题顺序](https://github.com/youngyangyang04/leetcode-master)
-* [GitHub: Anfany/Codility-Lessons-By-Python3](https://github.com/Anfany/Codility-Lessons-By-Python3/blob/master/L13_Fibonacci%20numbers/13.1%20FibFrog.md)
-* [GitHub: Luidy/codility-golang](https://github.com/Luidy/codility-golang/blob/master/Lesson13/01_fibFrog.go)
-* [GitHub: wufenggirl/LeetCode-in-Golang](https://github.com/wufenggirl/LeetCode-in-Golang)
-* [GitHub: anakin/golang-leetcode](https://github.com/anakin/golang-leetcode/tree/master)
-* [GitHub: jwasham/coding-interview-university](https://github.com/jwasham/coding-interview-university): A complete computer science study plan to become a software engineer.
-* [GitHub: checkcheckzz/system-design-interview](https://github.com/checkcheckzz/system-design-interview): System design interview for IT companies
-* [GitHub: kdn251/interviews](https://github.com/kdn251/interviews): Everything you need to know to get the job.
