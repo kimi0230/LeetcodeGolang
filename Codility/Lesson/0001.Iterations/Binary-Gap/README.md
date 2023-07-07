@@ -1,3 +1,64 @@
+---
+title: Binary Gap
+subtitle: "https://app.codility.com/programmers/lessons/1-iterations/binary_gap/"
+date: 2021-04-18T12:09:00+08:00
+lastmod: 2021-04-18T12:09:00+08:00
+draft: false
+author: "Kimi.Tsai"
+authorLink: "https://kimi0230.github.io/"
+description: "Binary Gap"
+license: ""
+images: []
+
+tags: [Codility, Go, Iterations, Painless, Bitwise Manipulation]
+categories: [Codility]
+
+featuredImage: ""
+featuredImagePreview: ""
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+twemoji: false
+lightgallery: true
+ruby: true
+fraction: true
+fontawesome: true
+linkToMarkdown: false
+rssFullText: false
+
+toc:
+  enable: true
+  auto: true
+code:
+  copy: true
+  maxShownLines: 200
+math:
+  enable: false
+  # ...
+mapbox:
+  # ...
+share:
+  enable: true
+  # ...
+comment:
+  enable: true
+  # ...
+library:
+  css:
+    # someCSS = "some.css"
+    # located in "assets/"
+    # Or
+    # someCSS = "https://cdn.example.com/some.css"
+  js:
+    # someJS = "some.js"
+    # located in "assets/"
+    # Or
+    # someJS = "https://cdn.example.com/some.js"
+seo:
+  images: []
+  # ...
+---
+
 # [BinaryGap](https://app.codility.com/programmers/lessons/1-iterations/binary_gap/)
 START
 Find longest sequence of zeros in binary representation of an integer.
@@ -25,6 +86,11 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 
 ## 解題思路
 先找出bit 1的位子, 再開始算中間最長的長度
+解題思路通常可以使用位運算來處理二進制數字。我們可以將N轉換為二進制表示，然後使用遍歷或迴圈來找到相鄰1之間的最大距離。可以使用兩個指針來記錄相鄰的1的
+
+時間複雜度: 解題思路中的遍歷或迴圈需要將N轉換為二進制，因此時間複雜度取決於二進制表示的位數。假設N的位數為k，則時間複雜度為O(k)。
+
+空間複雜度: 解題思路中不需要使用額外的數據結構，只需要使用幾個變數來保存位置和計算結果，因此空間複雜度為O(1)。
 
 ## 來源
 * https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
