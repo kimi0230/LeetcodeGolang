@@ -10,8 +10,8 @@ description: ""
 license: ""
 images: []
 
-tags: [Golang, Algorithms]
-categories: [Golang]
+tags: [Golang, Algorithms, Intersection]
+categories: [Algorithms]
 
 featuredImage: ""
 featuredImagePreview: ""
