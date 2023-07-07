@@ -10,7 +10,7 @@ description: "Two Go Routine Print A1B2C3....Z26"
 license: ""
 images: []
 
-tags: [Algorithm, A1B2C3]
+tags: [Algorithm, Golang, A1B2C3]
 categories: [Algorithm]
 
 featuredImage: ""
