@@ -11,7 +11,7 @@ license: ""
 images: []
 
 tags: [Golang, Algorithms, Search Graph, BFS]
-categories: [Golang]
+categories: [Algorithms]
 
 featuredImage: ""
 featuredImagePreview: ""
