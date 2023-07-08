@@ -174,6 +174,10 @@ BFS算法, Queue每次都會存二叉樹一層的節點, 最壞的情況下空�
    3. 對於每個狀態, 可以做出什麼**選擇**, 使得狀態發生改變
    4. 如何定義 dp 數組/函數的含義來表現**狀態**和**選擇**?
 
+| 替換 /跳過 <br> dp[i-1][j-1] | 刪除 <br> dp[i-1][j] |
+|------------------------------|----------------------|
+| 插入 <br> dp[i][j-1]         | dp[i][j]             |
+
 ```python
 # 初始化 base case
 dp[0][0][...] = base
@@ -187,7 +191,7 @@ for 狀態1 in 狀態1的所有取值：
 | No.                                                                                             |                                              Title                                              |                                                 Solution                                                  | Difficulty | Time                          | Space    | Topic               |
 |-------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------:|------------|-------------------------------|----------|---------------------|
 | [0053](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0053.Maximum-Subarray/)               |               [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)               |        [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0053.Maximum-Subarray)        | Easy       | O(n)                          | O(n)     | Dynamic Programming |
-| [0072](https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/0072.Edit-Distance/)     |               [0072. Edit Distance](https://leetcode.com/problems/edit-distance/)               |         [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0072.Edit-Distance)          | Hard       |                               |          | Dynamic Programming |
+| [0072](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0072.Edit-Distance/)     |               [0072. Edit Distance](https://leetcode.com/problems/edit-distance/)               |         [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0072.Edit-Distance)          | Hard       |                               |          | Dynamic Programming |
 | [0300](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0300.Longest-Increasing-Subsequence/) | [Longest-Increasing-Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0300.Longest-Increasing-Subsequence) | Medium     | 方法一:O(n^2) 方法二:O(nlogn) | O(n)     | Dynamic Programming |
 | [0322](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0322.Coin-Change/)                    |                    [Coin Change](https://leetcode.com/problems/coin-change/)                    |          [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0322.Coin-Change)           | Medium     | O(nm)                         | O(n)     | Dynamic Programming |
 | [0354](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0354.Russian-Doll-Envelopes/)         |         [Russian Doll Envelope](https://leetcode.com/problems/russian-doll-envelopes/)          |     [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0354.Russian-Doll-Envelopes)     | Hard       |                               |          | Dynamic Programming |
