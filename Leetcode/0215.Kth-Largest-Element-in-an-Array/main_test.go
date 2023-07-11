@@ -19,19 +19,19 @@ var tests = []struct {
 	},
 }
 
-func TestFindKthLargest(t *testing.T) {
+func TestFindKthLargestHeap(t *testing.T) {
 	for _, tt := range tests {
 		// if got := ReverseList(tt.arg1); !reflect.DeepEqual(got, tt.want) {
-		if got := FindKthLargest(tt.arg1, tt.arg2); got != tt.want {
+		if got := FindKthLargestHeap(tt.arg1, tt.arg2); got != tt.want {
 			t.Errorf("got = %v, want = %v", got, tt.want)
 		}
 	}
 }
 
-func BenchmarkFindKthLargest(b *testing.B) {
+func BenchmarkFindKthLargestHeap(b *testing.B) {
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
-		FindKthLargest(tests[0].arg1, tests[0].arg2)
+		FindKthLargestHeap(tests[0].arg1, tests[0].arg2)
 	}
 }
 
