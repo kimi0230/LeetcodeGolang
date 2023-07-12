@@ -2,7 +2,7 @@ package kthlargestelementinanarray
 
 import (
 	"container/heap"
-	"fmt"
+	"sort"
 )
 
 // 解法一：用Heap資料結構
@@ -28,7 +28,7 @@ func FindKthLargestHeap(nums []int, k int) int {
 			heap.Push(h, num)
 		}
 	}
-	fmt.Println(h)
+	// fmt.Println(h)
 
 	return (*h)[0]
 }
@@ -59,4 +59,8 @@ func (h *MinHeap) Pop() interface{} {
 	return x
 }
 
-// 解法二：先Sort，再取第k個
+// 解法二：先Sort，再取第k個, 最快！
+func FindKthLargestSort(nums []int, k int) int {
+	sort.Ints(nums)
+	return nums[len(nums)-k]
+}

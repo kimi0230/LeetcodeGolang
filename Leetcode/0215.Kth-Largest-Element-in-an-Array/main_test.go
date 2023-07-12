@@ -28,6 +28,15 @@ func TestFindKthLargestHeap(t *testing.T) {
 	}
 }
 
+func TestFindKthLargestSort(t *testing.T) {
+	for _, tt := range tests {
+		// if got := ReverseList(tt.arg1); !reflect.DeepEqual(got, tt.want) {
+		if got := FindKthLargestSort(tt.arg1, tt.arg2); got != tt.want {
+			t.Errorf("got = %v, want = %v", got, tt.want)
+		}
+	}
+}
+
 func BenchmarkFindKthLargestHeap(b *testing.B) {
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
@@ -35,7 +44,21 @@ func BenchmarkFindKthLargestHeap(b *testing.B) {
 	}
 }
 
-/*
-go test -benchmem -run=none LeetcodeGolang/Leetcode/0354.Russian-Doll-Envelopes -bench=.
+func BenchmarkFindKthLargestSort(b *testing.B) {
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		FindKthLargestSort(tests[0].arg1, tests[0].arg2)
+	}
+}
 
+/*
+go test -benchmem -run=none LeetcodeGolang/Leetcode/0215.Kth-Largest-Element-in-an-Array -bench=.
+goos: darwin
+goarch: amd64
+pkg: LeetcodeGolang/Leetcode/0215.Kth-Largest-Element-in-an-Array
+cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+BenchmarkFindKthLargestHeap-8            6112726               184.9 ns/op            48 B/op          3 allocs/op
+BenchmarkFindKthLargestSort-8           18023403                60.38 ns/op           24 B/op          1 allocs/op
+PASS
+ok      LeetcodeGolang/Leetcode/0215.Kth-Largest-Element-in-an-Array    3.383s
 */
