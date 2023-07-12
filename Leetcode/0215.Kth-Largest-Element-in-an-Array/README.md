@@ -98,6 +98,10 @@ Constraints:
 * 時間複雜度: 構建堆的時間複雜度為O(K)，遍歷數組的時間複雜度為O((N-K)logK)，因此總的時間複雜度為O(NlogK)。
 * 空間複雜度: 使用了大小為K的最小堆來存儲元素，因此空間複雜度為O(K)。
 
+
+在快速選擇 quickselect 的 partition 操作中，每次 partition 操作結束都會返回一個點，這個標定點的下標和最終排序之後有序數組中這個元素所在的下標是一致的。利用這個特性，我們可以不斷的劃分數組區間，最終找到第 K 大的元素。執行一次 partition 操作以後，如果這個元素的下標比 K 小，那麼接著就在後邊的區間繼續執行 partition 操作；如果這個元素的下標比 K 大，那麼就在左邊的區間繼續執行 partition 操作；如果相等就直接輸出這個下標對應的數組元素即可。
+快速選擇 quickselect 的思路實現的算法時間複雜度為 O(n)，空間複雜度為 O(logn)
+
 ## 來源
 * https://leetcode.com/problems/kth-largest-element-in-an-array/
 * https://books.halfrost.com/leetcode/ChapterFour/0200~0299/0215.Kth-Largest-Element-in-an-Array/
