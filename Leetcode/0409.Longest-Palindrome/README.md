@@ -1,6 +1,6 @@
 ---
 title: 0409. Longest Palindrome
-tags: Easy, Dynamic Programming
+tags: Easy, String
 author: Kimi Tsai <kimi0230@gmail.com>
 description:
 ---
@@ -39,7 +39,8 @@ Constraints:
 注意:假設字符串的長度不會超過 1010。
 
 ## 解題思路
-
+* 給出一個字符串，要求用這個字符串裡面的字符組成一個回文串，問回文串最多可以組合成多長的？
+* 這也是一道題水題，然後先統計每個字符的頻次，每個字符能取2個的取2個，不足2個的並且當前構造中的回文串是偶數的情況下（即每2個都陣容了），可以取1個。最後組合出來的就是終止回文串。
 
 ## 來源
 * https://leetcode.com/problems/longest-palindrome/
