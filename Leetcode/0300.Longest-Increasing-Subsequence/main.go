@@ -7,7 +7,7 @@ func max(a, b int) int {
 	return b
 }
 
-//  DP 解法 O(n^2)
+// DP 解法 O(n^2)
 func LengthOfLIS(nums []int) int {
 	dp := make([]int, len(nums))
 	for idx := 0; idx < len(dp); idx++ {
@@ -18,7 +18,7 @@ func LengthOfLIS(nums []int) int {
 	for i := 0; i < len(nums); i++ {
 		for j := 0; j < i; j++ {
 			if nums[i] > nums[j] {
-				// 找到前面比現在結尾還小的子序列
+				// 找到下一個數值比現在的大
 				dp[i] = max(dp[i], dp[j]+1)
 			}
 		}
@@ -47,7 +47,7 @@ func LengthOfLIS2(nums []int) int {
 	return res
 }
 
-//  DP + 二分搜尋:patience sorting. O(nlogn)
+// DP + 二分搜尋:patience sorting. O(nlogn)
 func LengthOfLISPatience(nums []int) int {
 	top := make([]int, len(nums))
 
