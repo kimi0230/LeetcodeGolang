@@ -63,7 +63,7 @@ func LengthOfLISPatience(nums []int) int {
 		for left < right {
 			mid := left + (right-left)/2
 			if top[mid] > poker {
-				// 現在的牌比堆小, 所小範圍
+				// 現在的牌比堆小, 縮小範圍
 				right = mid
 			} else if top[mid] < poker {
 				// 現在的牌比堆大

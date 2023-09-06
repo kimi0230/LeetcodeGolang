@@ -18,6 +18,10 @@ var tests = []struct {
 		[]int{7, 7, 7, 7, 7, 7, 7},
 		1,
 	},
+	{
+		[]int{6, 3, 5, 10, 11, 2, 9, 14, 13, 7, 4, 8, 12},
+		5,
+	},
 }
 
 func TestLengthOfLIS(t *testing.T) {
