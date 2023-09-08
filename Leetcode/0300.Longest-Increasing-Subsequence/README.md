@@ -1,6 +1,6 @@
 ---
 title: 0300.Longest Increasing Subsequence
-tags: Medium, Dynamic Programming
+tags: Medium, Dynamic Programming, Patience Sorting, Binary Search
 author: Kimi Tsai <kimi0230@gmail.com>
 description:
 ---
