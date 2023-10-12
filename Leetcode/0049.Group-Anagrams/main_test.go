@@ -75,7 +75,21 @@ func BenchmarkGroupAnagrams(b *testing.B) {
 	}
 }
 
+func BenchmarkGroupAnagramsBySort(b *testing.B) {
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		GroupAnagramsBySort(tests[0].arg1)
+	}
+}
+
 /*
 go test -benchmem -run=none LeetcodeGolang/Leetcode/0049.Group-Anagrams -bench=.
-
+goos: darwin
+goarch: amd64
+pkg: LeetcodeGolang/Leetcode/0049.Group-Anagrams
+cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+BenchmarkGroupAnagrams-8                  899431              1615 ns/op             968 B/op         12 allocs/op
+BenchmarkGroupAnagramsBySort-8            592148              3566 ns/op             776 B/op         33 allocs/op
+PASS
+ok      LeetcodeGolang/Leetcode/0049.Group-Anagrams     3.611s
 */

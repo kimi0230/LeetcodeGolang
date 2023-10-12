@@ -67,9 +67,13 @@ seo:
 
 ## 解題思路
 
+## Big O
+時間複雜 : `O(nk log(k) )`
+空間複雜 : `O(k log(k) )`
 
 ## 來源
-* LEETCODELINK
+* https://leetcode.com/problems/LEETCODETITLE
+* https://leetcode.cn/problems/LEETCODETITLE
 
 ## 解答
 https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/NUM.LEETCODETITLE/main.go
