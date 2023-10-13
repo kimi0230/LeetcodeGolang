@@ -6,7 +6,7 @@ lastmod: 2023-01-22T21:20:00+08:00
 draft: false
 author: "Kimi.Tsai"
 authorLink: "https://kimi0230.github.io/"
-description: "LEETCODETITLE"
+description: "NUM.FOLDERPATH"
 license: ""
 images: []
 
@@ -68,15 +68,15 @@ seo:
 ## 解題思路
 
 ## Big O
-時間複雜 : `O(nk log(k) )`
-空間複雜 : `O(k log(k) )`
+時間複雜 : ``
+空間複雜 : ``
 
 ## 來源
-* https://leetcode.com/problems/LEETCODETITLE
-* https://leetcode.cn/problems/LEETCODETITLE
+* LEETCODELINK
+* https://leetcode.cn/problems/
 
 ## 解答
-https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/NUM.LEETCODETITLE/main.go
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/NUM.FOLDERPATH/main.go
 
 ```go
 
