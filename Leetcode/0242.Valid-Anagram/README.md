@@ -59,6 +59,7 @@ seo:
   # ...
 ---
 # [0242.Valid-Anagram](https://leetcode.com/problems/valid-anagram/description/)
+驗證回文串
 
 ## 題目
 Given two strings s and t, return true if t is an anagram of s, and false otherwise.
@@ -89,10 +90,12 @@ Follow up: What if the inputs contain Unicode characters? How would you adapt yo
 ## 題目大意
 
 ## 解題思路
-
+只要先把所有字符轉換成小寫，並過濾掉空格和標點這類字符，然後對剩下的字符執行 [數組雙指針技巧匯總](https://labuladong.github.io/algo/di-yi-zhan-da78c/shou-ba-sh-48c1d/shuang-zhi-fa4bd/) 中提到的兩端向中心的雙指針演算法即可
 
 ## 來源
 * https://leetcode.com/problems/valid-anagram/description/
+* https://leetcode.cn/problems/valid-anagram/description/
+* 數組雙指針技巧匯總](https://labuladong.github.io/algo/di-yi-zhan-da78c/shou-ba-sh-48c1d/shuang-zhi-fa4bd/) 
 
 ## 解答
 https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/0242.Valid-Anagram/main.go
