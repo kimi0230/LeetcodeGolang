@@ -102,6 +102,9 @@ The tests are generated such that there is exactly one solution.
 ## 解題思路
 
 ## Big O
+二分查找
+時間複雜度： － ，其中 n 是陣列的長度。 需要遍歷陣列一次確定第一個數，
+
 時間複雜 : ``
 空間複雜 : ``
 
