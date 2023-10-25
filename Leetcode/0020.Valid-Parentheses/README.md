@@ -101,7 +101,7 @@ s consists of parentheses only '()[]{}'.
 
 ## 來源
 * https://leetcode.com/problems/valid-parentheses/
-* https://leetcode.cn/problems/
+* https://leetcode.cn/problems/valid-parentheses/
 
 ## 解答
 https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/0020.Valid-Parentheses/main.go
