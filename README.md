@@ -93,6 +93,7 @@ https://kimi0230.github.io/LeetcodeGolang/
 
 | No.                                                                                            |                                             Title                                             |                                                 Solution                                                 | Difficulty | Time | Space | Topic |
 |------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------:|------------|------|-------|-------|
+| [0020](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0020.Valid-Parentheses/)             |             [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)             |       [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0020.Valid-Parentheses)       | Easy       | O(n) | O(n)  | Stack |
 | [0094](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0094.Binary-Tree-Inorder-Traversal/) | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0094.Binary-Tree-Inorder-Traversal) | Medium     | O(n) | O(1)  | Stack |
 
 
