@@ -163,6 +163,9 @@ def backtrack(路徑, 選擇列表):
 假設有棵滿的二叉樹,節點數為 N. 對DFS來說空間複雜度就是遞迴, 最壞的情況就是樹的高度 O(log N)
 BFS算法, Queue每次都會存二叉樹一層的節點, 最壞的情況下空間複雜度應該就是樹的最下層的數量, 也就是 N/2. 空間複雜度 O(N)
 
+DFS（深度優先搜索）通常使用堆棧（Stack）來實現。在DFS中，您首先處理一個節點，然後將其子節點按某種順序推入堆棧中，接著繼續處理堆棧頂部的節點，直到堆棧為空。
+BFS（廣度優先搜索）則使用隊列（Queue）來實現。在BFS中，您首先處理一個節點，然後將其子節點按某種順序排隊，接著繼續處理隊列的前端節點，直到隊列為空。
+
 | No.                                                                                 |                                  Title                                  |                                           Solution                                            | Difficulty | Time   | Space  | Topic     |
 |-------------------------------------------------------------------------------------|:-----------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------:|------------|--------|--------|-----------|
 | [0695](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0695.Max-Area-of-Island/) | [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0695.Max-Area-of-Island) | Medium     | O(m*n) | O(m*n) | DFS & BFS |
