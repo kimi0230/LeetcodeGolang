@@ -101,7 +101,9 @@ https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/0226.Invert-Bina
 ```go
 package invertbinarytree
 
-import "LeetcodeGolang/Utility/structures"
+import (
+	"LeetcodeGolang/Utility/structures"
+)
 
 /**
  * Definition for a binary tree node.
@@ -112,6 +114,12 @@ import "LeetcodeGolang/Utility/structures"
  * }
  */
 
+// type TreeNode struct {
+// 	Val   int
+// 	Left  *TreeNode
+// 	Right *TreeNode
+// }
+
 func InvertTree(root *structures.TreeNode) *structures.TreeNode {
 	if root == nil {
 		return nil
@@ -121,6 +129,36 @@ func InvertTree(root *structures.TreeNode) *structures.TreeNode {
 	InvertTree(root.Right)
 
 	root.Left, root.Right = root.Right, root.Left
+	return root
+}
+
+func InvertTree2(root *structures.TreeNode) *structures.TreeNode {
+
+	if root != nil {
+		root.Left, root.Right = InvertTree2(root.Right), InvertTree2(root.Left)
+	}
+
+	return root
+}
+
+func InvertTree3(root *structures.TreeNode) *structures.TreeNode {
+	queue := make([]*structures.TreeNode, 0)
+	queue = append(queue, root)
+
+	for len(queue) > 0 {
+		current := queue[0]
+		queue = queue[1:]
+
+		current.Left, current.Right = current.Right, current.Left
+
+		if current.Left != nil {
+			queue = append(queue, current.Left)
+		}
+
+		if current.Right != nil {
+			queue = append(queue, current.Right)
+		}
+	}
 	return root
 }
 
@@ -150,8 +188,10 @@ func IntsToTree(nums []int) *TreeNode {
 goos: darwin
 goarch: amd64
 pkg: LeetcodeGolang/Leetcode/0226.Invert-Binary-Tree
-cpu: Intel(R) Core(TM) i5-6400 CPU @ 2.70GHz
-BenchmarkInvertTree-4            2602960               532.4 ns/op           168 B/op          7 allocs/op
+cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+BenchmarkInvertTree-8            2533011               398.7 ns/op           168 B/op          7 allocs/op
+BenchmarkInvertTree2-8           2667645               392.4 ns/op           168 B/op          7 allocs/op
+BenchmarkInvertTree3-8           1403001               727.5 ns/op           296 B/op         13 allocs/op
 PASS
-ok      LeetcodeGolang/Leetcode/0226.Invert-Binary-Tree 1.869s
+ok      LeetcodeGolang/Leetcode/0226.Invert-Binary-Tree 4.889s
 ```

@@ -379,7 +379,7 @@ int binarySearch(int[] nums, int target){
 #### Tree
 | No.                                                                                |                                  Title                                  |                                           Solution                                            | Difficulty | Time | Space | Topic |
 |------------------------------------------------------------------------------------|:-----------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------:|------------|------|-------|-------|
-| [0876](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0226.Invert-Binary-Tree) | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0226.Invert-Binary-Tree) | Easy       | O(n) | O(1)  | Tree  |
+| [0226](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0226.Invert-Binary-Tree) | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0226.Invert-Binary-Tree) | Easy       | O(n) | O(1)  | Tree  |
 
 ---
 
