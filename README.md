@@ -11,7 +11,6 @@ https://kimi0230.github.io/LeetcodeGolang/
 - [leetcode Content](#leetcode-content)
   - [Data Structure](#data-structure)
     - [Array \& String](#array--string)
-- [| 0409                             |                          409. Longest Palindrome                           |               Go               | Easy       | O(n)          | O(1)   | Array                 |](#-0409-------------------------------------------------------409-longest-palindrome------------------------------------------go----------------easy--------on-----------o1----array-----------------)
     - [Matrix](#matrix)
     - [Linked List](#linked-list)
     - [HashSet \& HashMap](#hashset--hashmap)
@@ -51,7 +50,9 @@ https://kimi0230.github.io/LeetcodeGolang/
 - [GeeksforGeeks Content](#geeksforgeeks-content)
 - [Codility Content](#codility-content)
 - [Reference](#reference)
+
 ### Data Structure
+
 #### Array & String
 
 | No.                                                                                                            |                                                              Title                                                              |                                                         Solution                                                          | Difficulty | Time          | Space  | Topic                 |
@@ -67,6 +68,7 @@ https://kimi0230.github.io/LeetcodeGolang/
 | [0217](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0217.Contains-Duplicate)                             |                    [0217.Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/)                     |               [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0217.Contains-Duplicate)               | Easy       | O(n)          | O(n)   | Array                 |
 | [0242](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0242.Valid-Anagram)                                  |                         [0242.Valid Anagram](https://leetcode.com/problems/valid-anagram/description/)                          |                 [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0242.Valid-Anagram)                  | Easy       | O(n)          | O(n)   | Array                 |
 | [0409](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0409.Longest-Palindrome)                             |                          [409. Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)                           |               [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0409.Longest-Palindrome)               | Easy       | O(n)          | O(1)   | Array                 |
+
 ---
 
 #### Matrix
