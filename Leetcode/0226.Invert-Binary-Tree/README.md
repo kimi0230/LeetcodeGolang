@@ -10,7 +10,7 @@ description: "226. Invert Binary Tree"
 license: ""
 images: []
 
-tags: [LeetCode, Go, Easy, Invert Binary Tree]
+tags: [LeetCode, Go, Easy, Invert Binary Tree, BFS]
 categories: [LeetCode]
 
 featuredImage: ""
@@ -91,6 +91,8 @@ Constraints:
 
 ## 解題思路
 用遞歸來解決，先遞歸調用反轉根節點的左children，然後遞歸調用反轉根節點的右children，然後左右交換根節點的左children和右children。
+有點像是[BFS](../../README.md#dfs--bfs)
+> BFS（廣度優先搜索）則使用隊列（Queue）來實現。在BFS中，您首先處理一個節點，然後將其子節點按某種順序排隊，接著繼續處理隊列的前端節點，直到隊列為空。
 
 ## 來源
 * https://leetcode.com/problems/invert-binary-tree/
