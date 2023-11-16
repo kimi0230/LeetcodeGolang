@@ -10,7 +10,7 @@ description: "在有序的array中 找出target在array中最後的index是什�
 license: ""
 images: []
 
-tags: [Interview, Algorithms, Go, Easy, Find Target Last Index]
+tags: [Interview, Algorithms, Go, Easy, Find Target Last Index, Right Bound, Left Bound]
 categories: [Algorithms]
 
 featuredImage: ""
