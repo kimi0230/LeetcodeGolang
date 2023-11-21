@@ -151,9 +151,10 @@ def backtrack(路徑, 選擇列表):
         撤銷選擇(後序)
 ```
 
-| No.                                                                           |                                Title                                 |                                        Solution                                         | Difficulty | Time | Space | Topic        |
-|-------------------------------------------------------------------------------|:--------------------------------------------------------------------:|:---------------------------------------------------------------------------------------:|------------|------|-------|--------------|
-| [0046](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0046.Permutations/) | [Permutations (全排列)](https://leetcode.com/problems/permutations/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0046.Permutations) | Medium     | O(n) | O(n)  | Backtracking |
+| No.                                                                           |                                Title                                 |                                        Solution                                         | Difficulty | Time   | Space | Topic        |
+|-------------------------------------------------------------------------------|:--------------------------------------------------------------------:|:---------------------------------------------------------------------------------------:|------------|--------|-------|--------------|
+| [0046](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0046.Permutations/) | [Permutations (全排列)](https://leetcode.com/problems/permutations/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0046.Permutations) | Medium     | O(n)   | O(n)  | Backtracking |
+| [0078](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0078.Subsets/)      |          [Subsets](https://leetcode.com/problems/subsets/)           |   [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0078.Subsets)    | Medium     | O(n^2) | O(n)  | Backtracking |
 
 ---
 
