@@ -95,7 +95,7 @@ Follow up: What if the inputs contain Unicode characters? How would you adapt yo
 ## 來源
 * https://leetcode.com/problems/valid-anagram/description/
 * https://leetcode.cn/problems/valid-anagram/description/
-* 數組雙指針技巧匯總](https://labuladong.github.io/algo/di-yi-zhan-da78c/shou-ba-sh-48c1d/shuang-zhi-fa4bd/) 
+* [數組雙指針技巧匯總](https://labuladong.github.io/algo/di-yi-zhan-da78c/shou-ba-sh-48c1d/shuang-zhi-fa4bd/) 
 
 ## 解答
 https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/0242.Valid-Anagram/main.go
@@ -149,5 +149,12 @@ func IsAnagram2(s string, t string) bool {
 ##  Benchmark
 
 ```sh
-
+goos: darwin
+goarch: amd64
+pkg: LeetcodeGolang/Leetcode/0242.Valid-Anagram
+cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+BenchmarkIsAnagram-8             6703497               276.3 ns/op             0 B/op          0 allocs/op
+BenchmarkIsAnagram2-8            3660909               318.9 ns/op            48 B/op          2 allocs/op
+PASS
+ok      LeetcodeGolang/Leetcode/0242.Valid-Anagram      4.498s
 ```

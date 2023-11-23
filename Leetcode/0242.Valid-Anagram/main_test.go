@@ -53,5 +53,12 @@ func BenchmarkIsAnagram2(b *testing.B) {
 
 /*
 go test -benchmem -run=none LeetcodeGolang/Leetcode/0242.Valid-Anagram -bench=.
-
+goos: darwin
+goarch: amd64
+pkg: LeetcodeGolang/Leetcode/0242.Valid-Anagram
+cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+BenchmarkIsAnagram-8             6703497               276.3 ns/op             0 B/op          0 allocs/op
+BenchmarkIsAnagram2-8            3660909               318.9 ns/op            48 B/op          2 allocs/op
+PASS
+ok      LeetcodeGolang/Leetcode/0242.Valid-Anagram      4.498s
 */
