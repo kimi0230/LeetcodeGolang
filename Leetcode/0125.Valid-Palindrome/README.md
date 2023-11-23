@@ -10,7 +10,7 @@ description: "Valid Palindrome"
 license: ""
 images: []
 
-tags: [LeetCode, Go, Easy/Medium/Hard, Valid Palindrome]
+tags: [LeetCode, Go, Easy, Valid Palindrome]
 categories: [LeetCode]
 
 featuredImage: ""
@@ -61,11 +61,41 @@ seo:
 # [0125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 
 ## 題目
+A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
+
+Given a string s, return true if it is a palindrome, or false otherwise.
+
+ 
+
+Example 1:
+
+Input: s = "A man, a plan, a canal: Panama"
+Output: true
+Explanation: "amanaplanacanalpanama" is a palindrome.
+Example 2:
+
+Input: s = "race a car"
+Output: false
+Explanation: "raceacar" is not a palindrome.
+Example 3:
+
+Input: s = " "
+Output: true
+Explanation: s is an empty string "" after removing non-alphanumeric characters.
+Since an empty string reads the same forward and backward, it is a palindrome.
+ 
+
+Constraints:
+
+1 <= s.length <= 2 * 105
+s consists only of printable ASCII characters.
 
 ## 題目大意
 
-
 ## 解題思路
+
+左右指針
+
 
 ## Big O
 時間複雜 : `O(n)`
@@ -86,7 +116,7 @@ import (
 	"unicode"
 )
 
-// 時間複雜 O(n), 空間複雜 O(1)
+// 時間複雜 O(), 空間複雜 O()
 func IsPalindrome(s string) bool {
 	// 將字符轉成小寫,
 	s = strings.ToLower(s)
@@ -122,10 +152,44 @@ func isCharAZ09(c byte) bool {
 	}
 	return false
 }
+
+func IsPalindromeStrBuilder(s string) bool {
+	s = strings.ToLower(s)
+	strLen := len(s)
+	// 將字符轉成小寫, 並濾掉空格和標點符號等字符
+	var sb strings.Builder
+	for i := 0; i < strLen; i++ {
+		c := rune(s[i])
+		if unicode.IsLetter(c) || unicode.IsDigit(c) {
+			sb.WriteRune(c)
+		}
+	}
+
+	sbStr := sb.String()
+
+	// 使用雙指針, 一左一右相向而行, 判斷回文
+	left, right := 0, len(sbStr)-1
+	for left < right {
+		if sbStr[left] != sbStr[right] {
+			return false
+		}
+		left++
+		right--
+	}
+	return true
+}
+
 ```
 
 ##  Benchmark
 
 ```sh
-
+goos: darwin
+goarch: amd64
+pkg: LeetcodeGolang/Leetcode/0125.Valid-Palindrome
+cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+BenchmarkIsPalindrome-8                  3840048               552.2 ns/op            32 B/op          1 allocs/op
+BenchmarkIsPalindromeStrBuilder-8        3164848               439.0 ns/op            88 B/op          4 allocs/op
+PASS
+ok      LeetcodeGolang/Leetcode/0125.Valid-Palindrome   5.242s
 ```
