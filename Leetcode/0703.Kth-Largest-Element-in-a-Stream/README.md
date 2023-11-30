@@ -10,7 +10,7 @@ description: "0703.Kth-Largest-Element-in-a-Stream"
 license: ""
 images: []
 
-tags: [LeetCode, Go, Easy, Kth Largest Element in a Stream]
+tags: [LeetCode, Go, Easy, Kth Largest Element in a Stream, Heap, Priority Queue]
 categories: [LeetCode]
 
 featuredImage: ""
@@ -108,6 +108,8 @@ Acceptance Rate
 
 ## 解題思路
 這題考察優先順序佇列的使用，可以先做下這道類似的題目 [215.陣列中的第 K 個最大元素](../0215.Kth-Largest-Element-in-an-Array/README.md)。
+
+[golang container/heap](../../structures/heap/index.en.md)
 
 ## Big O
 時間複雜 : ``
