@@ -112,8 +112,11 @@ Acceptance Rate
 [golang container/heap](../../structures/heap/index.en.md)
 
 ## Big O
-時間複雜 : ``
-空間複雜 : ``
+時間複雜 : 
+初始化時間複雜度為： O(nlog⁡k) ，其中 n 為初始化時 nums 的長度;
+單次插入時間複雜度為： O(log⁡k)
+
+空間複雜 : O(k)。 需要使用優先佇列存儲前 k 大的元素
 
 ## 來源
 * https://leetcode.com/problems/kth-largest-element-in-a-stream/
