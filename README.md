@@ -15,7 +15,7 @@ https://kimi0230.github.io/LeetcodeGolang/
     - [Linked List](#linked-list)
     - [HashSet \& HashMap](#hashset--hashmap)
     - [Stack \& Queue](#stack--queue)
-    - [Heap](#heap)
+    - [Heap \& Priority Queue](#heap--priority-queue)
     - [Disjoint Set Union](#disjoint-set-union)
     - [Trie](#trie)
     - [Binary Indexed Tree](#binary-indexed-tree)
@@ -100,10 +100,12 @@ https://kimi0230.github.io/LeetcodeGolang/
 | [0094](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0094.Binary-Tree-Inorder-Traversal/) | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0094.Binary-Tree-Inorder-Traversal) | Medium     | O(n) | O(1)  | Stack |
 
 
-#### Heap
+#### Heap & Priority Queue
 | No.                                                                                              |                                               Title                                               |                                                  Solution                                                  | Difficulty | Time             | Space | Topic                |
 |--------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------:|------------|------------------|-------|----------------------|
 | [0703](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0703.Kth-Largest-Element-in-a-Stream/) | [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0703.Kth-Largest-Element-in-a-Stream) | Easy       | O(K + (N-K)logK) | O(k)  | Heap, Priority Queue |
+| [1046](https://kimi0230.github.io/LeetcodeGolang/Leetcode/1046.Last-Stone-Weight/)               |               [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/)               |        [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/1046.Last-Stone-Weight)        | Easy       | O(nlogn)         | O(n)  | Heap, Priority Queue |
+
 
 #### Disjoint Set Union
 
