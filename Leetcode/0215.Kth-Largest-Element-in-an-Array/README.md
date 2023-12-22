@@ -10,7 +10,7 @@ description: "Kth Largest Element in an Array"
 license: ""
 images: []
 
-tags: [LeetCode, Go, Medium, Kth Largest Element in an Array, Heap, Sorting]
+tags: [LeetCode, Go, Medium, Kth Largest Element in an Array, Heap, Priority Queue, Sorting]
 categories: [LeetCode]
 
 featuredImage: ""
