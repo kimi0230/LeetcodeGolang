@@ -15,7 +15,7 @@ https://kimi0230.github.io/LeetcodeGolang/
     - [Linked List](#linked-list)
     - [HashSet \& HashMap](#hashset--hashmap)
     - [Stack \& Queue](#stack--queue)
-    - [Heap](#heap)
+    - [Heap \& Priority Queue](#heap--priority-queue)
     - [Disjoint Set Union](#disjoint-set-union)
     - [Trie](#trie)
     - [Binary Indexed Tree](#binary-indexed-tree)
@@ -50,7 +50,9 @@ https://kimi0230.github.io/LeetcodeGolang/
 - [GeeksforGeeks Content](#geeksforgeeks-content)
 - [Codility Content](#codility-content)
 - [Reference](#reference)
+
 ### Data Structure
+
 #### Array & String
 
 | No.                                                                                                            |                                                              Title                                                              |                                                         Solution                                                          | Difficulty | Time          | Space  | Topic                 |
@@ -60,8 +62,12 @@ https://kimi0230.github.io/LeetcodeGolang/
 | [0015](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0015.3Sum)                                           |                                          [3 Sum](https://leetcode.com/problems/3sum/)                                           |                      [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0015.3Sum)                      | Medium     | O(n^2)        | O(n)   | Array                 |
 | [0027](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0027.Remove-Element)                                 |                                 [Remove Element](https://leetcode.com/problems/remove-element/)                                 |                 [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0027.Remove-Element)                 | Easy       | O(n)          | O(1)   | Array                 |
 | [0035](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0035.Search-Insert-Position)                         |                         [Search Insert Position](https://leetcode.com/problems/search-insert-position/)                         |             [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0035.Search-Insert-Position)             | Easy       | O(n), O(logn) | O(1)   | Array                 |
+| [0049](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0049.Group-Anagrams)                                 |                             [Search Insert Position](https://leetcode.com/problems/group-anagrams/)                             |                 [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0049.Group-Anagrams)                 | Medium     | O(kn)         | O(kn)  | Array                 |
 | [0059](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0059.Spiral-Matrix-II)                               |                               [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)                               |                [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0059.Spiral-Matrix-II)                | Medium     | O(n)          | O(n^2) | Array                 |
 | [0088](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0088.Merge-Sorted-Array)                             |                             [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)                             |               [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0088.Merge-Sorted-Array)               | Easy       | O(n)          | O(1)   | Array                 |
+| [0217](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0217.Contains-Duplicate)                             |                    [0217.Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/)                     |               [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0217.Contains-Duplicate)               | Easy       | O(n)          | O(n)   | Array                 |
+| [0242](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0242.Valid-Anagram)                                  |                         [0242.Valid Anagram](https://leetcode.com/problems/valid-anagram/description/)                          |                 [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0242.Valid-Anagram)                  | Easy       | O(n)          | O(n)   | Array                 |
+| [0409](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0409.Longest-Palindrome)                             |                          [409. Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)                           |               [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0409.Longest-Palindrome)               | Easy       | O(n)          | O(1)   | Array                 |
 
 ---
 
@@ -70,14 +76,15 @@ https://kimi0230.github.io/LeetcodeGolang/
 ---
 #### Linked List
 
-| No.                                                                                               |                                            Title                                             |                                                  Solution                                                   | Difficulty | Time | Space | Topic                     |
-|---------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------:|------------|------|-------|---------------------------|
-| [0019](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0019.Remove-Nth-Node-From-End-of-List/) | [Remove Nth Node From End of List](https://leetcode.com/problems/middle-of-the-linked-list/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0019.Remove-Nth-Node-From-End-of-List) | Medium     | O(n) | O(1)  | Linked List, Two Pointers |
-| [0141](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0141.Linked-List-Cycle/)                |             [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)             |        [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0141.Linked-List-Cycle)         | Easy       | O(n) | O(1)  | Linked List, Two Pointers |
-| [0142](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0142.Linked-List-CycleII/)              |         [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)          |       [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0142.Linked-List-CycleII)        | Medium     | O(n) | O(1)  | Linked List, Two Pointers |
-| [0203](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0203.Remove-Linked-List-Elements)       |  [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)   |   [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0203.Remove-Linked-List-Elements)    | Easy       | O(n) | O(1)  | Linked List               |
-| [0206](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0206.Reverse-Linked-List)               |          [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)           |              [Go](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0206.Reverse-Linked-List)              | Easy       | O(n) | O(1)  | Linked List               |
-| [0876](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0876.Middle-of-the-Linked-List/)        |    [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)     |    [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0876.Middle-of-the-Linked-List)     | Easy       |      |       | Linked List, Two Pointers |
+| No.                                                                                               |                                            Title                                             |                                                  Solution                                                   | Difficulty | Time     | Space | Topic                     |
+|---------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------:|------------|----------|-------|---------------------------|
+| [0019](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0019.Remove-Nth-Node-From-End-of-List/) | [Remove Nth Node From End of List](https://leetcode.com/problems/middle-of-the-linked-list/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0019.Remove-Nth-Node-From-End-of-List) | Medium     | O(n)     | O(1)  | Linked List, Two Pointers |
+| [0141](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0141.Linked-List-Cycle/)                |             [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)             |        [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0141.Linked-List-Cycle)         | Easy       | O(n)     | O(1)  | Linked List, Two Pointers |
+| [0142](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0142.Linked-List-CycleII/)              |         [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)          |       [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0142.Linked-List-CycleII)        | Medium     | O(n)     | O(1)  | Linked List, Two Pointers |
+| [0203](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0203.Remove-Linked-List-Elements)       |  [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)   |   [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0203.Remove-Linked-List-Elements)    | Easy       | O(n)     | O(1)  | Linked List               |
+| [0206](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0206.Reverse-Linked-List)               |          [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)           |              [Go](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0206.Reverse-Linked-List)              | Easy       | O(n)     | O(1)  | Linked List               |
+| [0876](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0876.Middle-of-the-Linked-List/)        |    [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)     |    [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0876.Middle-of-the-Linked-List)     | Easy       |          |       | Linked List, Two Pointers |
+| [0021](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0021.Merge-Two-Sorted-Lists/)           | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)  |      [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0021.Merge-Two-Sorted-Lists)      | Easy       | O(log n) | O(1)  | Linked List               |
 
 ---
 
@@ -89,10 +96,15 @@ https://kimi0230.github.io/LeetcodeGolang/
 
 | No.                                                                                            |                                             Title                                             |                                                 Solution                                                 | Difficulty | Time | Space | Topic |
 |------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------:|------------|------|-------|-------|
+| [0020](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0020.Valid-Parentheses/)             |             [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)             |       [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0020.Valid-Parentheses)       | Easy       | O(n) | O(n)  | Stack |
 | [0094](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0094.Binary-Tree-Inorder-Traversal/) | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0094.Binary-Tree-Inorder-Traversal) | Medium     | O(n) | O(1)  | Stack |
 
 
-#### Heap
+#### Heap & Priority Queue
+| No.                                                                                              |                                               Title                                               |                                                  Solution                                                  | Difficulty | Time             | Space | Topic                |
+|--------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------:|------------|------------------|-------|----------------------|
+| [0703](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0703.Kth-Largest-Element-in-a-Stream/) | [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0703.Kth-Largest-Element-in-a-Stream) | Easy       | O(K + (N-K)logK) | O(k)  | Heap, Priority Queue |
+| [1046](https://kimi0230.github.io/LeetcodeGolang/Leetcode/1046.Last-Stone-Weight/)               |               [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/)               |        [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/1046.Last-Stone-Weight)        | Easy       | O(nlogn)         | O(n)  | Heap, Priority Queue |
 
 
 #### Disjoint Set Union
@@ -112,9 +124,10 @@ https://kimi0230.github.io/LeetcodeGolang/
 ---
 
 #### Sort
-| No.                                                                          |                           Title                           |                                       Solution                                        | Difficulty | Time | Space | Topic |
-|------------------------------------------------------------------------------|:---------------------------------------------------------:|:-------------------------------------------------------------------------------------:|------------|------|-------|-------|
-| [0075](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0075.Sort-Colors/) | [Sort Colors](https://leetcode.com/problems/sort-colors/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0075.Sort-Color) | Medium     | O(n) | O(1)  | Sort  |
+| No.                                                                                              |                                               Title                                               |                                                  Solution                                                  | Difficulty | Time | Space   | Topic |
+|--------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------:|------------|------|---------|-------|
+| [0075](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0075.Sort-Colors/)                     |                     [Sort Colors](https://leetcode.com/problems/sort-colors/)                     |           [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0075.Sort-Colors)           | Medium     | O(n) | O(1)    | Sort  |
+| [0215](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0215.Kth-Largest-Element-in-an-Array/) | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0215.Kth-Largest-Element-in-an-Array) | Medium     | O(n) | O(logn) | Sort  |
 
 #### Multiple Pointers
 
@@ -142,9 +155,10 @@ def backtrack(路徑, 選擇列表):
         撤銷選擇(後序)
 ```
 
-| No.                                                                           |                                Title                                 |                                        Solution                                         | Difficulty | Time | Space | Topic        |
-|-------------------------------------------------------------------------------|:--------------------------------------------------------------------:|:---------------------------------------------------------------------------------------:|------------|------|-------|--------------|
-| [0046](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0046.Permutations/) | [Permutations (全排列)](https://leetcode.com/problems/permutations/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0046.Permutations) | Medium     | O(n) | O(n)  | Backtracking |
+| No.                                                                           |                                Title                                 |                                        Solution                                         | Difficulty | Time   | Space | Topic        |
+|-------------------------------------------------------------------------------|:--------------------------------------------------------------------:|:---------------------------------------------------------------------------------------:|------------|--------|-------|--------------|
+| [0046](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0046.Permutations/) | [Permutations (全排列)](https://leetcode.com/problems/permutations/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0046.Permutations) | Medium     | O(n)   | O(n)  | Backtracking |
+| [0078](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0078.Subsets/)      |          [Subsets](https://leetcode.com/problems/subsets/)           |   [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0078.Subsets)    | Medium     | O(n^2) | O(n)  | Backtracking |
 
 ---
 
@@ -156,10 +170,13 @@ def backtrack(路徑, 選擇列表):
 假設有棵滿的二叉樹,節點數為 N. 對DFS來說空間複雜度就是遞迴, 最壞的情況就是樹的高度 O(log N)
 BFS算法, Queue每次都會存二叉樹一層的節點, 最壞的情況下空間複雜度應該就是樹的最下層的數量, 也就是 N/2. 空間複雜度 O(N)
 
-| No.                                                                                 |                                  Title                                  |                                           Solution                                            | Difficulty | Time | Space | Topic     |
-|-------------------------------------------------------------------------------------|:-----------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------:|------------|------|-------|-----------|
-| [0695](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0695.Max-Area-of-Island/) | [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0695.Max-Area-of-Island) | Medium     | O(n) | O(1)  | DFS & BFS |
-| [0733](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0733.Flood-Fill/)         |         [Flood Fill](https://leetcode.com/problems/flood-fill)          |     [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0733.Flood-Fill)     | Easy       | O(n) | O(n)  | DFS & BFS |
+DFS（深度優先搜索）通常使用堆棧（Stack）來實現。在DFS中，您首先處理一個節點，然後將其子節點按某種順序推入堆棧中，接著繼續處理堆棧頂部的節點，直到堆棧為空。
+BFS（廣度優先搜索）則使用隊列（Queue）來實現。在BFS中，您首先處理一個節點，然後將其子節點按某種順序排隊，接著繼續處理隊列的前端節點，直到隊列為空。
+
+| No.                                                                                 |                                  Title                                  |                                           Solution                                            | Difficulty | Time   | Space  | Topic     |
+|-------------------------------------------------------------------------------------|:-----------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------:|------------|--------|--------|-----------|
+| [0695](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0695.Max-Area-of-Island/) | [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0695.Max-Area-of-Island) | Medium     | O(m*n) | O(m*n) | DFS & BFS |
+| [0733](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0733.Flood-Fill/)         |         [Flood Fill](https://leetcode.com/problems/flood-fill)          |     [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0733.Flood-Fill)     | Easy       | O(m*n) | O(m*n) | DFS & BFS |
 
 ---
 #### Dynamic Programming
@@ -174,6 +191,10 @@ BFS算法, Queue每次都會存二叉樹一層的節點, 最壞的情況下空�
    3. 對於每個狀態, 可以做出什麼**選擇**, 使得狀態發生改變
    4. 如何定義 dp 數組/函數的含義來表現**狀態**和**選擇**?
 
+| 替換 /跳過 <br> dp[i-1][j-1] | 刪除 <br> dp[i-1][j] |
+|------------------------------|----------------------|
+| 插入 <br> dp[i][j-1]         | dp[i][j]             |
+
 ```python
 # 初始化 base case
 dp[0][0][...] = base
@@ -187,11 +208,12 @@ for 狀態1 in 狀態1的所有取值：
 | No.                                                                                             |                                              Title                                              |                                                 Solution                                                  | Difficulty | Time                          | Space    | Topic               |
 |-------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------:|------------|-------------------------------|----------|---------------------|
 | [0053](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0053.Maximum-Subarray/)               |               [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)               |        [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0053.Maximum-Subarray)        | Easy       | O(n)                          | O(n)     | Dynamic Programming |
-| [0072](https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/0072.Edit-Distance/)     |               [0072. Edit Distance](https://leetcode.com/problems/edit-distance/)               |         [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0072.Edit-Distance)          | Hard       |                               |          | Dynamic Programming |
+| [0072](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0072.Edit-Distance/)                  |               [0072. Edit Distance](https://leetcode.com/problems/edit-distance/)               |         [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0072.Edit-Distance)          | Hard       |                               |          | Dynamic Programming |
 | [0300](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0300.Longest-Increasing-Subsequence/) | [Longest-Increasing-Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0300.Longest-Increasing-Subsequence) | Medium     | 方法一:O(n^2) 方法二:O(nlogn) | O(n)     | Dynamic Programming |
 | [0322](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0322.Coin-Change/)                    |                    [Coin Change](https://leetcode.com/problems/coin-change/)                    |          [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0322.Coin-Change)           | Medium     | O(nm)                         | O(n)     | Dynamic Programming |
 | [0354](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0354.Russian-Doll-Envelopes/)         |         [Russian Doll Envelope](https://leetcode.com/problems/russian-doll-envelopes/)          |     [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0354.Russian-Doll-Envelopes)     | Hard       |                               |          | Dynamic Programming |
 | [0509](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0509.Fibonacci-Number/)               |               [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)               |        [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0509.Fibonacci-Number)        | Easy       | 很多解法                      | 很多解法 | Dynamic Programming |
+| [0070](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0070.Climbing-Stairs/)                |             [0070.Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)              |        [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0070.Climbing-Stairs)         | Easy       | O(n)                          | O(n)     | Dynamic Programming |
 
 ---
 
@@ -363,9 +385,11 @@ int binarySearch(int[] nums, int target){
 ---
 
 #### Tree
-| No.                                                                                |                                  Title                                  |                                           Solution                                            | Difficulty | Time | Space | Topic |
-|------------------------------------------------------------------------------------|:-----------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------:|------------|------|-------|-------|
-| [0876](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0226.Invert-Binary-Tree) | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0226.Invert-Binary-Tree) | Easy       | O(n) | O(1)  | Tree  |
+| No.                                                                                           |                                                  Title                                                   |                                                Solution                                                 | Difficulty | Time | Space           | Topic |
+|-----------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------:|------------|------|-----------------|-------|
+| [0226](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0226.Invert-Binary-Tree)            |                 [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                  |      [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0226.Invert-Binary-Tree)      | Easy       | O(n) | O(1)            | Tree  |
+| [0104](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0104.Maximum-Depth-of-Binary-Tree/) | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree//description/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0104.Maximum-Depth-of-Binary-Tree) | Easy       | O(n) | O(1)            | Tree  |
+| [0226](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0543.Diameter-of-Binary-Tree)       |            [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)             |   [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0543.Diameter-of-Binary-Tree)    | Easy       | O(n) | O(n), O(log(n)) | Tree  |
 
 ---
 
@@ -1016,3 +1040,4 @@ int binarySearch(int[] nums, int target){
 * [Codility](https://app.codility.com/programmers/)
 * [GitHub: labuladong/fucking-algorithm(labuladong 算法小抄)](https://github.com/labuladong/fucking-algorithm)
 * https://cses.fi/
+* https://github.com/neetcode-gh/leetcode

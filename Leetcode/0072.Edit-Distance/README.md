@@ -1,8 +1,62 @@
 ---
-title: 0072. Edit Distance
-tags: Hard, Dynamic Programming
-author: Kimi Tsai <kimi0230@gmail.com>
-description:
+title: "0072. Edit Distance"
+subtitle: "[WeightedEditDistance](https://leetcode.com/problems/edit-distance/)"
+date: 2023-07-08T15:23:25+08:00
+lastmod: 2023-07-08T15:23:25+08:00
+draft: false
+author: "Kimi.Tsai"
+authorLink: "https://kimi0230.github.io/"
+description: ""
+license: ""
+images: []
+
+tags: [Golang, Hard, Dynamic Programming, Edit Distance]
+categories: [LeetCode]
+
+featuredImage: ""
+featuredImagePreview: ""
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+twemoji: false
+lightgallery: true
+ruby: true
+fraction: true
+fontawesome: true
+linkToMarkdown: true
+rssFullText: false
+
+toc:
+  enable: true
+  auto: true
+code:
+  copy: true
+  maxShownLines: 50
+math:
+  enable: false
+  # ...
+mapbox:
+  # ...
+share:
+  enable: true
+  # ...
+comment:
+  enable: true
+  # ...
+library:
+  css:
+    # someCSS = "some.css"
+    # located in "assets/"
+    # Or
+    # someCSS = "https://cdn.example.com/some.css"
+  js:
+    # someJS = "some.js"
+    # located in "assets/"
+    # Or
+    # someJS = "https://cdn.example.com/some.js"
+seo:
+  images: []
+  # ...
 ---
 # [0072. Edit Distance](https://leetcode.com/problems/edit-distance/)
 
@@ -72,24 +126,24 @@ dp = [
 ]
 ```
 
-| word1 \ word2 |  "" |  h  |  o  |  r  |  s  |  e  |
-|---------------|-----|-----|-----|-----|-----|-----|
-| ""            |  0  |  1  |  2  |  3  |  4  |  5  |
-| r             |  1  |  1  |  2  |  2  |  3  |  4  |
-| o             |  2  |  2  |  1  |  2  |  3  |  4  |
-| s             |  3  |  3  |  2  |  2  |  2  |  3  |
+| word1 \ word2 | "" | h | o | r | s | e |
+|---------------|----|---|---|---|---|---|
+| ""            | 0  | 1 | 2 | 3 | 4 | 5 |
+| r             | 1  | 1 | 2 | 2 | 3 | 4 |
+| o             | 2  | 2 | 1 | 2 | 3 | 4 |
+| s             | 3  | 3 | 2 | 2 | 2 | 3 |
 
 dp(i,j) 返回值, 就是 word1[0..i] 和 word2[0..j]的最小編輯距離
 dp(1,0) "ro" , "h" 最小編輯距離 2
 
 | dp[i-1][j-1] | dp[i-1][j] |
 |--------------|------------|
-| dp[i][j-1]   |  dp[i][j]  |
+| dp[i][j-1]   | dp[i][j]   |
 
 
 | 替換/跳過 | 刪除 |
-|--------------|------------|
-| 插入  |   |
+|-----------|------|
+| 插入      |      |
 
 ## 來源
 * https://leetcode.com/problems/edit-distance/

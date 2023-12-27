@@ -1,6 +1,6 @@
 ---
 title: 0300.Longest Increasing Subsequence
-tags: Medium, Dynamic Programming
+tags: Medium, Dynamic Programming, Patience Sorting, Binary Search
 author: Kimi Tsai <kimi0230@gmail.com>
 description:
 ---
@@ -74,6 +74,8 @@ https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/0300.Longest-Inc
 ```go
 package longestincreasingsubsequence
 
+import "fmt"
+
 func max(a, b int) int {
 	if a > b {
 		return a
@@ -81,7 +83,7 @@ func max(a, b int) int {
 	return b
 }
 
-//  DP 解法 O(n^2)
+// DP 解法 O(n^2)
 func LengthOfLIS(nums []int) int {
 	dp := make([]int, len(nums))
 	for idx := 0; idx < len(dp); idx++ {
@@ -92,7 +94,7 @@ func LengthOfLIS(nums []int) int {
 	for i := 0; i < len(nums); i++ {
 		for j := 0; j < i; j++ {
 			if nums[i] > nums[j] {
-				// 找到前面比現在結尾還小的子序列
+				// 找到下一個數值比現在的大
 				dp[i] = max(dp[i], dp[j]+1)
 			}
 		}
@@ -121,7 +123,7 @@ func LengthOfLIS2(nums []int) int {
 	return res
 }
 
-//  DP + 二分搜尋:patience sorting
+// DP + 二分搜尋:patience sorting. O(nlogn)
 func LengthOfLISPatience(nums []int) int {
 	top := make([]int, len(nums))
 
@@ -137,7 +139,7 @@ func LengthOfLISPatience(nums []int) int {
 		for left < right {
 			mid := left + (right-left)/2
 			if top[mid] > poker {
-				// 現在的牌比堆小, 所小範圍
+				// 現在的牌比堆小, 縮小範圍
 				right = mid
 			} else if top[mid] < poker {
 				// 現在的牌比堆大
@@ -154,11 +156,13 @@ func LengthOfLISPatience(nums []int) int {
 		// 再把這張牌放在堆的頂端
 		top[left] = poker
 	}
+	fmt.Println(top)
 	return piles
 }
-```
 
 ```
+
+```sh
 go test -benchmem -run=none LeetcodeGolang/Leetcode/300.Longest-Increasing-Subsequence -bench=.
 goos: darwin
 goarch: amd64
