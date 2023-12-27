@@ -213,6 +213,7 @@ for 狀態1 in 狀態1的所有取值：
 | [0322](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0322.Coin-Change/)                    |                    [Coin Change](https://leetcode.com/problems/coin-change/)                    |          [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0322.Coin-Change)           | Medium     | O(nm)                         | O(n)     | Dynamic Programming |
 | [0354](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0354.Russian-Doll-Envelopes/)         |         [Russian Doll Envelope](https://leetcode.com/problems/russian-doll-envelopes/)          |     [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0354.Russian-Doll-Envelopes)     | Hard       |                               |          | Dynamic Programming |
 | [0509](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0509.Fibonacci-Number/)               |               [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)               |        [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0509.Fibonacci-Number)        | Easy       | 很多解法                      | 很多解法 | Dynamic Programming |
+| [0070](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0070.Climbing-Stairs/)                |             [0070.Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)              |        [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0070.Climbing-Stairs)         | Easy       | O(n)                          | O(n)     | Dynamic Programming |
 
 ---
 
