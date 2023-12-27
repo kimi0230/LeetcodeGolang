@@ -93,7 +93,7 @@ Constraints:
 * Acceptance Rate: 52.3%
 
 ## 題目大意
-
+類似 [Fibonacci Number](../0509.Fibonacci-Number/README.md)
 
 ## 解題思路
 
@@ -114,10 +114,57 @@ https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/0070.Climbing-St
 
 ```go
 
+package climbingstairs
+
+// 時間複雜 O(n), 空間複雜 O(n)
+func ClimbStairs(n int) int {
+	dp := make([]int, n+1)
+	dp[0], dp[1] = 1, 1
+
+	for i := 2; i <= n; i++ {
+		dp[i] = dp[i-1] + dp[i-2]
+	}
+	return dp[n]
+}
+
+func ClimbStairsCache(n int) int {
+	dp := make([]int, n+1)
+	dp[0], dp[1] = 1, 1
+
+	for i := 2; i <= n; i++ {
+		if val := dp[i]; val == 0 {
+			dp[i] = dp[i-1] + dp[i-2]
+		}
+	}
+	return dp[n]
+}
+
+func ClimbStairsRecursive(n int) int {
+	dp := make([]int, n+1)
+	// dp[0], dp[1] = 1, 1
+
+	var climbClosure func(n int) int
+	climbClosure = func(n int) int {
+		if n <= 2 {
+			return n
+		}
+		dp[n] = climbClosure(n-1) + climbClosure(n-2)
+		return dp[n]
+	}
+	return climbClosure(n)
+}
 ```
 
 ##  Benchmark
 
 ```sh
-
+goos: darwin
+goarch: amd64
+pkg: LeetcodeGolang/Leetcode/0070.Climbing-Stairs
+cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+BenchmarkClimbStairs-8                  10386211               112.1 ns/op           320 B/op          1 allocs/op
+BenchmarkClimbStairsCache-8             10184984               118.8 ns/op           320 B/op          1 allocs/op
+BenchmarkClimbStairsRecursive-8                4         281980486 ns/op             320 B/op          1 allocs/op
+PASS
+ok      LeetcodeGolang/Leetcode/0070.Climbing-Stairs    5.591s
 ```
