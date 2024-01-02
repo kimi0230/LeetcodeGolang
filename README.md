@@ -391,6 +391,7 @@ int binarySearch(int[] nums, int target){
 | [0226](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0226.Invert-Binary-Tree)            |                 [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                  |      [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0226.Invert-Binary-Tree)      | Easy       | O(n) | O(1)            | Tree      |
 | [0104](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0104.Maximum-Depth-of-Binary-Tree/) | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree//description/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0104.Maximum-Depth-of-Binary-Tree) | Easy       | O(n) | O(1)            | Tree      |
 | [0543](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0543.Diameter-of-Binary-Tree)       |            [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)             |   [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0543.Diameter-of-Binary-Tree)    | Easy       | O(n) | O(n), O(log(n)) | Tree, DFS |
+| [0110](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0110.Balanced-Binary-Tree)          |               [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)                |     [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0110.Balanced-Binary-Tree)     | Easy       | O(n) | O(1)            | Tree, DFS |
 
 ---
 
