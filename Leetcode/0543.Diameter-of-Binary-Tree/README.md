@@ -10,7 +10,7 @@ description: "0543.Diameter-of-Binary-Tree"
 license: ""
 images: []
 
-tags: [LeetCode, Go, Easy, Diameter of Binary Tree]
+tags: [LeetCode, Go, Easy, Diameter of Binary Tree, DFS]
 categories: [LeetCode]
 
 featuredImage: ""
