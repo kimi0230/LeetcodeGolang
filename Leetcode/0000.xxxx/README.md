@@ -1,8 +1,8 @@
 ---
 title: NUM.LEETCODETITLE
 subtitle: "LEETCODELINK"
-date: 2023-01-22T21:20:00+08:00
-lastmod: 2023-01-22T21:20:00+08:00
+date: 2024-01-22T21:20:00+08:00
+lastmod: 2024-01-22T21:20:00+08:00
 draft: false
 author: "Kimi.Tsai"
 authorLink: "https://kimi0230.github.io/"
