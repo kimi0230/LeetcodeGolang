@@ -16,6 +16,8 @@ https://kimi0230.github.io/LeetcodeGolang/
     - [HashSet \& HashMap](#hashset--hashmap)
     - [Stack \& Queue](#stack--queue)
     - [Heap \& Priority Queue](#heap--priority-queue)
+      - [Heap 有幾個特色：](#heap-有幾個特色)
+      - [heap sort](#heap-sort)
     - [Disjoint Set Union](#disjoint-set-union)
     - [Trie](#trie)
     - [Binary Indexed Tree](#binary-indexed-tree)
@@ -101,6 +103,19 @@ https://kimi0230.github.io/LeetcodeGolang/
 
 
 #### Heap & Priority Queue
+##### Heap 有幾個特色：
+* 常見架構是像 binary tree 那樣
+* 保持 balanced
+* max heap 的 root 是最大值；min heap 的 root 則是最小值
+* 雖然是 tree，卻很適合放在 array 中處理
+
+##### heap sort
+根據定義 heap 的 root 一定是最大(假設是 max heap)，也就是說，無序數列經過 heapify 再作 n 次 root deletion 取出最大值，就可以得到排序的結果。
+最後就得到 heap sort 的 worst case 時間複雜度 O(nlogn) 的結果。
+可是 quick sort 的 worst case 時間複雜度是 O(n²)，怎麼 quick sort 的時間複雜度比較糟糕卻比較受歡迎？
+google 的結果是說 heap sort 比較不利於 caching 對於 spatial locality 機制，蠻有道理的阿。
+https://www.zhihu.com/question/23873747
+
 | No.                                                                                              |                                               Title                                               |                                                  Solution                                                  | Difficulty | Time             | Space | Topic                |
 |--------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------:|------------|------------------|-------|----------------------|
 | [0703](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0703.Kth-Largest-Element-in-a-Stream/) | [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0703.Kth-Largest-Element-in-a-Stream) | Easy       | O(K + (N-K)logK) | O(k)  | Heap, Priority Queue |

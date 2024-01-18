@@ -109,14 +109,29 @@ Seen this question in a real interview before? 1/4
 如果堆的元素個數等於 k，則檢查堆頂與目前出現次數的大小。 如果堆頂較大，表示至少有 k 個數字的出現次數比目前值大，故捨棄目前值；否則，就彈出堆頂，並將目前值插入堆中。
 遍歷完成後，堆中的元素就代表了「出現次數數組」中前 k 大的值。
 
+複雜度分析
+
+時間複雜度：`O(Nlog⁡k)`，
+其中 N 為陣列的長度。 我們先遍歷原數組，並使用雜湊表記錄出現次數，每個元素需要O(1) 的時間，共需`O(N)` 的時間 。 
+隨後，我們遍歷「出現次數數組」，由於堆的大小至多為k，因此每次堆操作需要`O(log⁡k)`的時間，共需`O(Nlog⁡k)`的時間。 二者之和為 `O(Nlog⁡k)`。
+
+空間複雜度：`O(N)`。 
+雜湊表的大小為`O(N)`，而堆的大小為`O(k)`，共為`O(N)`。
+
+### 方法二： Quick Sort
+
+
 作者：力扣官方題解
 連結：https://leetcode.cn/problems/top-k-frequent-elements/solutions/402568/qian-k-ge-gao-pin-yuan-su-by-leetcode-solution/
 來源：力扣（LeetCode）
 著作權歸作者所有。 商業轉載請聯絡作者授權，非商業轉載請註明出處。
 
+
 ## Big O
-時間複雜 : ``
-空間複雜 : ``
+
+### 方法一：heap
+時間複雜 : `O(Nlog⁡k)`
+空間複雜 : `O(N)`
 
 ## 來源
 * https://leetcode.com/problems/top-k-frequent-elements/description/
