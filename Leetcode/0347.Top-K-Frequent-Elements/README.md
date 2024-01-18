@@ -10,7 +10,7 @@ description: "0347.Top-K-Frequent-Elements"
 license: ""
 images: []
 
-tags: [LeetCode, Go, Medium, Top K Frequent Elements]
+tags: [LeetCode, Go, Medium, Top K Frequent Elements, heap]
 categories: [LeetCode]
 
 featuredImage: ""
@@ -95,7 +95,7 @@ Seen this question in a real interview before? 1/4
 
 
 ## 解題思路
-### 方法一：heap
+### 方法一：[heap](../../README.md#heap--priority-queue)
 方法一：堆
 思路與演算法
 
@@ -119,7 +119,9 @@ Seen this question in a real interview before? 1/4
 雜湊表的大小為`O(N)`，而堆的大小為`O(k)`，共為`O(N)`。
 
 ### 方法二： Quick Sort
-
+| Name       | Best     | Average  | Worst | Memory | Stable |
+|------------|----------|----------|-------|--------|--------|
+| Quick sort | n log(n) | n log(n) | n2    | log(n) | No     |
 
 作者：力扣官方題解
 連結：https://leetcode.cn/problems/top-k-frequent-elements/solutions/402568/qian-k-ge-gao-pin-yuan-su-by-leetcode-solution/

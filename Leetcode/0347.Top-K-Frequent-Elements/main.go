@@ -2,10 +2,11 @@ package topkfrequentelements
 
 import (
 	"container/heap"
+	"sort"
 )
 
 // 方法一: 使用 PriorityQueue
-// 時間複雜 O(), 空間複雜 O()
+// 時間複雜 O(Nlog⁡k), 空間複雜 O(N)
 func TopKFrequent(nums []int, k int) []int {
 	m := make(map[int]int)
 	for i := 0; i < len(nums); i++ {
@@ -89,4 +90,39 @@ func (pg *PriorityQueue) PushPQ(v *Item) {
 
 func (pg *PriorityQueue) PopPQ() *Item {
 	return heap.Pop(pg).(*Item)
+}
+
+// 方法二: 使用 Quick Sort
+// 時間複雜 O(), 空間複雜 O()
+func TopKFrequentQuickSort(nums []int, k int) []int {
+	m := make(map[int]int)
+	for i := 0; i < len(nums); i++ {
+		m[nums[i]]++
+	}
+	values := [][]int{}
+	for key, count := range m {
+		values = append(values, []int{key, count})
+	}
+
+	result := []int{}
+	sort.Sort(sortValue(values))
+
+	for i := 0; i < k; i++ {
+		result = append(result, values[i][0])
+	}
+	return result
+}
+
+type sortValue [][]int
+
+func (s sortValue) Len() int {
+	return len(s)
+}
+
+func (s sortValue) Less(i, j int) bool {
+	return s[i][1] > s[j][1]
+}
+
+func (s sortValue) Swap(i, j int) {
+	s[i], s[j] = s[j], s[i]
 }
