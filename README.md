@@ -114,12 +114,14 @@ https://kimi0230.github.io/LeetcodeGolang/
 最後就得到 heap sort 的 worst case 時間複雜度 O(nlogn) 的結果。
 可是 quick sort 的 worst case 時間複雜度是 O(n²)，怎麼 quick sort 的時間複雜度比較糟糕卻比較受歡迎？
 google 的結果是說 heap sort 比較不利於 caching 對於 spatial locality 機制，蠻有道理的阿。
-https://www.zhihu.com/question/23873747
+* https://www.zhihu.com/question/23873747
+* https://rust-algo.club/sorting/heapsort/index.html
 
-| No.                                                                                              |                                               Title                                               |                                                  Solution                                                  | Difficulty | Time             | Space | Topic                |
-|--------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------:|------------|------------------|-------|----------------------|
-| [0703](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0703.Kth-Largest-Element-in-a-Stream/) | [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0703.Kth-Largest-Element-in-a-Stream) | Easy       | O(K + (N-K)logK) | O(k)  | Heap, Priority Queue |
-| [1046](https://kimi0230.github.io/LeetcodeGolang/Leetcode/1046.Last-Stone-Weight/)               |               [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/)               |        [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/1046.Last-Stone-Weight)        | Easy       | O(nlogn)         | O(n)  | Heap, Priority Queue |
+| No.                                                                                              |                                               Title                                               |                                                  Solution                                                  | Difficulty | Time             | Space | Topic                            |
+|--------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------:|------------|------------------|-------|----------------------------------|
+| [0703](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0703.Kth-Largest-Element-in-a-Stream/) | [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0703.Kth-Largest-Element-in-a-Stream) | Easy       | O(K + (N-K)logK) | O(k)  | Heap, Priority Queue             |
+| [1046](https://kimi0230.github.io/LeetcodeGolang/Leetcode/1046.Last-Stone-Weight/)               |               [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/)               |        [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/1046.Last-Stone-Weight)        | Easy       | O(nlogn)         | O(n)  | Heap, Priority Queue             |
+| [0347](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0347.Top-K-Frequent-Elements/)         |   [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/)   |     [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0347.Top-K-Frequent-Elements)     | Medium     | O(Nlog⁡k)         | O(n)  | Heap, Priority Queue, Quick Sort |
 
 
 #### Disjoint Set Union

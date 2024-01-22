@@ -40,7 +40,9 @@
         "auto-scroll-table",
         "wide-page",
         "tags",
-        "sitemap-general"
+        "sitemap-general",
+        "hints",
+        "tabs2"
     ],
     "pluginsConfig": {
         "favicon-absolute": {
