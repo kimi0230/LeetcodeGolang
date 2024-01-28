@@ -42,7 +42,8 @@
         "tags",
         "sitemap-general",
         "hints",
-        "tabs2"
+        "tabs2",
+        "mermaid-newface"
     ],
     "pluginsConfig": {
         "favicon-absolute": {
