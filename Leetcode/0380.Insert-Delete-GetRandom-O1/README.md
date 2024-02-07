@@ -181,5 +181,4 @@ func (this *RandomizedSet) GetRandom() int {
 ## Follow up
 如果允許重複, 譬如多個1
 
-```go
-```
+[0381.Insert-Delete-GetRandom-O1-Duplicates-allowed](../0381.Insert-Delete-GetRandom-O1-Duplicates-allowed/README.md) #Hard
