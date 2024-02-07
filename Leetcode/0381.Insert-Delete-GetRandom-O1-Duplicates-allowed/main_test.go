@@ -1,6 +1,7 @@
 package insertdeletegetrandomo1duplicatesallowed
 
 import (
+	"fmt"
 	"reflect"
 	"testing"
 )
@@ -21,6 +22,17 @@ var tests = []struct {
 			nil, true, false, true, true, 1,
 		},
 	},
+	// {
+	// 	[]string{
+	// 		"RandomizedCollection", "insert", "insert", "insert", "getRandom", "remove", "getRandom",
+	// 	},
+	// 	[]int{
+	// 		0, 1, 1, 2, 0, 1, 0,
+	// 	},
+	// 	[]interface{}{
+	// 		nil, true, false, true, 2, true, false, 2,
+	// 	},
+	// },
 }
 
 func TestInsertdeletegetrandom(t *testing.T) {
@@ -39,6 +51,7 @@ func TestInsertdeletegetrandom(t *testing.T) {
 			case "getRandom":
 				result = append(result, rSet.GetRandom())
 			}
+			fmt.Println(rSet.set)
 		}
 		if !reflect.DeepEqual(result, tt.want) {
 			t.Errorf("got = %v, want = %v", result, tt.want)

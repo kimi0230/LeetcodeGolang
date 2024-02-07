@@ -1,6 +1,8 @@
 package insertdeletegetrandomo1duplicatesallowed
 
-import "math/rand"
+import (
+	"math/rand"
+)
 
 // 時間複雜 O(1), 空間複雜 O(n)
 type RandomizedCollection struct {
@@ -43,13 +45,15 @@ func (this *RandomizedCollection) Remove(val int) bool {
 		break
 	}
 
-	// 與最後一筆交換
+	// 將最後一筆移到要替換的id
 	this.arr[i] = this.arr[this.size-1]
 	delete(ids, i)
 	// 因為把最後一個元素移到前面了
 	delete(this.set[this.arr[i]], this.size-1)
 
 	if i < this.size-1 {
+		// fmt.Printf("i =%d, this.size =%d\t", i, this.size)
+		// 將最後一個元素的index的map中, 最後一個元素的index改為i
 		this.set[this.arr[i]][i] = struct{}{}
 	}
 	if len(ids) == 0 {
