@@ -94,8 +94,8 @@ Constraints:
 ## 解題思路
 
 ## Big O
-時間複雜 : ``
-空間複雜 : ``
+時間複雜 : `O(n)`
+空間複雜 : `O(n)`
 
 ## 來源
 * https://leetcode.com/problems/fizz-buzz/description/
