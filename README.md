@@ -11,7 +11,7 @@ https://kimi0230.github.io/LeetcodeGolang/
 - [leetcode Content](#leetcode-content)
   - [Data Structure](#data-structure)
     - [Array \& String](#array--string)
-- [| 0381  |  0381.Insert Delete GetRandom O(1) Duplicates allowed  | Go  | Medium     | O(1)          | O(n)   | Array                 |](#-0381----0381insert-delete-getrandom-o1-duplicates-allowed---go---medium------o1-----------on----array-----------------)
+- [| 0412                                      |                    0412.Fizz Buzz                    |                   Go                    | Easy     | O(n)          |    | Array, string                 |](#-0412----------------------------------------------------------0412fizz-buzz---------------------------------------go---------------------easy------on---------------array-string-----------------)
     - [Matrix](#matrix)
     - [Linked List](#linked-list)
     - [HashSet \& HashMap](#hashset--hashmap)
@@ -73,6 +73,7 @@ https://kimi0230.github.io/LeetcodeGolang/
 | [0409](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0409.Longest-Palindrome)                             |                            [409. Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)                             |               [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0409.Longest-Palindrome)               | Easy       | O(n)          | O(1)   | Array                 |
 | [0380](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0380.Insert-Delete-GetRandom-O1)                     |             [0380.Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/description/)              |           [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0380.Insert-Delete-GetRandom-O1)           | Medium     | O(1)          | O(n)   | Array                 |
 | [0381](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0381.Insert-Delete-GetRandom-O1-Duplicates-allowed)  | [0381.Insert Delete GetRandom O(1) Duplicates allowed](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0381.Insert-Delete-GetRandom-O1-Duplicates-allowed)  | Medium     | O(1)          | O(n)   | Array                 |
+| [0412](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0412.Fizz-Buzz)                                      |                               [0412.Fizz Buzz](https://leetcode.com/problems/fizz-buzz/description/)                                |                   [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0412.Fizz-Buzz)                    | Easy       | O(n)          |        | Array, string         |
 ---
 
 #### Matrix
