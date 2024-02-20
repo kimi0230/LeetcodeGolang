@@ -10,7 +10,7 @@ description: "0128.Longest-Consecutive-Sequence"
 license: ""
 images: []
 
-tags: [LeetCode, Go, Easy/Medium/Hard, LEETCODETITLE]
+tags: [LeetCode, Go, Medium, Longest Consecutive Sequence, Array, Hash Table, Union Find]
 categories: [LeetCode]
 
 featuredImage: ""
