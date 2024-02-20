@@ -10,7 +10,7 @@ description: "0105.Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal"
 license: ""
 images: []
 
-tags: [LeetCode, Go, Medium, Construct Binary Tree from Preorder and Inorder Traversal]
+tags: [LeetCode, Go, Medium, Construct Binary Tree from Preorder and Inorder Traversal, Array,Hash Table,Divide and Conquer,Tree, Binary Tree]
 categories: [LeetCode]
 
 featuredImage: ""
@@ -68,8 +68,13 @@ seo:
 ## 解題思路
 
 ## Big O
-時間複雜 : ``
-空間複雜 : ``
+* 時間複雜 : `O(n)`
+n個樹節點
+
+* 空間複雜 : `O(n)`
+遞迴調用的Stack空間是 O(h)，其中 h 是樹的高度。
+在每個遞迴層級中，都創建了一個 TreeNode 對象，因此空間複雜度也是 O(n)，其中 n 是節點的數量。 
+h< n所以空間複雜為 O(n)
 
 ## 來源
 * https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/
