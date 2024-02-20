@@ -13,6 +13,14 @@ var tests = []struct {
 		[]int{1, 2, 2, 3, structures.NULL, structures.NULL, 3, 4, structures.NULL, structures.NULL, 4},
 		false,
 	},
+	{
+		[]int{1, 2, 2, 3, structures.NULL, structures.NULL, 3, 4, structures.NULL, structures.NULL, 4},
+		false,
+	},
+	{
+		[]int{3, 9, 20, structures.NULL, structures.NULL, 15, 7},
+		true,
+	},
 }
 
 func TestIsBalanced(t *testing.T) {
