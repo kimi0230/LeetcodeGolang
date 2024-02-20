@@ -106,6 +106,7 @@ func buildTree(preorder []int, inorder []int) *TreeNode {
 	return result
 }
 ```
+![](105.construct%20Binary%20Tree%20From%20Preorder%20And%20In%20order%20Traversal-2.jpg)
 
 ##  Benchmark
 
