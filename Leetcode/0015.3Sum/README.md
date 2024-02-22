@@ -1,10 +1,63 @@
 ---
-title: 0015.3Sum
-tags: Easy
-author: Kimi Tsai <kimi0230@gmail.com>
-description:
----
+title: 0015. 3Sum
+subtitle: "https://leetcode.com/problems/3sum/description/"
+date: 2024-02-22T23:04:00+08:00
+lastmod: 2024-02-22T23:04:00+08:00
+draft: false
+author: "Kimi.Tsai"
+authorLink: "https://kimi0230.github.io/"
+description: "0015.3Sum"
+license: ""
+images: []
 
+tags: [LeetCode, Go, Medium, 3Sum, Array, Two Pointers, Sorting]
+categories: [LeetCode]
+
+featuredImage: ""
+featuredImagePreview: ""
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+twemoji: false
+lightgallery: true
+ruby: true
+fraction: true
+fontawesome: true
+linkToMarkdown: false
+rssFullText: false
+
+toc:
+  enable: true
+  auto: true
+code:
+  copy: true
+  maxShownLines: 200
+math:
+  enable: false
+  # ...
+mapbox:
+  # ...
+share:
+  enable: true
+  # ...
+comment:
+  enable: true
+  # ...
+library:
+  css:
+    # someCSS = "some.css"
+    # located in "assets/"
+    # Or
+    # someCSS = "https://cdn.example.com/some.css"
+  js:
+    # someJS = "some.js"
+    # located in "assets/"
+    # Or
+    # someJS = "https://cdn.example.com/some.js"
+seo:
+  images: []
+  # ...
+---
 # [15. 3Sum](https://leetcode.com/problems/3sum/)
 
 ## 題目
@@ -81,12 +134,12 @@ ThreeSumDoublePoint : 最佳解, 排序 + 雙指針法 (滑動視窗) O(n^2)
 1. 特判，對於數組長度 n，如果數組為 null 或者數組長度小於 3，返回 []。
 2. 對數組進行排序。
 3. 遍歷排序後數組：
-	* 對於重複元素：跳過，避免出現重複解
-	* 令左指針 L=i+1，右指針 R=n−1，當 L<R 時，執行循環：
-		* 當nums[i]+nums[L]+nums[R]==0，執行循環，判斷左界和右界是否和下一位置重複，
-		去除重複解。並同時將 L,R 移到下一位置，尋找新的解
-		* 若和大於 0，說明 nums[R] 太大，R 左移
-		* 若和小於 0，說明 nnums[L] 太小，L 右移
+  - 對於重複元素：跳過，避免出現重複解
+  - 令左指針 L=i+1，右指針 R=n−1，當 L<R 時，執行循環：
+  - 當nums[i]+nums[L]+nums[R]==0，執行循環，判斷左界和右界是否和下一位置重複，
+    去除重複解。並同時將 L,R 移到下一位置，尋找新的解
+  - 若和大於 0，說明 nums[R] 太大，R 左移
+  - 若和小於 0，說明 nnums[L] 太小，L 右移
 */
 func ThreeSumDoublePoint(nums []int) [][]int {
 	result := [][]int{}
@@ -127,7 +180,6 @@ func ThreeSumDoublePoint(nums []int) [][]int {
 	return result
 }
 
-
 func ThreeSumHashTable(nums []int) [][]int {
 	result := [][]int{}
 	if len(nums) < 3 {
@@ -158,15 +210,49 @@ func ThreeSumHashTable(nums []int) [][]int {
 	return result
 }
 
+func ThreeSumTwoPointer(nums []int) [][]int {
+	result := [][]int{}
+	sort.Ints(nums)
+
+	for i := 0; i < len(nums)-2; i++ {
+		if i > 0 && nums[i] == nums[i-1] {
+			continue
+		}
+		target, l, r := -nums[i], i+1, len(nums)-1
+		for l < r {
+			sum := nums[l] + nums[r]
+			if sum == target {
+				result = append(result, []int{nums[i], nums[l], nums[r]})
+				l++
+				r--
+				for l < r && nums[l] == nums[l-1] {
+					l++
+				}
+				for l < r && nums[r] == nums[r+1] {
+					r--
+				}
+			} else if sum > target {
+				r--
+			} else if sum < target {
+				l++
+			}
+		}
+	}
+	return result
+}
+
 ```
 
 
 ```sh
-go test -benchmem -run=none LeetcodeGolang/Leetcode/0015.3Sum -bench=.
-cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
-BenchmarkThreeSumBurst-8                 4905326               260.5 ns/op            72 B/op          3 allocs/op
-BenchmarkThreeSumDoublePoint-8           7796299               138.9 ns/op            72 B/op          3 allocs/op
-BenchmarkThreeSumHashTable-8             6525658               182.5 ns/op            72 B/op          3 allocs/op
+goos: darwin
+goarch: amd64
+pkg: LeetcodeGolang/Leetcode/0015.3Sum
+cpu: Intel(R) Core(TM) i5-6400 CPU @ 2.70GHz
+BenchmarkThreeSumBurst-4                 9838000               121.4 ns/op            48 B/op          2 allocs/op
+BenchmarkThreeSumDoublePoint-4           9069201               112.8 ns/op            48 B/op          2 allocs/op
+BenchmarkThreeSumHashTable-4             7935907               147.1 ns/op            48 B/op          2 allocs/op
+BenchmarkThreeSumTwoPointer-4           10888315               103.5 ns/op            48 B/op          2 allocs/op
 PASS
-ok      LeetcodeGolang/Leetcode/0015.3Sum       4.201s
+ok      LeetcodeGolang/Leetcode/0015.3Sum       5.055s
 ```

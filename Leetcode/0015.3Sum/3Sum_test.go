@@ -76,6 +76,14 @@ func TestThreeSumHashTable(t *testing.T) {
 	}
 }
 
+func TestThreeSumTwoPointer(t *testing.T) {
+	for _, tt := range tests {
+		if got := ThreeSumTwoPointer(tt.arg1); !reflect.DeepEqual(got, tt.want) {
+			t.Errorf("got = %v \n want = %v \n", got, tt.want)
+		}
+	}
+}
+
 func BenchmarkThreeSumBurst(b *testing.B) {
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
@@ -97,12 +105,22 @@ func BenchmarkThreeSumHashTable(b *testing.B) {
 	}
 }
 
+func BenchmarkThreeSumTwoPointer(b *testing.B) {
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		ThreeSumTwoPointer(tests[0].arg1)
+	}
+}
+
 /*
-go test -benchmem -run=none LeetcodeGolang/Leetcode/0015.3Sum -bench=.
-cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
-BenchmarkThreeSumBurst-8                 4905326               260.5 ns/op            72 B/op          3 allocs/op
-BenchmarkThreeSumDoublePoint-8           7796299               138.9 ns/op            72 B/op          3 allocs/op
-BenchmarkThreeSumHashTable-8             6525658               182.5 ns/op            72 B/op          3 allocs/op
+goos: darwin
+goarch: amd64
+pkg: LeetcodeGolang/Leetcode/0015.3Sum
+cpu: Intel(R) Core(TM) i5-6400 CPU @ 2.70GHz
+BenchmarkThreeSumBurst-4                 9838000               121.4 ns/op            48 B/op          2 allocs/op
+BenchmarkThreeSumDoublePoint-4           9069201               112.8 ns/op            48 B/op          2 allocs/op
+BenchmarkThreeSumHashTable-4             7935907               147.1 ns/op            48 B/op          2 allocs/op
+BenchmarkThreeSumTwoPointer-4           10888315               103.5 ns/op            48 B/op          2 allocs/op
 PASS
-ok      LeetcodeGolang/Leetcode/0015.3Sum       4.201s
+ok      LeetcodeGolang/Leetcode/0015.3Sum       5.055s
 */
