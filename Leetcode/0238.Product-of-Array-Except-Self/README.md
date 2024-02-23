@@ -10,7 +10,7 @@ description: "0238.Product-of-Array-Except-Self"
 license: ""
 images: []
 
-tags: [LeetCode, Go, Medium, Product of Array Except Self, Array, Prefix Sum]
+tags: [LeetCode, Go, Medium, Product of Array Except Self, Array, Prefix Sum, Blind75]
 categories: [LeetCode]
 
 featuredImage: ""

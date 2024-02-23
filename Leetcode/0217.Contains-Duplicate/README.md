@@ -10,7 +10,7 @@ description: "Contains Duplicate"
 license: ""
 images: []
 
-tags: [LeetCode, Go, Easy, Contains Duplicate]
+tags: [LeetCode, Go, Easy, Contains Duplicate, Array, Blind75]
 categories: [LeetCode]
 
 featuredImage: ""
