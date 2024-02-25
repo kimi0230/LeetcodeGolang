@@ -109,6 +109,9 @@ https://kimi0230.github.io/LeetcodeGolang/
 
 
 #### Heap & Priority Queue
+
+Heap 總是能讓整棵樹當中最大或最小值維持在root節點上
+
 ##### Heap 有幾個特色：
 * 常見架構是像 binary tree 那樣
 * 保持 balanced
