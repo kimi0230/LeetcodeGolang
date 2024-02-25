@@ -10,7 +10,7 @@ description: "0121.Best-Time-to-Buy-and-Sell-Stock"
 license: ""
 images: []
 
-tags: [LeetCode, Go, Easy, Slide Windows, DP, Best Time to Buy and Sell Stock]
+tags: [LeetCode, Go, Easy, Slide Windows, DP, Best Time to Buy and Sell Stock, array, Blind75]
 categories: [LeetCode]
 
 featuredImage: ""
@@ -127,7 +127,7 @@ func MaxProfit(prices []int) int {
 	left, right := 0, 1
 	maxProfit := 0
 	for right < len(prices) {
-		if prices[left] < right {
+		if prices[left] < prices[right] {
 			profit := prices[right] - prices[left]
 			maxProfit = max(maxProfit, profit)
 		} else {
@@ -139,7 +139,7 @@ func MaxProfit(prices []int) int {
 }
 
 // 時間複雜 O(n), 空間複雜 O(1)
-// DP
+// DP : 最佳解
 func MaxProfitDP(prices []int) int {
 
 	if len(prices) == 0 {
