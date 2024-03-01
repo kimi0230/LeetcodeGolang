@@ -7,6 +7,9 @@ import (
 
 // 方法一: 使用 PriorityQueue
 // 時間複雜 O(Nlog⁡k), 空間複雜 O(N)
+// 首先遍歷整個數組，並使用哈希表記錄每個數字出現的次數，並形成一個「出現次數數組」
+// 建立一個 PriortyQueue, 將「出現次數數組」丟進去
+// 在把 PriortyQueue pop的值丟到 result
 func TopKFrequent(nums []int, k int) []int {
 	m := make(map[int]int)
 	for i := 0; i < len(nums); i++ {
