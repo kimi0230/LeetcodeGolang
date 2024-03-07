@@ -4,7 +4,7 @@ tags: Medium, Two Pointers
 author: Kimi Tsai <kimi0230@gmail.com>
 description:
 ---
-# [19. Remove Nth Node From End of List](https://leetcode.com/problems/middle-of-the-linked-list/)
+# [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 
 ## 題目
 Given the head of a linked list, remove the nth node from the end of the list and return its head.
@@ -65,6 +65,10 @@ type ListNode struct {
 	Next *ListNode
 }
 
+// 產生 dummyHead,跟 preslow
+// 使用雙指針, 先讓 fast走 `k` 步, 然後 `fast slow 同速前進`
+// 這樣當fast走到nil時, slow所在位置就是在倒數第 k 的節點
+// 將 slow的前一步(preslow)的next 指向 slow.Next
 func RemoveNthFromEnd(head *ListNode, n int) *ListNode {
 	dummyHead := &ListNode{Next: head}
 	preSlow, slow, fast := dummyHead, head, head
