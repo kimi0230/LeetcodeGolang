@@ -10,6 +10,9 @@
   - Search Graph
     * [Search Graph In Golang](Algorithms/SearchGraph/README.md)
   - [Weighted Edit Distance](Algorithms/WeightedEditDistance/README.md)
+- [Code Signal](CodeSignal/README.md)
+  - Bank Requests
+    * [Bank Requests](CodeSignal/Bank-Requests/README.md)
 - Codility
   - Lesson
     - 0001.Iterations
@@ -72,12 +75,16 @@
   - 0000.xxxx
     * [NUM.LEETCODETITLE](Leetcode/0000.xxxx/README.md)
   - 0001.Two-Sum
+    - [Merging 2 Packages](Leetcode/0001.Two-Sum/Merging-2-Packages/README.md)
     * [0001.Two Sum](Leetcode/0001.Two-Sum/README.md)
+  - 0002.Add-Two-Numbers
+    * [0002.Add Two Numbers](Leetcode/0002.Add-Two-Numbers/README.md)
   - 0003.Longest-Substring-Without-Repeating-Characters
     * [0003.Longest Substring Without Repeating Characters](Leetcode/0003.Longest-Substring-Without-Repeating-Characters/README.md)
   - 0005.Longest-Palindromic-Substring
     * [0005.Longest Palindromic Substring](Leetcode/0005.Longest-Palindromic-Substring/README.md)
-  - [0015.3Sum](Leetcode/0015.3Sum/README.md)
+  - 0015.3Sum
+    * [0015. 3Sum](Leetcode/0015.3Sum/README.md)
   - 0019.Remove-Nth-Node-From-End-of-List
     * [0019.Remove Nth Node From End of List](Leetcode/0019.Remove-Nth-Node-From-End-of-List/README.md)
   - 0020.Valid-Parentheses
@@ -111,16 +118,22 @@
     * [100. Same Tree](Leetcode/0100.Same-Tree/README.md)
   - 0104.Maximum-Depth-of-Binary-Tree
     * [0104.Maximum Depth of Binary Tree](Leetcode/0104.Maximum-Depth-of-Binary-Tree/README.md)
+  - 0105.Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal
+    * [105. Construct Binary Tree from Preorder and Inorder Traversal](Leetcode/0105.Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal/README.md)
   - 0110.Balanced-Binary-Tree
     * [110. Balanced Binary Tree](Leetcode/0110.Balanced-Binary-Tree/README.md)
   - 0121.Best-Time-to-Buy-and-Sell-Stock
     * [0121.Best Time to Buy and Sell Stock](Leetcode/0121.Best-Time-to-Buy-and-Sell-Stock/README.md)
   - 0125.Valid-Palindrome
     * [0125. Valid Palindrome](Leetcode/0125.Valid-Palindrome/README.md)
+  - 0128.Longest-Consecutive-Sequence
+    * [128. Longest Consecutive Sequence](Leetcode/0128.Longest-Consecutive-Sequence/README.md)
   - 0141.Linked-List-Cycle
     * [0141.Linked List Cycle](Leetcode/0141.Linked-List-Cycle/README.md)
   - 0142.Linked-List-CycleII
     * [0142.Linked List Cycle II](Leetcode/0142.Linked-List-CycleII/README.md)
+  - 0143.Reorder-List
+    * [143. Reorder List](Leetcode/0143.Reorder-List/README.md)
   - 0167.Two-Sum-II-Input-Array-Is-Sorted
     * [0167.Two Sum II Input Array Is Sorted](Leetcode/0167.Two-Sum-II-Input-Array-Is-Sorted/README.md)
   - 0203.Remove-Linked-List-Elements
@@ -134,6 +147,8 @@
   - [0217.Contains-Duplicate](Leetcode/0217.Contains-Duplicate/README.md)
   - 0226.Invert-Binary-Tree
     * [226. Invert Binary Tree](Leetcode/0226.Invert-Binary-Tree/README.md)
+  - 0238.Product-of-Array-Except-Self
+    * [238. Product of Array Except Self](Leetcode/0238.Product-of-Array-Except-Self/README.md)
   - [0242.Valid-Anagram](Leetcode/0242.Valid-Anagram/README.md)
   - 0283.Move-Zeroes
     * [0283. Move Zeroes](Leetcode/0283.Move-Zeroes/README.md)
@@ -149,8 +164,14 @@
     * [347. Top K Frequent Elements](Leetcode/0347.Top-K-Frequent-Elements/README.md)
   - 0354.Russian-Doll-Envelopes
     * [0354. Russian Doll Envelope](Leetcode/0354.Russian-Doll-Envelopes/README.md)
+  - 0380.Insert-Delete-GetRandom-O1
+    * [380. Insert Delete GetRandom O(1)](Leetcode/0380.Insert-Delete-GetRandom-O1/README.md)
+  - 0381.Insert-Delete-GetRandom-O1-Duplicates-allowed
+    * [381.Insert Delete GetRandom O(1) Duplicates allowed](Leetcode/0381.Insert-Delete-GetRandom-O1-Duplicates-allowed/README.md)
   - 0409.Longest-Palindrome
     * [0409. Longest Palindrome](Leetcode/0409.Longest-Palindrome/README.md)
+  - 0412.Fizz-Buzz
+    * [412. Fizz Buzz](Leetcode/0412.Fizz-Buzz/README.md)
   - 0438.Find-All-Anagrams-in-a-String
     * [0438.Find All Anagrams in a String](Leetcode/0438.Find-All-Anagrams-in-a-String/README.md)
   - 0509.Fibonacci-Number
@@ -183,6 +204,8 @@
     * [1046. Last Stone Weight](Leetcode/1046.Last-Stone-Weight/README.md)
   - 1143.Longest-Common-Subsequence
     * [1143.Longest Common Subsequence](Leetcode/1143.Longest-Common-Subsequence/README.md)
+  - 1195.Fizz-Buzz-Multithreaded
+    * [1195. Fizz Buzz Multithreaded](Leetcode/1195.Fizz-Buzz-Multithreaded/README.md)
 - [Structures](structures/README.md)
   - Heap
     * [Golang Container Heap](structures/heap/index.en.md)

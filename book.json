@@ -43,7 +43,9 @@
         "sitemap-general",
         "hints",
         "tabs2",
-        "mermaid-newface"
+        "mermaid-newface",
+        // "-highlight",
+        // "sunlight-highlighter"
     ],
     "pluginsConfig": {
         "favicon-absolute": {
@@ -126,5 +128,9 @@
         },
         "headerTemplate": null,
         "footerTemplate": null
-    }
+    },
+    // "sunlight-highlighter": {
+    //     "theme": "dark",
+    //     "lineNumber": true
+    // }
 }
