@@ -87,7 +87,8 @@ func NewBank() *Bank {
 	return &Bank{}
 }
 
-// 錯誤處理: 回傳錯誤的 "負號" + request id
+// 錯誤處理: 回傳錯誤為
+// 單一元素為`[- <request_id>]`的數組（請注意負號）
 func (bank *Bank) failedAction() {
 	bank.mutex.Lock()
 	defer bank.mutex.Unlock()
@@ -162,7 +163,7 @@ func bankRequests(requests []string, balances []int) []int {
 	for index, request := range requests {
 		reqParams := extractRequestParams(request)
 		bank := NewBank()
-		bank.requestId = index
+		bank.requestId = index + 1
 		bank.action = reqParams["action"].(string)
 		bank.amount = reqParams["amount"].(int)
 		bank.from = reqParams["from"].(int)

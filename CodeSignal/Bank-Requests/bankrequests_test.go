@@ -26,7 +26,26 @@ var tests = []struct {
 			"withdraw 5 65",
 		},
 		[]int{20, 30, 10, 90, 60},
-		[]int{0},
+		[]int{-1},
+	},
+	{
+		[]string{
+			"withdraw 2 10",
+			"transfer 5 1 20",
+			"deposit 5 20",
+			"transfer 3 4 15",
+		},
+		[]int{10, 100, 20, 50, 30},
+		[]int{30, 90, 5, 65, 30},
+	},
+	{
+		[]string{
+			"deposit 3 400",
+			"transfer 1 2 30",
+			"withdraw 4 50",
+		},
+		[]int{20, 1000, 500, 40, 90},
+		[]int{-2},
 	},
 }
 
