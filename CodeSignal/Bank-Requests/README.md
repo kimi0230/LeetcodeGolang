@@ -1,4 +1,64 @@
-## **Bank Requests**
+---
+title: Bank Requests
+subtitle: ""
+date: 2024-03-10T14:31:00+08:00
+lastmod: 2024-03-10T14:31:00+08:00
+draft: false
+author: "Kimi.Tsai"
+authorLink: "https://kimi0230.github.io/"
+description: "Bank Requests"
+license: ""
+images: []
+
+tags: [CodeSignal, Go, Bank Requests]
+categories: [CodeSignal]
+
+featuredImage: ""
+featuredImagePreview: ""
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+twemoji: false
+lightgallery: true
+ruby: true
+fraction: true
+fontawesome: true
+linkToMarkdown: false
+rssFullText: false
+
+toc:
+  enable: true
+  auto: true
+code:
+  copy: true
+  maxShownLines: 200
+math:
+  enable: false
+  # ...
+mapbox:
+  # ...
+share:
+  enable: true
+  # ...
+comment:
+  enable: true
+  # ...
+library:
+  css:
+    # someCSS = "some.css"
+    # located in "assets/"
+    # Or
+    # someCSS = "https://cdn.example.com/some.css"
+  js:
+    # someJS = "some.js"
+    # located in "assets/"
+    # Or
+    # someJS = "https://cdn.example.com/some.js"
+seo:
+  images: []
+  # ...
+---
+# Bank Requests
 
 _A solution to one of my coding interview questions. Complete solution - written in **GoLang**_
 
