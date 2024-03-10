@@ -30,12 +30,14 @@ type BankService interface {
 
 type Bank struct {
 	BankService
-	action    string
-	requestId int
-	from      int
-	to        int
-	amount    int
-	balances  []int
+	action        string
+	requestId     int
+	from          int
+	to            int
+	amount        int
+	balances      []int
+	requestFailed bool
+	failedRequest []int
 
 	mutex sync.RWMutex
 }
@@ -85,10 +87,21 @@ func NewBank() *Bank {
 	return &Bank{}
 }
 
+// 錯誤處理: 回傳錯誤的 "負號" + request id
+func (bank *Bank) failedAction() {
+	bank.mutex.Lock()
+	defer bank.mutex.Unlock()
+	failed := []int{-bank.requestId}
+
+	bank.balances = []int{}
+	bank.requestFailed = true
+	bank.failedRequest = failed
+}
+
 func (bank *Bank) Action() {
 	var requestErr error
 	action := bank.getActionName()
-	fmt.Println("action:", action)
+	// fmt.Println("action:", action)
 
 	switch action {
 	case "transfer":
@@ -100,7 +113,10 @@ func (bank *Bank) Action() {
 	default:
 		requestErr = errUnknownAction
 	}
-
+	if requestErr != nil {
+		fmt.Println("requestErr:", requestErr)
+		bank.failedAction()
+	}
 }
 
 func extractRequestParams(request string) map[string]interface{} {
@@ -153,10 +169,14 @@ func bankRequests(requests []string, balances []int) []int {
 		if _, ok := reqParams["to"]; ok {
 			bank.to = reqParams["to"].(int)
 		}
-		fmt.Println(bank.action)
 
 		bank.balances = balances
 		bank.Action()
+
+		if bank.requestFailed {
+			return bank.failedRequest
+		}
+		res = bank.balances
 	}
 	return res
 }

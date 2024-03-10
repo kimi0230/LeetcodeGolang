@@ -19,15 +19,15 @@ var tests = []struct {
 		[]int{20, 30, 10, 90, 60},
 		[]int{10, 30, 20, 100, 45},
 	},
-	// {
-	// 	[]string{
-	// 		"transfer 1 4 40",
-	// 		"deposit 3 10",
-	// 		"withdraw 5 65",
-	// 	},
-	// 	[]int{20, 30, 10, 90, 60},
-	// 	[]int{0},
-	// },
+	{
+		[]string{
+			"transfer 1 4 40",
+			"deposit 3 10",
+			"withdraw 5 65",
+		},
+		[]int{20, 30, 10, 90, 60},
+		[]int{0},
+	},
 }
 
 func TestBankRequests(t *testing.T) {
