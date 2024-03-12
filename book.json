@@ -126,9 +126,5 @@
         },
         "headerTemplate": null,
         "footerTemplate": null
-    },
-    // "sunlight-highlighter": {
-    //     "theme": "dark",
-    //     "lineNumber": true
-    // }
+    }
 }
