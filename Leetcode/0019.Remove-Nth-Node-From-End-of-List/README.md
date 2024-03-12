@@ -1,8 +1,62 @@
 ---
-title: 0019.Remove Nth Node From End of List
-tags: Medium, Two Pointers
-author: Kimi Tsai <kimi0230@gmail.com>
-description:
+title: 0019. Remove Nth Node From End of List
+subtitle: "https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
+date: 2024-03-12T16:26:00+08:00
+lastmod: 2024-03-12T16:26:00+08:00
+draft: false
+author: "Kimi.Tsai"
+authorLink: "https://kimi0230.github.io/"
+description: "0015.3Sum"
+license: ""
+images: []
+
+tags: [LeetCode, Go, Medium, Linked List, Two Pointers, Facebook, Amazon, Microsoft, Google, Bloomberg]
+categories: [LeetCode]
+
+featuredImage: ""
+featuredImagePreview: ""
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+twemoji: false
+lightgallery: true
+ruby: true
+fraction: true
+fontawesome: true
+linkToMarkdown: false
+rssFullText: false
+
+toc:
+  enable: true
+  auto: true
+code:
+  copy: true
+  maxShownLines: 200
+math:
+  enable: false
+  # ...
+mapbox:
+  # ...
+share:
+  enable: true
+  # ...
+comment:
+  enable: true
+  # ...
+library:
+  css:
+    # someCSS = "some.css"
+    # located in "assets/"
+    # Or
+    # someCSS = "https://cdn.example.com/some.css"
+  js:
+    # someJS = "some.js"
+    # located in "assets/"
+    # Or
+    # someJS = "https://cdn.example.com/some.js"
+seo:
+  images: []
+  # ...
 ---
 # [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 
