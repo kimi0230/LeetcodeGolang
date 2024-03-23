@@ -1,5 +1,12 @@
-package longestpalindromicsubstring
+// 時間複雜度:
+// 空間複雜度:
+/*
+ * @lc app=leetcode.cn id=5 lang=golang
+ *
+ * [5] 最长回文子串
+ */
 
+// @lc code=start
 func longestPalindrome(s string) string {
 	dp := make([][]bool, len(s))
 	result := s[0:1]
@@ -28,3 +35,6 @@ func longestPalindrome(s string) string {
 	}
 	return result
 }
+
+// @lc code=end
+

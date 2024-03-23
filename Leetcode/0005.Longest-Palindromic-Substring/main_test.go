@@ -18,7 +18,7 @@ var tests = []struct {
 
 func TestLongestPalindromeSubstring(t *testing.T) {
 	for _, tt := range tests {
-		if got := LongestPalindromeSubstring(tt.arg1); got != tt.want {
+		if got := longestPalindrome(tt.arg1); got != tt.want {
 			t.Errorf("got = %v, want = %v", got, tt.want)
 		}
 	}
@@ -27,7 +27,7 @@ func TestLongestPalindromeSubstring(t *testing.T) {
 func BenchmarkLongestPalindromeSubstring(b *testing.B) {
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
-		LongestPalindromeSubstring(tests[0].arg1)
+		longestPalindrome(tests[0].arg1)
 	}
 }
 
