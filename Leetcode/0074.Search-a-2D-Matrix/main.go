@@ -1,6 +1,6 @@
 package searcha2dmatrix
 
-// 時間複雜 O(), 空間複雜 O()
+// 時間複雜 O(logmn), 空間複雜 O(1)
 func searchMatrix(matrix [][]int, target int) bool {
 	m := len(matrix)
 	if m <= 0 {

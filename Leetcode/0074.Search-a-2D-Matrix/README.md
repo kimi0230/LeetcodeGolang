@@ -72,8 +72,8 @@ seo:
 
 ## Big O
 
-* 時間複雜 : ``
-* 空間複雜 : ``
+* 時間複雜 : `O(log⁡mn)` 其中 m 和 n 分別是矩陣的行數和列數
+* 空間複雜 : `O(1)`
 
 ## 來源
 * https://leetcode.com/problems/search-a-2d-matrix/description/
@@ -83,6 +83,37 @@ seo:
 https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/0074.Search-a-2D-Matrix/main.go
 
 ```go
+package searcha2dmatrix
+
+// 時間複雜 O(logmn), 空間複雜 O(1)
+func searchMatrix(matrix [][]int, target int) bool {
+	m := len(matrix)
+	if m <= 0 {
+		return false
+	}
+	n := len(matrix[0])
+
+	left, right := 0, m*n-1
+	for left <= right {
+		mid := int(uint(right+left) >> 1) //left + (right-left)/2
+		val := getMatrix(matrix, mid)
+		if val == target {
+			return true
+		} else if val < target {
+			left = mid + 1
+		} else {
+			right = mid - 1
+		}
+	}
+	return false
+}
+
+// 將 mxn的二維陣列 映射成一維陣列
+func getMatrix(matrix [][]int, index int) int {
+	n := len(matrix[0])
+	i, j := index/n, index%n
+	return matrix[i][j]
+}
 
 ```
 
