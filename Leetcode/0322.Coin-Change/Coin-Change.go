@@ -62,11 +62,12 @@ func CoinChangeDP(coins []int, amount int) int {
 
 	// 外層 for 循環遍歷所有狀態的所有取值
 	for i := 1; i <= amount; i++ {
-		// 內層 for 循環遍歷球所有選擇的最小值
+		// 內層 for 循環遍歷求所有選擇的最小值
 		for _, coin := range coins {
 			if i-coin < 0 {
 				continue
 			}
+			// 狀態轉移
 			dp[i] = min(dp[i], 1+dp[i-coin])
 		}
 	}
