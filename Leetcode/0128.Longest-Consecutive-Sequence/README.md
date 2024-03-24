@@ -10,7 +10,7 @@ description: "0128.Longest-Consecutive-Sequence"
 license: ""
 images: []
 
-tags: [LeetCode, Go, Medium, Longest Consecutive Sequence, Array, Hash Table, Union Find]
+tags: [LeetCode, Go, Medium, Longest Consecutive Sequence, Array, Hash Table, Union Find, Amazon, Microsoft, Google, Adobe, Spotify]
 categories: [LeetCode]
 
 featuredImage: ""
@@ -62,8 +62,10 @@ seo:
 
 ## 題目
 
-## 題目大意
+給定一個未排序的整數數位列 nums ，找出數字連續的最長序列（不要求序列元素在原陣列中連續）的長度。
+請你設計並實現時間複雜度為 O(n) 的演演算法解決此問題。
 
+## 題目大意
 
 ## 解題思路
 

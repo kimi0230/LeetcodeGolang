@@ -10,7 +10,7 @@ description: "0167.Two-Sum-II-Input-Array-Is-Sorted"
 license: ""
 images: []
 
-tags: [LeetCode, Go, Medium, Two Sum II Input Array Is Sorted]
+tags: [LeetCode, Go, Medium, Two Sum II Input Array Is Sorted, Array, Two Pointers, Binary Search]
 categories: [LeetCode]
 
 featuredImage: ""
