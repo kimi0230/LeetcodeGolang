@@ -33,7 +33,7 @@ https://kimi0230.github.io/LeetcodeGolang/
     - [Sweep Line](#sweep-line)
     - [Rolling Sum](#rolling-sum)
     - [Two Pointers](#two-pointers)
-    - [Bit Manipulation](#bit-manipulation)
+    - [Bit Manipulation∂](#bit-manipulation)
     - [Union Find](#union-find)
     - [Breadth First Search](#breadth-first-search)
     - [Binary Search](#binary-search)
@@ -309,10 +309,11 @@ https://labuladong.gitee.io/algo/2/21/57/
 | [0344](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0344.Reverse-String/)                   |               [Reverse String](https://leetcode.com/problems/reverse-string/)                |          [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0344.Reverse-String)          | Easy       | O(n) | O(1)  | Two Pointers              |
 | [0876](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0876.Middle-of-the-Linked-List/)        |    [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)     |    [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0876.Middle-of-the-Linked-List)     | Easy       |      |       | Linked List, Two Pointers |
 | [0011](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0011.Container-With-Most-Water/)        |    [Container With Most Water](0011.Container-With-Most-Water)     |    [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0011.Container-With-Most-Water)     | Medium       |      |       |Two Pointers |
+| [0074](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0074.Search-a-2D-Matrix/)        |    [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)     |    [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0074.Search-a-2D-Matrix)     | Medium       |      |       |  Binary Search, Two Pointers |
 
 ---
 
-#### Bit Manipulation
+#### Bit Manipulation∂
 
 | No.                                                                                                  |                                                   Title                                                   |                                                    Solution                                                    | Difficulty | Time       | Space       | Topic            |
 |------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------:|------------|------------|-------------|------------------|
