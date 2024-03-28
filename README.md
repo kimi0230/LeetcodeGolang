@@ -395,6 +395,93 @@ int binarySearch(int[] nums, int target){
     return ...;
 }
 ```
+
+**將搜尋區間全部統一成兩端都閉**, 方便記憶
+
+```go
+func Search(nums []int, target int) int {
+	lenght := len(nums)
+	if lenght <= 0 {
+		return -1
+	}
+	left, right := 0, lenght-1
+
+	for left <= right {
+		mid := (right-left)/2 + left
+		if nums[mid] == target {
+			return mid
+		} else if nums[mid] < target {
+			// 找右邊
+			left = mid + 1
+		} else if nums[mid] > target {
+			// 找左邊
+			right = mid - 1
+		}
+	}
+	// 都沒找到
+	return -1
+}
+
+// 有點類似 nums 小於 target的元素有幾個
+func LeftBound(nums []int, target int) (index int) {
+	lenght := len(nums)
+	if lenght <= 0 {
+		return -1
+	}
+	left, right := 0, lenght-1
+
+	for left <= right {
+		// 除以2
+		// mid := left + (right-left)>>1
+		mid := int(uint(right+left) >> 1)
+		if nums[mid] == target {
+			// 要繼續找左邊, 所以把右邊變小
+			right = mid - 1
+		} else if nums[mid] < target {
+			// 找右邊
+			left = mid + 1
+		} else if nums[mid] > target {
+			// 找左邊
+			right = mid - 1
+		}
+	}
+	// 都沒找到 注意: left越界情況
+	if left >= lenght || nums[left] != target {
+		return -1
+	}
+	return left
+}
+
+// 有點類似 nums 大於 target的元素有幾個
+func RightBound(nums []int, target int) (index int) {
+	lenght := len(nums)
+	if lenght <= 0 {
+		return -1
+	}
+	left, right := 0, lenght-1
+
+	for left <= right {
+		// 除以2
+		// mid := left + (right-left)>>1
+		mid := int(uint(right+left) >> 1)
+		if nums[mid] == target {
+			// 注意:要繼續找右邊, 所以把左邊變大=mid+1
+			left = mid + 1
+		} else if nums[mid] < target {
+			// 找右邊
+			left = mid + 1
+		} else if nums[mid] > target {
+			// 找左邊
+			right = mid - 1
+		}
+	}
+	// 都沒找到 注意:right越界情況
+	if right < 0 || nums[right] != target {
+		return -1
+	}
+	return right
+}
+```
 | No.                                                                                  |                                           Title                                            |                                            Solution                                            | Difficulty | Time                                  | Space                         | Topic         |
 |--------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------:|------------|---------------------------------------|-------------------------------|---------------|
 | [0704](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0704.Binary-Search/)       |             [704. Binary Search](https://leetcode.com/problems/binary-search/)             |    [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0704.Binary-Search)    | Easy       | 最差:O(long n)<br> 最佳O(1)剛好在中間 | 迭代: O(1) <br/> 遞迴O(log n) | Binary Search |
