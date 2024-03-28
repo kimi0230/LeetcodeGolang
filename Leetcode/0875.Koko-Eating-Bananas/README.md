@@ -63,9 +63,13 @@ seo:
 ## 題目
 
 ## 題目大意
-
+珂珂喜歡吃香蕉。 這裡有 N 堆香蕉，第 i 堆中有 piles[i] 根香蕉。 警衛已經離開了，將在 H 小時後回來。
+可以決定她吃香蕉的速度 K （單位：根/小時）。 每個小時，她將會選擇一堆香蕉，從中吃掉 K 根。 如果這堆香蕉少於 K 根，她將吃掉這堆的所有香蕉，然後這一小時內不會再吃更多的香蕉。
+珂珂喜歡慢慢吃，但仍然想在警衛回來前吃掉所有的香蕉。
+返回她可以在 H 小時內吃掉所有香蕉的最小速度 K（K 為整數）。
 
 ## 解題思路
+這一題可以用二分搜索來解答。 在 [0 , max(piles)] 的範圍內搜索，二分的過程都是常規思路。 判斷是否左右邊界如果劃分的時候需要注意題目中給的限定條件。 當香蕉個數小於 k 的時候，那個小時不能再吃其他香蕉了。
 
 ## Big O
 
@@ -75,6 +79,7 @@ seo:
 ## 來源
 * https://leetcode.com/problems/koko-eating-bananas/description/
 * https://leetcode.cn/problems/koko-eating-bananas/description/
+* https://books.halfrost.com/leetcode/ChapterFour/0800~0899/0875.Koko-Eating-Bananas/
 
 ## 解答
 https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/0875.Koko-Eating-Bananas/main.go
