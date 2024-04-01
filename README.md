@@ -397,6 +397,7 @@ int binarySearch(int[] nums, int target){
 ```
 
 **將搜尋區間全部統一成兩端都閉**, 方便記憶
+`[letf,right]`
 
 ```go
 func Search(nums []int, target int) int {
@@ -482,12 +483,26 @@ func RightBound(nums []int, target int) (index int) {
 	return right
 }
 ```
-| No.                                                                                                   |                                                            Title                                                             |                                                    Solution                                                     | Difficulty | Time                                  | Space                         | Topic         |
-|-------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------:|------------|---------------------------------------|-------------------------------|---------------|
-| [0704](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0704.Binary-Search/)                        |                              [704. Binary Search](https://leetcode.com/problems/binary-search/)                              |            [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0704.Binary-Search)             | Easy       | 最差:O(long n)<br> 最佳O(1)剛好在中間 | 迭代: O(1) <br/> 遞迴O(log n) | Binary Search |
-| [0875](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0875.Koko-Eating-Bananas/)                  |                  [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/)                  |         [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0875.Koko-Eating-Bananas)          | Medium     | O（n log m）                          | O(1)                          | Binary Search |
-| [0153](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0153.Find-Minimum-in-Rotated-Sorted-Array/) | [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0153.Find-Minimum-in-Rotated-Sorted-Array) | Medium     | O(log n）                             | O(1)                          | Binary Search |
-| [0033](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0033.Search-in-Rotated-Sorted-Array/)       |       [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description//)       |    [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0033.Search-in-Rotated-Sorted-Array)    | Medium     | O(log n）                             | O(1)                          | Binary Search |
+
+`for left <= right {}`：
+
+* 此方法在迭代終止時，left 和 right 指針指向同一個位置。
+* 此方法會包括最後一個可能的候選解，在某些情況下可能更容易理解和實現。
+* 在應對邊界情況時可能更為方便，例如當 left 和 right 指向同一位置時，這時可能需要進一步處理。
+
+`for left < right {}`：
+
+* 此方法在迭代終止時，left 和 right 指針指向相鄰位置。
+* 此方法會排除最後一個可能的候選解，當要求嚴格小於或大於某個值時可能更合適。
+* 在一些情況下，可能會更高效，因為在每次循環中只需要比較一次 left 和 right，而不需要再處理當兩者相等時的情況。
+
+| No.                                                                                                                      |                                                                               Title                                                                               |                                                              Solution                                                              | Difficulty | Time                                  | Space                         | Topic         |
+|--------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|------------|---------------------------------------|-------------------------------|---------------|
+| [0704](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0704.Binary-Search/)                                           |                                                [704. Binary Search](https://leetcode.com/problems/binary-search/)                                                 |                      [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0704.Binary-Search)                      | Easy       | 最差:O(long n)<br> 最佳O(1)剛好在中間 | 迭代: O(1) <br/> 遞迴O(log n) | Binary Search |
+| [0875](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0875.Koko-Eating-Bananas/)                                     |                                    [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/)                                     |                   [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0875.Koko-Eating-Bananas)                   | Medium     | O（n log m）                          | O(1)                          | Binary Search |
+| [0153](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0153.Find-Minimum-in-Rotated-Sorted-Array/)                    |                   [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/)                    |          [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0153.Find-Minimum-in-Rotated-Sorted-Array)           | Medium     | O(log n）                             | O(1)                          | Binary Search |
+| [0033](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0033.Search-in-Rotated-Sorted-Array/)                          |                         [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description//)                          |             [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0033.Search-in-Rotated-Sorted-Array)              | Medium     | O(log n）                             | O(1)                          | Binary Search |
+| [0034](https://kimi0230.github.io/LeetcodeGolang/Leetcode/0034.Find-First-and-Last-Position-of-Element-in-Sorted-Array/) | [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | [Go](https://github.com/kimi0230/LeetcodeGolang/tree/master/Leetcode/0034.Find-First-and-Last-Position-of-Element-in-Sorted-Array) | Medium     | O(log n）                             | O(1)                          | Binary Search |
 
 
 ---
