@@ -34,6 +34,7 @@ func LengthOfLongestSubstring(s string) int {
 }
 
 // LengthOfLongestSubstringMap 用map 紀錄是否重複.
+// O(n)
 func LengthOfLongestSubstringMap(s string) int {
 	slength := len(s)
 	if slength == 0 || slength == 1 {

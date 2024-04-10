@@ -10,7 +10,7 @@ description: "0003.Longest Substring Without Repeating Characters"
 license: ""
 images: []
 
-tags: [LeetCode, Go, Medium, Longest Substring Without Repeating Characters, Sliding Window, Array]
+tags: [LeetCode, Go, Medium, Longest Substring Without Repeating Characters, Sliding Window, Array, Hash Table, String]
 categories: [LeetCode]
 
 featuredImage: ""
