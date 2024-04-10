@@ -10,7 +10,7 @@ description: "0121.Best-Time-to-Buy-and-Sell-Stock"
 license: ""
 images: []
 
-tags: [LeetCode, Go, Easy, Slide Windows, DP, Best Time to Buy and Sell Stock, array, Blind75]
+tags: [LeetCode, Go, Easy, Slide Windows, DP, Best Time to Buy and Sell Stock, array, Blind75,amazon, bloomberg, facebook, microsoft, uber]
 categories: [LeetCode]
 
 featuredImage: ""
