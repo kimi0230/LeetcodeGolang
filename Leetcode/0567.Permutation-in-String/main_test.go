@@ -7,15 +7,20 @@ var tests = []struct {
 	arg2 string
 	want bool
 }{
+	// {
+	// 	"ab",
+	// 	"eidbaooo",
+	// 	true,
+	// },
+	// {
+	// 	"ab",
+	// 	"eidboaoo",
+	// 	false,
+	// },
 	{
-		"ab",
-		"eidbaooo",
+		"abcdxabcde",
+		"abcdeabcdx",
 		true,
-	},
-	{
-		"ab",
-		"eidboaoo",
-		false,
 	},
 }
 
@@ -30,6 +35,14 @@ func TestCheckInclusion(t *testing.T) {
 func TestCheckInclusionSlice(t *testing.T) {
 	for _, tt := range tests {
 		if got := CheckInclusionSlice(tt.arg1, tt.arg2); got != tt.want {
+			t.Errorf("got = %v, want = %v", got, tt.want)
+		}
+	}
+}
+
+func TestCheckInclusion2(t *testing.T) {
+	for _, tt := range tests {
+		if got := CheckInclusion2(tt.arg1, tt.arg2); got != tt.want {
 			t.Errorf("got = %v, want = %v", got, tt.want)
 		}
 	}

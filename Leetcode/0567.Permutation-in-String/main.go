@@ -81,3 +81,38 @@ func CheckInclusionSlice(s1 string, s2 string) bool {
 	}
 	return false
 }
+
+func CheckInclusion2(s1 string, s2 string) bool {
+	left, right := 0, 0
+	need, windows := make(map[byte]int), make(map[byte]int)
+	match := 0
+	for _, v := range s1 {
+		need[byte(v)]++
+	}
+
+	for right < len(s2) {
+		cRight := s2[right]
+		windows[cRight]++
+		right++
+		if windows[cRight] == need[cRight] {
+			match++
+		}
+
+		if match == len(need) {
+			return true
+		}
+
+		if right-left >= len(s1) {
+			cLeft := s2[left]
+
+			// 如果左指針字符出現次數達到目標，減少 match
+			if windows[cLeft] == need[cLeft] {
+				match--
+			}
+			// 移動左指針
+			windows[cLeft]--
+			left++
+		}
+	}
+	return false
+}
