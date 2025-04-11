@@ -29,7 +29,7 @@
             "showLog": true,
             "asRoot": false,
             "trace": "verbose",
-            "stopOnEntry": true,
+            // "stopOnEntry": true,
             "debugAdapter": "dlv-dap"
         },
     ]

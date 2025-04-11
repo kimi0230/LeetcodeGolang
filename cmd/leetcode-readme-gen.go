@@ -25,6 +25,10 @@ type LeetcodeResponse struct {
 			Tags       []struct {
 				Name string `json:"name"`
 			} `json:"topicTags"`
+			CodeSnippets []struct {
+				Lang string `json:"lang"`
+				Code string `json:"code"`
+			} `json:"codeSnippets"`
 		} `json:"question"`
 	} `json:"data"`
 }
@@ -117,6 +121,7 @@ type ReadmeData struct {
 	Difficulty string
 	Tags       []string
 	Problem    string
+	Code       string
 	Now        string
 }
 
@@ -157,6 +162,10 @@ func fetchLeetcode(slug string) (*ReadmeData, error) {
     topicTags {
       name
     }
+    codeSnippets {
+      lang
+      code
+    }
   }
 }`
 
@@ -184,6 +193,14 @@ func fetchLeetcode(slug string) (*ReadmeData, error) {
 		tags = append(tags, tag.Name)
 	}
 
+	code := ""
+	for _, snippet := range q.CodeSnippets {
+		if snippet.Lang == "Go" || snippet.Lang == "Golang" {
+			code = snippet.Code
+			break
+		}
+	}
+
 	return &ReadmeData{
 		ID:         q.QuestionID,
 		Title:      strings.ReplaceAll(q.Title, " ", "-"),
@@ -191,6 +208,7 @@ func fetchLeetcode(slug string) (*ReadmeData, error) {
 		Difficulty: q.Difficulty,
 		Tags:       tags,
 		Problem:    stripHTML(q.Content),
+		Code:       code,
 		Now:        time.Now().Format(time.RFC3339),
 	}, nil
 }
@@ -228,6 +246,38 @@ func writeREADME(data *ReadmeData) error {
 	return tmpl.Execute(f, data)
 }
 
+func writeMainGo(data *ReadmeData) error {
+	dir := fmt.Sprintf("Leetcode/%s.%s", data.ID, data.Title)
+	f, err := os.Create(filepath.Join(dir, "main.go"))
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	_, err = f.WriteString(data.Code)
+	return err
+}
+
+func writeMainTest(data *ReadmeData) error {
+	dir := fmt.Sprintf("Leetcode/%s.%s", data.ID, data.Title)
+	f, err := os.Create(filepath.Join(dir, "main_test.go"))
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	testContent := `package main
+
+import (
+	"testing"
+)
+
+func TestExample(t *testing.T) {
+	// TODO: add test cases
+}
+`
+	_, err = f.WriteString(testContent)
+	return err
+}
+
 func main() {
 	if len(os.Args) < 2 {
 		fmt.Println("Usage: leetcode-readme-gen <id>")
@@ -252,5 +302,11 @@ func main() {
 	if err := writeREADME(data); err != nil {
 		panic(err)
 	}
-	fmt.Printf("README generated for %s (%s)\n", data.Title, data.ID)
+	if err := writeMainGo(data); err != nil {
+		panic(err)
+	}
+	if err := writeMainTest(data); err != nil {
+		panic(err)
+	}
+	fmt.Printf("README, main.go, and main_test.go generated for %s (%s)\n", data.Title, data.ID)
 }
