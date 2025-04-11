@@ -1,0 +1,78 @@
+templates:
+  - name: leetcode-readme
+    path: Leetcode/{{id}}.{{title}}/README.md
+    content: |
+      ---
+      title: {{id}}.{{title}}
+      subtitle: "https://leetcode.com/problems/{{title | dash}}/description/"
+      date: {{now}}
+      lastmod: {{now}}
+      draft: false
+      author: "Kimi.Tsai"
+      authorLink: "https://kimi0230.github.io/"
+      description: "{{title | space}}"
+      license: ""
+      images: []
+
+      tags: [LeetCode, Go, {{difficulty}}, {{tags}}]
+      categories: [LeetCode]
+
+      featuredImage: ""
+      featuredImagePreview: ""
+
+      hiddenFromHomePage: false
+      hiddenFromSearch: false
+      twemoji: false
+      lightgallery: true
+      ruby: true
+      fraction: true
+      fontawesome: true
+      linkToMarkdown: false
+      rssFullText: false
+
+      toc:
+        enable: true
+        auto: true
+      code:
+        copy: true
+        maxShownLines: 200
+      math:
+        enable: false
+      mapbox:
+      share:
+        enable: true
+      comment:
+        enable: true
+      library:
+        css:
+        js:
+      seo:
+        images: []
+      ---
+
+      # [{{id}}.{{title}}](https://leetcode.com/problems/{{title | dash}}/description/)
+
+      ## 題目
+      {{problem}}
+
+      ## 題目大意
+
+
+      ## 解題思路
+
+
+      ## 來源
+      * https://leetcode.com/problems/{{title | dash}}/description/
+
+      ## 解答
+      https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/{{id}}.{{title}}/main.go
+
+      ```go
+      {{code}}
+      ```
+
+      ## Benchmark
+
+      ```sh
+
+      ```

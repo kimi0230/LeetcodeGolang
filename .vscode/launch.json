@@ -10,6 +10,27 @@
             "request": "launch",
             "mode": "auto",
             "program": "${fileDirname}"
-        }
+        },
+        {
+            "name": "執行 leetcode-readme-gen",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/cmd/leetcode-readme-gen.go",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "1"
+            ],
+            "env": {},
+            "dlvFlags": [
+                "--check-go-version=false",
+                "--only-same-user=false"
+            ],
+            "showLog": true,
+            "asRoot": false,
+            "trace": "verbose",
+            "stopOnEntry": true,
+            "debugAdapter": "dlv-dap"
+        },
     ]
 }
