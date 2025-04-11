@@ -19,6 +19,7 @@ type LeetcodeResponse struct {
 	Data struct {
 		Question struct {
 			QuestionID string `json:"questionId"`
+			FrontendID string `json:"questionFrontendId"`
 			Title      string `json:"title"`
 			Content    string `json:"content"`
 			Difficulty string `json:"difficulty"`
@@ -37,13 +38,14 @@ type ProblemListResponse struct {
 	StatStatusPairs []struct {
 		Stat struct {
 			QuestionID   int    `json:"question_id"`
+			FrontendID   int    `json:"frontend_question_id"`
 			QuestionSlug string `json:"question__title_slug"`
 		} `json:"stat"`
 	} `json:"stat_status_pairs"`
 }
 
 const readmeTemplate = `---
-title: {{.ID}}.{{.Title}}
+title: {{.FrontendID}}.{{.Title}}
 subtitle: "https://leetcode.com/problems/{{.Slug}}/description/"
 date: {{.Now}}
 lastmod: {{.Now}}
@@ -90,7 +92,7 @@ seo:
   images: []
 ---
 
-# [{{.ID}}.{{.Title}}](https://leetcode.com/problems/{{.Slug}}/description/)
+# [{{.FrontendID}}.{{.Title}}](https://leetcode.com/problems/{{.Slug}}/description/)
 
 ## 題目
 {{.Problem}}
@@ -105,7 +107,7 @@ seo:
 * https://leetcode.com/problems/{{.Slug}}/description/
 
 ## 解答
-https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/{{.ID}}.{{.Title}}/main.go
+https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/{{.FrontendID}}.{{.Title}}/main.go
 
 
 
@@ -116,6 +118,7 @@ https://github.com/kimi0230/LeetcodeGolang/blob/master/Leetcode/{{.ID}}.{{.Title
 
 type ReadmeData struct {
 	ID         string
+	FrontendID string
 	Title      string
 	Slug       string
 	Difficulty string
@@ -145,7 +148,7 @@ func fetchSlugFromID(id int) (string, error) {
 	}
 
 	for _, p := range problems.StatStatusPairs {
-		if p.Stat.QuestionID == id {
+		if p.Stat.FrontendID == id {
 			return p.Stat.QuestionSlug, nil
 		}
 	}
@@ -156,6 +159,7 @@ func fetchLeetcode(slug string) (*ReadmeData, error) {
 	query := `query questionTitleSlug($titleSlug: String!) {
   question(titleSlug: $titleSlug) {
     questionId
+    questionFrontendId
     title
     content
     difficulty
@@ -203,6 +207,7 @@ func fetchLeetcode(slug string) (*ReadmeData, error) {
 
 	return &ReadmeData{
 		ID:         q.QuestionID,
+		FrontendID: fmt.Sprintf("%04s", q.FrontendID),
 		Title:      strings.ReplaceAll(q.Title, " ", "-"),
 		Slug:       slug,
 		Difficulty: q.Difficulty,
@@ -232,7 +237,7 @@ func stripHTML(input string) string {
 }
 
 func writeREADME(data *ReadmeData) error {
-	dir := fmt.Sprintf("Leetcode/%s.%s", data.ID, data.Title)
+	dir := fmt.Sprintf("Leetcode/%s.%s", data.FrontendID, data.Title)
 	os.MkdirAll(dir, 0755)
 	f, err := os.Create(filepath.Join(dir, "README.md"))
 	if err != nil {
@@ -247,7 +252,7 @@ func writeREADME(data *ReadmeData) error {
 }
 
 func writeMainGo(data *ReadmeData) error {
-	dir := fmt.Sprintf("Leetcode/%s.%s", data.ID, data.Title)
+	dir := fmt.Sprintf("Leetcode/%s.%s", data.FrontendID, data.Title)
 	f, err := os.Create(filepath.Join(dir, "main.go"))
 	if err != nil {
 		return err
@@ -258,7 +263,7 @@ func writeMainGo(data *ReadmeData) error {
 }
 
 func writeMainTest(data *ReadmeData) error {
-	dir := fmt.Sprintf("Leetcode/%s.%s", data.ID, data.Title)
+	dir := fmt.Sprintf("Leetcode/%s.%s", data.FrontendID, data.Title)
 	f, err := os.Create(filepath.Join(dir, "main_test.go"))
 	if err != nil {
 		return err
@@ -308,5 +313,5 @@ func main() {
 	if err := writeMainTest(data); err != nil {
 		panic(err)
 	}
-	fmt.Printf("README, main.go, and main_test.go generated for %s (%s)\n", data.Title, data.ID)
+	fmt.Printf("README, main.go, and main_test.go generated for %s (%s)\n", data.Title, data.FrontendID)
 }
