@@ -52,4 +52,4 @@ jobs:
           pip install ghp-import
           ghp-import -n -p -f site
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}

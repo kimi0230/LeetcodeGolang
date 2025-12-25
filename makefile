@@ -1,19 +1,22 @@
+VERSION ?= v0.0.1
+
 all: build
 
-build: summary
-	gitbook build
+build:
+	mkdocs build
 
-start: summary
-	gitbook serve .
+pdf:
+	mkdocs build
+	@echo "PDF generated at site/pdf/leetcode-golang.pdf"
 
-summary:
-	book sm -i _book node_modules 
+start:
+	mkdocs serve
 
-deploy_firebase: summary build
-	firebase login
-	firebase deploy
+# 使用方式: make gen ID=217
+gen:
+	go run cmd/leetcode-readme-gen.go $(ID)
 
-tag: summary
+tag:
 	@echo "Version: $(VERSION)"
 	git tag -a $(VERSION) -m "$(VERSION)"
 	git push origin $(VERSION)
@@ -21,4 +24,7 @@ tag: summary
 sync:
 	git submodule update --recursive --remote
 
-.PHONY: clean build all
+clean:
+	rm -rf site/
+
+.PHONY: clean build all start gen tag sync

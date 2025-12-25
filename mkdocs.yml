@@ -54,6 +54,14 @@ plugins:
       filename: .pages
   - minify:
       minify_html: true
+  - with-pdf:
+      author: Kimi Tsai
+      copyright: Kimi Tsai
+      cover_subtitle: Leetcode in Golang
+      toc_title: Table of Contents
+      output_path: leetcode-golang.pdf
+      exclude_pages:
+        - tags.md
 
 extra:
   social:
