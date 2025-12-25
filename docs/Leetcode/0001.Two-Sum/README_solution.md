@@ -4,6 +4,8 @@ tags:
   - Easy
 author: Kimi Tsai <kimi0230@gmail.com>
 description: UMPIRE Solution for Two Sum problem
+math:
+  enable: true
 ---
 
 # UMPIRE 0001.Two-Sum
