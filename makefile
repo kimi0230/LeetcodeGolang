@@ -10,7 +10,7 @@ build:
 	mkdocs build
 
 pdf:
-	mkdocs build
+	ENABLE_PDF_EXPORT=1 mkdocs build
 	@echo "PDF generated at site/pdf/leetcode-golang.pdf"
 
 start:

@@ -34,8 +34,8 @@ jobs:
 
       - name: Build Site
         run: |
-          # 編譯網站
-          mkdocs build --clean
+          # 編譯網站並生成 PDF
+          ENABLE_PDF_EXPORT=1 mkdocs build --clean
           
           # 如果有設定密碼，則進行加密 (參考 build.yml)
           if [ ! -z "${{ secrets.SOLUTION_PASSWORD }}" ]; then
