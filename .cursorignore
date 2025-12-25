@@ -1,0 +1,8 @@
+# Cursor Indexing Ignore File
+node_modules/
+_book/
+gitbook/
+.git/
+*.exe
+*.test
+vendor/

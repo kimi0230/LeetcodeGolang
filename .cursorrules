@@ -1,0 +1,18 @@
+# Cursor Project Rules
+
+## Project Context
+This is a Golang project for Leetcode solutions and data structures.
+
+## General Guidelines
+- Always use idiomatic Go.
+- Refer to `.cursor/rules/` for detailed sub-rules.
+- Prioritize time and space complexity analysis in every code explanation.
+- Keep the `Leetcode/` directory as the main source of problem solutions.
+
+## File Organization
+- `structures/`: Common data structures (Heap, TreeNode, ListNode, etc.)
+- `Leetcode/`: Individual problem solutions.
+- `template/`: Algorithmic templates (Segment Tree, Union Find, etc.)
+
+## Custom Commands (Prompts)
+- **UMPIRE**: Whenever you see "UMPIRE" or are asked to solve using UMPIRE, strictly follow the template in `.cursor/prompts/umpire.md`.
