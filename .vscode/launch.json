@@ -19,7 +19,7 @@
             "program": "${workspaceFolder}/cmd/leetcode-readme-gen.go",
             "cwd": "${workspaceFolder}",
             "args": [
-                "3223"
+                "3224" // edit leetcode problem id
             ],
             "env": {},
             "dlvFlags": [

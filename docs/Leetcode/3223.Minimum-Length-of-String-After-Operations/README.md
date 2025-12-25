@@ -1,8 +1,9 @@
 ---
 title: 3223.Minimum-Length-of-String-After-Operations
-subtitle: "https://leetcode.com/problems/minimum-length-of-string-after-operations/description/"
-date: 2025-04-11T20:56:29+08:00
-lastmod: 2025-04-11T20:56:29+08:00
+subtitle: ""
+url: "https://leetcode.com/problems/minimum-length-of-string-after-operations/description/"
+date: 2025-12-25T12:29:39+08:00
+lastmod: 2025-12-25T12:29:39+08:00
 draft: false
 author: "Kimi.Tsai"
 authorLink: "https://kimi0230.github.io/"
@@ -10,13 +11,7 @@ description: "Minimum-Length-of-String-After-Operations"
 license: ""
 images: []
 
-tags:
-  - LeetCode
-  - Go
-  - Medium
-  - Hash Table
-  - String
-  - Counting
+tags: [LeetCode, Go, Medium, Hash Table, String, Counting]
 categories: [LeetCode]
 
 featuredImage: ""

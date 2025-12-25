@@ -46,7 +46,8 @@ type ProblemListResponse struct {
 
 const readmeTemplate = `---
 title: {{.FrontendID}}.{{.Title}}
-subtitle: "https://leetcode.com/problems/{{.Slug}}/description/"
+subtitle:
+url: "https://leetcode.com/problems/{{.Slug}}/description/"
 date: {{.Now}}
 lastmod: {{.Now}}
 draft: false
@@ -237,7 +238,7 @@ func stripHTML(input string) string {
 }
 
 func writeREADME(data *ReadmeData) error {
-	dir := fmt.Sprintf("Leetcode/%s.%s", data.FrontendID, data.Title)
+	dir := fmt.Sprintf("docs/Leetcode/%s.%s", data.FrontendID, data.Title)
 	os.MkdirAll(dir, 0755)
 	f, err := os.Create(filepath.Join(dir, "README.md"))
 	if err != nil {
@@ -252,7 +253,7 @@ func writeREADME(data *ReadmeData) error {
 }
 
 func writeMainGo(data *ReadmeData) error {
-	dir := fmt.Sprintf("Leetcode/%s.%s", data.FrontendID, data.Title)
+	dir := fmt.Sprintf("docs/Leetcode/%s.%s", data.FrontendID, data.Title)
 	f, err := os.Create(filepath.Join(dir, "main.go"))
 	if err != nil {
 		return err
@@ -263,7 +264,7 @@ func writeMainGo(data *ReadmeData) error {
 }
 
 func writeMainTest(data *ReadmeData) error {
-	dir := fmt.Sprintf("Leetcode/%s.%s", data.FrontendID, data.Title)
+	dir := fmt.Sprintf("docs/Leetcode/%s.%s", data.FrontendID, data.Title)
 	f, err := os.Create(filepath.Join(dir, "main_test.go"))
 	if err != nil {
 		return err
