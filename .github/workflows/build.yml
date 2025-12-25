@@ -30,7 +30,24 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
-          # 這裡使用 mkdocs gh-deploy 自動處理 gh-pages 分支
-          mkdocs gh-deploy --force --clean
+          # 1. 編譯網站產生 site 目錄
+          mkdocs build --clean
+          
+          # 2. 安裝 staticrypt
+          npm install -g staticrypt
+          
+          # 3. 加密所有 solution 頁面
+          # 搜尋所有名為 README_solution 的目錄（MkDocs 預設將 .md 轉為目錄/index.html）
+          find site -name "README_solution" -type d | while read dir; do
+            if [ -f "$dir/index.html" ]; then
+              echo "Encrypting $dir/index.html"
+              staticrypt "$dir/index.html" -p "111" -o "$dir/index.html" --title "受保護的解法" --instructions "請輸入密碼以查看解題思路。"
+            fi
+          done
+
+          # 4. 使用 ghp-deploy 工具手動推送 site 目錄到 gh-pages 分支
+          # 因為 mkdocs gh-deploy 會自動重啟 build，我們需要手動處理已加密的 site
+          pip install ghp-import
+          ghp-import -n -p -f site
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
