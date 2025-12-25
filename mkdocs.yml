@@ -1,0 +1,63 @@
+site_name: "Kimi's LeetcodeGolang Notes"
+site_description: "My LeetcodeGolang notes using MkDocs Material"
+site_author: "Kimi Tsai"
+site_url: "https://kimi0230.github.io/LeetcodeGolang/"
+repo_url: "https://github.com/kimi0230/LeetcodeGolang"
+repo_name: "kimi0230/LeetcodeGolang"
+edit_uri: "edit/master/docs/"
+
+theme:
+  name: material
+  language: zh-Hant
+  favicon: assets/images/favicon.ico  # 請確認路徑是否正確
+  features:
+    - navigation.tabs
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.snippets
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - tags:
+      tags_file: tags.md
+  - awesome-pages:
+      filename: .pages
+  - minify:
+      minify_html: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/kimi0230
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@kimi0230
