@@ -33,12 +33,21 @@ jobs:
           # 1. 編譯網站
           mkdocs build --clean
           
-          # 2. 執行 Python 加密腳本
-          python3 encrypt_solutions.py
+          # 2. 安裝 staticrypt
+          npm install staticrypt
           
-          # 3. 部署到 GitHub Pages
+          # 3. 搜尋並加密解決方案檔案
+          # 使用 -p 帶入 Secret 密碼, -s 允許短密碼, -o 指定輸出路徑為原路徑 (達成覆蓋)
+          echo "Searching for solution files..."
+          FOUND_FILES=$(find site -path "*/README_solution/index.html")
+          
+          for file in $FOUND_FILES; do
+            echo "🔒 Encrypting $file with staticrypt..."
+            ./node_modules/.bin/staticrypt "$file" -p "${{ secrets.SOLUTION_PASSWORD }}" -s -o "$file"
+          done
+          
+          # 4. 部署到 GitHub Pages
           pip install ghp-import
           ghp-import -n -p -f site
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SOLUTION_PASSWORD: ${{ secrets.SOLUTION_PASSWORD }}
