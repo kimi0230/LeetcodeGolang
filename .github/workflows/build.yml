@@ -20,20 +20,19 @@ jobs:
       - name: install nodejs
         uses: actions/setup-node@v3
         with:
-          node-version: 10.14.1
+          node-version: 16
 
-      - name: configue gitbook
+      - name: configure honkit
         run: |
           npm install
-          npm install -g gitbook-cli          
-          gitbook install
+          npm install -g honkit
           npm install -g gitbook-summary
 
       - name: generate _book folder
         run: |
           book sm
           ln -s -f SUMMARY.md Content.md
-          gitbook build
+          honkit build
           cp SUMMARY.md _book
 
       - name: push _book to branch gh-pages
