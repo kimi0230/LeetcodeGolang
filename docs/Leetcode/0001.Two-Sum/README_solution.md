@@ -1,5 +1,5 @@
 ---
-title: Solution 1.Two-Sum
+title: UMPIRE 1.Two-Sum
 subtitle: "https://leetcode.com/problems/two-sum/description/"
 date: 2025-04-11T20:16:46+08:00
 lastmod: 2025-04-11T20:16:46+08:00
