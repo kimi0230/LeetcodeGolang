@@ -33,22 +33,12 @@ jobs:
           # 1. 編譯網站
           mkdocs build --clean
           
-          # 2. 搜尋並加密所有 solution 相關的 HTML
-          echo "Searching for solution files to encrypt..."
-          FOUND_FILES=$(find site -path "*/README_solution/index.html")
+          # 2. 執行 Python 加密腳本
+          python3 encrypt_solutions.py
           
-          if [ -z "$FOUND_FILES" ]; then
-            echo "⚠️ No solution files found! Please check your directory structure."
-            exit 1
-          fi
-
-          for file in $FOUND_FILES; do
-            echo "🔒 Encrypting $file"
-            npx staticrypt "$file" -p "111" -o "$file" --title "受保護的解法" --instructions "請輸入密碼以查看解題思路。"
-          done
-
           # 3. 部署到 GitHub Pages
           pip install ghp-import
           ghp-import -n -p -f site
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SOLUTION_PASSWORD: ${{ secrets.SOLUTION_PASSWORD }}
