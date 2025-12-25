@@ -9,7 +9,7 @@ edit_uri: "edit/master/docs/"
 theme:
   name: material
   language: zh-Hant
-  favicon: assets/images/favicon.ico  # 請確認路徑是否正確
+  favicon: assets/images/favicon.png  # 請確認路徑是否正確
   features:
     - navigation.tabs
     - navigation.expand
