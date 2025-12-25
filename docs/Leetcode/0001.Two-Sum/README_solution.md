@@ -1,133 +1,106 @@
 ---
-title: UMPIRE 1.Two-Sum
-subtitle: "https://leetcode.com/problems/two-sum/description/"
-date: 2025-04-11T20:16:46+08:00
-lastmod: 2025-04-11T20:16:46+08:00
-draft: false
-author: "Kimi.Tsai"
-authorLink: "https://kimi0230.github.io/"
-description: "Two-Sum"
-license: ""
-images: []
-
-tags: [LeetCode, Go, Easy, Array, Hash Table]
-categories: [LeetCode]
-
-featuredImage: ""
-featuredImagePreview: ""
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-twemoji: false
-lightgallery: true
-ruby: true
-fraction: true
-fontawesome: true
-linkToMarkdown: false
-rssFullText: false
-
-toc:
-  enable: true
-  auto: true
-code:
-  copy: true
-  maxShownLines: 200
-math:
-  enable: false
-mapbox:
-share:
-  enable: true
-comment:
-  enable: true
-library:
-  css:
-  js:
-seo:
-  images: []
+title: UMPIRE 0001.Two-Sum
+tags:
+  - Easy
+author: Kimi Tsai <kimi0230@gmail.com>
+description: UMPIRE Solution for Two Sum problem
 ---
-# Solution - UMPIRE
+
+# UMPIRE 0001.Two-Sum
 
 ## Output 1: UMPIRE 解題（完整思考版）
 
 ### U – Understand（理解題目）
-- **題目描述**：給定一個整數陣列 `nums` 和一個目標值 `target`，找出陣列中兩個整數，使其相加等於 `target`，並回傳這兩個數字的索引值。
+- **題目描述**：給定一個整數陣列 `nums` 和一個目標值 `target`，請在該陣列中找出和為目標值的那兩個整數，並返回它們的陣列下標。
 - **關鍵限制**：
-  - 每種輸入剛好只有一個解。
-  - 同一個元素不能使用兩次。
-  - 回傳索引的順序不限。
+    - 每種輸入只會對應一個答案。
+    - 不能重複使用陣列中同樣的元素（即同一個 index 不能用兩次）。
+    - 答案可以按任意順序返回。
 - **潛在陷阱**：
-  - 負數的存在（`target` 或 `nums[i]` 可能為負）。
-  - 陣列長度最小為 2。
-- **測試案例**：
-  - **Happy Path**: `nums = [2, 7, 11, 15], target = 9` -> `[0, 1]`
-  - **Edge Case 1 (重複數字)**: `nums = [3, 3], target = 6` -> `[0, 1]`
-  - **Edge Case 2 (負數)**: `nums = [-1, -8, 5], target = -9` -> `[0, 1]`
+    - 陣列中可能包含負數。
+    - 陣列可能未排序（此題未註明排序，不能直接用雙指針而不先排序）。
+- **Happy Path**：
+    - `nums = [2, 7, 11, 15], target = 9` -> 返回 `[0, 1]`。
+- **Edge Cases**：
+    - `nums = [3, 3], target = 6` -> 返回 `[0, 1]`（數值相同但 index 不同）。
+    - `nums = [3, 2, 4], target = 6` -> 返回 `[1, 2]`（目標值由非連續元素組成）。
 
 ### M – Match（匹配知識）
-- **主要演算法/資料結構**：**Hash Table (Map)**。
-- **為什麼匹配**：
-  - 暴力法 (O(n²)) 需要兩層迴圈。
-  - 使用 Hash Table 可以將查找時間從 O(n) 降低到 O(1)，總時間複雜度優化至 O(n)。
-- **其他嘗試**：
-  - **排序 + 雙指針**: 雖然空間複雜度可降至 O(1)，但因為需要回傳原始索引，排序會打亂索引，處理起來較複雜且時間複雜度為 O(n log n)，不如 Hash Table 快。
+- **主要模式**：**Hash Map (Hash Table)**。
+- **為什麼適合**：
+    - 我們需要快速尋找「當前數值的互補值」（即 `target - nums[i]`）是否已經在之前出現過。Hash Map 的查找時間複雜度為 $O(1)$，比起線性尋找的 $O(n)$ 快得多。
+- **其他方案**：
+    - **暴力解 (Brute Force)**：雙層迴圈遍歷所有組合。時間複雜度 $O(n^2)$，效率較低。
+    - **排序 + 雙指針**：先排序再從兩端逼近。時間複雜度 $O(n \log n)$（受限於排序），雖然空間複雜度可降至 $O(1)$，但若題目要求返回原始下標，排序會打亂位置，需額外處理，不如 Hash Map 直觀且快。
 
 ### P – Plan（制定計畫）
-- 建立一個空的 Map `m`，Key 存數字的值，Value 存該數字的索引。
-- 遍歷 `nums` 陣列，對於當前數字 `v` 與索引 `i`：
-  1. 計算所需的差值 `complement = target - v`。
-  2. 檢查 `complement` 是否已存在於 Map `m` 中。
-  3. 如果存在，代表找到了這兩個數，直接回傳 `[]int{m[complement], i}`。
-  4. 如果不存在，將當前數字與索引存入 Map：`m[v] = i`。
-- 預防 Bug：確保先檢查再存入，以避免「同一個元素使用兩次」（例如 target 是 6，當前數字是 3）。
+1. 初始化一個空的分佈式雜湊表 (Map)，用來儲存 `數值 : 下標` 的映射。
+2. 遍歷陣列 `nums`，對於每個元素 `v` 和其索引 `i`：
+    - 計算需要的互補值 `complement = target - v`。
+    - 在 Map 中檢查 `complement` 是否已存在：
+        - 如果**存在**：表示找到答案，返回 `[Map[complement], i]`。
+        - 如果**不存在**：將當前數值與索引存入 Map `Map[v] = i`。
+3. 如果遍歷結束仍未找到（根據題目假設這不會發生），返回空或預設值。
+- **避免的 Bug**：先檢查再存入，可以自然避免「重複使用同一個元素」的問題（因為 Map 裡只會有之前處理過的元素）。
 
 ### I – Implement（實際實作，Golang）
 ```go
 func twoSum(nums []int, target int) []int {
-    // 建立 hash map 存儲 {值: 索引}
+    // 建立一個 map，key 是數值，value 是對應的索引
     m := make(map[int]int)
     
     for i, v := range nums {
         complement := target - v
-        // 檢查差值是否已在 map 中
+        // 檢查互補值是否已經在 map 中
         if idx, ok := m[complement]; ok {
             return []int{idx, i}
         }
-        // 將當前數字存入 map
+        // 如果沒找到，把當前數值存入 map
         m[v] = i
     }
-    return nil
+    
+    return []int{}
 }
 ```
 
 ### R – Review（檢查與回顧）
-- **Dry Run (`nums = [2, 7, 11, 15], target = 9`)**:
-  - `i=0, v=2`: complement=7。Map 空，存入 `{2: 0}`。
-  - `i=1, v=7`: complement=2。Map 中有 2 (索引 0)，回傳 `[0, 1]`。正確。
-- **狀態轉換**：Map 動態增長，確保我們只會跟「之前出現過」的數字做比較，完美避開重複使用同一元素。
+- **Dry Run**：以 `nums = [3, 2, 4], target = 6` 為例：
+    1. `i=0, v=3`：`complement=3`。Map 為空，不匹配。Map 存入 `{3: 0}`。
+    2. `i=1, v=2`：`complement=4`。Map 只有 `{3: 0}`，不匹配。Map 存入 `{3: 0, 2: 1}`。
+    3. `i=2, v=4`：`complement=2`。Map 存在鍵 `2`，其索引為 `1`。匹配成功。
+    4. 返回 `[1, 2]`。
+- **狀態轉換**：Map 會動態紀錄掃描過的數字，將原本需要二次掃描的查找降為 $O(1)$。
 
 ### E – Evaluate（總結與評估）
-- **Time Complexity**: **O(n)**。只需遍歷陣列一次，Map 的查找與插入均為 O(1)。
-- **Space Complexity**: **O(n)**。最差情況下需要將所有數字存入 Map。
-- **Trade-offs**: 犧牲了空間（O(n)）來換取最快的時間（O(n)）。
+- **時間複雜度**：$O(n)$。我們只需遍歷陣列一次，且每次 Map 的存取與查找均為 $O(1)$。
+- **空間複雜度**：$O(n)$。最壞情況下需要將 $n$ 個元素存入 Map。
+- **權衡**：使用空間換取時間。這是處理「尋找特定配對」問題最經典的優化方式。
 
 ---
 
 ## Output 2: 面試官口語回答腳本（精簡可直接說）
 
 ### 1️⃣ 開場：題目理解
-這題是要在陣列中找到兩個數，相加等於給定的 `target`。比較關鍵的要求是每個輸入只有一個正確解，而且同一個元素不能重複用兩次。
+這題是要在陣列中找到兩個數字，讓它們加起來等於目標值 `target`，並回傳這兩個數字的索引。題目保證一定有一個解，且每個數字不能重複使用。
 
 ### 2️⃣ 解法選擇說明
-最直觀的方法是兩層迴圈的暴力破解，但時間複雜度是 O(n²)。我會選擇使用 **Hash Map** 來優化，這樣可以把查找的時間降到 O(1)，讓整體的效率提升到 **O(n)**。
+我選擇使用 **Hash Map** 來解這題，因為它能將尋找「互補數字」的時間從 $O(n)$ 降到 $O(1)$。雖然暴力解用雙層迴圈也能做，但 $O(n^2)$ 的效率在數據量大時會太慢。
 
 ### 3️⃣ 解題策略概覽
-我會遍歷陣列一次，每遇到一個數字，就去算一下「還差多少（complement）」才能達到目標值。如果這個差值已經在 Map 裡面了，就代表找到了；如果還沒出現過，就把現在這個數字存進 Map，留給後面的數字匹配。
+我會遍歷一次陣列。對於每個數字，我先去計算「還差多少才到 target」，然後檢查這個「差額」是否已經存在 Hash Map 中。如果有，就代表找到了；如果沒有，我就把當前的數字和它的索引存進 Map，繼續往後看。
 
 ### 4️⃣ 寫程式時會補充的關鍵說明
-在實作時，我會注意**先檢查再存入**。這樣可以確保我們不會誤用同一個索引兩次，例如當 target 是 6 而當前數字是 3 的時候。
+在實作時有兩個細節要注意：
+1. 我們要「先檢查、再存入」，這樣可以保證我們不會找到自己，滿足題目「不能重複使用同一個元素」的要求。
+2. 在 Golang 中，使用 `if idx, ok := m[complement]; ok` 可以很優雅地同時完成查找和判斷是否存在。
 
 ### 5️⃣ 快速 Dry Run 說明
-以 `[2, 7, 11, 15]` 目標 9 為例。第一個數字 2 進去時 Map 是空的，所以把 `2` 存起來。到第二個數字 7 時，差值是 2，這時發現 Map 裡已經有 2 了，就直接回傳它們的索引。
+假設輸入 `[3, 2, 4]` 目標是 `6`。
+看到 `3` 時 Map 是空的，存入 `{3:0}`；
+看到 `2` 時去找 `4`，沒找到，存入 `{2:1}`；
+最後看到 `4` 時去找 `2`，在 Map 裡找到了索引 `1`，所以直接回傳 `[1, 2]`。
 
 ### 6️⃣ 收尾總結
-這個解法在時間上非常高效，是 **O(n)**。雖然空間上因為用了 Map 需要 **O(n)** 的額外空間，但在現代面試中，這通常是時間與空間權衡下的最優解。
+這個演算法的**時間複雜度是 $O(n)$**，**空間複雜度也是 $O(n)$**。這是在這類尋找配對問題中最優的時間效率。
+
+---
