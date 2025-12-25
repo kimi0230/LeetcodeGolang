@@ -3,4 +3,5 @@ mkdocs-minify-plugin
 mkdocs-awesome-pages-plugin
 mkdocs-mermaid2-plugin
 mkdocs-with-pdf
+mkdocs-git-revision-date-localized-plugin
 ghp-import

@@ -54,6 +54,9 @@ plugins:
       filename: .pages
   - minify:
       minify_html: true
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: datetime
   - with-pdf:
       author: Kimi Tsai
       copyright: Kimi Tsai
