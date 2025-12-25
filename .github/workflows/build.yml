@@ -1,4 +1,4 @@
-name: Build my gitbook and deploy to gh-pages
+name: Build and Deploy MkDocs
 
 on:
   workflow_dispatch:
@@ -7,47 +7,30 @@ on:
       - master
 
 jobs:
-  master-to-gh-pages:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: checkout master
-        uses: actions/checkout@v2
+      - name: Checkout master
+        uses: actions/checkout@v3
         with:
           submodules: recursive
-          ref: master
+          fetch-depth: 0
 
-      - name: install nodejs
-        uses: actions/setup-node@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          node-version: 16
+          python-version: 3.x
 
-      - name: configure honkit
+      - name: Install dependencies
         run: |
-          npm install
-          npm install -g honkit
-          npm install -g gitbook-summary
+          pip install mkdocs-material \
+                      mkdocs-minify-plugin \
+                      mkdocs-awesome-pages-plugin \
+                      mkdocs-mermaid2-plugin
 
-      - name: generate _book folder
+      - name: Deploy to GitHub Pages
         run: |
-          book sm
-          ln -s -f SUMMARY.md Content.md
-          honkit build
-          cp SUMMARY.md _book
-
-      - name: push _book to branch gh-pages
+          # 這裡使用 mkdocs gh-deploy 自動處理 gh-pages 分支
+          mkdocs gh-deploy --force --clean
         env:
-          TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
-          REF: github.com/${{github.repository}}
-          MYEMAIL: kimi0230@gmail.com
-          MYNAME: ${{github.repository_owner}}
-        run: |
-          cd _book
-          git config --global user.email "${MYEMAIL}"
-          git config --global user.name "${MYNAME}"
-          git init
-          git remote add origin https://${REF}
-          git add . 
-          git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages"
-          git branch -M master
-          git push --force --quiet "https://${TOKEN}@${REF}" master:gh-pages
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
