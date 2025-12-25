@@ -25,7 +25,7 @@
         "-toggle-chapters",
         "back-to-top-button",
         "page-footer-ex",
-        "favicon-absolute",
+        "favicon",
         "github",
         "github-buttons",
         "-disqus",
@@ -33,7 +33,6 @@
         "code",
         "-copy-code-button",
         "-emphasize",
-        "page-toc",
         "intopic-toc",
         "-tbfed-pagefooter",
         "edit-link",
@@ -46,18 +45,13 @@
         "mermaid-newface"
     ],
     "pluginsConfig": {
-        "favicon-absolute": {
-            "favicon": "/favicon.ico",
+        "favicon": {
+            "shortcut": "/favicon.ico",
             "bookmark": "/bookmark.ico",
-            "appleTouchIcon152": "/apple-touch-icon-152.png",
-            "appleTouchIconPrecomposed152": "/apple-touch-icon-precomposed-152.png",
-            "appleTouchIconMore": {
+            "appleTouch": "/apple-touch-icon-152.png",
+            "appleTouchMore": {
                 "120x120": "/apple-touch-icon-120.png",
                 "180x180": "/apple-touch-icon-180.png"
-            },
-            "appleTouchIconPrecomposedMore": {
-                "120x120": "/apple-touch-icon-precomposed-120.png",
-                "180x180": "/apple-touch-icon-precomposed-180.png"
             }
         },
         "expandable-chapters": {

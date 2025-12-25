@@ -1,3 +1,50 @@
+---
+title: Solution 1.Two-Sum
+subtitle: "https://leetcode.com/problems/two-sum/description/"
+date: 2025-04-11T20:16:46+08:00
+lastmod: 2025-04-11T20:16:46+08:00
+draft: false
+author: "Kimi.Tsai"
+authorLink: "https://kimi0230.github.io/"
+description: "Two-Sum"
+license: ""
+images: []
+
+tags: [LeetCode, Go, Easy, Array, Hash Table]
+categories: [LeetCode]
+
+featuredImage: ""
+featuredImagePreview: ""
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+twemoji: false
+lightgallery: true
+ruby: true
+fraction: true
+fontawesome: true
+linkToMarkdown: false
+rssFullText: false
+
+toc:
+  enable: true
+  auto: true
+code:
+  copy: true
+  maxShownLines: 200
+math:
+  enable: false
+mapbox:
+share:
+  enable: true
+comment:
+  enable: true
+library:
+  css:
+  js:
+seo:
+  images: []
+---
 # Solution - UMPIRE
 
 ## Output 1: UMPIRE 解題（完整思考版）

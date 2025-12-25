@@ -82,17 +82,26 @@
   - 0003.Longest-Substring-Without-Repeating-Characters
     * [0003.Longest Substring Without Repeating Characters](Leetcode/0003.Longest-Substring-Without-Repeating-Characters/README.md)
   - 0005.Longest-Palindromic-Substring
-    * [0005.Longest Palindromic Substring](Leetcode/0005.Longest-Palindromic-Substring/README.md)
+    * [0005. Longest Palindromic Substring](Leetcode/0005.Longest-Palindromic-Substring/README.md)
+  - [0010.Regular-Expression-Matching](Leetcode/0010.Regular-Expression-Matching/README.md)
+  - 0011.Container-With-Most-Water
+    * [0011.Container With Most Water](Leetcode/0011.Container-With-Most-Water/README.md)
   - 0015.3Sum
     * [0015. 3Sum](Leetcode/0015.3Sum/README.md)
   - 0019.Remove-Nth-Node-From-End-of-List
-    * [0019.Remove Nth Node From End of List](Leetcode/0019.Remove-Nth-Node-From-End-of-List/README.md)
+    * [0019. Remove Nth Node From End of List](Leetcode/0019.Remove-Nth-Node-From-End-of-List/README.md)
   - 0020.Valid-Parentheses
     * [0020. Valid Parentheses](Leetcode/0020.Valid-Parentheses/README.md)
   - 0021.Merge-Two-Sorted-Lists
     * [0021. Merge Two Sorted Lists](Leetcode/0021.Merge-Two-Sorted-Lists/README.md)
   - 0027.Remove-Element
     * [0027.Remove Element](Leetcode/0027.Remove-Element/README.md)
+  - 0028.Find-the-Index-of-the-First-Occurrence-in-a-String
+    * [0028. Find the Index of the First Occurrence in a String](Leetcode/0028.Find-the-Index-of-the-First-Occurrence-in-a-String/README.md)
+  - 0033.Search-in-Rotated-Sorted-Array
+    * [33. Search in Rotated Sorted Array](Leetcode/0033.Search-in-Rotated-Sorted-Array/README.md)
+  - 0034.Find-First-and-Last-Position-of-Element-in-Sorted-Array
+    * [0034. Find First and Last Position of Element in Sorted Array](Leetcode/0034.Find-First-and-Last-Position-of-Element-in-Sorted-Array/README.md)
   - 0035.Search-Insert-Position
     * [0035.Search Insert Position](Leetcode/0035.Search-Insert-Position/README.md)
   - [0046.Permutations](Leetcode/0046.Permutations/README.md)
@@ -106,6 +115,8 @@
     * [0070.Climbing Stairs](Leetcode/0070.Climbing-Stairs/README.md)
   - 0072.Edit-Distance
     * [0072. Edit Distance](Leetcode/0072.Edit-Distance/README.md)
+  - 0074.Search-a-2D-Matrix
+    * [74. Search a 2D Matrix](Leetcode/0074.Search-a-2D-Matrix/README.md)
   - 0075.Sort-Colors
     * [0075.Sort Colors](Leetcode/0075.Sort-Colors/README.md)
   - 0078.Subsets
@@ -128,12 +139,15 @@
     * [0125. Valid Palindrome](Leetcode/0125.Valid-Palindrome/README.md)
   - 0128.Longest-Consecutive-Sequence
     * [128. Longest Consecutive Sequence](Leetcode/0128.Longest-Consecutive-Sequence/README.md)
+  - 0138.Copy-List-with-Random-Pointer
+    * [138. Copy List with Random Pointer](Leetcode/0138.Copy-List-with-Random-Pointer/README.md)
   - 0141.Linked-List-Cycle
     * [0141.Linked List Cycle](Leetcode/0141.Linked-List-Cycle/README.md)
   - 0142.Linked-List-CycleII
     * [0142.Linked List Cycle II](Leetcode/0142.Linked-List-CycleII/README.md)
   - 0143.Reorder-List
     * [143. Reorder List](Leetcode/0143.Reorder-List/README.md)
+  - [0153.Find-Minimum-in-Rotated-Sorted-Array](Leetcode/0153.Find-Minimum-in-Rotated-Sorted-Array/README.md)
   - 0167.Two-Sum-II-Input-Array-Is-Sorted
     * [0167.Two Sum II Input Array Is Sorted](Leetcode/0167.Two-Sum-II-Input-Array-Is-Sorted/README.md)
   - 0203.Remove-Linked-List-Elements
@@ -198,14 +212,21 @@
     * [746. Min Cost Climbing Stairs](Leetcode/0746.Min-Cost-Climbing-Stairs/README.md)
   - 0752.Open-the-Lock
     * [0752.Open the Lock](Leetcode/0752.Open-the-Lock/README.md)
+  - 0875.Koko-Eating-Bananas
+    * [875. Koko Eating Bananas](Leetcode/0875.Koko-Eating-Bananas/README.md)
   - 0876.Middle-of-the-Linked-List
     * [0876.Middle of the Linked List](Leetcode/0876.Middle-of-the-Linked-List/README.md)
+  - 0981.Time-Based-Key-Value-Store
+    * [0981.Time Based Key-Value Store](Leetcode/0981.Time-Based-Key-Value-Store/README.md)
+  - [1.Two-Sum](Leetcode/1.Two-Sum/README.md)
+    * [Solution 1.Two-Sum](Leetcode/1.Two-Sum/README_solution.md)
   - 1046.Last-Stone-Weight
     * [1046. Last Stone Weight](Leetcode/1046.Last-Stone-Weight/README.md)
   - 1143.Longest-Common-Subsequence
     * [1143.Longest Common Subsequence](Leetcode/1143.Longest-Common-Subsequence/README.md)
   - 1195.Fizz-Buzz-Multithreaded
     * [1195. Fizz Buzz Multithreaded](Leetcode/1195.Fizz-Buzz-Multithreaded/README.md)
+  - [3223.Minimum-Length-of-String-After-Operations](Leetcode/3223.Minimum-Length-of-String-After-Operations/README.md)
 - [Structures](structures/README.md)
   - Heap
     * [Golang Container Heap](structures/heap/index.en.md)
