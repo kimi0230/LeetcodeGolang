@@ -79,13 +79,13 @@ func twoSum(nums []int, target int) []int {
     2. `i = 1, v = 2`：`complement = 4`。Map 只有 `{3: 0}`。存入 `{3: 0, 2: 1}`。
     3. `i = 2, v = 4`：`complement = 2`。Map 存在 `2`，索引為 `1`。
     4. 返回 `[1, 2]`。正確。
-- **關鍵狀態變遷**：
+**Visual Aid**:
 ```mermaid
 stateDiagram-v2
     [*] --> Start
     Start --> i0: i=0, v=3, Map={}
-    i0 --> i1: complement=3 not in Map, Map={3:0}
-    i1 --> i2: i=1, v=2, complement=4 not in Map, Map={3:0, 2:1}
+    i0 --> i1: complement=3 not in Map, Map={3-0}
+    i1 --> i2: i=1, v=2, complement=4 not in Map, Map={3-0, 2-1}
     i2 --> Found: i=2, v=4, complement=2 found in Map!
     Found --> [*]
 ```

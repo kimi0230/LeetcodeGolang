@@ -141,12 +141,12 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 ```mermaid
 stateDiagram-v2
     direction LR
-    [*] --> S1: "L1:[9], L2:[1], C:0"
-    S1 --> S2: "Sum:10, Carry:1, Node:0"
-    S2 --> S3: "L1:[9], L2:nil, C:1"
-    S3 --> S4: "Sum:10, Carry:1, Node:0"
-    S4 --> S5: "L1:nil, L2:nil, C:1"
-    S5 --> S6: "Sum:1, Carry:0, Node:1"
+    [*] --> S1: L1 [9], L2 [1], C 0
+    S1 --> S2: Sum 10, Carry 1, Node 0
+    S2 --> S3: L1 [9], L2 nil, C 1
+    S3 --> S4: Sum 10, Carry 1, Node 0
+    S4 --> S5: L1 nil, L2 nil, C 1
+    S5 --> S6: Sum 1, Carry 0, Node 1
     S6 --> [*]
 ```
 
