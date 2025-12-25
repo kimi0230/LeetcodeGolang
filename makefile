@@ -2,6 +2,10 @@ VERSION ?= v0.0.1
 
 all: build
 
+install:
+	pip install -r requirements.txt
+	npm install staticrypt
+
 build:
 	mkdocs build
 
