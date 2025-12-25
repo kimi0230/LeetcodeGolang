@@ -43,7 +43,9 @@ jobs:
           
           for file in $FOUND_FILES; do
             echo "🔒 Encrypting $file with staticrypt..."
-            ./node_modules/.bin/staticrypt "$file" -p "${{ secrets.SOLUTION_PASSWORD }}" -s -o "$file"
+            dir=$(dirname "$file")
+            base=$(basename "$file")
+            ./node_modules/.bin/staticrypt "$file" -p "${{ secrets.SOLUTION_PASSWORD }}" -s -d "$dir" -o "$base"
           done
           
           # 4. 部署到 GitHub Pages
