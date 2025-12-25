@@ -9,6 +9,11 @@ package addtwonumbers
  * }
  */
 
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
+
 // 遍歷 l1跟 l2. 講兩個list的val相加, 並且記錄進位的值給next使用
 // 最後如果 carry 還有的話, 需要產生一個新的節點
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
