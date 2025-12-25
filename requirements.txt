@@ -3,5 +3,4 @@ mkdocs-minify-plugin
 mkdocs-awesome-pages-plugin
 mkdocs-mermaid2-plugin
 mkdocs-with-pdf
-staticrypt
 ghp-import
