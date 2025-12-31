@@ -3,7 +3,7 @@ title: 0001.Two Sum
 tags:
   - Easy
 author: Kimi Tsai <kimi0230@gmail.com>
-description:
+description: two sum
 ---
 # [1. Two Sum](https://leetcode.com/problems/two-sum/)
 ## 题目
